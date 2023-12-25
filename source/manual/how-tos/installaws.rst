@@ -13,7 +13,7 @@ Step 1 - New Instance
 
 To start a new instance go to "instances", followed by "launch instance" in your EC2 view.
 
-Next go to "AWS Marketplace" and search "OPNsense". Our official image is sold via Deciso Sales B.V..
+Next go to "AWS Marketplace" and search "OPNsense". Our official image is sold via Reticen8 Sales B.V..
 
 .. image:: images/aws_step1_choose_ami.png
     :width: 100%

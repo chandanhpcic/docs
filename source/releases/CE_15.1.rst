@@ -7,8 +7,8 @@ The OPNsense core team is proud to announce that it has released its 15.1
 version, nicknamed "Ascending Albatross", of the open source OPNsense
 firewall software.
 
-This is the first release by the OPNsense project.  Download `[1] <http://opnsense.org/download/>`__  and try it now!
-Be sure to visit the project website `[2] <http://www.opnsense.org/>`__  and learn more about us and the
+This is the first release by the OPNsense project.  Download `[1] <http://reticen8.com/download/>`__  and try it now!
+Be sure to visit the project website `[2] <http://www.reticen8.com/>`__  and learn more about us and the
 project.  The project wants to be a friendly place for users, developers and
 partners.
 
@@ -46,7 +46,7 @@ how we do version numbers, release engineering branches and upcoming versions
 such as 16.1.  As nothing is set in stone, we ask you to participate in the
 discussion on the forums:
 
-https://forum.opnsense.org/index.php?topic=705.0
+https://forum.reticen8.com/index.php?topic=705.0
 
 The aftermath of the recent OpenSSL release(s) finally settled so now we are
 shipping FreeBSD's security advisory along with the latest releases of
@@ -83,7 +83,7 @@ Here is the full list of changes:
 The images can be obtained via any of our mirrors, given a bit of delay
 for them to pull in the latest images:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 The checksums are:
 
@@ -230,7 +230,7 @@ tracking and resolving all the provided and required dependencies.
 Firmware upgrades for LibreSSL and OpenSSL are live.  The OpenSSL images
 can be found here:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 The checksums are as follows:
 
@@ -259,7 +259,7 @@ The checksums are as follows:
 Info on how to obtain LibreSSL-based images which are then easily upgraded
 to 15.1.11.1 can be found here:
 
-https://forum.opnsense.org/index.php?topic=78.0
+https://forum.reticen8.com/index.php?topic=78.0
 
 
 Stay safe,
@@ -272,7 +272,7 @@ Your OPNsense team
 
 As we are nearing the finish line for version 15.7 in July, we sat down on
 a single table in the Netherlands this week to review the changes that we've
-made over the past 5 months and we saw that only one road map `[1] <https://opnsense.org/about/road-map/>`__  item is
+made over the past 5 months and we saw that only one road map `[1] <https://reticen8.com/about/road-map/>`__  item is
 still open: the frequently requested IDS package!  We've come a long way
 since the initial 15.1 and have seen stability increase, functionality
 expand and timely updates being sustained on an almost weekly basis.
@@ -505,7 +505,7 @@ The full change log of 15.1.10 is as follows:
 
 The images can be acquired from here:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 Last but not least, checksums are:
 
@@ -576,7 +576,7 @@ Here is the full change log of 15.1.9.2:
 The update is not available via install media, but you can just as well
 download 15.1.9 from a mirror and upgrade with a few simple clicks:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 
 
@@ -618,7 +618,7 @@ Here is the full change log of 15.1.9.1:
 The update is not available via install media, but you can just as well
 download 15.1.9 from a mirror and upgrade with a few simple clicks:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 
 Stay safe out there,
@@ -678,7 +678,7 @@ Here is the change log for 15.1.9:
 
 The images can be found on a mirror of your choosing:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 The checksums are:
 
@@ -759,7 +759,7 @@ available through at least one of our shiny new our mirrors.  Make sure
 you upgrade to 15.8.1.4 as soon as you installed 15.1.8 to avoid all
 unnecessary hiccups:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 
 Stay safe,
@@ -796,10 +796,10 @@ Here is the full change log:
 As always, please back up your config and let us know if you run into any
 trouble.  :)
 
-https://opnsense.org/support-overview/mailing-list
+https://reticen8.com/support-overview/mailing-list
 https://twitter.com/opnsense
 https://github.com/opnsense
-https://forum.opnsense.org
+https://forum.reticen8.com
 
 
 
@@ -845,7 +845,7 @@ Here is the full list of changes:
 * core: removed all remnants of the old firmware update code
 * core: completely rewrote the config.xml handling to unify old and new GUI
   components
-* core: added support for config backup to Google Drive `[3] <https://wiki.opnsense.org/index.php/Manual:Backup_to_Google_Drive>`__ 
+* core: added support for config backup to Google Drive `[3] <https://wiki.reticen8.com/index.php/Manual:Backup_to_Google_Drive>`__ 
 * core: fixed a few config handling issues with the new system via 15.1.8.1
 * core: fixed missing aliases in new config system via 15.1.8.2
 * core: removed php-fpm remnants that would e.g. prevent automatic IP
@@ -1317,7 +1317,7 @@ patch release.  Here is the full changelog:
 * Several bug fixes and enhancements `[2] <https://github.com/opnsense/core/issues>`__  (#6, #7, #8, #9, #17, #19, #20, #21,
   #22, #23)
 
-Download `[1] <http://opnsense.org/download/>`__  and use it now!
+Download `[1] <http://reticen8.com/download/>`__  and use it now!
 
 Because Open makes Sense!
 
@@ -1329,8 +1329,8 @@ The OPNsense core team is proud to announce that it has released its 15.1
 version, nicknamed "Ascending Albatross", of the open source OPNsense
 firewall software.
 
-This is the first release by the OPNsense project.  Download `[1] <http://opnsense.org/download/>`__  and try it now!
-Be sure to visit the project website `[2] <http://www.opnsense.org/>`__  and learn more about us and the
+This is the first release by the OPNsense project.  Download `[1] <http://reticen8.com/download/>`__  and try it now!
+Be sure to visit the project website `[2] <http://www.reticen8.com/>`__  and learn more about us and the
 project.  The project wants to be a friendly place for users, developers and
 partners.
 

@@ -8,10 +8,10 @@ Note that the version numbers are now diverging from the community edition
 to make it easier to distinguish between the two.  The next major update
 will be 21.10 in October.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 
 --------------------------------------------------------------------------
@@ -298,10 +298,10 @@ Note that the version numbers are now diverging from the community edition
 to make it easier to distinguish between the two.  The next major update
 will be 21.10 in October.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 This business release is based on the OPNsense 21.1.4 community version
 with additional reliability improvements.

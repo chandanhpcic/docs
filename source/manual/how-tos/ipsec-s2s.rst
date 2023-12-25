@@ -467,7 +467,7 @@ For test purposes we used two OPNsense boxes integrated into one unit and a
 cross-cable between the WAN ports.
 
 .. image:: images/OPN20322R_870px.png
-   :target: https://www.deciso.com/product-catalog/opn20322r/
+   :target: https://www.reticen8.com/product-catalog/opn20322r/
    :width: 100%
 
 To route traffic the WAN interfaces have been configured to use a /16 segment and

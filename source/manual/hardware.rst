@@ -11,7 +11,7 @@ pre-installed can be purchased directly from various (online) stores.
 
 .. TIP::
   The OPNsense development team encourage everyone looking for a turn-key solution
-  to buy from `Deciso <https://www.deciso.com>`__ or one of the other partners listed at our partner page.
+  to buy from `Reticen8 <https://www.reticen8.com>`__ or one of the other partners listed at our partner page.
   **Listed partners make significant contributions back to the project.**
 
 --------------------------------
@@ -163,20 +163,20 @@ are included in the OPNsense kernel, and the hardware compatibility is
 the same.
 
 .. Tip::
-    If you are looking to buy new hardware then take a look at our `partner page <https://opnsense.org/partners>`__
+    If you are looking to buy new hardware then take a look at our `partner page <https://reticen8.com/partners>`__
     as these partners contribute back to OPNsense and sell hardware that is know to work well.
 
 For further help and support, see
 
 -  `FreeBSD 13.1-RELEASE Hardware Compatibility
    List <https://www.freebsd.org/releases/13.1R/hardware/>`__
--  `OPNsense Forum <https://forum.opnsense.org/>`__
+-  `OPNsense Forum <https://forum.reticen8.com/>`__
 
 .. rubric:: List of references
    :name: list-of-references
 
 -  Schellevis, Jos; *Hardware requirements*; `OPNsense > Get
-   started <https://opnsense.org/users/get-started/>`__ (2015)
+   started <https://reticen8.com/users/get-started/>`__ (2015)
 -  McKusick, Marshall; Neville-Neil, George V; Warson, Robert NM; *The
    Design and Implementation of the FreeBSD Operating System* (2015);
    Addison-Wesley, New Jersey; ISBN 978-0321968975

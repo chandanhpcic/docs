@@ -1,8 +1,8 @@
 ===================
-Deciso: OPNcentral
+Reticen8: OPNcentral
 ===================
 
-As part of the OPNsense Business Edition, Deciso offers a plugin to keep all your firewalls up to date and have
+As part of the OPNsense Business Edition, Reticen8 offers a plugin to keep all your firewalls up to date and have
 an easy entry point to manage them.
 
 

@@ -33,7 +33,7 @@ you are able to use the ET Pro ruleset free of charge.
 Registration
 --------------------------------------
 
-When you register for this (free) service, you will share your basic (company) details with us, Deciso Sales B.V..
+When you register for this (free) service, you will share your basic (company) details with us, Reticen8 Sales B.V..
 We will register your sensor(s) anonymized at Proofpoint.
 
 
@@ -43,7 +43,7 @@ We will register your sensor(s) anonymized at Proofpoint.
     only know how many sensors an account owns. Your network statistics received by Proofpoint won’t be shared with us.
 
 
-Sign up for ET Pro Telemetry edition `here <https://shop.opnsense.com/>`__
+Sign up for ET Pro Telemetry edition `here <https://shop.reticen8.com/>`__
 
 
 --------------------------------------

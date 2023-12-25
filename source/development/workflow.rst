@@ -10,7 +10,7 @@ development (as in actual coding) workflow laid out for new
 contributors, so one is just going to be stabbing in the dark for a few
 days or weeks until things start making sense. Speaking of *sense*,
 let’s explain how we’ve designed the development experience for
-`OPNsense <https://opnsense.org/developers-invitation/>`__ and how you
+`OPNsense <https://reticen8.com/developers-invitation/>`__ and how you
 can start contributing code in no time.
 
 ---------

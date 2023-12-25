@@ -17,7 +17,7 @@ latest versions.  The logging frontend was rewritten for MVC with seamless
 API support.  On the far side the documentation increased in quality as well
 as quantity and now presents itself in a familiar menu layout.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/20.1/
@@ -25,7 +25,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/20.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/20.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/20.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -105,7 +105,7 @@ Here are the full patch notes:
 * plugins: os-freeradius 1.9.7 `[4] <https://github.com/opnsense/plugins/pull/1726>`__ 
 * plugins: os-haproxy 2.23 `[5] <https://github.com/opnsense/plugins/pull/1883>`__ 
 * plugins: os-intrusion-detection-content-snort-vrt 1.1
-* plugins: os-stunnel 1.0 `[6] <https://docs.opnsense.org/manual/how-tos/stunnel.html>`__  (sponsored by Incenter Technology)
+* plugins: os-stunnel 1.0 `[6] <https://docs.reticen8.com/manual/how-tos/stunnel.html>`__  (sponsored by Incenter Technology)
 * plugins: os-tayga 1.1 `[7] <https://github.com/opnsense/plugins/pull/1826>`__ 
 * plugins: os-theme-rebellion 1.8.4 `[8] <https://github.com/opnsense/plugins/pull/1892>`__ 
 * ports: ca_root_nss 3.53
@@ -441,7 +441,7 @@ latest versions.  The logging frontend was rewritten for MVC with seamless
 API support.  On the far side the documentation increased in quality as well
 as quantity and now presents itself in a familiar menu layout.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/20.1/
@@ -449,7 +449,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/20.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/20.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/20.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 These are the most prominent changes since version 19.7:
 
@@ -488,7 +488,7 @@ Known issues and limitations:
 
 * HardenedBSD 12.1 has been postponed to the next major release
 * Legacy MPD5 plugins os-l2tp, os-pppoe and os-pptp have been deprecated and will no longer receive updates
-* To prevent stale configuration files for remote syslog we advise to setup the new targets first `[9] <https://docs.opnsense.org/manual/settingsmenu.html#logging-targets>`__  and disable the old ones under System: Settings: Logging
+* To prevent stale configuration files for remote syslog we advise to setup the new targets first `[9] <https://docs.reticen8.com/manual/settingsmenu.html#logging-targets>`__  and disable the old ones under System: Settings: Logging
 * i386 has not been deprecated for the time being ;)
 
 The public key for the 20.1 series is:
@@ -539,7 +539,7 @@ upstream software updates as well as clear and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/20.1/
@@ -547,7 +547,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/20.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/20.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/20.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 19.7.9_1:
 

@@ -81,7 +81,7 @@ Images can be found on any of our mirrors, but they may take a
 few hours to sync.  The checksums are attached at the end of
 this announcement for convenience.
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -363,7 +363,7 @@ and fixes in all areas.  Notable from a development perspective are the
 opnsense-bootstrap tool, which can install the latest OPNsense version on a
 FreeBSD 10.1.  Additionally, the development branch offers a sneak preview of
 Suricata in true IPS mode!  Instructions on how to test it can be found in
-the forum `[9] <https://forum.opnsense.org/index.php?topic=1740>`__ .
+the forum `[9] <https://forum.reticen8.com/index.php?topic=1740>`__ .
 
 Here are the full patch notes:
 
@@ -378,7 +378,7 @@ Here are the full patch notes:
 * ports: pkg 1.6.2 `[7] <https://github.com/freebsd/freebsd-ports/commit/0466b08981bf9c714>`__ 
 * ports: opnsense-bootstrap, the infamous installer that works on stock FreeBSD `[8] <https://github.com/opnsense/update/commit/e3f63ecdb1149a8cc30e3>`__ 
 * intrusion detection: ignore json parse errors in eve log file
-* intrusion prevention (development): added Suricata 2.1beta4 in inline mode `[9] <https://forum.opnsense.org/index.php?topic=1740>`__ 
+* intrusion prevention (development): added Suricata 2.1beta4 in inline mode `[9] <https://forum.reticen8.com/index.php?topic=1740>`__ 
 * interfaces: reverted cache removal due to multiple speed regressions reports
 * backend: send timeouts with proper description to syslog
 * openvpn: fix auth server selection for translations
@@ -421,9 +421,9 @@ Here are the full patch notes:
 * languages: translation strings no longer use obfuscated argument reordering
   by default
 * languages: updated German and French to a newer version from
-  translate.opnsense.org
+  translate.reticen8.com
 * captive portal (development): added a new voucher implementation
-* api (development): added API key authentication mechanism `[4] <https://wiki.opnsense.org/index.php/Howto_use_the_API>`__ 
+* api (development): added API key authentication mechanism `[4] <https://wiki.reticen8.com/index.php/Howto_use_the_API>`__ 
 
 
 
@@ -466,7 +466,7 @@ Here are the full patch notes:
 * crash reporter: Suhosin PHP module no longer triggers crash reports
 * crash reporter: fixed 10 assorted crash reports
 * languages: fix all apply button prompts for non-English translations
-* languages: updated German and French via https://translate.opnsense.org
+* languages: updated German and French via https://translate.reticen8.com
 * backend: added simple plugin hooks for boot up, early boot up and shutdown
 * GUI: hooked up the authentication backend rewrite
 * dhcp: remove illegal ifconfig tag in custom dhclient script
@@ -607,7 +607,7 @@ here are the full patch notes:
 
 
 We hope you guys are having a good week?  Because if not we have a treat for
-you: the wait for System Health `[1] <https://opnsense.org/system-health-whats-next/>`__  is finally over and the best part is that
+you: the wait for System Health `[1] <https://reticen8.com/system-health-whats-next/>`__  is finally over and the best part is that
 it'll just work with your previously collected RRD data.  :) We kindly ask
 you to provide feedback via the usual channels in order to make it even
 better.  There's still a lot of time till 16.1 hits the shelves, so to speak.
@@ -709,7 +709,7 @@ available for LibreSSL, Bind and PHP.
 We've also been able to iron out the few IPsec configuration problems
 left related to the page rewrite thanks to relentless testing by
 Frank Wall and others.  We appreciate any help in doing the same for
-the new Firewall pages we have staged in our development version `[12] <https://forum.opnsense.org/index.php?topic=1305.0>`__ .
+the new Firewall pages we have staged in our development version `[12] <https://forum.reticen8.com/index.php?topic=1305.0>`__ .
 Here is the full list of changes:
 
 * src: local privilege escalation in IRET handler `[1] <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:21.amd64.asc>`__ 
@@ -864,7 +864,7 @@ features simmer there until they are fully ready to be rolled out.  We
 already have VPN configuration improvements and firmware upgrade eye candy
 staged in the current development package.  Join our forum to find out more:
 
-https://forum.opnsense.org/
+https://forum.reticen8.com/
 
 Here are the full patch notes:
 
@@ -1005,7 +1005,7 @@ as small fixes and further firmware experience improvements.  We've also
 taken the time to refine our version 16.1 road map items for you to review
 and discuss:
 
-https://opnsense.org/about/road-map/
+https://reticen8.com/about/road-map/
 
 The full list of changes are as follows:
 
@@ -1182,7 +1182,7 @@ Images can be found on any of our mirrors, but they may take a
 few hours to sync.  The checksums are attached at the end of
 this announcement for convenience.
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 
 

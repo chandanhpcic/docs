@@ -8,10 +8,10 @@ with a new API-capable VLAN interface including QinQ support, FreeBSD 13 and
 many other improvements.  Please make sure to read the migration notes before
 upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 
 --------------------------------------------------------------------------
@@ -179,7 +179,7 @@ Here are the full patch notes:
 * mvc: fix two regressions and deprecate __items
 * plugins: os-OPNBEcore 1.0.2 cleans up LDAP sync task
 * plugins: os-OPNProxy 1.0.2 fixes newline issue in template
-* plugins: os-OPNcentral 1.5 `[1] <https://docs.opnsense.org/vendor/deciso/opncentral.html?highlight=opncentral#multi-tenancy-using-host-groups>`__ 
+* plugins: os-OPNcentral 1.5 `[1] <https://docs.reticen8.com/vendor/reticen8/opncentral.html?highlight=opncentral#multi-tenancy-using-host-groups>`__ 
 * plugins: os-acme-client 3.10 `[2] <https://github.com/opnsense/plugins/blob/stable/22.1/security/acme-client/pkg-descr>`__ 
 * plugins: os-bind 1.23 `[3] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/bind/pkg-descr>`__ 
 * plugins: os-chrony 1.5 `[4] <https://github.com/opnsense/plugins/blob/stable/22.1/net/chrony/pkg-descr>`__ 
@@ -215,10 +215,10 @@ with a new API-capable VLAN interface including QinQ support, FreeBSD 13 and
 many other improvements.  Please make sure to read the migration notes before
 upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 This business release is based on the OPNsense 22.1.4 community version
 with additional reliability improvements.
@@ -439,7 +439,7 @@ Here are the full patch notes:
 * ui: sidebar 2nd submenu view fix (contributed by Team Rebellion)
 * ui: universal striping adjustment for MVC components (contributed by kulikov-a)
 * ui: omit total entries display for log grids
-* plugins: os-OPNProxy 1.0.1 `[2] <https://docs.opnsense.org/vendor/deciso/opnproxy.html#authentication-options>`__ 
+* plugins: os-OPNProxy 1.0.1 `[2] <https://docs.reticen8.com/vendor/reticen8/opnproxy.html#authentication-options>`__ 
 * plugins: os-bind 1.22 `[3] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/bind/pkg-descr>`__ 
 * plugins: os-ddclient 1.4 `[4] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__  as an eventual replacement for os-dyndns
 * plugins: os-dnscrypt-proxy 1.11 `[5] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/dnscrypt-proxy/pkg-descr>`__ 

@@ -82,7 +82,7 @@ For our example we use the following data:
  **State or Province**    Zuid Holland
  **City**                 Middelharnis
  **Organization**         OPNsense
- **Email Address**        spam@opnsense.org
+ **Email Address**        spam@reticen8.com
  **Common Name**          opnsense-ssl-ca
 ======================== ===========================================
 

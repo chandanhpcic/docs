@@ -54,13 +54,13 @@ Getting Support
 
 **Support for Free Edition**
 
-If you need help with Zenarmor, there is an active discussion on the OPNsense forum. Feel free to `click here <https://forum.opnsense.org/index.php?board=38.0>`_ to join the conversation.
+If you need help with Zenarmor, there is an active discussion on the OPNsense forum. Feel free to `click here <https://forum.reticen8.com/index.php?board=38.0>`_ to join the conversation.
 
 You may also submit bug reports by visiting the *Report Bug* page in the Zenarmor web UI.
 
 With its in-depth coverage, `Zenarmor Documentation <https://www.sunnyvalley.io/docs/opnsense>`_ is always available for reference.
 
-* `OPNsense Forum <https://forum.opnsense.org/index.php?board=38.0>`_
+* `OPNsense Forum <https://forum.reticen8.com/index.php?board=38.0>`_
 * `Users' Manual <https://www.sunnyvalley.io/docs/opnsense>`_
 
 **Premium Subscription Support**

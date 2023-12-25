@@ -20,7 +20,7 @@ has been completed.  2FA now works with a remote LDAP / local TOTP
 combination.  And the OpenVPN client export was rewritten for full API
 support as well.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.1/
@@ -28,7 +28,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -434,10 +434,10 @@ Here are the full patch notes:
 The full list of changes of the OPNsense 19.1 series can be reviewed using
 their original announcements:
 
-* 19.1: https://forum.opnsense.org/index.php?topic=11398.0
-* 19.1.1: https://forum.opnsense.org/index.php?topic=11469.0
-* 19.1.2: https://forum.opnsense.org/index.php?topic=11849.0
-* 19.1.3: https://forum.opnsense.org/index.php?topic=11941.0
+* 19.1: https://forum.reticen8.com/index.php?topic=11398.0
+* 19.1.1: https://forum.reticen8.com/index.php?topic=11469.0
+* 19.1.2: https://forum.reticen8.com/index.php?topic=11849.0
+* 19.1.3: https://forum.reticen8.com/index.php?topic=11941.0
 
 We would also like to use this opportunity to remind everyone that OPNsense
 is and always will be free software.  All of its source code and associated
@@ -445,7 +445,7 @@ build tools can be found here:
 
 https://github.com/opnsense
 
-Download links, an installation guide `[6] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[6] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.1/
@@ -453,7 +453,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 The public key for the 19.1 series is:
 
@@ -686,7 +686,7 @@ has been completed.  2FA now works with a remote LDAP / local TOTP
 combination.  And the OpenVPN client export was rewritten for full API
 support as well.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.1/
@@ -694,7 +694,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 These are the most prominent changes since version 18.7:
 
@@ -705,7 +705,7 @@ These are the most prominent changes since version 18.7:
 * WPAD / PAC and parent proxy support in the web proxy
 * P12 certificate export with custom passwords
 * Dpinger is now the default gateway monitor
-* ET Pro Telemetry edition plugin `[2] <https://docs.opnsense.org/manual/etpro_telemetry.html>`__ 
+* ET Pro Telemetry edition plugin `[2] <https://docs.reticen8.com/manual/etpro_telemetry.html>`__ 
 * extended IPv6 DUID support
 * Dnsmasq DNSSEC support
 * OpenVPN client export API
@@ -743,8 +743,8 @@ Migration notes and minor incompatibilities to look out for:
 * Gateway health graphs may need a manual reset due to the Apinger to Dpinger migration.  Apinger is no longer available.
 * Intrusion detection GeoIP rules are automatically deactivated and need to be manually migrated to firewall alias GeoIP.
 * Quagga plugin has been superseded by FRR plugin.  A binary quagga package has been conserved for the time being.
-* Please read the FRR documentation with regard to the required system tunables `[8] <https://docs.opnsense.org/manual/dynamic_routing.html>`__ .
-* Bhyve VM boot may fail as a guest.  Use the "-w" parameter `[9] <https://forum.opnsense.org/index.php?topic=11492.0>`__  to boot.
+* Please read the FRR documentation with regard to the required system tunables `[8] <https://docs.reticen8.com/manual/dynamic_routing.html>`__ .
+* Bhyve VM boot may fail as a guest.  Use the "-w" parameter `[9] <https://forum.reticen8.com/index.php?topic=11492.0>`__  to boot.
 * Boot may fail due to Meltdown/Spectre mitigation.  A workaround `[10] <https://github.com/opnsense/core/issues/3177>`__  exists.
 * SNMP plugin has been superseded by Net-SNMP plugin.
 
@@ -818,7 +818,7 @@ and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.1/
@@ -826,7 +826,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full changes against version 18.7.10:
 
@@ -944,7 +944,7 @@ Known issues and limitations:
 * Monit general settings do not save.  A patch exists `[12] <https://github.com/opnsense/core/commit/a2899594>`__  to remedy this problem: opnsense-patch a2899594
 * Issue with IDS migration code creating a spurious crash report.  Patch already done for the final 19.1.
 * Quagga plugin has been superseded by FRR plugin.  A binary quagga package has been conserved for the time being.
-* Please read the FRR documentation with regard to the required system tunables `[13] <https://docs.opnsense.org/manual/dynamic_routing.html>`__ .
+* Please read the FRR documentation with regard to the required system tunables `[13] <https://docs.reticen8.com/manual/dynamic_routing.html>`__ .
 * SNMP plugin has been superseded by Net-SNMP plugin.
 * ZFS guided installation pending.
 

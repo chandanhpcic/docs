@@ -26,7 +26,7 @@ Brendel, Fabian Franz and Michael Muenz.  And we, last but not least,
 have been working more closely than ever with HardenedBSD by unifying
 our ports infrastructure.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below.
 
 * Europe: https://opnsense.c0urier.net/releases/17.7/
@@ -34,7 +34,7 @@ can be found below.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.7/
 * South America: http://mirror.upb.edu.co/opnsense/releases/17.7/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/17.7/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -241,7 +241,7 @@ To all our 18.1-BETA testers we say this: thank you!  The results have
 been thoroughly positive.  If you would like to participate as well,
 please take a closer look:
 
-https://forum.opnsense.org/index.php?topic=6257.0
+https://forum.reticen8.com/index.php?topic=6257.0
 
 And here are the full patch notes:
 
@@ -431,11 +431,11 @@ clear and stable 2-Clause BSD licensing.
 The full list of changes of OPNsense 17.7 can be reviewed using their
 original announcements:
 
-* 17.7: https://forum.opnsense.org/index.php?topic=5604.0
-* 17.7.1: https://forum.opnsense.org/index.php?topic=5863.0
-* 17.7.2: https://forum.opnsense.org/index.php?topic=5956.0
-* 17.7.3: https://forum.opnsense.org/index.php?topic=5994.0
-* 17.7.4: https://forum.opnsense.org/index.php?topic=6041.0
+* 17.7: https://forum.reticen8.com/index.php?topic=5604.0
+* 17.7.1: https://forum.reticen8.com/index.php?topic=5863.0
+* 17.7.2: https://forum.reticen8.com/index.php?topic=5956.0
+* 17.7.3: https://forum.reticen8.com/index.php?topic=5994.0
+* 17.7.4: https://forum.reticen8.com/index.php?topic=6041.0
 * 17.7.5: this document
 
 We would also like to use this opportunity to remind everyone that OPNsense
@@ -454,7 +454,7 @@ Download Locations
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.7/
 * South America: http://mirror.upb.edu.co/opnsense/releases/17.7/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/17.7/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 All images are provided with SHA-256 signatures, which can be verified
 against the distributed public key:
@@ -601,10 +601,10 @@ Here are the full patch notes:
 * plugins: migrate plugin models on install
 * plugins: only restart configd once on reinstall
 * plugins: os-acme-client 1.10 `[1] <https://github.com/opnsense/plugins/pull/254>`__  (contributed by Frank Wall)
-* plugins: os-clamav 1.0 `[2] <https://docs.opnsense.org/manual/how-tos/clamav.html>`__  (contributed by Michael Muenz)
-* plugins: os-c-icap 1.0 `[3] <https://docs.opnsense.org/manual/how-tos/c-icap.html>`__  (contributed by Michael Muenz)
+* plugins: os-clamav 1.0 `[2] <https://docs.reticen8.com/manual/how-tos/clamav.html>`__  (contributed by Michael Muenz)
+* plugins: os-c-icap 1.0 `[3] <https://docs.reticen8.com/manual/how-tos/c-icap.html>`__  (contributed by Michael Muenz)
 * plugins: os-dyndns fix for Cloudflare proxy status (contributed by sll552)
-* plugins: os-mdns-repeater `[4] <https://docs.opnsense.org/manual/how-tos/multicast-dns.html>`__  1.0 (contributed by Fabian Franz)
+* plugins: os-mdns-repeater `[4] <https://docs.reticen8.com/manual/how-tos/multicast-dns.html>`__  1.0 (contributed by Fabian Franz)
 * plugins: os-zerotier 1.1.0 (contributed by David Harrigan)
 * ports: mpd 5.8_2 `[5] <https://github.com/freebsd/freebsd-ports/commit/4156f1e3d>`__  `[6] <https://github.com/freebsd/freebsd-ports/commit/003e792d>`__ 
 * ports: php 7.0.23 `[7] <https://php.net/ChangeLog-7.php#7.0.23>`__ 
@@ -726,7 +726,7 @@ Brendel, Fabian Franz and Michael Muenz.  And we, last but not least,
 have been working more closely than ever with HardenedBSD by unifying
 our ports infrastructure.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below.
 
 * Europe: https://opnsense.c0urier.net/releases/17.7/
@@ -734,7 +734,7 @@ can be found below.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.7/
 * South America: http://mirror.upb.edu.co/opnsense/releases/17.7/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/17.7/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here is the full list of changes against version 17.7-RC2:
 
@@ -913,13 +913,13 @@ have been working more closely than ever with HardenedBSD by unifying
 our ports infrastructure.  Although this is only the beginning, let us
 not skip ahead.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below.
 
 * Europe: https://opnsense.c0urier.net/releases/17.7.r1/
 * US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/17.7.r1/
 * US West Coast: http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.7.r1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here is the full (and surprisingly sparse) list of changes against
 version 17.1.9:

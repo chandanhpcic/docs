@@ -30,7 +30,7 @@ workaround has been added to avoid the problem in the future.
 All images can be found on the mirrors below with checksums attached to
 the end of this announcement:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -750,13 +750,13 @@ workaround has been added to avoid the problem in the future.
 All images can be found on the mirrors below with checksums attached to
 the end of this announcement:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 Please stay in touch, tell us what you think about OPNsense and how we can
 improve it further!  You can find us in any of these popular locations:
 
 * Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
+* Forum: https://forum.reticen8.com/
 * GitHub: https://github.com/opnsense
 
 Lastly, here are the full changes since 16.7-RC2:
@@ -767,7 +767,7 @@ Lastly, here are the full changes since 16.7-RC2:
 * system: Etc/UTC is now the default time zone
 * system: prevent user from deleting itself
 * interfaces: register groups in the system immediately
-* firmware: add subscription option for private repositories `[3] <https://forum.opnsense.org/index.php?topic=3408.0>`__ 
+* firmware: add subscription option for private repositories `[3] <https://forum.reticen8.com/index.php?topic=3408.0>`__ 
 * firmware: work around API POST problem on Chrome by deleting css source map pointer
 * firewall: allow cron to set arbitrary syslog times for alias updates
 * proxy: add syslog target for access_log
@@ -823,7 +823,7 @@ means there will not be another release candidate.
 
 New images are available from all known mirrors, checksums are found below:
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 Here is the list of all changes since 16.7-RC1:
 
@@ -900,7 +900,7 @@ work as usual so that migration is simple.  Checksums for the images can
 be found below.  VGA images have been omitted to permit work on the UEFI
 variant in the meantime.
 
-https://opnsense.org/download/
+https://reticen8.com/download/
 
 The RC cycle will end in a month with the actual 16.7 release so that
 early birds will not have to reinstall afterwards.  Remember: feedback

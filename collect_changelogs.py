@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 """
-    Copyright (c) 2020-2021 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2020-2021 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -98,9 +98,9 @@ def parse_change_log(payload, this_version, links):
                 result['prelude'].append(content_line)
 
         # prelude exit
-        if prelude_line and line.find('https://opnsense.org/download/') > -1:
+        if prelude_line and line.find('https://reticen8.com/download/') > -1:
             prelude_line = False
-        elif prelude_line and line.find('https://downloads.opnsense.com') > -1: # BE
+        elif prelude_line and line.find('https://downloads.reticen8.com') > -1: # BE
             prelude_line = False
 
     result["content"] = "\n".join(result["content"])

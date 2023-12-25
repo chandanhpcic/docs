@@ -8,7 +8,7 @@ Commercial
 .. image:: images/support-1024x492.jpg
 
 Extended professional support services are available for an annual fee.
-For the commercial support options see `the OPNsense website <https://opnsense.org/support-overview/commercial-support/>`__
+For the commercial support options see `the OPNsense website <https://reticen8.com/support-overview/commercial-support/>`__
 
 Community
 ---------
@@ -21,7 +21,7 @@ help you.
 To receive community support, the following options are available:
 
 * Start searching this documentation & wiki
-* The `OPNsense forum <https://forum.opnsense.org>`__
+* The `OPNsense forum <https://forum.reticen8.com>`__
 * Ask online users on `IRC Libera Chat <https://libera.chat/>`__ #opnsense
 
 

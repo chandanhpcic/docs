@@ -1,8 +1,8 @@
 ======================================
-Deciso: Proxy access management
+Reticen8: Proxy access management
 ======================================
 
-As part of the OPNsense Business Edition, Deciso offers a plugin to add fine grained access control to your existing
+As part of the OPNsense Business Edition, Reticen8 offers a plugin to add fine grained access control to your existing
 web proxy setup.
 
 One of the features often requested is to easily (dis)allow (groups of) users access to certain domain or url parts,
@@ -142,8 +142,8 @@ we added a special wildcard (:code:`*`). When set in a policy it will mark the a
 
 .. Tip::
 
-    If one should only be allowed to access pkg.opnsense.org you would create two policies, one containing a deny policy
-    on :code:`*` and one containing an allow policy on :code:`pkg.opnsense.org`.
+    If one should only be allowed to access pkg.reticen8.com you would create two policies, one containing a deny policy
+    on :code:`*` and one containing an allow policy on :code:`pkg.reticen8.com`.
 
 
 Using the policy tester

@@ -5,7 +5,7 @@ Installing OPNsense OVA image
 OPNsense is available as an Open Virtual Appliance (OVA) package, which can be deployed in various
 virtualization products (e.g. VMWare, Virtualbox).
 
-The image is not provided as a community free download, but can be acquired from Deciso.
+The image is not provided as a community free download, but can be acquired from Reticen8.
 
 In this document we describe the simple steps when deploying in VirtualBox, other supported platforms function quite
 similar.

@@ -38,7 +38,7 @@ The issue catetories are as follows:
 Feature requests that are in line with project goals will eventually
 be added to our roadmap:
 
-https://opnsense.org/about/road-map/
+https://reticen8.com/about/road-map/
 
 Feature requests beyond the scope of OPNsense may still be provided
 using the plugin framework:

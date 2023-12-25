@@ -29,7 +29,7 @@ like putty.
 
 .. Tip::
 
-    When using devices from the OPNsense shop (https://shop.opnsense.com), usually there's a mini-usb to serial cable included
+    When using devices from the OPNsense shop (https://shop.reticen8.com), usually there's a mini-usb to serial cable included
     in the box, the :doc:`Serial Console connectivity </hardware/serial_connectivity>` guide will help you with the setup.
 
 -----------------------------

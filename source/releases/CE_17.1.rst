@@ -31,7 +31,7 @@ https://opnsense.c0urier.net/releases/17.1/ (Europe)
 http://mirrors.nycbug.org/pub/opnsense/releases/17.1/ (US East Coast)
 http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 
 --------------------------------------------------------------------------
@@ -443,13 +443,13 @@ modularising and hardening the code base, quick and reliable firmware
 upgrades, multi-language support, fast adoption of upstream software
 updates as well as clear and stable 2-Clause BSD licensing.
 
-Download links, an installation guide `[8] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[8] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below.
 
 * Europe: https://opnsense.c0urier.net/releases/17.1.4/
 * US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/17.1.4/
 * US West Coast: http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1.4/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 
@@ -721,7 +721,7 @@ https://opnsense.c0urier.net/releases/17.1/ (Europe)
 http://mirrors.nycbug.org/pub/opnsense/releases/17.1/ (US East Coast)
 http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 Here is the list of major features that have been worked on since 16.7 was
 released 6 months ago:
@@ -806,7 +806,7 @@ be for you, please do not hesitate to contact us through any of the known
 channels:
 
 * Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
+* Forum: https://forum.reticen8.com/
 * GitHub: https://github.com/opnsense
 
 
@@ -856,7 +856,7 @@ https://opnsense.c0urier.net/releases/17.1.r1/ (Europe)
 http://mirrors.nycbug.org/pub/opnsense/releases/17.1.r1/ (US East Coast)
 http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1.r1/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 If you have been running 17.1-BETA and want to switch to the stable
 upgrade path simply upgrade to 17.1-RC1 and run the following from
@@ -912,7 +912,7 @@ Known issues in this version:
 * Insight and Health statistics import from the early installer may not work.
 * Due to a Python 2.7.13 incompatibility the NetFlow connector
   may not work.  A workaround is to revert to the Python 2.7.12
-  release.  See the forum for details `[1] <https://forum.opnsense.org/index.php?topic=4235.0>`__ .
+  release.  See the forum for details `[1] <https://forum.reticen8.com/index.php?topic=4235.0>`__ .
 * The LibreSSL version will not be available until the final release.
 * The console settings received a non-backwards compatible change.
   If the VGA console is not working, simply reconfigure it from
@@ -924,7 +924,7 @@ release January 31 is highly appreciated.  Please do not hesitate to
 contact us through any of the known channels:
 
 * Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
+* Forum: https://forum.reticen8.com/
 * GitHub: https://github.com/opnsense
 
 
@@ -975,7 +975,7 @@ https://opnsense.c0urier.net/releases/17.1.b/ (Europe)
 http://mirrors.nycbug.org/pub/opnsense/releases/17.1.b/ (US East Coast)
 http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1.b/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 Here is a list of hand-picked major features that were worked on since 16.7:
 
@@ -1015,7 +1015,7 @@ release at the end of January 2017 is highly appreciated.  Please do
 not hesitate to contact us through any of the known channels:
 
 * Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
+* Forum: https://forum.reticen8.com/
 * GitHub: https://github.com/opnsense
 
 

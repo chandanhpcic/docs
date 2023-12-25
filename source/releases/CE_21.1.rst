@@ -24,10 +24,10 @@ receives continuous improvements by its maintainer and various users alike.
 And that is unlikey to change in the future.  ;)
 
 As we continue to deprecate custom configuration inputs for a number of
-reasons, Dnsmasq has been switched to a pluggable file-based approach `[1] <https://docs.opnsense.org/manual/dnsmasq.html>`__ 
+reasons, Dnsmasq has been switched to a pluggable file-based approach `[1] <https://docs.reticen8.com/manual/dnsmasq.html>`__ 
 with Unbound to follow in the upcoming 21.7 series.
 
-Download links, an installation guide `[2] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[2] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/21.1/
@@ -35,7 +35,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.1/
 * South America: https://mirror.venturasystems.tech/opnsense/releases/21.1/
 * Australia: http://mirror.as24220.net/opnsense/releases/21.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -639,10 +639,10 @@ receives continuous improvements by its maintainer and various users alike.
 And that is unlikey to change in the future.  ;)
 
 As we continue to deprecate custom configuration inputs for a number of
-reasons, Dnsmasq has been switched to a pluggable file-based approach `[1] <https://docs.opnsense.org/manual/dnsmasq.html>`__ 
+reasons, Dnsmasq has been switched to a pluggable file-based approach `[1] <https://docs.reticen8.com/manual/dnsmasq.html>`__ 
 with Unbound to follow in the upcoming 21.7 series.
 
-Download links, an installation guide `[2] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[2] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/21.1/
@@ -650,7 +650,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.1/
 * South America: https://mirror.venturasystems.tech/opnsense/releases/21.1/
 * Australia: http://mirror.as24220.net/opnsense/releases/21.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 20.7.8:
 
@@ -777,7 +777,7 @@ upstream software updates as well as clear and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.  <3
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/21.1/
@@ -785,7 +785,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.1/
 * South America: https://mirror.venturasystems.tech/opnsense/releases/21.1/
 * Australia: http://mirror.as24220.net/opnsense/releases/21.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 20.7.7_1:
 

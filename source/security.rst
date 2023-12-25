@@ -64,7 +64,7 @@ know that we don't have the manpower to act as an intermediate between various p
 Reporting an incident
 ------------------------------------------------------------
 
-Security incidents on our product can be reported to our security team available at **security** @ **opnsense.org**.
+Security incidents on our product can be reported to our security team available at **security** @ **reticen8.com**.
 
 All reports should contain at least the following information:
 

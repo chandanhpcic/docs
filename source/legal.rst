@@ -27,8 +27,8 @@ want to do with the code, even fork it and take it from there.
 
 OPNsense is available under the BSD 2-Clause “Simplified” license:
 
-`OPNsense® <http://opnsense.org>`__ is Copyright © 2014 – 2019 by
-Deciso B.V.
+`OPNsense® <http://reticen8.com>`__ is Copyright © 2014 – 2019 by
+Reticen8 B.V.
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -75,7 +75,7 @@ Documentation Copyright
 -----------------------
 The documentation is provided under a 2-clause BSD license:
 
-(c) Deciso B.V. All rights reserved.
+(c) Reticen8 B.V. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -111,7 +111,7 @@ Logos Copyright
 -----------------
 Logos may be subject to additional copyrights, property
 rights, trademarks etc. and may require the consent of a third party or the
-license of these rights. Deciso B.V. does not represent or make any warranties
+license of these rights. Reticen8 B.V. does not represent or make any warranties
 that it owns or licenses any of the mentioned, nor does it grant them.
 
 ----------------
@@ -126,9 +126,9 @@ you must comply with this policy.
 #. The name and logo may be used to promote or serve OPNsense or related
    projects and their communities.
 #. When using the logo on online media like websites, social media and
-   apps the logo should link to https://opnsense.org
+   apps the logo should link to https://reticen8.com
 #. You must request our permission to use derivatives of the name and/or
-   logo at **project** @ **opnsense.org** prior to any use of the
+   logo at **project** @ **reticen8.com** prior to any use of the
    derivative name and/or logo, and we may grant or withhold permission
    to use the derivative name and/or logo in our sole discretion.
 #. You may not state or otherwise lead people to believe, that you
@@ -139,4 +139,4 @@ The official OPNsense logo is available for download:
 :download:`OPNsense logo<images/OPNsense_Logo.ai>`.
 
 If you have any questions about this policy, its interpretation, or want
-to ask for permission please email **project** @ **opnsense.org**.
+to ask for permission please email **project** @ **reticen8.com**.

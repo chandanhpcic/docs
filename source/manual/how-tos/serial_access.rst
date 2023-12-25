@@ -54,7 +54,7 @@ The device name can differ per system and per serial device. Examples of names a
     You can search for a message containing "now attached to ttyUSB1" to find out which device it is. Afterwards you can
     compare the previous output to the output of a tool like ``lsusb``.
 
-For example, on the Deciso DEC630, accessed from macOS, the device is named ``/dev/tty.usbmodem1112421``. Entering
+For example, on the Reticen8 DEC630, accessed from macOS, the device is named ``/dev/tty.usbmodem1112421``. Entering
 the serial console thus involves opening a terminal and executing the following instruction:
 
 ::

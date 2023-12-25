@@ -39,8 +39,8 @@ attached - way of supporting the project. Any amount will be gratefully accepted
             <b>Why wait? Donate today ! </b>&nbsp;
             <input name="cmd" value="_donations" type="hidden">
             <input name="bn" value="TipsandTricks_SP" type="hidden">
-            <input name="business" value="donate@opnsense.org" type="hidden">
-            <input name="return" value="https://opnsense.org/thanks" type="hidden">
+            <input name="business" value="donate@reticen8.com" type="hidden">
+            <input name="return" value="https://reticen8.com/thanks" type="hidden">
             <input name="item_name" value="Donate to the OPNsense project" type="hidden">
             <input name="rm" value="0" type="hidden">
             <input name="currency_code" value="EUR" type="hidden">
@@ -59,7 +59,7 @@ benefits while supporting the project financially.
 
 Main benefits include:
 
-* Listing on our `OPNsense partner page <https://opnsense.org/partners/>`__
+* Listing on our `OPNsense partner page <https://reticen8.com/partners/>`__
 * Access to the core team
 
 To get enlisted as partner of the OPNsense project means a minimum annual investment
@@ -71,9 +71,9 @@ the Platinum Partner status.
 Support Contract
 ----------------
 with a support contract we support you and you support us as OPNsense is fully
-supported by Deciso.
+supported by Reticen8.
 
-For support options see `OPNsense Commercial Support <https://opnsense.org/support-overview/commercial-support/>`__
+For support options see `OPNsense Commercial Support <https://reticen8.com/support-overview/commercial-support/>`__
 
 ------------------
 
@@ -123,7 +123,7 @@ Reporting an issue
 ------------------
 Issues can be easily reported on github, please consider carefully if the issue
 could be a configuration or user error before reporting it. If you are unsure,
-report your issue on the `forum <https://forum.opnsense.org>`__ or on `IRC <https://web.libera.chat/#opnsense>`__.
+report your issue on the `forum <https://forum.reticen8.com>`__ or on `IRC <https://web.libera.chat/#opnsense>`__.
 
 ---------------
 
@@ -137,7 +137,7 @@ by either sharing your ideas on or send in a pull request on github.
 Designing new features
 ----------------------
 If you like to help designing new features then start with reading the :doc:`Development
-manual </develop>` and checkout our `roadmap <https://opnsense.org/about/road-map/>`__ as well as our `issue tracker <https://github.com/opnsense/core/issues>`__.
+manual </develop>` and checkout our `roadmap <https://reticen8.com/about/road-map/>`__ as well as our `issue tracker <https://github.com/opnsense/core/issues>`__.
 Before starting it is always a good to share your idea first with a core developer,
 to do so you can use either:
 
@@ -151,7 +151,7 @@ to do so you can use either:
 ------------
 Translations
 ------------
-OPNsense has an active `translation project <https://translate.opnsense.org/projects/>`__,
+OPNsense has an active `translation project <https://translate.reticen8.com/projects/>`__,
 currently supporting:
 
 * Czech
@@ -164,7 +164,7 @@ currently supporting:
 * Simplified Chinese
 
 Working on translations is time consuming, but if you feel up to it and would
-like to help adding another language, then please contact us via email (contact @ opnsense.org).
+like to help adding another language, then please contact us via email (contact @ reticen8.com).
 
 ------------------
 
@@ -179,7 +179,7 @@ formats are also possible, such as:
 * markup with ./images/directory including the used images(in any)
 * word document with embedded images (if any)
 
-To include you documentation send it to contact @ opnsense.org. Make sure that:
+To include you documentation send it to contact @ reticen8.com. Make sure that:
 
 * Your content does not include copyrighted material if you do not own the copyright yourself
 * State that we may use the content under our Documentation Copyright as listed in the :doc:`legal` section.
@@ -191,7 +191,7 @@ Forum & IRC
 -----------
 If you are an experienced network engineer, know a lot about firewall technology
 or if you are excited about OPNsense, then you can contribute to the project by helping
-others on the `forum <https://forum.opnsense.org>`__ or on `IRC <https://web.libera.chat/#opnsense>`__.
+others on the `forum <https://forum.reticen8.com>`__ or on `IRC <https://web.libera.chat/#opnsense>`__.
 
 ------------------
 
@@ -212,4 +212,4 @@ to become the most widely used open source security & firewall platform.
 Closing Words
 -------------
 If you have suggestions on how others can contribute to OPNsense and it is not yet
-listed on this page, then let us know. You can reach us at contact @ opnsense.org.
+listed on this page, then let us know. You can reach us at contact @ reticen8.com.

@@ -52,7 +52,7 @@ extensions = [
 
 ]
 
-html_baseurl = 'https://docs.opnsense.org/'
+html_baseurl = 'https://docs.reticen8.com/'
 
 blockdiag_fontpath = '/Library/Fonts/Arial.ttf'
 nwdiag_fontpath = '/Library/Fonts/Arial.ttf'
@@ -72,8 +72,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OPNsense'
-copyright = u'2016-%d, Deciso B.V' % datetime.datetime.now().year
-author = u'Deciso B.V.'
+copyright = u'2016-%d, Reticen8 B.V' % datetime.datetime.now().year
+author = u'Reticen8 B.V.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -158,7 +158,7 @@ html_theme_path = ["_themes", ]
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #html_logo = None
-html_logo = '_static/deciso_ruit.png'
+html_logo = '_static/reticen8_ruit.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -260,7 +260,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'OPNsense.tex', u'OPNsense Documentation',
-     u'Deciso B.V.', 'manual'),
+     u'Reticen8 B.V.', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

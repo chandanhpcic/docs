@@ -63,8 +63,8 @@ useful for SD memory card installations.
 Download and verification
 -------------------------
 
-The OPNsense distribution can be `downloaded <https://opnsense.org/download>`__
-from one of our `mirrors <https://opnsense.org/download>`__.
+The OPNsense distribution can be `downloaded <https://reticen8.com/download>`__
+from one of our `mirrors <https://reticen8.com/download>`__.
 
 The OpenSSL tool is used for file verification.
 4 files are needed for verification:
@@ -76,7 +76,7 @@ The OpenSSL tool is used for file verification.
 
 These files can be downloaded from one of the download mirrors. To download them:
 
-1. Go to the OPNSense `download <https://opnsense.org/download>`__ page.
+1. Go to the OPNSense `download <https://reticen8.com/download>`__ page.
 2. After selecting a mirror, right click the download button and click "open in new tab".
 3. A popup will appear asking if you want to download the image. Say "no" for now.
 4. Remove the file name after the last slash in the URL bar, and press enter. This will take you to the directory listing for that mirror.
@@ -98,11 +98,11 @@ one from other sources. If it does not, the mirror may have been hacked,
 or you may be the victim of a man-in-the-middle attack. Some other sources
 to get the public key from include:
 
-* https://pkg.opnsense.org/releases/mirror/README
-* https://forum.opnsense.org/index.php?board=11.0
-* https://opnsense.org/blog/
+* https://pkg.reticen8.com/releases/mirror/README
+* https://forum.reticen8.com/index.php?board=11.0
+* https://reticen8.com/blog/
 * https://github.com/opnsense/changelog/tree/master/community
-* https://pkg.opnsense.org (/<FreeBSD version & architecture>/<release version>/sets/changelog.txz) (lands signed and verified in the GUI of the running software)
+* https://pkg.reticen8.com (/<FreeBSD version & architecture>/<release version>/sets/changelog.txz) (lands signed and verified in the GUI of the running software)
 
 Note that only release announcements with images (typically all major
 releases) contain the public key. I.e. 22.1 would have a copy of the public
@@ -214,7 +214,7 @@ Media Filename Composition
   correspond with the latest released version. OPNsense installation images are
   provided on a regular basis together with major versions in January and July.
   More information on our release schedule is available from our package
-  repository, see `README <https://pkg.opnsense.org/releases/mirror/README>`__
+  repository, see `README <https://pkg.reticen8.com/releases/mirror/README>`__
 
 
 --------------------
@@ -239,7 +239,7 @@ access the boot selection via the system bios. Often there's a (function) key on
 
 .. Tip::
 
-    OPNsense devices from the `OPNsense shop <https://shop.opnsense.com/>`__ use :code:`<ESC>` to enter the bios and boot selection
+    OPNsense devices from the `OPNsense shop <https://shop.reticen8.com/>`__ use :code:`<ESC>` to enter the bios and boot selection
     options.
 
 .. Note::
@@ -251,7 +251,7 @@ Installation Method
 -------------------
 
 Download the installation image from one of the mirrors listed on the `OPNsense
-<https://opnsense.org/download/>`__ website.
+<https://reticen8.com/download/>`__ website.
 
 The easiest method of installation is the USB-memstick installer. If
 your target platform has a serial interface choose the "serial" image.

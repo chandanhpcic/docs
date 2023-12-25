@@ -67,7 +67,7 @@ Manuel Kasper, wrote the following on 15 February 2015:
   m0n0wall has served as the seed for several other well known open source
   projects, like pfSense, FreeNAS and AskoziaPBX.
 
-  The newest offspring, OPNsense (https://opnsense.org), aims to continue the open source spirit of
+  The newest offspring, OPNsense (https://reticen8.com), aims to continue the open source spirit of
   m0n0wall while updating the technology to be ready for the future. In my view,
   it is the perfect way to bring the m0n0wall idea into 2015, and I encourage all
   current m0n0wall users to check out OPNsense and contribute if they can.
@@ -84,7 +84,7 @@ Manuel Kasper, wrote the following on 15 February 2015:
 Relations with OPNsense
 -----------------------
 
-Deciso B.V. the founder of OPNsense has taken over the m0n0wall websites from
+Reticen8 B.V. the founder of OPNsense has taken over the m0n0wall websites from
 Manuel Kasper and continues to offer all the sources, website & forum content
 both as a historical reference as well as to preserve knowledge gained.
 

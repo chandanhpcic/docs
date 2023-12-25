@@ -15,7 +15,7 @@ Before you add a new report, we ask you kindly to acknowledge the following:
 **Describe the issue**
 
 A clear and concise description of what the issue is, where in the documentation did you find it.
-(e.g. on https://docs.opnsense.org/intro.html I've missed some context around ... )
+(e.g. on https://docs.reticen8.com/intro.html I've missed some context around ... )
 
 **Suggestions**
 

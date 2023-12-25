@@ -140,7 +140,7 @@ For our example we will use the following setting:
  **State or Province**      *ZH*
  **City**                   *Middelharnis*
  **Organization**           *OPNsense*
- **Email Address**          *spam@opnsense.org*
+ **Email Address**          *spam@reticen8.com*
  **Common Name**            *internal-sslvpn-ca*
 ========================= ================================================
 
@@ -166,7 +166,7 @@ Fill in the form with (leave the rest default):
  **State or Province**      *ZH*
  **City**                   *Middelharnis*
  **Organization**           *OPNsense*
- **Email Address**          *spam@opnsense.org*
+ **Email Address**          *spam@reticen8.com*
  **Common Name**            *SSLVPN Server Certificate*
 =========================== ================================================
 

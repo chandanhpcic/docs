@@ -16,7 +16,7 @@ The basic ( `FreeBSD <https://www.freebsd.org/>`__) system contains a kernel and
 bare essentials for the system to be able to boot and do its work.
 
 Both components are updated using :code:`opnsense-update`, which is explained in more detail
-`here <https://docs.opnsense.org/manual/opnsense_tools.html#opnsense-update>`__.
+`here <https://docs.reticen8.com/manual/opnsense_tools.html#opnsense-update>`__.
 
 
 Plugins

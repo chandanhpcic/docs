@@ -24,7 +24,7 @@ of the default gateway priority switching feature and their continued work
 of writing and maintaining plenty of community plugins.  This time around,
 Maltrail, Netdata and WireGuard VPN have been freshly added to the mix.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.7/
@@ -32,7 +32,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.7/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.7/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.7/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -89,7 +89,7 @@ Here are the full patch notes:
 * system: use 825 days as the default maximum certificate lifetime
 * system: hide leaking hostname on SSH password auth (contributed by sooslaca)
 * system: remove unused "lifetime" parameter from user manager page
-* firewall: new GeoIP settings page to allow continued use of upstream database `[1] <https://docs.opnsense.org/manual/how-tos/maxmind_geo_ip.html>`__ 
+* firewall: new GeoIP settings page to allow continued use of upstream database `[1] <https://docs.reticen8.com/manual/how-tos/maxmind_geo_ip.html>`__ 
 * firewall: log when alias could not resolve a hostname
 * firewall: translate pfInfo page tabs (contributed by Smart-Soft)
 * firmware: add mirror MARWAN (Moroccan Academic & Research Wide Area Network)
@@ -343,7 +343,7 @@ A hotfix release was issued as 19.7.5_5:
 
 A wee bit of updates for you... nothing overly exciting.  On the other
 hand, we have updated the roadmap page to include 20.1 if you want to
-take a closer look `[1] <https://opnsense.org/about/road-map/>`__ .  More exciting for sure.  :)
+take a closer look `[1] <https://reticen8.com/about/road-map/>`__ .  More exciting for sure.  :)
 
 Here are the full patch notes:
 
@@ -361,7 +361,7 @@ Here are the full patch notes:
 * unbound: set absolute path to root.hints (contributed by h-town)
 * plugins: os-bind 1.8 `[2] <https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__  (contributed by ErikJStaab)
 * plugins: os-dnscrypt-proxy 1.6 `[3] <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__  (contributed by ErikJStaab)
-* plugins: os-etpro-telemetry 1.4 `[4] <https://docs.opnsense.org/manual/etpro_telemetry.html>`__ 
+* plugins: os-etpro-telemetry 1.4 `[4] <https://docs.reticen8.com/manual/etpro_telemetry.html>`__ 
 * plugins: os-theme-cicada 1.20 (contributed by Team Rebellion)
 * plugins: os-theme-tukan 1.20 (contributed by Team Rebellion)
 * ports: ca_root_nss 3.46
@@ -476,10 +476,10 @@ Here are the full patch notes:
 * firmware: Cloudfence mirror in Brazil added
 * plugins: os-bind 1.6 (contributed by crazy-max)
 * plugins: os-dnscrypt-proxy 1.5 (contributed by crazy-max)
-* plugins: os-grid_example 1.0 `[1] <https://docs.opnsense.org/development/examples/using_grids.html>`__ 
-* plugins: os-helloworld Python 3 compatibility `[2] <https://docs.opnsense.org/development/examples/helloworld.html>`__ 
+* plugins: os-grid_example 1.0 `[1] <https://docs.reticen8.com/development/examples/using_grids.html>`__ 
+* plugins: os-helloworld Python 3 compatibility `[2] <https://docs.reticen8.com/development/examples/helloworld.html>`__ 
 * plugins: os-nut 1.5 adds Riello driver (contributed by Michael Muenz)
-* plugins: os-sunnyvalley 1.0 `[3] <https://docs.opnsense.org/third_party_plugins.html>`__  `[4] <https://www.sunnyvalley.io/sensei>`__ 
+* plugins: os-sunnyvalley 1.0 `[3] <https://docs.reticen8.com/third_party_plugins.html>`__  `[4] <https://www.sunnyvalley.io/sensei>`__ 
 * src: fix panic from Intel CPU vulnerability mitigation `[5] <https://www.freebsd.org/security/advisories/FreeBSD-EN-19:13.mds.asc>`__ 
 * src: fix multiple telnet client vulnerabilities `[6] <https://www.freebsd.org/security/advisories/FreeBSD-SA-19:12.telnet.asc>`__ 
 * src: fix pts write-after-free `[7] <https://www.freebsd.org/security/advisories/FreeBSD-SA-19:13.pts.asc>`__ 
@@ -565,7 +565,7 @@ of the default gateway priority switching feature and their continued work
 of writing and maintaining plenty of community plugins.  This time around,
 Maltrail, Netdata and WireGuard VPN have been freshly added to the mix.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.7/
@@ -573,7 +573,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.7/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.7/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.7/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 These are the most prominent changes since version 19.1:
 
@@ -690,7 +690,7 @@ and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/19.7/
@@ -698,7 +698,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.7/
 * South America: http://mirror.upb.edu.co/opnsense/releases/19.7/
 * South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.7/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full changes against version 19.1.10:
 

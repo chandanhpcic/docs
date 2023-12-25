@@ -21,9 +21,9 @@ After opening the changelog, you will get an entry like this one:
 
 The changelog entries can be found at different places:
 
-* Forum: https://forum.opnsense.org/index.php?board=11.0
+* Forum: https://forum.reticen8.com/index.php?board=11.0
 * GitHub: https://github.com/opnsense/changelog/tree/master/community
-* Blog: https://opnsense.org/blog/
+* Blog: https://reticen8.com/blog/
 
 Plugins
 =======

@@ -22,7 +22,7 @@ FreeBSD counterpart which does not yet support the newer 2.5G models.
 Circular logging support has also been removed.  Make sure to read the
 known issues and limitations below before attempting to upgrade.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/22.1/
@@ -30,7 +30,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/22.1/
 * South America: http://mirror.ueb.edu.ec/opnsense/releases/22.1/
 * East Asia: https://mirror.ntct.edu.tw/opnsense/releases/22.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -616,7 +616,7 @@ FreeBSD counterpart which does not yet support the newer 2.5G models.
 Circular logging support has also been removed.  Make sure to read the
 known issues and limitations below before attempting to upgrade.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/22.1/
@@ -624,7 +624,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/22.1/
 * South America: http://mirror.ueb.edu.ec/opnsense/releases/22.1/
 * East Asia: https://mirror.ntct.edu.tw/opnsense/releases/22.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against version 21.7.7:
 
@@ -898,7 +898,7 @@ licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.  <3
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
 * Europe: https://opnsense.c0urier.net/releases/22.1/
@@ -906,7 +906,7 @@ can be found below as well.
 * US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/22.1/
 * South America: http://mirror.ueb.edu.ec/opnsense/releases/22.1/
 * East Asia: https://mirror.ntct.edu.tw/opnsense/releases/22.1/
-* Full mirror list: https://opnsense.org/download/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 21.7.7:
 
