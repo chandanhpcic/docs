@@ -27,7 +27,7 @@ https://creativecommons.org/publicdomain/zero/1.0/
 
 Logos may be subject to additional copyrights, property
 rights, trademarks etc. and may require the consent of a third party or the
-license of these rights. Reticen8 B.V. does not represent or make any warranties
+license of these rights. Reticen8 Technologies does not represent or make any warranties
 that it owns or licenses any of the mentioned, nor does it grant them.
 
 #### Prepare build

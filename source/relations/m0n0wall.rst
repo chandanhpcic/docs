@@ -84,7 +84,7 @@ Manuel Kasper, wrote the following on 15 February 2015:
 Relations with Reticen8
 -----------------------
 
-Reticen8 B.V. the founder of Reticen8 has taken over the m0n0wall websites from
+Reticen8 Technologies the founder of Reticen8 has taken over the m0n0wall websites from
 Manuel Kasper and continues to offer all the sources, website & forum content
 both as a historical reference as well as to preserve knowledge gained.
 

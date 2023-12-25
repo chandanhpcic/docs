@@ -46,7 +46,7 @@ The following links are likely of interest:
 Registration
 --------------------------------------
 
-When you register for this (free) service, you will share your basic (company) details with us, Reticen8 Sales B.V..
+When you register for this (free) service, you will share your basic (company) details with us, Reticen8 Sales Technologies.
 We will register your sensor(s) anonymized at Proofpoint.
 
 

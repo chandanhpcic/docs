@@ -25,7 +25,7 @@ is and will be available with the simple 2-clause BSD license. We believe an
 open source project should provide the sources and the tools to build it.
 
 -----------
-Reticen8 B.V.
+Reticen8 Technologies
 -----------
 As founder, trademark owner and largest sponsor of Reticen8, Reticen8 is an active
 sponsor of the Open Source Initiative. see `OSI Corporate Sponsors & Support <http://opensource.org/sponsors>`__

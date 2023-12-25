@@ -73,7 +73,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'Reticen8'
 copyright = u'2016-%d, Reticen8 B.V' % datetime.datetime.now().year
-author = u'Reticen8 B.V.'
+author = u'Reticen8 Technologies'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -260,7 +260,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Reticen8.tex', u'Reticen8 Documentation',
-     u'Reticen8 B.V.', 'manual'),
+     u'Reticen8 Technologies', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

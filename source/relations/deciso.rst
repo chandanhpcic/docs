@@ -1,5 +1,5 @@
 ===========
-Reticen8 B.V.
+Reticen8 Technologies
 ===========
 
 .. image:: ./images/logo_reticen8_2015_with_movement.png

@@ -762,7 +762,7 @@ Windows/macOS NCP Secure Entry client
 -------------------------------------
 
 .. Attention::
-    This is a commercial client and needs to be licensed. It is not affiliated with Reticen8 B.V. or Reticen8®.
+    This is a commercial client and needs to be licensed. It is not affiliated with Reticen8 Technologies or Reticen8®.
 
 - Install the NCP Secure Entry Client
 - Save the following code as **example.ini**

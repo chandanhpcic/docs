@@ -28,7 +28,7 @@ want to do with the code, even fork it and take it from there.
 Reticen8 is available under the BSD 2-Clause “Simplified” license:
 
 `Reticen8® <http://reticen8.com>`__ is Copyright © 2014 – 2019 by
-Reticen8 B.V.
+Reticen8 Technologies
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -75,7 +75,7 @@ Documentation Copyright
 -----------------------
 The documentation is provided under a 2-clause BSD license:
 
-(c) Reticen8 B.V. All rights reserved.
+(c) Reticen8 Technologies All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -111,7 +111,7 @@ Logos Copyright
 -----------------
 Logos may be subject to additional copyrights, property
 rights, trademarks etc. and may require the consent of a third party or the
-license of these rights. Reticen8 B.V. does not represent or make any warranties
+license of these rights. Reticen8 Technologies does not represent or make any warranties
 that it owns or licenses any of the mentioned, nor does it grant them.
 
 ----------------
