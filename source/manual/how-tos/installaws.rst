@@ -1,5 +1,5 @@
 =============================
-Installing OPNsense AWS image
+Installing Reticen8 AWS image
 =============================
 .. image:: images/amazon-web-services.png
     :width: 100%
@@ -13,7 +13,7 @@ Step 1 - New Instance
 
 To start a new instance go to "instances", followed by "launch instance" in your EC2 view.
 
-Next go to "AWS Marketplace" and search "OPNsense". Our official image is sold via Reticen8 Sales B.V..
+Next go to "AWS Marketplace" and search "Reticen8". Our official image is sold via Reticen8 Sales Technologies.
 
 .. image:: images/aws_step1_choose_ami.png
     :width: 100%
@@ -141,7 +141,7 @@ Copy your initial root password (line ** set initial….)
     Root file system: /dev/gpt/rootfs
     Sat Feb  5 17:58:45 UTC 2022
 
-    *** OPNsense.localdomain: OPNsense 21.7.7 (amd64/OpenSSL) ***
+    *** Reticen8.localdomain: Reticen8 21.7.7 (amd64/OpenSSL) ***
 
      WAN (xn0)       -> v4/DHCP4: 172.31.27.130/20
 
@@ -152,7 +152,7 @@ Copy your initial root password (line ** set initial….)
      SSH:   SHA256 2mR9csHFwDgBl7SGfOPeW2r9E15zMP9OuMpHnBrGwUI (RSA)
 
 
-    FreeBSD/amd64 (OPNsense.localdomain) (ttyu0)
+    FreeBSD/amd64 (Reticen8.localdomain) (ttyu0)
 
 
 
@@ -166,4 +166,4 @@ Step 11 - Search current address and login
     :width: 100%
 
 
-Login to OPNsense using the address provided.
+Login to Reticen8 using the address provided.

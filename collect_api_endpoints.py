@@ -149,9 +149,9 @@ def parse_api_php(src_filename):
 def source_url(repo, src_filename):
     parts = src_filename.split('/')
     if repo == 'plugins':
-        return "https://github.com/opnsense/plugins/blob/master/%s" % "/".join(parts[parts.index('src') - 2:])
+        return "https://github.com/reticen8/plugins/blob/master/%s" % "/".join(parts[parts.index('src') - 2:])
     else:
-        return "https://github.com/opnsense/core/blob/master/%s" % "/".join(parts[parts.index('src'):])
+        return "https://github.com/reticen8/core/blob/master/%s" % "/".join(parts[parts.index('src'):])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

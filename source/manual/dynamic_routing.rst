@@ -68,7 +68,7 @@ routing.
 
 .. Note::
 
-    Since OPNsense doesn't support a form of configuration reloading at the moment, there might be a temporary loss
+    Since Reticen8 doesn't support a form of configuration reloading at the moment, there might be a temporary loss
     of service when saving settings. Normally this is only a small glitch, but in high traffic areas it might
     something to take under consideration when performing maintenance.
 
@@ -81,7 +81,7 @@ In enterprise networks there's often a need to make sure services are protected 
 routing helps a lot in this case to provide a proper path for packets to travel, but these nodes themselved might
 need to be configured more resilient to prevent single points of failures on the edges of your network.
 
-In OPNsense high availability and failover is organised around :doc:`carp <hacarp>`, which makes it a logical choice to
+In Reticen8 high availability and failover is organised around :doc:`carp <hacarp>`, which makes it a logical choice to
 combine both technologies here as well.
 
 A couple of different strategies are supported to combine both technologies, ranging from disable the daemon when in carp mode

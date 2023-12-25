@@ -10,14 +10,14 @@ os-igmp-proxy plugin installed.
 
 This is just a basic working setup. You can separate all IPTV traffic into a VLAN, if needed.
 
-All network hardware between OPNsense and the Media Receiver or TV Box must support IGMP snooping. Without IGMP snooping enabled, the network
+All network hardware between Reticen8 and the Media Receiver or TV Box must support IGMP snooping. Without IGMP snooping enabled, the network
 gets flooded with multicast traffic and live tv starts stuttering.
 
 
 **IGMPproxy setup**
 -------------------
 
-Ensure you are running OPNsense 22.1 or later
+Ensure you are running Reticen8 22.1 or later
 
 Then configure IGMPproxy as follows
 

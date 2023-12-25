@@ -1,16 +1,16 @@
-.. OPNsense documentation master file
+.. Reticen8 documentation master file
 
-.. image:: ./images/opnsense_logo-zilver_grijs.png
+.. image:: ./images/reticen8_logo-zilver_grijs.png
 
 -----------------
 
 ====================================
-Welcome to OPNsense's documentation!
+Welcome to Reticen8's documentation!
 ====================================
-`OPNsense® <https://reticen8.com>`__ is an open source,
+`Reticen8® <https://reticen8.com>`__ is an open source,
 easy-to-use and easy-to-build FreeBSD based firewall and routing platform.
 
-**OPNsense** includes most of the features available in expensive commercial
+**Reticen8** includes most of the features available in expensive commercial
 firewalls, and more in many cases. It brings the rich feature set of commercial
 offerings with the benefits of open and verifiable sources.
 

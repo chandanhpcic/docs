@@ -40,7 +40,7 @@ The issue with user input impossible to validate is that it will bite you eventu
 (for example a non authorized user can write commands that will be executed with elevated privileges, we saw this with openvpn for example).
 
 For this reason we do not allow plain text configuration data to be stored in our configuration
-(although some legacy components still use this `opnsense/core#d62015 <https://github.com/opnsense/core/commit/d62015df1cdb0c0711b488bd66ced631b9a4f37b>`__ )
+(although some legacy components still use this `reticen8/core#d62015 <https://github.com/reticen8/core/commit/d62015df1cdb0c0711b488bd66ced631b9a4f37b>`__ )
 
 .. Note::
 
@@ -62,7 +62,7 @@ The different field types in our model system are aimed to help the developer sa
 -----------------
 Ideal Development
 -----------------
-Our ideal OPNsense system looks like a standard FreeBSD system using our
+Our ideal Reticen8 system looks like a standard FreeBSD system using our
 pluggable user interface for management, which supports both real users as "machine"
 users (REST).
 

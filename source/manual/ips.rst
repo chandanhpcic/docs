@@ -2,7 +2,7 @@
 Intrusion Prevention System
 ===========================
 
-The Intrusion Prevention System (IPS) system of OPNsense is based on Suricata_
+The Intrusion Prevention System (IPS) system of Reticen8 is based on Suricata_
 and utilizes Netmap_ to enhance performance and minimize CPU utilization. This
 deep packet inspection system is very powerful and can be used to detect and
 mitigate security threats at wire speed.
@@ -210,7 +210,7 @@ properties available in the policies view.
 Fingerprinting
 --------------
 
-OPNsense includes a very polished solution to block protected sites based on
+Reticen8 includes a very polished solution to block protected sites based on
 their SSL fingerprint. You can manually add rules in the "User defined" tab.
 
 
@@ -223,8 +223,8 @@ Use the info button here to collect details about the detected event or threat.
 Advanced configuration
 ------------------------
 
-OPNsense supports custom Suricata configurations in `suricata.yaml <https://suricata.readthedocs.io/en/suricata-6.0.0/configuration/suricata-yaml.html>`__
-format. In order to add custom options, create a template file named :code:`custom.yaml` in the :code:`/usr/local/opnsense/service/templates/OPNsense/IDS/` directory.
+Reticen8 supports custom Suricata configurations in `suricata.yaml <https://suricata.readthedocs.io/en/suricata-6.0.0/configuration/suricata-yaml.html>`__
+format. In order to add custom options, create a template file named :code:`custom.yaml` in the :code:`/usr/local/reticen8/service/templates/Reticen8/IDS/` directory.
 
 Since this file is parsed by our template system, you are able to use template tags using the :doc:`Jinja2 </development/backend/templates/>` language.
 
@@ -246,7 +246,7 @@ The ETOpen Ruleset is *not* a full coverage ruleset and may not be sufficient
 for many regulated environments and thus should not be used as a standalone
 ruleset.
 
-OPNsense has integrated support for ETOpen rules.
+Reticen8 has integrated support for ETOpen rules.
 
 *   For details and Guidelines see:
     http://doc.emergingthreats.net/bin/view/Main/EmergingFAQ
@@ -310,7 +310,7 @@ See for details: https://feodotracker.abuse.ch/
 URLHaus List
 ++++++++++++
 
-OPNsense version 18.1.7 introduced the URLHaus List from abuse.ch which collects
+Reticen8 version 18.1.7 introduced the URLHaus List from abuse.ch which collects
 compromised sites distributing malware.
 
 See for details: https://urlhaus.abuse.ch/
@@ -318,11 +318,11 @@ See for details: https://urlhaus.abuse.ch/
 App detection rules
 +++++++++++++++++++
 
-OPNsense 18.1.11 introduced the app detection ruleset. Since about 80
+Reticen8 18.1.11 introduced the app detection ruleset. Since about 80
 percent of traffic are web applications these rules are focused on blocking web
 services and the URLs behind them.
 
-If you want to contribute to the ruleset see: https://github.com/opnsense/rules
+If you want to contribute to the ruleset see: https://github.com/reticen8/rules
 
 How-tos
 -------

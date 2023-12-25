@@ -2,7 +2,7 @@
 Dashboard
 =========
 
-The Dashboard is the first page you will see after you log into OPNsense.
+The Dashboard is the first page you will see after you log into Reticen8.
 Additionally, it can be accessed via :menuselection:`Lobby --> Dashboard`. The Dashboard provides an overview of your system status.
 
 -------------
@@ -14,7 +14,7 @@ configuration.
 
 By default, the following widgets are present:
 
-* **System Information:**  Shows information about the installation OPNsense version, the hardware in the computer and resource usage.
+* **System Information:**  Shows information about the installation Reticen8 version, the hardware in the computer and resource usage.
 * **Services:** Shows running background services and allow starting, stopping and reloading them.
 * **Gateways:** Shows used gateways.
 * **Interfaces:** Shows configured interfaces and their status.

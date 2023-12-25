@@ -14,7 +14,7 @@ Interfaces
     "``GET``","interfaces","loopback_settings","set",""
     "``POST``","interfaces","loopback_settings","setItem","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Loopback.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Loopback.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Loopback.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Interfaces/Loopback.xml>`__"
 
 .. csv-table:: Resources (VlanSettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -29,7 +29,7 @@ Interfaces
     "``GET``","interfaces","vlan_settings","set",""
     "``POST``","interfaces","vlan_settings","setItem","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Vlan.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/Vlan.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Vlan.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Interfaces/Vlan.xml>`__"
 
 .. csv-table:: Resources (VxlanSettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -44,4 +44,4 @@ Interfaces
     "``GET``","interfaces","vxlan_settings","set",""
     "``POST``","interfaces","vxlan_settings","setItem","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `VxLan.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Interfaces/VxLan.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `VxLan.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Interfaces/VxLan.xml>`__"

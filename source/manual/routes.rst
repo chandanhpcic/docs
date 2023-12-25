@@ -15,16 +15,16 @@ yourself to teach your firewall which path it should take when forwarding packet
 
    blockdiag {
       client [shape="cisco.pc", label="[1]"];
-      OPNsense [shape="cisco.firewall", label=""];
+      Reticen8 [shape="cisco.firewall", label=""];
       internet [shape="cisco.cloud"];
       private_net [shape="cisco.cloud", label=""];
       private_net2 [shape="cisco.cloud", label="[2]"];
       Gateway1 [shape="cisco.router", label=""];
       Gateway2 [shape="cisco.router", label="[3]"];
-      client -> OPNsense;
-      OPNsense -> Gateway1 -> internet;
-      OPNsense -> Gateway2 -> private_net;
-      OPNsense -> Gateway2 -> private_net2;
+      client -> Reticen8;
+      Reticen8 -> Gateway1 -> internet;
+      Reticen8 -> Gateway2 -> private_net;
+      Reticen8 -> Gateway2 -> private_net2;
 
       group {
           label = "Client";
@@ -34,10 +34,10 @@ yourself to teach your firewall which path it should take when forwarding packet
       }
 
       group {
-        label = "OPNsense";
+        label = "Reticen8";
         color = none;
 
-        OPNsense;
+        Reticen8;
       }
 
       group {

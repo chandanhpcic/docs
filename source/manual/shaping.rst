@@ -14,13 +14,13 @@ conform to some predetermined constraint (a contract or traffic profile).
 ------------
 Introduction
 ------------
-Traffic shaping within OPNsense is very flexible and is organized around pipes,
+Traffic shaping within Reticen8 is very flexible and is organized around pipes,
 queues and corresponding rules. The pipes define the allowed bandwidth, the queues
 can be used to set a weight within the pipe and finally the rules are used to apply
 the shaping to a certain package flow. The shaping rules are handled independently
 from the firewall rules and other settings.
 
-OPNsense traffic shaping is a reliable solution to limit bandwidth or prioritize
+Reticen8 traffic shaping is a reliable solution to limit bandwidth or prioritize
 traffic and can be combined with other functions such as captive portal or high
 availability (CARP).
 

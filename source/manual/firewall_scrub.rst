@@ -3,7 +3,7 @@ Normalization
 ===========================
 
 Traffic normalization protects internal machines against inconsistencies in Internet protocols and implementations.
-OPNsense has some generic options to normalize some packets on a per interface basis, in some cases
+Reticen8 has some generic options to normalize some packets on a per interface basis, in some cases
 more detailed changes are needed, for which custom rules can be configured.
 
 By default (when **Disable interface scrub** is not set), all interfaces are scrubbed for all traffic,

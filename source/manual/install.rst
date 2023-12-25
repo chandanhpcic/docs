@@ -8,13 +8,13 @@ Initial Installation & Configuration
 
 .. Note::
    Just looking on how to invoke the installer? When the live environment has been
-   started just login with user **installer** and password **opnsense**.
+   started just login with user **installer** and password **reticen8**.
 
 ------------
 Architecture
 ------------
 
-The **software setup** and installation of OPNsense® is available
+The **software setup** and installation of Reticen8® is available
 for the `x86-64 <https://en.wikipedia.org/wiki/X86-64>`__ bit microprocessor
 architecture only.
 
@@ -30,7 +30,7 @@ disks (SSD) <https://en.wikipedia.org/wiki/Solid-state_drive>`__ or
 
 Since version 15.1.10 (04 May 2015) the option to install an
 `embedded <https://en.wikipedia.org/wiki/Embedded_operating_system>`__
-OPNsense image is also supported.
+Reticen8 image is also supported.
 
 The main differences between an embedded image and a full image are:
 
@@ -63,7 +63,7 @@ useful for SD memory card installations.
 Download and verification
 -------------------------
 
-The OPNsense distribution can be `downloaded <https://reticen8.com/download>`__
+The Reticen8 distribution can be `downloaded <https://reticen8.com/download>`__
 from one of our `mirrors <https://reticen8.com/download>`__.
 
 The OpenSSL tool is used for file verification.
@@ -76,7 +76,7 @@ The OpenSSL tool is used for file verification.
 
 These files can be downloaded from one of the download mirrors. To download them:
 
-1. Go to the OPNSense `download <https://reticen8.com/download>`__ page.
+1. Go to the REticen8 `download <https://reticen8.com/download>`__ page.
 2. After selecting a mirror, right click the download button and click "open in new tab".
 3. A popup will appear asking if you want to download the image. Say "no" for now.
 4. Remove the file name after the last slash in the URL bar, and press enter. This will take you to the directory listing for that mirror.
@@ -85,11 +85,11 @@ I.e. If you wanted to download from the US East Coast mirror:
 
 Opening the link in a new tab would take you to this link:
 
-``mirror.wdc1.us.leaseweb.net/opnsense/releases/22.7/OPNsense-22.7-OpenSSL-dvd-amd64.iso.bz2``
+``mirror.wdc1.us.leaseweb.net/reticen8/releases/22.7/Reticen8-22.7-OpenSSL-dvd-amd64.iso.bz2``
 
 You should take off the file name at the end, like this:
 
-``mirror.wdc1.us.leaseweb.net/opnsense/releases/22.1/``
+``mirror.wdc1.us.leaseweb.net/reticen8/releases/22.1/``
 
 The OpenSSL public key is required to verify against. This file is also on
 the mirror directory listing page, however you should not trust the copy
@@ -101,7 +101,7 @@ to get the public key from include:
 * https://pkg.reticen8.com/releases/mirror/README
 * https://forum.reticen8.com/index.php?board=11.0
 * https://reticen8.com/blog/
-* https://github.com/opnsense/changelog/tree/master/community
+* https://github.com/reticen8/changelog/tree/master/community
 * https://pkg.reticen8.com (/<FreeBSD version & architecture>/<release version>/sets/changelog.txz) (lands signed and verified in the GUI of the running software)
 
 Note that only release announcements with images (typically all major
@@ -171,7 +171,7 @@ Media Filename Composition
      default_textcolor = black;
      default_group_color = lightgray;
 
-     OS [label="OPNsense-##.#.##-OpenSSL-", width=200];
+     OS [label="Reticen8-##.#.##-OpenSSL-", width=200];
 
      platform [label = "amd64-" ];
 
@@ -211,7 +211,7 @@ Media Filename Composition
 .. Note::
 
   **Please** be aware that the latest installation media does not always
-  correspond with the latest released version. OPNsense installation images are
+  correspond with the latest released version. Reticen8 installation images are
   provided on a regular basis together with major versions in January and July.
   More information on our release schedule is available from our package
   repository, see `README <https://pkg.reticen8.com/releases/mirror/README>`__
@@ -221,7 +221,7 @@ Media Filename Composition
 OpenSSL and LibreSSL
 --------------------
 
-OPNsense images are provided based upon `OpenSSL <https://www.openssl.org>`__.
+Reticen8 images are provided based upon `OpenSSL <https://www.openssl.org>`__.
 The `LibreSSL <http://www.libressl.org>`__ flavor can be selected from within
 the GUI (:menuselection:`System --> Firmware --> Settings`). In order to apply your choice an update
 must be performed after save, which can include a reboot of the system.
@@ -239,7 +239,7 @@ access the boot selection via the system bios. Often there's a (function) key on
 
 .. Tip::
 
-    OPNsense devices from the `OPNsense shop <https://shop.reticen8.com/>`__ use :code:`<ESC>` to enter the bios and boot selection
+    Reticen8 devices from the `Reticen8 shop <https://shop.reticen8.com/>`__ use :code:`<ESC>` to enter the bios and boot selection
     options.
 
 .. Note::
@@ -250,7 +250,7 @@ access the boot selection via the system bios. Often there's a (function) key on
 Installation Method
 -------------------
 
-Download the installation image from one of the mirrors listed on the `OPNsense
+Download the installation image from one of the mirrors listed on the `Reticen8
 <https://reticen8.com/download/>`__ website.
 
 The easiest method of installation is the USB-memstick installer. If
@@ -266,14 +266,14 @@ Before writing an (iso) image you need to unpack it first (use bunzip2).
 **FreeBSD**
 ::
 
-  dd if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/daX bs=16k
+  dd if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/daX bs=16k
 
 Where X = the device number of your USB flash drive (check ``dmesg``)
 
 **Linux**
 ::
 
-  dd  if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/sdX bs=16k
+  dd  if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/sdX bs=16k
 
 where X = the IDE device name of your USB flash drive (check with hdparm -i /dev/sdX)
 (ignore the warning about trailing garbage - it's because of the digital signature)
@@ -282,7 +282,7 @@ where X = the IDE device name of your USB flash drive (check with hdparm -i /dev
 
 ::
 
-     dd if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/rsd6c bs=16k
+     dd if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/rsd6c bs=16k
 
 The device must be the ENTIRE device (in Windows/DOS language: the 'C'
 partition), and a raw I/O device (the 'r' in front of the device "sd6"),
@@ -292,7 +292,7 @@ not a block mode device.
 
 ::
 
-      sudo dd  if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/rdiskX bs=64k
+      sudo dd  if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/rdiskX bs=64k
 
 where r = raw device, and where X = the disk device number of your CF
 card (check Disk Utility) (ignore the warning about trailing garbage -
@@ -302,7 +302,7 @@ it's because of the digital signature)
 
 ::
 
-      physdiskwrite -u OPNsense-##.#.##-[Type]-[Architecture].img
+      physdiskwrite -u Reticen8-##.#.##-[Type]-[Architecture].img
 
 (use v0.3 or later!)
 
@@ -314,16 +314,16 @@ steps. It has been designed to always boot into a live environment in order to
 be able to access the GUI or even SSH directly. If a timeout was missed simply
 restart the boot procedure.
 
-OPNsense Importer
+Reticen8 Importer
 -----------------
-All images feature the new "opnsense-importer" utility, which is now invoked
+All images feature the new "reticen8-importer" utility, which is now invoked
 instead of the early installer. You can stop the automatic timeout by pressing
 any key. Afterwards you will have the opportunity to select a disk to import
 from. If the option times out or the importer is exited without a disk selection,
 the factory defaults will be used for the boot.
 
 The next prompt will be for manual interface selection.
-This step is well-established since OPNsense 15.7 .
+This step is well-established since Reticen8 15.7 .
 
 Live environment
 ----------------
@@ -333,11 +333,11 @@ fully functional setup, but will not overwrite the previous installation. Use
 this feature for safely previewing upgrades.
 
 If you have used a DVD, VGA, Serial image you are by default able to log into
-the root shell using the user "root" with password "opnsense" to operate the
+the root shell using the user "root" with password "reticen8" to operate the
 live environment.
 
 The GUI will listen on https://192.168.1.1/ for user "root" with password
-"opnsense" by default unless a previous configuration was imported. Using SSH,
+"reticen8" by default unless a previous configuration was imported. Using SSH,
 the "root" and "installer" users are available as well on IP 192.168.1.1. Note
 that these install medias are read-only, which means your current live
 configuration will be lost after reboot.
@@ -355,11 +355,11 @@ file. Configure your system to boot from USB.
 Install to target system
 ------------------------
 If you have used a DVD, VGA, Serial image you are by default able to start the
-installer using the user "installer" with password "opnsense". On a previously
+installer using the user "installer" with password "reticen8". On a previously
 imported configuration the password will be the same as root's password.
 
 Should the installer user not work for any reason, log in as user "root", select
-option 8 from the menu and type "opnsense-installer". The "opnsense-importer" can
+option 8 from the menu and type "reticen8-installer". The "reticen8-importer" can
 be run this way as well should you require to run the import again.
 
 The installer can always be run to clone an existing system, even for Nano
@@ -369,7 +369,7 @@ The installation process involves a few simple steps.
 
 .. Note::
    To invoke the installer login with user **installer** and password
-   **opnsense**
+   **reticen8**
 
 .. Tip::
    The installer can also be started from the network using ssh, default ip
@@ -405,12 +405,12 @@ By default you have to log in to enter the console.
 **Welcome message**
 ::
 
-    * * * Welcome to OPNsense [OPNsense 15.7.25 (amd64/OpenSSL) on OPNsense * * *
+    * * * Welcome to Reticen8 [Reticen8 15.7.25 (amd64/OpenSSL) on Reticen8 * * *
      
     WAN (em1)     -> v4/DHCP4: 192.168.2.100/24
     LAN (em0)     -> v4: 192.168.1.1/24
      
-    FreeBSD/10.1 (OPNsense.localdomain) (ttyv0)
+    FreeBSD/10.1 (Reticen8.localdomain) (ttyv0)
      
     login:   
 
@@ -419,7 +419,7 @@ By default you have to log in to enter the console.
 
     A user can login to the console menu with his
     credentials. The default credentials after a fresh install are username "root"
-    and password "opnsense".
+    and password "reticen8".
 
 VLANs and assigning interfaces
     If choose to do manual interface assignment or when no config file can be
@@ -433,11 +433,11 @@ LAN, WAN and optional interfaces
     interface. Type the appropriate interface name, eg. "em1" . Possible
     additional interfaces can be assigned as OPT interfaces. If you
     assigned all your interfaces you can press [ENTER] and confirm the
-    settings. OPNsense will configure your system and present the login
+    settings. Reticen8 will configure your system and present the login
     prompt when finished.
 
 Minimum installation actions
-    In case of a minimum install setup (i.e. on CF cards), OPNsense can
+    In case of a minimum install setup (i.e. on CF cards), Reticen8 can
     be run with all standard features, except for the ones that require
     disk writes, e.g. a caching proxy like Squid. Do not create a swap
     slice, but a RAM Disk instead. In the GUI enable :menuselection:`System --> Settings --> Miscellaneous --> RAM Disk Settings`
@@ -469,14 +469,14 @@ The console menu shows 13 options.
 
 Table:  *The console menu*
 
-.. rubric:: opnsense-update
-   :name: opnsense-update
+.. rubric:: reticen8-update
+   :name: reticen8-update
 
-OPNsense features a command line
-interface (CLI) tool "opnsense-update". Via menu option **8) Shell**, the user can
-get to the shell and use opnsense-update.
+Reticen8 features a command line
+interface (CLI) tool "reticen8-update". Via menu option **8) Shell**, the user can
+get to the shell and use reticen8-update.
 
-For help, type *man opnsense-update* and press [Enter].
+For help, type *man reticen8-update* and press [Enter].
 
 .. rubric:: Upgrade from console
    :name: upgrade-from-console

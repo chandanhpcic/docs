@@ -4,16 +4,16 @@ Serial Access
 
 .. image:: images/serial_bootloader.png
 
-Besides the web frontend, SSH and a locally connected monitor (if your device supports it), OPNsense can also be
-controlled via serial. Accessing OPNsense via serial is similar to accessing via SSH, but unlike SSH, the system can
-be accessed at any time, even when OPNsense is not accessible over the network. This makes it especially useful for installing OPNsense,
+Besides the web frontend, SSH and a locally connected monitor (if your device supports it), Reticen8 can also be
+controlled via serial. Accessing Reticen8 via serial is similar to accessing via SSH, but unlike SSH, the system can
+be accessed at any time, even when Reticen8 is not accessible over the network. This makes it especially useful for installing Reticen8,
 for emergency troubleshooting when you accidentally cut off internet access as well as for major system upgrades.
 
 ------------
 Requirements
 ------------
 
-* OPNsense installation must provide a serial interface (virtual or hardware)
+* Reticen8 installation must provide a serial interface (virtual or hardware)
 * Software which can be used to access the serial interface (screen, minicom, PuTTY etc.)
 
 For a bare metal installation, you also need the following (unless provided though a management interface differently,
@@ -26,9 +26,9 @@ please refer your server manual):
 Connecting to the serial console
 --------------------------------
 
-If you already installed OPNsense via a non-serial installer, serial access needs to be turned on. To do this, open
+If you already installed Reticen8 via a non-serial installer, serial access needs to be turned on. To do this, open
 the web interface, navigate to :menuselection:`System --> Settings --> Administration`, scroll down to 'Console' and set the primary or
-secondary console to 'Serial console'. Note: this is **only** necessary if you already installed OPNsense, and did not
+secondary console to 'Serial console'. Note: this is **only** necessary if you already installed Reticen8, and did not
 use the serial installer to do so. In all other cases (accessing BIOS, running the serial installer, connecting to an
 installation that was done via serial), serial access is already available.
 
@@ -67,7 +67,7 @@ the serial console thus involves opening a terminal and executing the following 
     Access to the device is likely to be access restricted. You should run the command as root because running it as
     a user may lead to an access denied error on Linux / BSD.
 
-If OPNsense is running, you will now be asked for your username and password if authentication is enabled. Otherwise
+If Reticen8 is running, you will now be asked for your username and password if authentication is enabled. Otherwise
 the menu is displayed (at least after pressing enter). The credentials are the same as those used for SSH.
 
 A thing to note is that the screen won't always auto-update. If you connect and see no output, try pressing `Enter`

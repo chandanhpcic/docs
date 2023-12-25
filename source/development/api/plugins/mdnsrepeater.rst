@@ -17,4 +17,4 @@ Mdnsrepeater
     "``GET``","mdnsrepeater","settings","get",""
     "``GET``","mdnsrepeater","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `MDNSRepeater.xml <https://github.com/opnsense/plugins/blob/master/net/mdns-repeater/src/opnsense/mvc/app/models/OPNsense/MDNSRepeater/MDNSRepeater.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `MDNSRepeater.xml <https://github.com/reticen8/plugins/blob/master/net/mdns-repeater/src/reticen8/mvc/app/models/Reticen8/MDNSRepeater/MDNSRepeater.xml>`__"

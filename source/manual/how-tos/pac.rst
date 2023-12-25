@@ -9,7 +9,7 @@ PAC
 Introduction
 ============
 
-OPNsense supports generating PAC files to provide automatic proxy configuration
+Reticen8 supports generating PAC files to provide automatic proxy configuration
 files to clients. For example if your web GUI is running at http://192.168.0.1/,
 your PAC URL will be http://192.168.0.1/wpad.dat.
 
@@ -173,7 +173,7 @@ Variant 2: Manual Configuration
 -------------------------------
 
 .. Warning::
-    When DNS is used, OPNsense must respond via HTTP on port 80.
+    When DNS is used, Reticen8 must respond via HTTP on port 80.
 
 Open the page :menuselection:`Services --> Unbound DNS --> Overrides` and add a new host override
 for the `wpad` host:
@@ -185,7 +185,7 @@ for the `wpad` host:
 Host        wpad
 Domain      your domain
 Type        A or AAAA
-IP          IP of your OPNsense (where the Web interface is reachable
+IP          IP of your Reticen8 (where the Web interface is reachable
 Description can stay empty
 =========== =========================================================
 
@@ -205,14 +205,14 @@ In the DHCP server settings, you can check the following checkbox:
 In this case, an entry for the protocol and the port of the web interface
 will be created with the domain you choose in your system settings
 (domain of the firewall). The hostname is `wpad`. If you are running
-the OPNsense web interface on port 80 with HTTP. The following URL will be
+the Reticen8 web interface on port 80 with HTTP. The following URL will be
 created:
 
     http://wpad.example.com:80/wpad.dat
     
 .. Warning::
     If you have **HTTP Redirect** enabled via :menuselection:`System --> Settings --> Administration`,
-    make sure your browser accepts the certificate presented by OPNsense, as it won't
+    make sure your browser accepts the certificate presented by Reticen8, as it won't
     download wpad.dat if the certificate is untrusted.
 
 Variant 2: Manual Configuration

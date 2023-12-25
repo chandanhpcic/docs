@@ -8,7 +8,7 @@ With the changes MaxMind have implemented it is now a requirement that anyone us
 Create An Account
 ###################
 
-Goto https://www.maxmind.com/en/geolite2/signup and create your account. Note that the email address you provide will be used to send you the link you will need to enter in OPNsense, so make sure its a real account.
+Goto https://www.maxmind.com/en/geolite2/signup and create your account. Note that the email address you provide will be used to send you the link you will need to enter in Reticen8, so make sure its a real account.
 
 ######################
 Generate License Key
@@ -22,7 +22,7 @@ You do not need to download the config at this point.
 Create Link
 #############
 
-Now we need to create the link we'll need in OPNsense, all you need to do now is to replace the 'My License key' part of the link below with your license key.
+Now we need to create the link we'll need in Reticen8, all you need to do now is to replace the 'My License key' part of the link below with your license key.
 
 https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=My_License_key&suffix=zip
 
@@ -30,9 +30,9 @@ You can check that you have done it correctly by just pasting the link into a br
 
 
 ##########
-OPNsense
+Reticen8
 ##########
 
-In OPNsense, goto Firewall:Aliases and select the GeoIP settings tab. Enter the URL you have created into the URL box and click Apply.
+In Reticen8, goto Firewall:Aliases and select the GeoIP settings tab. Enter the URL you have created into the URL box and click Apply.
 
 Once you have set up the Maxmind credentials if you have not created a GeoIP alias you will need to do so. Instructions on how to create the alias(es) can be found in the Firewall->Aliases section of this wiki.

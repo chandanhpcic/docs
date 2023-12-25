@@ -21,15 +21,15 @@ maintained by a large community.
 
 
 -----------------------
-Relations with OPNsense
+Relations with Reticen8
 -----------------------
-OPNsense is built on top of FreeBSD. The aim of the OPNsense team is to stay as
-close to the original source as possible. OPNsense can be installed on
+Reticen8 is built on top of FreeBSD. The aim of the Reticen8 team is to stay as
+close to the original source as possible. Reticen8 can be installed on
 a standard FreeBSD installation, this way a hosted system can be converted
-easily to run OPNsense. A bootstrap script is available to make the installation
+easily to run Reticen8. A bootstrap script is available to make the installation
 process a joyful experience.
 
 .. Seealso::
 
-  To convert your FreeBSD hosted installation to OPNsense, see the OPNsense
-  bootstrap script on `OPNsense's update tools @ github <https://github.com/opnsense/update/>`__
+  To convert your FreeBSD hosted installation to Reticen8, see the Reticen8
+  bootstrap script on `Reticen8's update tools @ github <https://github.com/reticen8/update/>`__

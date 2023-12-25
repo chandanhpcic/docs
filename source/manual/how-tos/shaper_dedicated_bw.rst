@@ -28,14 +28,14 @@ has 10 Mbps Download and 1 Mbps Upload.
 
       network LAN {
         switchlan [label="",shape = "cisco.workgroup_switch"];
-        label = "LAN OPNsense";
+        label = "LAN Reticen8";
         address ="192.168.1.x/24";
-        fw1 [label="OPNsense",address="192.168.1.1/24"];
+        fw1 [label="Reticen8",address="192.168.1.1/24"];
       }
 
       network WAN  {
-        label = ".WAN OPNsense";
-        fw1 [label="OPNsense", shape = "cisco.firewall", address="172.10.1.1/32"];
+        label = ".WAN Reticen8";
+        fw1 [label="Reticen8", shape = "cisco.firewall", address="172.10.1.1/32"];
         Internet;
       }
 

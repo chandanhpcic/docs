@@ -8,7 +8,7 @@ Zabbixproxy
     "``GET``","zabbixproxy","general","get",""
     "``GET``","zabbixproxy","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/zabbix-proxy/src/opnsense/mvc/app/models/OPNsense/Zabbixproxy/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/zabbix-proxy/src/reticen8/mvc/app/models/Reticen8/Zabbixproxy/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -20,4 +20,4 @@ Zabbixproxy
     "``GET``","zabbixproxy","service","status",""
     "``GET``","zabbixproxy","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/zabbix-proxy/src/opnsense/mvc/app/models/OPNsense/Zabbixproxy/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/zabbix-proxy/src/reticen8/mvc/app/models/Reticen8/Zabbixproxy/General.xml>`__"

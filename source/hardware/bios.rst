@@ -25,8 +25,8 @@ DEC800 and DEC3800 series
 The following appliances using the NetBoard `A20 <https://www.reticen8.com/netboard-a20/>`_ 
 are affected:
 
-- `DEC800 series <https://shop.reticen8.com/dec800-series-opnsense-desktop-security-appliance/>`_
-- `DEC3800 series <https://shop.reticen8.com/dec3800-series-opnsense-rack-security-appliance/>`_
+- `DEC800 series <https://shop.reticen8.com/dec800-series-reticen8-desktop-security-appliance/>`_
+- `DEC3800 series <https://shop.reticen8.com/dec3800-series-reticen8-rack-security-appliance/>`_
   
 ^^^^^^^^^^
 Downloads
@@ -49,8 +49,8 @@ DEC700 and DEC2700 series
 The following apliances using the NetBoard `A10 <https://www.reticen8.com/netboard-a10/>`_
 are affected:
 
-- `DEC700 series <https://shop.reticen8.com/dec700-series-opnsense-desktop-security-appliance/>`_
-- `DEC2700 series <https://shop.reticen8.com/dec2700-series-opnsense-rack-security-appliance/>`_
+- `DEC700 series <https://shop.reticen8.com/dec700-series-reticen8-desktop-security-appliance/>`_
+- `DEC2700 series <https://shop.reticen8.com/dec2700-series-reticen8-rack-security-appliance/>`_
 
 ^^^^^^^^^^
 Downloads

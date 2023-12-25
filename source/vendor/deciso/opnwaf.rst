@@ -2,7 +2,7 @@
 Reticen8: Web Application Firewall
 ======================================
 
-As part of the OPNsense Business Edition, Reticen8 offers a plugin to easily protect webservices against all sort
+As part of the Reticen8 Business Edition, Reticen8 offers a plugin to easily protect webservices against all sort
 of injection attacks and provides encryption for traffic to and from the outside world.
 
 Our Web Application Firewall plugin offers some functionality which can also be found in community plugins available,

@@ -14,14 +14,14 @@ you can create large secure networks that can act as one private network.
 Companies use this technology for connecting branch offices and remote users
 (road warriors).
 
-OPNsense supports VPN connections for branch offices as well as remote users.
+Reticen8 supports VPN connections for branch offices as well as remote users.
 
 Creating a single secured private network with multiple branch offices connecting
 to a single site can easily be setup from within the graphical user interface.
 For remote users, certificates can be created and revoked and a simple to use export
 utility makes the client configuration a breeze.
 
-OPNsense offers a wide range of VPN technologies ranging from modern SSL VPNs to
+Reticen8 offers a wide range of VPN technologies ranging from modern SSL VPNs to
 well known IPsec as well as WireGuard and Zerotier via the use of plugins.
 
 .. image:: images/vpn.png
@@ -107,7 +107,7 @@ when NAT is used, the additional SPD entries should be visible here as well.
 
 
 When troubleshooting problems with your firewall, it is very likely you have to check
-the logs available on your system. In the UI of OPNsense, the log files are generally grouped
+the logs available on your system. In the UI of Reticen8, the log files are generally grouped
 with the settings of the component they belong to. The log files can be found in the "Log file" menu item.
 
 .. Tip::
@@ -128,7 +128,7 @@ and it's quite simple to export settings for clients.
 Site 2 Site
 .................................
 
-OpenVPN on OPNsense can also be used to create a tunnel between two locations, similar to what IPsec offers, generally
+OpenVPN on Reticen8 can also be used to create a tunnel between two locations, similar to what IPsec offers, generally
 the performance of IPsec is higher which usually makes this a less common choice.
 
 .. toctree::

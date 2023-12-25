@@ -14,7 +14,7 @@ Tor
     "``POST``","tor","exitacl","setacl","$uuid"
     "``POST``","tor","exitacl","toggleacl","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `ACLExitPolicy.xml <https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/ACLExitPolicy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `ACLExitPolicy.xml <https://github.com/reticen8/plugins/blob/master/security/tor/src/reticen8/mvc/app/models/Reticen8/Tor/ACLExitPolicy.xml>`__"
 
 .. csv-table:: Resources (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -30,7 +30,7 @@ Tor
     "``POST``","tor","general","sethidservauth","$uuid"
     "``POST``","tor","general","togglehidservauth","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/security/tor/src/reticen8/mvc/app/models/Reticen8/Tor/General.xml>`__"
 
 .. csv-table:: Service (HiddenserviceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -45,7 +45,7 @@ Tor
     "``POST``","tor","hiddenservice","setservice","$uuid"
     "``POST``","tor","hiddenservice","toggleservice","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `HiddenService.xml <https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/HiddenService.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `HiddenService.xml <https://github.com/reticen8/plugins/blob/master/security/tor/src/reticen8/mvc/app/models/Reticen8/Tor/HiddenService.xml>`__"
 
 .. csv-table:: Service (HiddenserviceaclController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -60,7 +60,7 @@ Tor
     "``POST``","tor","hiddenserviceacl","setacl","$uuid"
     "``POST``","tor","hiddenserviceacl","toggleacl","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `HiddenServiceACL.xml <https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/HiddenServiceACL.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `HiddenServiceACL.xml <https://github.com/reticen8/plugins/blob/master/security/tor/src/reticen8/mvc/app/models/Reticen8/Tor/HiddenServiceACL.xml>`__"
 
 .. csv-table:: Service (RelayController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -69,7 +69,7 @@ Tor
     "``GET``","tor","relay","get",""
     "``GET``","tor","relay","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Relay.xml <https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/Relay.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Relay.xml <https://github.com/reticen8/plugins/blob/master/security/tor/src/reticen8/mvc/app/models/Reticen8/Tor/Relay.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -97,4 +97,4 @@ Tor
     "``POST``","tor","socksacl","setacl","$uuid"
     "``POST``","tor","socksacl","toggleacl","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `ACLSocksPolicy.xml <https://github.com/opnsense/plugins/blob/master/security/tor/src/opnsense/mvc/app/models/OPNsense/Tor/ACLSocksPolicy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `ACLSocksPolicy.xml <https://github.com/reticen8/plugins/blob/master/security/tor/src/reticen8/mvc/app/models/Reticen8/Tor/ACLSocksPolicy.xml>`__"

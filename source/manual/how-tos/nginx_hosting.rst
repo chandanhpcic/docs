@@ -4,7 +4,7 @@ nginx: Local Website Hosting
 
 .. Warning::
 
-    Even if you can host websites directly from OPNsense, it is not recommended for security reasons - especially when
+    Even if you can host websites directly from Reticen8, it is not recommended for security reasons - especially when
     sending requests to a local PHP interpreter. Do NOT consider using the feature to serve PHP content locally in
     enterprise networks. It is intended for home users who want to save money by saving power and know what they are
     doing. If you do not know how to handle a web server properly, do not enable this feature.
@@ -130,7 +130,7 @@ Security Considerations
 * This is nginx and not httpd. It will not care about your .htaccess files.
   Do not put secret data in unprotected directories. You can protect those directories by yourself,
   but make sure you don't forget them. Some application depend on this file.
-* Do not overlap nor use OPNsense directories as root
+* Do not overlap nor use Reticen8 directories as root
 * Do not upload badly maintained software. If your firewall gets compromised,
   it will become easy to compromise your hosts too.
 * All your applications run under the same user (www)

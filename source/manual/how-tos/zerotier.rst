@@ -70,7 +70,7 @@ Networks
 --------
 
 This table allows for the creation, modification and deletion of Zerotier
-networks. Adding a Network here will join your OPNsense installation to the
+networks. Adding a Network here will join your Reticen8 installation to the
 specified Zerotier network.
 
 .. Note::
@@ -95,17 +95,17 @@ in the following:
     name/description of the Zerotier network - it's simply an aide-mémoire to
     help you remember what the network is for.
 
-Adding a network does **not** automatically cause your OPNsense installation
+Adding a network does **not** automatically cause your Reticen8 installation
 to join that network. In order to join that network it **must** be ``Enabled``
-first. Likewise, to remove your OPNsense node from the configured network
+first. Likewise, to remove your Reticen8 node from the configured network
 simply deselect ``Enabled``, thus disabling the network.
 
 Once a network has been added and enabled the node **must** be authorised to
-join the network on the portal. Simply enabling the network on your OPNsense
+join the network on the portal. Simply enabling the network on your Reticen8
 installation marks that node as a member of that network. It now has to
 request permission to talk to the other nodes on that network. To achieve
 this, you log into the portal, select the network, find the node address (this
-can found on the OPNsense Zerotier Overview menu item, under the Information
+can found on the Reticen8 Zerotier Overview menu item, under the Information
 tab) and authorise it by clicking on the "Auth?" check box beside the node. It
 should go from "red" to "green" to indicate that it has been authorised.
 
@@ -143,7 +143,7 @@ Zerotier service.
 Networks Overview
 ------------------
 
-This tab shows each configured **and** enabled network that this OPNsense
+This tab shows each configured **and** enabled network that this Reticen8
 installation has joined. If no networks are enabled, no information is shown.
 
 Peers Overview
@@ -164,8 +164,8 @@ Interface Assignment
     `Zerotier Portal <https://my.zerotier.com>`_ 
 
 After joining a Zerotier network (and authorising it on the portal) you may
-now wish to assign the Zerotier virtual interface on OPNsense in order to
-avail of OPNsense functionality such as firewalling and routing (using OSPF
+now wish to assign the Zerotier virtual interface on Reticen8 in order to
+avail of Reticen8 functionality such as firewalling and routing (using OSPF
 for example).
 
 .. image:: images/zerotier-4.png
@@ -182,7 +182,7 @@ it creates a new interface called ``OPT1``. Clicking on ``OPT1`` shows the
     It is **very** important that ``Lock`` (i.e., Prevent interface removal)
     is enabled. This is because Zerotier is a software interface and not
     guaranteed to be brought "up" whilst the system is booting. It could
-    happen shortly afterwards, hence locking the interface tells OPNsense not
+    happen shortly afterwards, hence locking the interface tells Reticen8 not
     to remove it, thinking it's gone bad.
 
 Once the new interface has been enabled, it is recommended to change the

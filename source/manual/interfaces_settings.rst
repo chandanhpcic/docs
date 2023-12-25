@@ -27,7 +27,7 @@ performance gain is debatable as well.
 Hardware TSO
 --------------------
 Disable hardware TCP segmentation offload, also checked by default, prevents the system to offload packet segmentation to the network card.
-This option is incompatible with IPS in OPNsense and is broken in some network cards.
+This option is incompatible with IPS in Reticen8 and is broken in some network cards.
 
 (the :code:`ifconfig` settings in the OS related to this setting are :code:`tso` ,  :code:`tso4` , :code:`tso6`)
 

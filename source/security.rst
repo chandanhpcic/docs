@@ -20,7 +20,7 @@ Staying ahead
 
 Even though we always encourage people to update regularly, sometimes it's not possible to do so for various reasons.
 
-Luckily OPNsense comes with an integrated security check for know vulnerabilities, which can be found in our firmware
+Luckily Reticen8 comes with an integrated security check for know vulnerabilities, which can be found in our firmware
 module. In which case you do have the opportunity to validate for yourself what the risk is to keep using the
 current version for a bit longer.
 
@@ -32,7 +32,7 @@ If all goes well, a report like the one below will be shown:
 .. code-block::
 
     ***GOT REQUEST TO AUDIT SECURITY***
-    Currently running OPNsense 22.1.8_1 (amd64/OpenSSL) at Tue May 31 09:01:04 CEST 2022
+    Currently running Reticen8 22.1.8_1 (amd64/OpenSSL) at Tue May 31 09:01:04 CEST 2022
     vulnxml file up-to-date
     0 problem(s) in 0 installed package(s) found.
     ***DONE***
@@ -55,7 +55,7 @@ If all goes well, a report like the one below will be shown:
 Upstream vulnerabilities
 ------------------------------------------------------------
 
-Since OPNsense is a collection of opensource software, when finding an issue, it is always a good idea to
+Since Reticen8 is a collection of opensource software, when finding an issue, it is always a good idea to
 inspect where is should be fixed first. In case you don't know or aren't sure, you can still ask on our end, just
 know that we don't have the manpower to act as an intermediate between various projects.
 

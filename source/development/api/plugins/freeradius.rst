@@ -14,7 +14,7 @@ Freeradius
     "``POST``","freeradius","avpair","setAvpair","$uuid"
     "``POST``","freeradius","avpair","toggleAvpair","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Avpair.xml <https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Avpair.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Avpair.xml <https://github.com/reticen8/plugins/blob/master/net/freeradius/src/reticen8/mvc/app/models/Reticen8/Freeradius/Avpair.xml>`__"
 
 .. csv-table:: Resources (ClientController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -31,7 +31,7 @@ Freeradius
     "``POST``","freeradius","client","setClient","$uuid"
     "``GET``","freeradius","client","toggleClient","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Client.xml <https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Client.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Client.xml <https://github.com/reticen8/plugins/blob/master/net/freeradius/src/reticen8/mvc/app/models/Reticen8/Freeradius/Client.xml>`__"
 
 .. csv-table:: Resources (DhcpController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -46,7 +46,7 @@ Freeradius
     "``POST``","freeradius","dhcp","setDhcp","$uuid"
     "``POST``","freeradius","dhcp","toggleDhcp","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Dhcp.xml <https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Dhcp.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Dhcp.xml <https://github.com/reticen8/plugins/blob/master/net/freeradius/src/reticen8/mvc/app/models/Reticen8/Freeradius/Dhcp.xml>`__"
 
 .. csv-table:: Resources (EapController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -69,7 +69,7 @@ Freeradius
     "``GET``","freeradius","ldap","get",""
     "``GET``","freeradius","ldap","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Ldap.xml <https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Ldap.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Ldap.xml <https://github.com/reticen8/plugins/blob/master/net/freeradius/src/reticen8/mvc/app/models/Reticen8/Freeradius/Ldap.xml>`__"
 
 .. csv-table:: Resources (LeaseController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -84,7 +84,7 @@ Freeradius
     "``POST``","freeradius","lease","setLease","$uuid"
     "``POST``","freeradius","lease","toggleLease","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Lease.xml <https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/Lease.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Lease.xml <https://github.com/reticen8/plugins/blob/master/net/freeradius/src/reticen8/mvc/app/models/Reticen8/Freeradius/Lease.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -111,4 +111,4 @@ Freeradius
     "``POST``","freeradius","user","setUser","$uuid"
     "``GET``","freeradius","user","toggleUser","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `User.xml <https://github.com/opnsense/plugins/blob/master/net/freeradius/src/opnsense/mvc/app/models/OPNsense/Freeradius/User.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `User.xml <https://github.com/reticen8/plugins/blob/master/net/freeradius/src/reticen8/mvc/app/models/Reticen8/Freeradius/User.xml>`__"

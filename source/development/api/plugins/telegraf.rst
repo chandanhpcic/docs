@@ -28,7 +28,7 @@ Telegraf
     "``POST``","telegraf","key","setKey","$uuid"
     "``POST``","telegraf","key","toggleKey","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Key.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/telegraf/src/opnsense/mvc/app/models/OPNsense/Telegraf/Key.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Key.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/telegraf/src/reticen8/mvc/app/models/Reticen8/Telegraf/Key.xml>`__"
 
 .. csv-table:: Resources (OutputController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

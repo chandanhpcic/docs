@@ -11,7 +11,7 @@ Rspamd
     "``GET``","rspamd","service","status",""
     "``GET``","rspamd","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `RSpamd.xml <https://github.com/opnsense/plugins/blob/master/mail/rspamd/src/opnsense/mvc/app/models/OPNsense/Rspamd/RSpamd.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RSpamd.xml <https://github.com/reticen8/plugins/blob/master/mail/rspamd/src/reticen8/mvc/app/models/Reticen8/Rspamd/RSpamd.xml>`__"
 
 .. csv-table:: Service (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -20,4 +20,4 @@ Rspamd
     "``GET``","rspamd","settings","get",""
     "``GET``","rspamd","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `RSpamd.xml <https://github.com/opnsense/plugins/blob/master/mail/rspamd/src/opnsense/mvc/app/models/OPNsense/Rspamd/RSpamd.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RSpamd.xml <https://github.com/reticen8/plugins/blob/master/mail/rspamd/src/reticen8/mvc/app/models/Reticen8/Rspamd/RSpamd.xml>`__"

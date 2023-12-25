@@ -17,7 +17,7 @@ Proxy
     "``GET``","proxy","service","status",""
     "``GET``","proxy","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Proxy.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Proxy/Proxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Proxy.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Proxy/Proxy.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -49,7 +49,7 @@ Proxy
     "``POST``","proxy","settings","togglePACRule","$uuid"
     "``POST``","proxy","settings","toggleRemoteBlacklist","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Proxy.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Proxy/Proxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Proxy.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Proxy/Proxy.xml>`__"
 
 .. csv-table:: Resources (TemplateController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -61,4 +61,4 @@ Proxy
     "``POST``","proxy","template","set",""
     "``GET``","proxy","template","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Proxy.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Proxy/Proxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Proxy.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Proxy/Proxy.xml>`__"

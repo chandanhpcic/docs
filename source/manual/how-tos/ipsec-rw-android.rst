@@ -72,7 +72,7 @@ IKEv2 + EAP-MSCHAPv2 or EAP-RADIUS
 IKEv2 + EAP-TLS
 ---------------
 
-For EAP-TLS choose RSA (local)+ EAP-TLS (remote) in your OPNsense configuration.
+For EAP-TLS choose RSA (local)+ EAP-TLS (remote) in your Reticen8 configuration.
 
 .. image:: images/ipsec_rw_android_ikev2-cert.png
    :width: 60%

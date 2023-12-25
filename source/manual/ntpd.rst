@@ -2,11 +2,11 @@
 Network Time
 ==============
 
-OPNsense ships with a standard `NTPd <http://doc.ntp.org/current-stable/>`__ server,
+Reticen8 ships with a standard `NTPd <http://doc.ntp.org/current-stable/>`__ server,
 which synchronizes time with upstream servers and provides time to connected clients.
 
 A newly installed firewall comes with NTP enabled on all interfaces (firewall blocks all non LAN access in this case),
-forwarding queries to one of the :code:`X.opnsense.pool.ntp.org` upstreams (:code:`X` is any of 0,1,2,3).
+forwarding queries to one of the :code:`X.reticen8.pool.ntp.org` upstreams (:code:`X` is any of 0,1,2,3).
 
 -------------------------
 General settings

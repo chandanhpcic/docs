@@ -8,7 +8,7 @@ Shadowsocks
     "``GET``","shadowsocks","general","get",""
     "``GET``","shadowsocks","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/shadowsocks/src/opnsense/mvc/app/models/OPNsense/Shadowsocks/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/shadowsocks/src/reticen8/mvc/app/models/Reticen8/Shadowsocks/General.xml>`__"
 
 .. csv-table:: Service (LocalController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -17,7 +17,7 @@ Shadowsocks
     "``GET``","shadowsocks","local","get",""
     "``GET``","shadowsocks","local","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Local.xml <https://github.com/opnsense/plugins/blob/master/net/shadowsocks/src/opnsense/mvc/app/models/OPNsense/Shadowsocks/Local.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Local.xml <https://github.com/reticen8/plugins/blob/master/net/shadowsocks/src/reticen8/mvc/app/models/Reticen8/Shadowsocks/Local.xml>`__"
 
 .. csv-table:: Service (LocalserviceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -29,7 +29,7 @@ Shadowsocks
     "``GET``","shadowsocks","localservice","status",""
     "``GET``","shadowsocks","localservice","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Local.xml <https://github.com/opnsense/plugins/blob/master/net/shadowsocks/src/opnsense/mvc/app/models/OPNsense/Shadowsocks/Local.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Local.xml <https://github.com/reticen8/plugins/blob/master/net/shadowsocks/src/reticen8/mvc/app/models/Reticen8/Shadowsocks/Local.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -41,4 +41,4 @@ Shadowsocks
     "``GET``","shadowsocks","service","status",""
     "``GET``","shadowsocks","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/shadowsocks/src/opnsense/mvc/app/models/OPNsense/Shadowsocks/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/shadowsocks/src/reticen8/mvc/app/models/Reticen8/Shadowsocks/General.xml>`__"

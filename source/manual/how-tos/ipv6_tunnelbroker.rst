@@ -7,15 +7,15 @@ Configure IPv6 Tunnel Broker
 Introduction
 ------------
 
-OPNsense supports native IPv6 as well as tunneled IPv6. This article shows how
-to set up TunnelBroker, Hurricane Electric's IPv6-in-IPv4 tunnel, with OPNsense.
+Reticen8 supports native IPv6 as well as tunneled IPv6. This article shows how
+to set up TunnelBroker, Hurricane Electric's IPv6-in-IPv4 tunnel, with Reticen8.
 If you're based in the US and you use Netflix, you might not want to follow these
 instructions. Netflix now blocks TunnelBroker.
 
 If you use IRC or need access to SMTP over the TunnelBroker connection,
 Hurricane Electric requires you to go through their free IPv6 certification process.
 Their "sage" level is the highest level and will allow you to enable IRC and SMTP.
-Note that your OPNsense firewall must be directly connected to the Internet.
+Note that your Reticen8 firewall must be directly connected to the Internet.
 Being behind a NAT will not work.
 
 The rest of this article assumes you already have a TunnelBroker account. If not,
@@ -26,7 +26,7 @@ throughout this article.
 Background
 ----------
 
-Enable ICMP on the WAN side of your OPNsense firewall. TunnelBroker's UI will
+Enable ICMP on the WAN side of your Reticen8 firewall. TunnelBroker's UI will
 tell you an IP to use when you're setting up your tunnel on their end.
 
 Now add a tunnel. Make sure to add a routed /48 as we will need that to dish out
@@ -40,7 +40,7 @@ should look like this:
 Step 1 - Add GIF tunnel
 -----------------------
 
-To configure OPNsense start with adding a new gif interface.
+To configure Reticen8 start with adding a new gif interface.
 Go to :menuselection:`Interfaces --> Other Types --> GIF` and click on **Add** in the upper tight corner
 of the form.
 
@@ -56,7 +56,7 @@ Use the following settings and copy in the IPv4&6 addresses from your TunnelBrok
  **Description**                *Tunnel Broker*
 ============================== ============================
 
-.. image:: images/opnsense_add_gif.png
+.. image:: images/reticen8_add_gif.png
    :width: 100%
 
 ----------------------------------------------------
@@ -103,7 +103,7 @@ but assigning the next interface a separate **/64** address.
 Step 5 - Configure DHCPv6 SLAAC
 -------------------------------
 
-We'll next configure OPNsense for Stateless Address Auto Configuration (SLAAC).
+We'll next configure Reticen8 for Stateless Address Auto Configuration (SLAAC).
 Go to :menuselection:`Services --> Router Advertisements` and choose an interface.
 
 Set the **Router Advertisements** setting to *Assisted* and the 

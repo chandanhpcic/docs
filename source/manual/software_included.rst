@@ -2,7 +2,7 @@
 Included software
 =======================
 
-OPNsense® comes with a lot of features included in the base system, for some situations you may need additional software, which
+Reticen8® comes with a lot of features included in the base system, for some situations you may need additional software, which
 is either provided via a plugin or only as a binary package (without user interface).
 
 This chapter aims to provide some details on the components included in the system, where to find them and how to
@@ -15,17 +15,17 @@ The operating system
 The basic ( `FreeBSD <https://www.freebsd.org/>`__) system contains a kernel and a base package, which provide the
 bare essentials for the system to be able to boot and do its work.
 
-Both components are updated using :code:`opnsense-update`, which is explained in more detail
-`here <https://docs.reticen8.com/manual/opnsense_tools.html#opnsense-update>`__.
+Both components are updated using :code:`reticen8-update`, which is explained in more detail
+`here <https://docs.reticen8.com/manual/reticen8_tools.html#reticen8-update>`__.
 
 
 Plugins
 ....................................
 
-Plugins are packages offered by OPNsense®, which can be installed directly via the user interface and often come
+Plugins are packages offered by Reticen8®, which can be installed directly via the user interface and often come
 with setup options accessible for the end-user.
 
-Since OPNsense® is a community driven project, the amount of (community/commercial) support available on these plugins
+Since Reticen8® is a community driven project, the amount of (community/commercial) support available on these plugins
 can be different.
 
 .. Note::
@@ -58,9 +58,9 @@ If, for example you would like to install the gnu `nano <https://www.nano-editor
 
 .. Note::
 
-    OPNsense® is a firewall distribution, we aim to keep our footprint as small as possible. This means that we don't build
+    Reticen8® is a firewall distribution, we aim to keep our footprint as small as possible. This means that we don't build
     all the software available in the world. If you need a specific package for your use-case, you could always ask via
-    a support ticket on `GitHub <https://github.com/opnsense/tools/issues>`__, but note that packages not used by our core system or
+    a support ticket on `GitHub <https://github.com/reticen8/tools/issues>`__, but note that packages not used by our core system or
     a supported plugin would not be guaranteed in the future (build contents may change over time).
 
 
@@ -77,7 +77,7 @@ It's best to use our build system to facilitate this, you can do so using the fo
 
 .. code-block:: sh
 
-    opnsense-code ports tools
+    reticen8-code ports tools
     cd /usr/ports/your/port
     make install
 
@@ -86,7 +86,7 @@ To update a package, the following command can be used instead:
 
 .. code-block:: sh
 
-    opnsense-code ports tools
+    reticen8-code ports tools
     cd /usr/ports/your/port
     make reinstall
 

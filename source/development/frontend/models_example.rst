@@ -2,7 +2,7 @@
 Usage example
 -------------
 
-Now let's test our model using a small PHP script (in /usr/local/opnsense/mvc/script/ ):
+Now let's test our model using a small PHP script (in /usr/local/reticen8/mvc/script/ ):
 
 .. code-block:: php
 
@@ -12,7 +12,7 @@ Now let's test our model using a small PHP script (in /usr/local/opnsense/mvc/sc
      
     // include myModel and the shared config component
     use myVendorName\myModule\myModel;
-    use OPNsense\Core\Config;
+    use Reticen8\Core\Config;
      
     // create a new model, reading the model definition and the current data from our config.xml
     $myMdl = new myModel();

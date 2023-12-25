@@ -8,7 +8,7 @@ Fetchmail
     "``GET``","fetchmail","general","get",""
     "``GET``","fetchmail","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/mail/fetchmail/src/opnsense/mvc/app/models/OPNsense/Fetchmail/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/mail/fetchmail/src/reticen8/mvc/app/models/Reticen8/Fetchmail/General.xml>`__"
 
 .. csv-table:: Resources (MailboxController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -23,7 +23,7 @@ Fetchmail
     "``POST``","fetchmail","mailbox","setMailbox","$uuid"
     "``POST``","fetchmail","mailbox","toggleMailbox","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Mailbox.xml <https://github.com/opnsense/plugins/blob/master/mail/fetchmail/src/opnsense/mvc/app/models/OPNsense/Fetchmail/Mailbox.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Mailbox.xml <https://github.com/reticen8/plugins/blob/master/mail/fetchmail/src/reticen8/mvc/app/models/Reticen8/Fetchmail/Mailbox.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -35,4 +35,4 @@ Fetchmail
     "``GET``","fetchmail","service","status",""
     "``GET``","fetchmail","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/mail/fetchmail/src/opnsense/mvc/app/models/OPNsense/Fetchmail/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/mail/fetchmail/src/reticen8/mvc/app/models/Reticen8/Fetchmail/General.xml>`__"

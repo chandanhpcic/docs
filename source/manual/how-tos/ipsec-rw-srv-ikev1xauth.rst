@@ -1,11 +1,11 @@
 ===========================================
-IPsec: Setup OPNsense for IKEv1 using XAuth
+IPsec: Setup Reticen8 for IKEv1 using XAuth
 ===========================================
 
 .. contents:: Index
 
 XAuth was an addition to IKEv1 supporting user authentication credentials additionally to
-pre-shared keys or certificates. There are three different types supported by OPNsense which
+pre-shared keys or certificates. There are three different types supported by Reticen8 which
 we will describe here.
 
 Mutual PSK + XAuth: You define a pre-shared key which is the same for every user and after securing
@@ -214,7 +214,7 @@ To add a VPN connection on an iOS device go to :menuselection:`Settings --> Gene
 Select **Add VPN Configuration** chose **IPsec** and use the Following Settings:
 
 ========================== ======================= ========================================
-  **Description**           IPsec OPNsense          *Freely chosen description*
+  **Description**           IPsec Reticen8          *Freely chosen description*
   **Server**                172.18.0.164            *Our server address*
   **Account**               expert                  *Username of the remote account*
   **Password**              &test!9T                *Leave blank to be prompted every time*
@@ -230,8 +230,8 @@ select **VPN**. Press the **+** in the top right corner to add a new VPN connect
 Use the Following Settings:
 
 ========================== ======================= =============================
-  **Name**                  IPsec OPNsense         *Freely chosen name*
-  **Type**                  IPSec Xauth PSK        *As configured in OPNsense*
+  **Name**                  IPsec Reticen8         *Freely chosen name*
+  **Type**                  IPSec Xauth PSK        *As configured in Reticen8*
   **Server address**        172.18.0.164           *Our server address*
   **Preshared IPsec-key**   At4aDMOAOub2NwT6gMHA   *Our PSK*
 ========================== ======================= =============================

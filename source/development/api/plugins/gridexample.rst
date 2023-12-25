@@ -14,4 +14,4 @@ Gridexample
     "``POST``","gridexample","settings","setItem","$uuid"
     "``POST``","gridexample","settings","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `GridExample.xml <https://github.com/opnsense/plugins/blob/master/devel/grid_example/src/opnsense/mvc/app/models/OPNsense/GridExample/GridExample.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `GridExample.xml <https://github.com/reticen8/plugins/blob/master/devel/grid_example/src/reticen8/mvc/app/models/Reticen8/GridExample/GridExample.xml>`__"

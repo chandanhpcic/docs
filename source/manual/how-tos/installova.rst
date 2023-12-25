@@ -1,8 +1,8 @@
 =============================
-Installing OPNsense OVA image
+Installing Reticen8 OVA image
 =============================
 
-OPNsense is available as an Open Virtual Appliance (OVA) package, which can be deployed in various
+Reticen8 is available as an Open Virtual Appliance (OVA) package, which can be deployed in various
 virtualization products (e.g. VMWare, Virtualbox).
 
 The image is not provided as a community free download, but can be acquired from Reticen8.
@@ -28,7 +28,7 @@ Step 2 - Network setup
 --------------------------
 
 The OVA template comes with two interfaces configured by default (you can add more later if needed).
-Always choose the right type of network before using OPNsense, the imported adapters might not be assigned to a type after import.
+Always choose the right type of network before using Reticen8, the imported adapters might not be assigned to a type after import.
 
 
 .. Note::

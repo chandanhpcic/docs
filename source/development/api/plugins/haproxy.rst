@@ -27,7 +27,7 @@ Haproxy
     "``GET``","haproxy","maintenance","serverWeightBulk",""
     "``GET``","haproxy","maintenance","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `HAProxy.xml <https://github.com/opnsense/plugins/blob/master/net/haproxy/src/opnsense/mvc/app/models/OPNsense/HAProxy/HAProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `HAProxy.xml <https://github.com/reticen8/plugins/blob/master/net/haproxy/src/reticen8/mvc/app/models/Reticen8/HAProxy/HAProxy.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -40,7 +40,7 @@ Haproxy
     "``GET``","haproxy","service","status",""
     "``GET``","haproxy","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `HAProxy.xml <https://github.com/opnsense/plugins/blob/master/net/haproxy/src/opnsense/mvc/app/models/OPNsense/HAProxy/HAProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `HAProxy.xml <https://github.com/reticen8/plugins/blob/master/net/haproxy/src/reticen8/mvc/app/models/Reticen8/HAProxy/HAProxy.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -128,7 +128,7 @@ Haproxy
     "``POST``","haproxy","settings","togglemailer","$uuid,$enabled=null"
     "``POST``","haproxy","settings","toggleresolver","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `HAProxy.xml <https://github.com/opnsense/plugins/blob/master/net/haproxy/src/opnsense/mvc/app/models/OPNsense/HAProxy/HAProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `HAProxy.xml <https://github.com/reticen8/plugins/blob/master/net/haproxy/src/reticen8/mvc/app/models/Reticen8/HAProxy/HAProxy.xml>`__"
 
 .. csv-table:: Resources (StatisticsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

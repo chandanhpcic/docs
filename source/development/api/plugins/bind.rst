@@ -14,7 +14,7 @@ Bind
     "``POST``","bind","acl","setAcl","$uuid"
     "``POST``","bind","acl","toggleAcl","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Acl.xml <https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Acl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Acl.xml <https://github.com/reticen8/plugins/blob/master/dns/bind/src/reticen8/mvc/app/models/Reticen8/Bind/Acl.xml>`__"
 
 .. csv-table:: Service (DnsblController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -23,7 +23,7 @@ Bind
     "``GET``","bind","dnsbl","get",""
     "``GET``","bind","dnsbl","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Dnsbl.xml <https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Dnsbl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Dnsbl.xml <https://github.com/reticen8/plugins/blob/master/dns/bind/src/reticen8/mvc/app/models/Reticen8/Bind/Dnsbl.xml>`__"
 
 .. csv-table:: Resources (DomainController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -38,7 +38,7 @@ Bind
     "``POST``","bind","domain","setDomain","$uuid=null"
     "``POST``","bind","domain","toggleDomain","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Domain.xml <https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Domain.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Domain.xml <https://github.com/reticen8/plugins/blob/master/dns/bind/src/reticen8/mvc/app/models/Reticen8/Bind/Domain.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -47,7 +47,7 @@ Bind
     "``GET``","bind","general","get",""
     "``GET``","bind","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/dns/bind/src/reticen8/mvc/app/models/Reticen8/Bind/General.xml>`__"
 
 .. csv-table:: Resources (RecordController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -62,7 +62,7 @@ Bind
     "``POST``","bind","record","setRecord","$uuid=null"
     "``POST``","bind","record","toggleRecord","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Record.xml <https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/Record.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Record.xml <https://github.com/reticen8/plugins/blob/master/dns/bind/src/reticen8/mvc/app/models/Reticen8/Bind/Record.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -75,4 +75,4 @@ Bind
     "``GET``","bind","service","status",""
     "``GET``","bind","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns/bind/src/opnsense/mvc/app/models/OPNsense/Bind/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/dns/bind/src/reticen8/mvc/app/models/Reticen8/Bind/General.xml>`__"

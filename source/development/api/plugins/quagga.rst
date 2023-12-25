@@ -14,7 +14,7 @@ Quagga
     "``POST``","quagga","bfd","setNeighbor","$uuid"
     "``POST``","quagga","bfd","toggleNeighbor","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `BFD.xml <https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/BFD.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `BFD.xml <https://github.com/reticen8/plugins/blob/master/net/frr/src/reticen8/mvc/app/models/Reticen8/Quagga/BFD.xml>`__"
 
 .. csv-table:: Resources (BgpController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -52,7 +52,7 @@ Quagga
     "``POST``","quagga","bgp","togglePrefixlist","$uuid"
     "``POST``","quagga","bgp","toggleRoutemap","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `BGP.xml <https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/BGP.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `BGP.xml <https://github.com/reticen8/plugins/blob/master/net/frr/src/reticen8/mvc/app/models/Reticen8/Quagga/BGP.xml>`__"
 
 .. csv-table:: Resources (DiagnosticsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -98,7 +98,7 @@ Quagga
     "``POST``","quagga","ospf6settings","setInterface","$uuid"
     "``POST``","quagga","ospf6settings","toggleInterface","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `OSPF6.xml <https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/OSPF6.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `OSPF6.xml <https://github.com/reticen8/plugins/blob/master/net/frr/src/reticen8/mvc/app/models/Reticen8/Quagga/OSPF6.xml>`__"
 
 .. csv-table:: Resources (OspfsettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -131,7 +131,7 @@ Quagga
     "``POST``","quagga","ospfsettings","togglePrefixlist","$uuid"
     "``POST``","quagga","ospfsettings","toggleRoutemap","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `OSPF.xml <https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/OSPF.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `OSPF.xml <https://github.com/reticen8/plugins/blob/master/net/frr/src/reticen8/mvc/app/models/Reticen8/Quagga/OSPF.xml>`__"
 
 .. csv-table:: Service (RipController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -140,7 +140,7 @@ Quagga
     "``GET``","quagga","rip","get",""
     "``GET``","quagga","rip","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `RIP.xml <https://github.com/opnsense/plugins/blob/master/net/frr/src/opnsense/mvc/app/models/OPNsense/Quagga/RIP.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RIP.xml <https://github.com/reticen8/plugins/blob/master/net/frr/src/reticen8/mvc/app/models/Reticen8/Quagga/RIP.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

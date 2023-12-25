@@ -59,7 +59,7 @@ Diagnostics
     "``GET``","diagnostics","lvtemplate","set",""
     "``POST``","diagnostics","lvtemplate","setItem","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Lvtemplate.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Lvtemplate.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Lvtemplate.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/Lvtemplate.xml>`__"
 
 .. csv-table:: Resources (NetflowController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

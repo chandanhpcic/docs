@@ -11,7 +11,7 @@ In some cases people prefer to use dnsmasq or combine it with our default enable
 
 .. Note::
 
-    Since OPNsense 17.7 Unbound has been our standard DNS service, the main reason for Dnsmasq being shipped
+    Since Reticen8 17.7 Unbound has been our standard DNS service, the main reason for Dnsmasq being shipped
     in our product is for compatibility. Although there are some use-cases that require Dnsmasq specifically,
     most users better opt for Unbound.
 

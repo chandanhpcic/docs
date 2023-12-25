@@ -31,7 +31,7 @@ network to run communication over it, just like with OpenVPN or GRE (e.g. 192.16
 After hitting **Save changes** you can reopen the newly created instance, write down your new public
 key and give it to the other side. 
 
-When this VPN is set up on OPNsense only do the same on the second machine and exchange the public
+When this VPN is set up on Reticen8 only do the same on the second machine and exchange the public
 keys. Now go to tab **Endpoints** and add the remote site, give it a **Name**, insert the **Public
 Key** and the **Allowed IPs** e.g. *192.168.0.2/32, 10.10.10.0/24*. This will set the remote tunnel
 IP address (/32 is important when using multiple endpoints) and route 10.10.10.0/24 via the tunnel. 

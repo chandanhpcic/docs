@@ -22,7 +22,7 @@ the first step, but as it is required we can't go on without it. Every other fie
 Hit **Save** and open your instance again to write down your public key. You need it to get the rest
 of the configuration from the Mullvad API servers. 
 
-Now change to your OPNsense CLI via SSH or Console and execute *either* of the curl strings below. Please replace
+Now change to your Reticen8 CLI via SSH or Console and execute *either* of the curl strings below. Please replace
 **YOURACCOUNTNUMBER** with your own ID you got from MullvadVPN and **YOURPUBLICKEY** with the one in your **Local**
 
 The command below is for Mullvad's standard API. DNS requests through a tunnel that uses tunnel IPs generated via this API are "hijacked", so that Mullvad's DNS servers are used to avoid leaks:

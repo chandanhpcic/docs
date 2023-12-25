@@ -2,7 +2,7 @@
 Interface configuration
 =========================
 
-All traffic in OPNsense travels via interfaces. By default, WAN and LAN are assigned, but many more are possible, like
+All traffic in Reticen8 travels via interfaces. By default, WAN and LAN are assigned, but many more are possible, like
 GUESTNET (:doc:`captive portal </manual/captiveportal>`) and PFSYNC (:doc:`high availability </manual/hacarp>`).
 
 .. Note::
@@ -67,7 +67,7 @@ For IPv4:
  Hostname                        This value is sent as the DHCP client identifier and hostname when requesting a DHCP lease. Some ISPs may require this (for client identification).
  Override MTU                    An ISP may incorrectly set an MTU value which can cause intermittent network disruption. By default this value will be ignored. Unsetting this option will allow to apply the MTU supplied by the ISP instead.
  **PPP configuration**
- Service Provider                By selecting a country, provider and plan here, OPNsense can fill in the other fields for you. If your provider or plan not in the list, you have to set them manually.
+ Service Provider                By selecting a country, provider and plan here, Reticen8 can fill in the other fields for you. If your provider or plan not in the list, you have to set them manually.
  Username
  Password
  Phone number
@@ -131,26 +131,26 @@ For IPv6:
 Mobile Networking
 -----------------------------
 
-.. image:: images/OPNsense_4G_new.png
+.. image:: images/Reticen8_4G_new.png
    :width: 100%
 
-OPNsense supports 3G and 4G (LTE) cellular modems as failsafe or primary WAN
+Reticen8 supports 3G and 4G (LTE) cellular modems as failsafe or primary WAN
 interface. Both USB and (mini)PCIe cards are supported.
 
 
 .............................
 Supported Devices
 .............................
-While all devices supported by FreeBSD will likely function under OPNsense their
+While all devices supported by FreeBSD will likely function under Reticen8 their
 configuration depends on a AT command string that can differ from device to device.
 To make thing easier some of these strings are part of a easy selectable profile.
 
-Tested devices by the OPNsense team include:
+Tested devices by the Reticen8 team include:
 
-* **Huaweu M909S-120** (device cuaUx.0) (Requires separate SIM card holder/adapter) [Tested: OPNsense 21.1]
+* **Huaweu M909S-120** (device cuaUx.0) (Requires separate SIM card holder/adapter) [Tested: Reticen8 21.1]
 * **Huawei ME909u-521** (device cuaUx.0)
 * **Huawei E220** (device cuaUx.0)
-* **Sierra Wireless MC7304** (device cuaUx.2) [as of OPNsense 16.7]
+* **Sierra Wireless MC7304** (device cuaUx.2) [as of Reticen8 16.7]
 
 .. Note::
 

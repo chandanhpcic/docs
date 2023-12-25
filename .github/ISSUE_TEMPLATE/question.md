@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Ask a question about the OPNsense documentation, but before you do, please consider using our forum
+about: Ask a question about the Reticen8 documentation, but before you do, please consider using our forum
 title: ''
 labels: support
 assignees: ''
@@ -11,5 +11,5 @@ Our forum is located at https://forum.reticen8.com , please consider joining dis
 
 Before you ask a new question, we ask you kindly to acknowledge the following:
 
-- [ ] I have read the contributing guide lines at https://github.com/opnsense/docs/blob/master/CONTRIBUTING.md
+- [ ] I have read the contributing guide lines at https://github.com/reticen8/docs/blob/master/CONTRIBUTING.md
 - [ ] I have searched the existing issues and I am convinced that mine is new.

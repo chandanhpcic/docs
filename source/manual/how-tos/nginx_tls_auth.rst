@@ -40,7 +40,7 @@ Testing
 
 .. code-block:: none
 
-    curl https://192.168.1.1:444/file.txt --cacert ../MyOPNsenseCA.crt 
+    curl https://192.168.1.1:444/file.txt --cacert ../MyReticen8CA.crt 
     <html>
     <head><title>400 No required SSL certificate was sent</title></head>
     <body bgcolor="white">
@@ -52,5 +52,5 @@ Testing
 
 .. code-block:: none
 
-    curl https://192.168.1.1:444/file.txt --cert ../nginx_client_test_cert.crt --key ../nginx_client_test_cert.key --cacert ../MyOPNsenseCA.crt
+    curl https://192.168.1.1:444/file.txt --cert ../nginx_client_test_cert.crt --key ../nginx_client_test_cert.key --cacert ../MyReticen8CA.crt
     Hello World

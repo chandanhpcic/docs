@@ -5,7 +5,7 @@ Setup for Sky UK ISP
 
 **Introduction**
 -----------------
-This doc covers the setup of OPNsense on a Sky UK VDSL connection.
+This doc covers the setup of Reticen8 on a Sky UK VDSL connection.
 
 Sky uses a simple IPoE connection, all that is required is a suitable modem
 in bridge mode. If using a standard OpenReach modem then no setting is required
@@ -73,7 +73,7 @@ IPV6 DHCP. The ‘Prevent Release' option.
 	:width: 100%
 
 This is there as the Sky DHCPv6 servers use a 'sticky' address. If the
-OPNsense dhcp6 client sends a release signal to the server it's more than
+Reticen8 dhcp6 client sends a release signal to the server it's more than
 likely that the allocated prefix will change, thus this setting, along with
 the 'DHCP Unique Identifier' setting will attempt to mitigate this risk.
 
@@ -82,7 +82,7 @@ Once these settings have been entered, click on 'Save' then 'Apply'.
 **DHCP Unique Identifier**
 --------------------------
 
-Although OPNsense stores the IPv6 DUID it is possible this can be lost, this
+Although Reticen8 stores the IPv6 DUID it is possible this can be lost, this
 again would probably result in a new prefix being given, therefore an option
 to enter and store a DUID is given in the Interface:Settings menu.
 

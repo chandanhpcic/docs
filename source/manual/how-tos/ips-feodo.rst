@@ -30,7 +30,7 @@ Prerequisites
 
 .. warning::
 
-  After applying you need to reboot OPNsense otherwise offloading may not
+  After applying you need to reboot Reticen8 otherwise offloading may not
   completely be disabled and IPS mode will not function.
 
 .. Note::

@@ -2,7 +2,7 @@
 System hardening vs performance
 =======================================
 
-OPNsense tends to choose more strict hardening options by default, so when comparing performance between upstream
+Reticen8 tends to choose more strict hardening options by default, so when comparing performance between upstream
 standard FreeBSD it's good to know which settings differ and can have an impact on your measurements.
 This document aims to describe (some of) the differences, so when you value performance over security it is more obvious
 which toggles might be worthwhile to change.
@@ -30,7 +30,7 @@ for enabling this feature. To disable PTI set :code:`vm.pmap.pti` to 0. Not all 
 
 Spectre variant 2, the system offers IBRS-based mitigation on Intel CPUs.
 The IBRS mitigation main disadvantage is the significant performance penalty.
-In OPNsense IBRS is enabled (for Intel) by default by disabling (0) :code:`hw.ibrs_disable`, upstream FreeBSD standard is disabled (1).
+In Reticen8 IBRS is enabled (for Intel) by default by disabling (0) :code:`hw.ibrs_disable`, upstream FreeBSD standard is disabled (1).
 
 User/group separation (security.bsd)
 --------------------------------------------------

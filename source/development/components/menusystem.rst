@@ -2,7 +2,7 @@
 Menu System
 ===========
 
-.. sidebar:: OPNsense Menu System
+.. sidebar:: Reticen8 Menu System
 
     .. image:: images/menusystem.png
        :width: 300px
@@ -12,7 +12,7 @@ Menu System
 Overview
 --------
 
-One of the shared components of the OPNsense framework is the menu system, which
+One of the shared components of the Reticen8 framework is the menu system, which
 is wrapped in a single class and part of the base model.
 
 The only responsibility of the menu system is to create a tree like structure to
@@ -23,7 +23,7 @@ the menu system doesn't know anything about users or authorisation.
 Currently the main focus for the menu system is to support the legacy code, so
 we will be able to reimplement the menu in both legacy and new code.
 
-Our base UI controller (\\OPNsense\\Base\\ControllerBase) implements the menu
+Our base UI controller (\\Reticen8\\Base\\ControllerBase) implements the menu
 system for further use.
 
 An example of how to create a menu, is given below:
@@ -38,7 +38,7 @@ An example of how to create a menu, is given below:
     print_r($menu->getItems("/testpage.php"));
 
 The current version only implements a static menu defined by one XML file
-(models/OPNsense/Base/Menu/Menu.xml), but extending with additional XML files
+(models/Reticen8/Base/Menu/Menu.xml), but extending with additional XML files
 is already supported in the component for future use.
 
 --------
@@ -59,7 +59,7 @@ The menu xml is defined as follows:
 The top level should be named "menu" to let the system know this is a menu
 structure, the next layers will be used for the structure of itself. To map the
 attributes to the menu objects created there are setters in
-OPNsense\\Base\\Menu\\MenuItem, in this version the next attributes are supported:
+Reticen8\\Base\\Menu\\MenuItem, in this version the next attributes are supported:
 
 -  order, sort order in our menu
 -  VisibleName, name to use ( if not set the tagname / id will be used)

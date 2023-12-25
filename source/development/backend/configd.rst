@@ -9,11 +9,11 @@ General
 To add new services and system calls, which can be used from the frontend system or command line, you can create configd actions.
 
 All available templates should be installed at the following location on
-the OPNsense system:
+the Reticen8 system:
 
 ::
 
-    /usr/local/opnsense/service/conf/actions.d/
+    /usr/local/reticen8/service/conf/actions.d/
 
 
 *Please note that all actions which should be accessible from the frontend should have a registered configd action, if possible use standard rc(8) scripts for service start/stop.*
@@ -31,7 +31,7 @@ For example, we will describe the template for ssh, which is installed by defaul
 
 ::
 
-    /usr/local/opnsense/service/conf/actions.d/actions_sshd.conf
+    /usr/local/reticen8/service/conf/actions.d/actions_sshd.conf
 
 Our ssh service has two actions available:
 

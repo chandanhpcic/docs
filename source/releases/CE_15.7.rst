@@ -38,7 +38,7 @@ tools.  Please see the full patch notes for details and references:
 * notable ports updates: phalcon 2.0.3 `[5] <https://github.com/phalcon/cphalcon/releases/tag/phalcon-v2.0.3>`__ , curl 7.43.0_2 `[6] <https://curl.haxx.se/changes.html>`__ ,
   openssh 6.8p1_8, python 2.7.10 `[7] <https://hg.python.org/cpython/raw-file/15c95b7d81dc/Misc/NEWS>`__ , perl 5.20.2_5 `[8] <https://perldoc.perl.org/5.20.2/perldelta>`__ , ntp 4.2.8p3 `[9] <http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ChangeLog-stable>`__ ,
   libxml 2.9.2_3 `[10] <https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-1819>`__ , openldap24-server 2.4.41 `[11] <https://www.openldap.org/software/release/changes.html>`__ 
-* opnsense-update: will no longer try to reinstall the istalled version
+* reticen8-update: will no longer try to reinstall the istalled version
   after a fresh installation
 * bsdinstaller: bring back cpdup to error out on low memory installation
   (you need 1 GB of RAM, or work around installation using the nano image)
@@ -128,7 +128,7 @@ We're back, and we have a lot of neat changes and security updates
 for you.  Most notably, the firewall pages received a lot of subtle
 tweaks to improve user experience.  Secondly, the firmware pages
 gained the plugins management feature.  And last but not least, the
-kernel and base upgrade gained better signature support `[1] <https://github.com/opnsense/update#opnsense-sign--opnsense-verify>`__  that ties
+kernel and base upgrade gained better signature support `[1] <https://github.com/reticen8/update#reticen8-sign--reticen8-verify>`__  that ties
 right into FreeBSD's pkg verification mechanism, how cool is that!
 
 We'd like to use this opportunity to thank four of our regular
@@ -142,8 +142,8 @@ Here are the full patch notes:
 * ports: syslogd 10.2, mpd 5.8 `[5] <http://mpd.sourceforge.net/doc5/mpd4.html#4>`__ , ca_root_nss 3.21, dnsmasq 2.75_1 `[6] <https://reviews.freebsd.org/D4813>`__ 
 * ports: ntp 4.2.8p5 `[7] <http://support.ntp.org/bin/view/Main/SecurityNotice#Recent_Vulnerabilities>`__ , php 5.6.17 `[8] <https://php.net/ChangeLog-5.php#5.6.17>`__ , python 2.7.11_1 `[9] <https://bugs.python.org/issue20397>`__ 
 * ports: miniupnpd 1.9.20151212, openvpn 2.3.10 `[10] <https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.10>`__ 
-* opnsense-update: add opnsense-verify and opnsense-sign
-* opnsense-update: improve verification of signatures of kernel
+* reticen8-update: add reticen8-verify and reticen8-sign
+* reticen8-update: improve verification of signatures of kernel
   and base upgrades
 * menu: bring back dashboard entry due to popular demand
 * menu: fix interface listing error when its description is empty
@@ -360,7 +360,7 @@ Here are the full patch notes:
 
 Today we proudly present to you 15.7.20, which includes several improvements
 and fixes in all areas.  Notable from a development perspective are the
-opnsense-bootstrap tool, which can install the latest OPNsense version on a
+reticen8-bootstrap tool, which can install the latest Reticen8 version on a
 FreeBSD 10.1.  Additionally, the development branch offers a sneak preview of
 Suricata in true IPS mode!  Instructions on how to test it can be found in
 the forum `[9] <https://forum.reticen8.com/index.php?topic=1740>`__ .
@@ -370,13 +370,13 @@ Here are the full patch notes:
 * src: fix kqueue write events never fired for files greater 2GB `[1] <https://www.freebsd.org/security/advisories/FreeBSD-EN-15:19.kqueue.asc>`__ 
 * src: remove obsolete locking primitives IFA_LOCK() / IFA_UNLOCK()
 * src: enable netmap(4) driver support in the kernel
-* src: merge stf(4) driver modifications from pfSense `[2] <https://github.com/opnsense/src/commit/19ba0fbfd15ea8ff24ce172dee30e1>`__ 
+* src: merge stf(4) driver modifications from pfSense `[2] <https://github.com/reticen8/src/commit/19ba0fbfd15ea8ff24ce172dee30e1>`__ 
 * ports: squid 5.3.11 `[3] <http://ftp.meisei-u.ac.jp/mirror/squid/squid-3.5-ChangeLog.txt>`__ 
 * ports: strongswan 5.3.4 `[4] <https://www.strongswan.org/blog/2015/11/16/strongswan-5.3.4-released.html>`__ 
 * ports: choparp 20150613 `[5] <https://github.com/quinot/choparp>`__ 
 * ports: libxml 2.9.3 `[6] <http://www.xmlsoft.org/news.html>`__ 
 * ports: pkg 1.6.2 `[7] <https://github.com/freebsd/freebsd-ports/commit/0466b08981bf9c714>`__ 
-* ports: opnsense-bootstrap, the infamous installer that works on stock FreeBSD `[8] <https://github.com/opnsense/update/commit/e3f63ecdb1149a8cc30e3>`__ 
+* ports: reticen8-bootstrap, the infamous installer that works on stock FreeBSD `[8] <https://github.com/reticen8/update/commit/e3f63ecdb1149a8cc30e3>`__ 
 * intrusion detection: ignore json parse errors in eve log file
 * intrusion prevention (development): added Suricata 2.1beta4 in inline mode `[9] <https://forum.reticen8.com/index.php?topic=1740>`__ 
 * interfaces: reverted cache removal due to multiple speed regressions reports
@@ -409,7 +409,7 @@ Here are the full patch notes:
 
 * ports: sudo 1.8.15 `[1] <https://www.sudo.ws/legacy.html#1.8.15>`__ , sqlite 3.9.2 `[2] <https://sqlite.org/releaselog/3_9_2.html>`__ 
 * aliases: make url tables useable
-* interfaces: fix faulty GUI caching issues `[3] <https://github.com/opnsense/core/issues/451>`__ 
+* interfaces: fix faulty GUI caching issues `[3] <https://github.com/reticen8/core/issues/451>`__ 
 * ipsec: obey force nat traversal
 * ipsec: switch status page and widget from deprecated SMP to VICI interface
   for reliable output
@@ -499,25 +499,25 @@ Here are the full patch notes:
 
 .. code-block::
 
-    # SHA256 (OPNsense-15.7.18-OpenSSL-cdrom-amd64.iso.bz2) = f193e04ce0f0d2b1eab54b246f5b4931cdd50ed0a97015a363e8ece24449825d
-    # SHA256 (OPNsense-15.7.18-OpenSSL-nano-amd64.img.bz2) = f1cfa7ff9f2fe30361f92773aa6fe416ac5bb3e27bd98c1b470f32ceea9ee4eb
-    # SHA256 (OPNsense-15.7.18-OpenSSL-serial-amd64.img.bz2) = e95698fac21e8bef7ac8c8e66406fcbece583a32db325da19be810d33a714147
-    # SHA256 (OPNsense-15.7.18-OpenSSL-vga-amd64.img.bz2) = 3cc366d5e48f74bba5a07466cbaa2808d98fba422814d3cafbbffb5e2847c888
-    # SHA256 (OPNsense-15.7.18-OpenSSL-cdrom-i386.iso.bz2) = 57229a3873d6020979e8ebb1dff1c97b14166afff7da6d5ca7e5b32a17e40207
-    # SHA256 (OPNsense-15.7.18-OpenSSL-nano-i386.img.bz2) = e89464b51c52c02a9d1a15d168190f23b7d72030be5b31db4bd5a78cfa0a108f
-    # SHA256 (OPNsense-15.7.18-OpenSSL-serial-i386.img.bz2) = 0eb92ffcbe6d4152b79e89e71984b5a3d00cf0e2e0946868331fd93a506cf54c
-    # SHA256 (OPNsense-15.7.18-OpenSSL-vga-i386.img.bz2) = 284157e596dd77551ce6ce4e5b661614273abcfaa590f6d4553903172332f370
+    # SHA256 (Reticen8-15.7.18-OpenSSL-cdrom-amd64.iso.bz2) = f193e04ce0f0d2b1eab54b246f5b4931cdd50ed0a97015a363e8ece24449825d
+    # SHA256 (Reticen8-15.7.18-OpenSSL-nano-amd64.img.bz2) = f1cfa7ff9f2fe30361f92773aa6fe416ac5bb3e27bd98c1b470f32ceea9ee4eb
+    # SHA256 (Reticen8-15.7.18-OpenSSL-serial-amd64.img.bz2) = e95698fac21e8bef7ac8c8e66406fcbece583a32db325da19be810d33a714147
+    # SHA256 (Reticen8-15.7.18-OpenSSL-vga-amd64.img.bz2) = 3cc366d5e48f74bba5a07466cbaa2808d98fba422814d3cafbbffb5e2847c888
+    # SHA256 (Reticen8-15.7.18-OpenSSL-cdrom-i386.iso.bz2) = 57229a3873d6020979e8ebb1dff1c97b14166afff7da6d5ca7e5b32a17e40207
+    # SHA256 (Reticen8-15.7.18-OpenSSL-nano-i386.img.bz2) = e89464b51c52c02a9d1a15d168190f23b7d72030be5b31db4bd5a78cfa0a108f
+    # SHA256 (Reticen8-15.7.18-OpenSSL-serial-i386.img.bz2) = 0eb92ffcbe6d4152b79e89e71984b5a3d00cf0e2e0946868331fd93a506cf54c
+    # SHA256 (Reticen8-15.7.18-OpenSSL-vga-i386.img.bz2) = 284157e596dd77551ce6ce4e5b661614273abcfaa590f6d4553903172332f370
 
 .. code-block::
 
-    # MD5 (OPNsense-15.7.18-OpenSSL-cdrom-amd64.iso.bz2) = 7718af5a632a426c7e3832e4cf6e7f91
-    # MD5 (OPNsense-15.7.18-OpenSSL-nano-amd64.img.bz2) = 88018ba7ec8c6e6906054a03106020c6
-    # MD5 (OPNsense-15.7.18-OpenSSL-serial-amd64.img.bz2) = 50879c1a12ca65b95ebd5a77eea389e5
-    # MD5 (OPNsense-15.7.18-OpenSSL-vga-amd64.img.bz2) = 764c8a9c42b13cdfc73d1025e9795901
-    # MD5 (OPNsense-15.7.18-OpenSSL-cdrom-i386.iso.bz2) = ce115445d922883c1e57457503b7d044
-    # MD5 (OPNsense-15.7.18-OpenSSL-nano-i386.img.bz2) = 947d4955775295f09ef849b8ac7757a6
-    # MD5 (OPNsense-15.7.18-OpenSSL-serial-i386.img.bz2) = 4b7affd7c051e15171ef2ee4869739b6
-    # MD5 (OPNsense-15.7.18-OpenSSL-vga-i386.img.bz2) = 59b796e2a2a68cb699bb67b79f08c808
+    # MD5 (Reticen8-15.7.18-OpenSSL-cdrom-amd64.iso.bz2) = 7718af5a632a426c7e3832e4cf6e7f91
+    # MD5 (Reticen8-15.7.18-OpenSSL-nano-amd64.img.bz2) = 88018ba7ec8c6e6906054a03106020c6
+    # MD5 (Reticen8-15.7.18-OpenSSL-serial-amd64.img.bz2) = 50879c1a12ca65b95ebd5a77eea389e5
+    # MD5 (Reticen8-15.7.18-OpenSSL-vga-amd64.img.bz2) = 764c8a9c42b13cdfc73d1025e9795901
+    # MD5 (Reticen8-15.7.18-OpenSSL-cdrom-i386.iso.bz2) = ce115445d922883c1e57457503b7d044
+    # MD5 (Reticen8-15.7.18-OpenSSL-nano-i386.img.bz2) = 947d4955775295f09ef849b8ac7757a6
+    # MD5 (Reticen8-15.7.18-OpenSSL-serial-i386.img.bz2) = 4b7affd7c051e15171ef2ee4869739b6
+    # MD5 (Reticen8-15.7.18-OpenSSL-vga-i386.img.bz2) = 59b796e2a2a68cb699bb67b79f08c808
 
 --------------------------------------------------------------------------
 15.7.17 (October 20, 2015)
@@ -692,7 +692,7 @@ Here are the full patch notes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 15.7.12 (September 12, 2015)
@@ -750,7 +750,7 @@ Here are the full patch notes:
 
 * dns resolver: switch unbound to use libevent to address "too many fds"
   log message
-* firmware: os-update package was renamed to opnsense-update so "os-" can
+* firmware: os-update package was renamed to reticen8-update so "os-" can
   be our plugin prefix
 * firewall: fix alias page not being available due to a dirty config.xml
   sample entry
@@ -763,14 +763,14 @@ Here are the full patch notes:
 
 .. code-block::
 
-    # SHA256 (OPNsense-15.7.11-OpenSSL-cdrom-amd64.iso.bz2) = 4e6a78e309945f950bb924345d3bb3571f4cc4891227129bbf7a9f462d1a0f6b
-    # SHA256 (OPNsense-15.7.11-OpenSSL-nano-amd64.img.bz2) = 714d2ab06db2d56b81421182a6315b6b7373defbc4f3d82f795e22371b8ef501
-    # SHA256 (OPNsense-15.7.11-OpenSSL-serial-amd64.img.bz2) = f644a45a770850aacee824a83992ecbf5f177ea05051f8907470d8d548183521
-    # SHA256 (OPNsense-15.7.11-OpenSSL-vga-amd64.img.bz2) = 3da0787d7e0d4708230f0d7b95a9617d74f7a3e12b861091b6eefa934d2a5564
-    # SHA256 (OPNsense-15.7.11-OpenSSL-cdrom-i386.iso.bz2) = 407a83caeaff638b046f8ee7b8fa0823eb8b5cae28458a376c80134f66555eea
-    # SHA256 (OPNsense-15.7.11-OpenSSL-nano-i386.img.bz2) = 03ab10b56367249d742b824a454891678025db576bca126fb97fa2a9e0297835
-    # SHA256 (OPNsense-15.7.11-OpenSSL-serial-i386.img.bz2) = cc316a27fee85107d358d6e970db69f9abae5cb67d33073026c9aec14210b9be
-    # SHA256 (OPNsense-15.7.11-OpenSSL-vga-i386.img.bz2) = b90cbc906324d3b1671302804b5f902eaab2180d0cdde4145e54614d61355e6c
+    # SHA256 (Reticen8-15.7.11-OpenSSL-cdrom-amd64.iso.bz2) = 4e6a78e309945f950bb924345d3bb3571f4cc4891227129bbf7a9f462d1a0f6b
+    # SHA256 (Reticen8-15.7.11-OpenSSL-nano-amd64.img.bz2) = 714d2ab06db2d56b81421182a6315b6b7373defbc4f3d82f795e22371b8ef501
+    # SHA256 (Reticen8-15.7.11-OpenSSL-serial-amd64.img.bz2) = f644a45a770850aacee824a83992ecbf5f177ea05051f8907470d8d548183521
+    # SHA256 (Reticen8-15.7.11-OpenSSL-vga-amd64.img.bz2) = 3da0787d7e0d4708230f0d7b95a9617d74f7a3e12b861091b6eefa934d2a5564
+    # SHA256 (Reticen8-15.7.11-OpenSSL-cdrom-i386.iso.bz2) = 407a83caeaff638b046f8ee7b8fa0823eb8b5cae28458a376c80134f66555eea
+    # SHA256 (Reticen8-15.7.11-OpenSSL-nano-i386.img.bz2) = 03ab10b56367249d742b824a454891678025db576bca126fb97fa2a9e0297835
+    # SHA256 (Reticen8-15.7.11-OpenSSL-serial-i386.img.bz2) = cc316a27fee85107d358d6e970db69f9abae5cb67d33073026c9aec14210b9be
+    # SHA256 (Reticen8-15.7.11-OpenSSL-vga-i386.img.bz2) = b90cbc906324d3b1671302804b5f902eaab2180d0cdde4145e54614d61355e6c
 
 --------------------------------------------------------------------------
 15.7.10 (August 25, 2015)
@@ -847,7 +847,7 @@ These are the full patch notes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 15.7.8 (August 12, 2015)
@@ -918,7 +918,7 @@ Here are the full patch notes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 15.7.6 (July 31, 2015)
@@ -928,7 +928,7 @@ Your OPNsense team
 This is 15.7.6 due to several security advisories for FreeBSD as well as
 OpenSSH and Bind problems.  Reference links are provided for external
 issues as always.  More crash reports came in for issues that date back
-to as much as a few years long before we started OPNsense.  We are very
+to as much as a few years long before we started Reticen8.  We are very
 happy for the chance to finally flush them out of the code base.
 
 The update requires a reboot.  Here are the full patch notes:
@@ -937,7 +937,7 @@ The update requires a reboot.  Here are the full patch notes:
 * src: resource exhaustion in TCP reassembly `[2] <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:15.tcp.asc>`__ 
 * src: OpenSSH multiple vulnerabilities `[3] <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:16.openssh.asc>`__ 
 * ports: phalcon 2.0.6 `[4] <https://github.com/phalcon/cphalcon/releases/tag/phalcon-v2.0.6>`__ , openssh 6.9p1 `[5] <http://www.openssh.com/txt/release-6.9>`__ , bind 9.10.2P3 `[6] <https://kb.isc.org/article/AA-01280/81/BIND-9.10.2-P3-Release-Notes.html>`__ , dnsmasq 2.74 `[7] <https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__ 
-* opnsense-update: can now replace mirror locations
+* reticen8-update: can now replace mirror locations
 * crash reporter: fixed numerous remotely-submitted warnings and bugs
 * universal plug and play: fixed concurrent enable for UPnP and NAT-PMP (contributed by Chong Cheung)
 * intrusion detection: reload general settings after download
@@ -968,7 +968,7 @@ full patch notes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 15.7.4 (July 24, 2015)
@@ -984,7 +984,7 @@ to make sure your infrastructure keeps running as smoothly as possible.
 Here are the the full patch notes:
 
 * updated sudo 1.8.14p3 `[1] <http://www.sudo.ws/stable.html#1.8.14p3>`__ , pcre 8.37_2 `[2] <https://bugs.exim.org/show_bug.cgi?id=1651>`__ , and FreeBSD 10.1-RELEASE-p15 `[3] <https://www.freebsd.org/security/advisories/FreeBSD-SA-15:13.tcp.asc>`__ 
-* firmware: fix upgrade when using opnsense-devel package
+* firmware: fix upgrade when using reticen8-devel package
 * proxy: fix config write for multiple interfaces
 * crash reporter: raise PHP log level to warnings after an extensive cleanup
 * dashboard: made widgets translatable (contributed by Fabian Franz)
@@ -1035,7 +1035,7 @@ That's all for now.  Really.
 It's us.  Again.  Following the recent OpenSSL announcement of CVE-2015-1793
 we are pushing out 15.7.2 earlier than expected.  It is notable that FreeBSD
 10.1 as well as LibreSSL are not affected.  However, if you are running
-OPNsense with OpenSSL you should upgrade immediately.  Services are not
+Reticen8 with OpenSSL you should upgrade immediately.  Services are not
 restarted automatically, so a reboot is advised but not mandatory.  Please
 take a responsible course of action.
 
@@ -1043,7 +1043,7 @@ Here are the full patch notes:
 
 * notable ports updates: phalcon 2.0.4 `[1] <https://blog.phalconphp.com/post/phalcon-2-0-4-released>`__ , libressl 2.2.1 `[2] <http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.2.1-relnotes.txt>`__ ,
   openssl 1.0.2d `[3] <https://www.openssl.org/news/secadv_20150709.txt>`__ 
-* opnsense-update: can now switch from/to LibreSSL/OpenSSL on the fly
+* reticen8-update: can now switch from/to LibreSSL/OpenSSL on the fly
   (needs root shell for now)
 * ssh: work around a shutdown bug that prevents other users from logging
   in (requires a reboot if used)
@@ -1139,7 +1139,7 @@ tools.  Please see the full patch notes for details and references:
 * notable ports updates: phalcon 2.0.3 `[5] <https://github.com/phalcon/cphalcon/releases/tag/phalcon-v2.0.3>`__ , curl 7.43.0_2 `[6] <https://curl.haxx.se/changes.html>`__ ,
   openssh 6.8p1_8, python 2.7.10 `[7] <https://hg.python.org/cpython/raw-file/15c95b7d81dc/Misc/NEWS>`__ , perl 5.20.2_5 `[8] <https://perldoc.perl.org/5.20.2/perldelta>`__ , ntp 4.2.8p3 `[9] <http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ChangeLog-stable>`__ ,
   libxml 2.9.2_3 `[10] <https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-1819>`__ , openldap24-server 2.4.41 `[11] <https://www.openldap.org/software/release/changes.html>`__ 
-* opnsense-update: will no longer try to reinstall the istalled version
+* reticen8-update: will no longer try to reinstall the istalled version
   after a fresh installation
 * bsdinstaller: bring back cpdup to error out on low memory installation
   (you need 1 GB of RAM, or work around installation using the nano image)
@@ -1188,19 +1188,19 @@ https://reticen8.com/download/
 
 .. code-block::
 
-    # SHA256 (OPNsense-15.7_LibreSSL-cdrom-amd64.iso.bz2) = 2251b042f47c710e3f940f1fca417f46b3f1f437e37973ae0ba11aa396a38501
-    # SHA256 (OPNsense-15.7_LibreSSL-nano-amd64.img.bz2) = 52a94a8cd9ace6733a6e311445cccbb27360a97a7c8ec5f9c8fe303be59dcf99
-    # SHA256 (OPNsense-15.7_LibreSSL-serial-amd64.img.bz2) = cc9a9827548984f5fc2b10222207b7088919c2da91bcdd29cdcc0f9890696b94
-    # SHA256 (OPNsense-15.7_LibreSSL-vga-amd64.img.bz2) = ae5c9882202e859a17074dffe433e7b2e160b3a0317a14f8562287122f4daf03
-    # SHA256 (OPNsense-15.7_LibreSSL-cdrom-i386.iso.bz2) = cbb6398e841db4d69f33e7a837d64636d87648a98fba3f1adf267cc168591ff7
-    # SHA256 (OPNsense-15.7_LibreSSL-nano-i386.img.bz2) = cb6cb90811310a2d15100505603fe853bd4c5044704061549a1671e35b7dc3c2
-    # SHA256 (OPNsense-15.7_LibreSSL-serial-i386.img.bz2) = 7e0fd8138f8b3e416b3cd72d095a2f6821c41175e2e4b69500e4c7088847bd0b
-    # SHA256 (OPNsense-15.7_LibreSSL-vga-i386.img.bz2) = f0c6cc573e0afec7bc9252e91f9e9164f11eee1298f5ce84ec8ec84f87ae160e
-    # SHA256 (OPNsense-15.7_OpenSSL-cdrom-amd64.iso.bz2) = 35f2bea1791db432ec625d155852403a6d1bfed468ab35ee3d3c448005bf555e
-    # SHA256 (OPNsense-15.7_OpenSSL-nano-amd64.img.bz2) = 8352cf10edaaff5bd2fe9f7322e67acb4fbe76238b82d0b60d7222f34a0adf7e
-    # SHA256 (OPNsense-15.7_OpenSSL-serial-amd64.img.bz2) = c995407085b06b0d1f1a4c00e7962ba89e2a7daefb21a6a24519861d92403b2b
-    # SHA256 (OPNsense-15.7_OpenSSL-vga-amd64.img.bz2) = 5630a50e2c23ab49ff95f62d61993f3038652f1225baefe1a3cc7d641b70af30
-    # SHA256 (OPNsense-15.7_OpenSSL-cdrom-i386.iso.bz2) = b27053f6afe979fe4b682538457dd5f3993e02a44f3f30638874d9c58a1f3504
-    # SHA256 (OPNsense-15.7_OpenSSL-nano-i386.img.bz2) = 410cab97a35660033ab1572cfa7eb0f411e08abf7325261185b645e361e15a19
-    # SHA256 (OPNsense-15.7_OpenSSL-serial-i386.img.bz2) = 5c0eacd5fd13abd5b575d7cb085ea5c4ad7e08250d8aac1f264965a01554c8e9
-    # SHA256 (OPNsense-15.7_OpenSSL-vga-i386.img.bz2) = 7a525085fa7140e3561ed3336a11a27c8ceafcab24bf871fd88900a15c5b69b6
+    # SHA256 (Reticen8-15.7_LibreSSL-cdrom-amd64.iso.bz2) = 2251b042f47c710e3f940f1fca417f46b3f1f437e37973ae0ba11aa396a38501
+    # SHA256 (Reticen8-15.7_LibreSSL-nano-amd64.img.bz2) = 52a94a8cd9ace6733a6e311445cccbb27360a97a7c8ec5f9c8fe303be59dcf99
+    # SHA256 (Reticen8-15.7_LibreSSL-serial-amd64.img.bz2) = cc9a9827548984f5fc2b10222207b7088919c2da91bcdd29cdcc0f9890696b94
+    # SHA256 (Reticen8-15.7_LibreSSL-vga-amd64.img.bz2) = ae5c9882202e859a17074dffe433e7b2e160b3a0317a14f8562287122f4daf03
+    # SHA256 (Reticen8-15.7_LibreSSL-cdrom-i386.iso.bz2) = cbb6398e841db4d69f33e7a837d64636d87648a98fba3f1adf267cc168591ff7
+    # SHA256 (Reticen8-15.7_LibreSSL-nano-i386.img.bz2) = cb6cb90811310a2d15100505603fe853bd4c5044704061549a1671e35b7dc3c2
+    # SHA256 (Reticen8-15.7_LibreSSL-serial-i386.img.bz2) = 7e0fd8138f8b3e416b3cd72d095a2f6821c41175e2e4b69500e4c7088847bd0b
+    # SHA256 (Reticen8-15.7_LibreSSL-vga-i386.img.bz2) = f0c6cc573e0afec7bc9252e91f9e9164f11eee1298f5ce84ec8ec84f87ae160e
+    # SHA256 (Reticen8-15.7_OpenSSL-cdrom-amd64.iso.bz2) = 35f2bea1791db432ec625d155852403a6d1bfed468ab35ee3d3c448005bf555e
+    # SHA256 (Reticen8-15.7_OpenSSL-nano-amd64.img.bz2) = 8352cf10edaaff5bd2fe9f7322e67acb4fbe76238b82d0b60d7222f34a0adf7e
+    # SHA256 (Reticen8-15.7_OpenSSL-serial-amd64.img.bz2) = c995407085b06b0d1f1a4c00e7962ba89e2a7daefb21a6a24519861d92403b2b
+    # SHA256 (Reticen8-15.7_OpenSSL-vga-amd64.img.bz2) = 5630a50e2c23ab49ff95f62d61993f3038652f1225baefe1a3cc7d641b70af30
+    # SHA256 (Reticen8-15.7_OpenSSL-cdrom-i386.iso.bz2) = b27053f6afe979fe4b682538457dd5f3993e02a44f3f30638874d9c58a1f3504
+    # SHA256 (Reticen8-15.7_OpenSSL-nano-i386.img.bz2) = 410cab97a35660033ab1572cfa7eb0f411e08abf7325261185b645e361e15a19
+    # SHA256 (Reticen8-15.7_OpenSSL-serial-i386.img.bz2) = 5c0eacd5fd13abd5b575d7cb085ea5c4ad7e08250d8aac1f264965a01554c8e9
+    # SHA256 (Reticen8-15.7_OpenSSL-vga-i386.img.bz2) = 7a525085fa7140e3561ed3336a11a27c8ceafcab24bf871fd88900a15c5b69b6

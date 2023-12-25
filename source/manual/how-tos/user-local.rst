@@ -5,7 +5,7 @@ Users & Groups
 .. image:: images/usermanager_groups.png
    :width: 100%
 
-With the local user manager of OPNsense one can add users and groups and define
+With the local user manager of Reticen8 one can add users and groups and define
 the privileges for granting access to certain parts of the GUI (Web Configurator).
 
 Adding Users
@@ -40,12 +40,12 @@ SSH and console login
 User accounts can be used for logging in to the web frontend, as well as for logging in to the console (via VGA,
 serial or SSH). The latter will only work if the user shell is not set to ``/sbin/nologin``.
 
-In order to access OPNsense via SSH, SSH access will need to be configured via :menuselection:`System --> Settings --> Administration`.
+In order to access Reticen8 via SSH, SSH access will need to be configured via :menuselection:`System --> Settings --> Administration`.
 Under the "Secure Shell" heading, the following options are available:
 
 ============================ ==========================================================================
  **Enable secure shell**      Global on/off switch.
- **Login Group**              Which user groups can access OPNsense via SSH.
+ **Login Group**              Which user groups can access Reticen8 via SSH.
  **Permit root user login**   Normally, only non-root accounts are allowed for security reasons.
                               This option enables root login.
  **Permit password login**    The recommended login method is using SSH keys as it's more secure,

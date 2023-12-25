@@ -4,7 +4,7 @@
 
 
 
-For more than 7 and a half years now, OPNsense is driving innovation through
+For more than 7 and a half years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, fast adoption
 of upstream software updates as well as clear and stable 2-Clause BSD
@@ -26,11 +26,11 @@ everyone to switch between 22.7.x for the least amount of possible impact.
 Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/22.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/22.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/22.7/
-* South America: http://mirror.ueb.edu.ec/opnsense/releases/22.7/
-* East Asia: https://mirror.ntct.edu.tw/opnsense/releases/22.7/
+* Europe: https://reticen8.c0urier.net/releases/22.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/22.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/22.7/
+* South America: http://mirror.ueb.edu.ec/reticen8/releases/22.7/
+* East Asia: https://mirror.ntct.edu.tw/reticen8/releases/22.7/
 * Full mirror list: https://reticen8.com/download/
 
 
@@ -61,14 +61,14 @@ Here are the full patch notes:
 * dhcp: do not advertise DNS domain when DNS router advertisements are disabled (contributed by Patrick M. Hausen)
 * unbound: do not start DHCP watcher immediately after daemonizing Unbound itself
 * lang: fix reported issues with Italian and French translations
-* plugins: os-acme-client 3.12 `[1] <https://github.com/opnsense/plugins/blob/stable/22.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.20 `[2] <https://github.com/opnsense/plugins/blob/stable/22.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-acme-client 3.12 `[1] <https://github.com/reticen8/plugins/blob/stable/22.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.20 `[2] <https://github.com/reticen8/plugins/blob/stable/22.7/net/freeradius/pkg-descr>`__ 
 * plugins: os-git-backup fixes git binary variable use
 * plugins: os-haproxy fixes deprecation notes in PHP 8 (contributed by Gavin Chappell)
-* plugins: os-maltrail 1.9 `[3] <https://github.com/opnsense/plugins/blob/stable/22.7/security/maltrail/pkg-descr>`__ 
-* plugins: os-munin-node 1.1 `[4] <https://github.com/opnsense/plugins/blob/stable/22.7/sysutils/munin-node/pkg-descr>`__ 
-* plugins: os-netdata 1.2 `[5] <https://github.com/opnsense/plugins/blob/stable/22.7/net-mgmt/netdata/pkg-descr>`__ 
-* plugins: os-nginx 1.29 `[6] <https://github.com/opnsense/plugins/blob/stable/22.7/www/nginx/pkg-descr>`__ 
+* plugins: os-maltrail 1.9 `[3] <https://github.com/reticen8/plugins/blob/stable/22.7/security/maltrail/pkg-descr>`__ 
+* plugins: os-munin-node 1.1 `[4] <https://github.com/reticen8/plugins/blob/stable/22.7/sysutils/munin-node/pkg-descr>`__ 
+* plugins: os-netdata 1.2 `[5] <https://github.com/reticen8/plugins/blob/stable/22.7/net-mgmt/netdata/pkg-descr>`__ 
+* plugins: os-nginx 1.29 `[6] <https://github.com/reticen8/plugins/blob/stable/22.7/www/nginx/pkg-descr>`__ 
 * ports: libxml 2.9.14 `[7] <http://www.xmlsoft.org/news.html>`__ 
 * ports: nss 3.81 `[8] <https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.81_release_notes>`__ 
 * ports: rrdtool 1.8.0 `[9] <https://github.com/oetiker/rrdtool-1.x/blob/master/CHANGES>`__ 
@@ -81,7 +81,7 @@ Here are the full patch notes:
 --------------------------------------------------------------------------
 
 
-For more than 7 and a half years now, OPNsense is driving innovation through
+For more than 7 and a half years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, fast adoption
 of upstream software updates as well as clear and stable 2-Clause BSD
@@ -103,11 +103,11 @@ everyone to switch between 22.7.x for the least amount of possible impact.
 Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/22.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/22.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/22.7/
-* South America: http://mirror.ueb.edu.ec/opnsense/releases/22.7/
-* East Asia: https://mirror.ntct.edu.tw/opnsense/releases/22.7/
+* Europe: https://reticen8.c0urier.net/releases/22.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/22.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/22.7/
+* South America: http://mirror.ueb.edu.ec/reticen8/releases/22.7/
+* East Asia: https://mirror.ntct.edu.tw/reticen8/releases/22.7/
 * Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 22.1.10:
@@ -195,12 +195,12 @@ Here are the full patch notes against 22.1.10:
 * ui: add catch undefined TypeError in SimpleActionButton (contributed by agh1467)
 * ui: fix assorted typos in the code base (contributed by Josh Soref)
 * ui: handle HTTP 500 error gracefully in MVC pages
-* plugins: os-apcupsd 1.0 `[2] <https://github.com/opnsense/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__  (contributed by David Berry, Dan Lundqvist and Nicola Pellegrini)
-* plugins: os-boot-delay is no longer available `[3] <https://github.com/opnsense/plugins/blob/b31bcb92106/sysutils/boot-delay/Makefile#L6>`__ 
-* plugins: os-crowdsec 1.0 `[4] <https://github.com/opnsense/plugins/blob/stable/22.7/security/crowdsec/pkg-descr>`__ 
+* plugins: os-apcupsd 1.0 `[2] <https://github.com/reticen8/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__  (contributed by David Berry, Dan Lundqvist and Nicola Pellegrini)
+* plugins: os-boot-delay is no longer available `[3] <https://github.com/reticen8/plugins/blob/b31bcb92106/sysutils/boot-delay/Makefile#L6>`__ 
+* plugins: os-crowdsec 1.0 `[4] <https://github.com/reticen8/plugins/blob/stable/22.7/security/crowdsec/pkg-descr>`__ 
 * plugins: os-nginx fix for missing DH parameter file
 * plugins: os-postfix fix for missing DH parameter file
-* plugins: os-tayga 1.2 `[5] <https://github.com/opnsense/plugins/blob/stable/22.7/net/tayga/pkg-descr>`__ 
+* plugins: os-tayga 1.2 `[5] <https://github.com/reticen8/plugins/blob/stable/22.7/net/tayga/pkg-descr>`__ 
 * plugins: os-tor no longer available on LibreSSL due to incompatibilities with newer Tor versions
 * plugins: os-web-proxy-useracl is no longer available, no updates since 2017
 * src: FreeBSD 13.1-RELEASE `[6] <https://www.freebsd.org/releases/13.1R/relnotes/>`__ 
@@ -252,10 +252,10 @@ The public key for the 22.7 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-22.7-OpenSSL-dvd-amd64.iso.bz2) = 9345057e993cd55dfa5280beefd33f1dc2243681defff3c5f11b84fa2c7910f8
-    # SHA256 (OPNsense-22.7-OpenSSL-nano-amd64.img.bz2) = 061ea4ca261bcd8397ae1a4acf2fb32f0fbbb6ac00d617e1f4151318f66cc77d
-    # SHA256 (OPNsense-22.7-OpenSSL-serial-amd64.img.bz2) = cf1603e20d4268d917b40344ddadd2f147c3e167dbe1f6cd254a2afcb586fb4d
-    # SHA256 (OPNsense-22.7-OpenSSL-vga-amd64.img.bz2) = 2537f37247d98e27634c34cdf23f30f95d0ed00ac0af01c2d9675580a790f8fb
+    # SHA256 (Reticen8-22.7-OpenSSL-dvd-amd64.iso.bz2) = 9345057e993cd55dfa5280beefd33f1dc2243681defff3c5f11b84fa2c7910f8
+    # SHA256 (Reticen8-22.7-OpenSSL-nano-amd64.img.bz2) = 061ea4ca261bcd8397ae1a4acf2fb32f0fbbb6ac00d617e1f4151318f66cc77d
+    # SHA256 (Reticen8-22.7-OpenSSL-serial-amd64.img.bz2) = cf1603e20d4268d917b40344ddadd2f147c3e167dbe1f6cd254a2afcb586fb4d
+    # SHA256 (Reticen8-22.7-OpenSSL-vga-amd64.img.bz2) = 2537f37247d98e27634c34cdf23f30f95d0ed00ac0af01c2d9675580a790f8fb
 
 --------------------------------------------------------------------------
 22.7.r2 (July 20, 2022)
@@ -294,14 +294,14 @@ Here are the full patch notes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 22.7.r1 (July 13, 2022)
 --------------------------------------------------------------------------
 
 
-For more than 7 and a half years now, OPNsense is driving innovation through
+For more than 7 and a half years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, fast adoption
 of upstream software updates as well as clear and stable 2-Clause BSD
@@ -313,11 +313,11 @@ We know it would not be the same without you.  <3
 Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/22.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/22.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/22.7/
-* South America: http://mirror.ueb.edu.ec/opnsense/releases/22.7/
-* East Asia: https://mirror.ntct.edu.tw/opnsense/releases/22.7/
+* Europe: https://reticen8.c0urier.net/releases/22.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/22.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/22.7/
+* South America: http://mirror.ueb.edu.ec/reticen8/releases/22.7/
+* East Asia: https://mirror.ntct.edu.tw/reticen8/releases/22.7/
 * Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 22.1.10:
@@ -373,9 +373,9 @@ Here are the full patch notes against 22.1.10:
 * ui: merge option objects instead of replacing them in bootgrid (contributed by agh1467)
 * ui: correct required API for command-info in bootgrid (contributed by agh1467)
 * ui: add catch undefined TypeError in SimpleActionButton (contributed by agh1467)
-* plugins: os-apcupsd 1.0 `[2] <https://github.com/opnsense/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__  (contributed by David Berry, Dan Lundqvist and Nicola Pellegrini)
-* plugins: os-boot-delay is no longer available `[3] <https://github.com/opnsense/plugins/blob/b31bcb92106/sysutils/boot-delay/Makefile#L6>`__ 
-* plugins: os-tayga 1.2 `[4] <https://github.com/opnsense/plugins/blob/stable/22.7/net/tayga/pkg-descr>`__ 
+* plugins: os-apcupsd 1.0 `[2] <https://github.com/reticen8/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__  (contributed by David Berry, Dan Lundqvist and Nicola Pellegrini)
+* plugins: os-boot-delay is no longer available `[3] <https://github.com/reticen8/plugins/blob/b31bcb92106/sysutils/boot-delay/Makefile#L6>`__ 
+* plugins: os-tayga 1.2 `[4] <https://github.com/reticen8/plugins/blob/stable/22.7/net/tayga/pkg-descr>`__ 
 * plugins: os-tor no longer available on LibreSSL due to incompatibilities with newer Tor versions
 * plugins: os-web-proxy-useracl is no longer available, no updates since 2017
 * src: FreeBSD 13.1-RELEASE `[5] <https://www.freebsd.org/releases/13.1R/relnotes/>`__ 
@@ -424,7 +424,7 @@ Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-22.7.r1-OpenSSL-dvd-amd64.iso.bz2) = 4c4a58de86b112e62721d53667e21745b85e4d6ba696ec0f52ab7bf7edcb21e4
-    # SHA256 (OPNsense-22.7.r1-OpenSSL-nano-amd64.img.bz2) = 325fd29d4ca191b6dd90845e4ddfeb96fff2ebcc03b2b675ac656660e8d58b0d
-    # SHA256 (OPNsense-22.7.r1-OpenSSL-serial-amd64.img.bz2) = d5adb1425e6d49386513f241fd6375ff466b65da01dc4142bc32dd58732c90a0
-    # SHA256 (OPNsense-22.7.r1-OpenSSL-vga-amd64.img.bz2) = ca846e3c53696ebe4a94364e45f5a358091b8493ea982690568eb16212dc0f75
+    # SHA256 (Reticen8-22.7.r1-OpenSSL-dvd-amd64.iso.bz2) = 4c4a58de86b112e62721d53667e21745b85e4d6ba696ec0f52ab7bf7edcb21e4
+    # SHA256 (Reticen8-22.7.r1-OpenSSL-nano-amd64.img.bz2) = 325fd29d4ca191b6dd90845e4ddfeb96fff2ebcc03b2b675ac656660e8d58b0d
+    # SHA256 (Reticen8-22.7.r1-OpenSSL-serial-amd64.img.bz2) = d5adb1425e6d49386513f241fd6375ff466b65da01dc4142bc32dd58732c90a0
+    # SHA256 (Reticen8-22.7.r1-OpenSSL-vga-amd64.img.bz2) = ca846e3c53696ebe4a94364e45f5a358091b8493ea982690568eb16212dc0f75

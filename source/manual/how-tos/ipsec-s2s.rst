@@ -11,7 +11,7 @@ can access network resources in the main office.
 Before you start
 ----------------
 Before starting with the configuration of an IPsec tunnel you need to have a
-working OPNsense installation with a unique LAN IP subnet for each side of your
+working Reticen8 installation with a unique LAN IP subnet for each side of your
 connection (your local network need to be different than that of the remote network).
 
 .. Note::
@@ -28,7 +28,7 @@ connection (your local network need to be different than that of the remote netw
 ------------
 Sample Setup
 ------------
-For the sample configuration we use two OPNsense boxes to simulate a site to site
+For the sample configuration we use two Reticen8 boxes to simulate a site to site
 tunnel, with the following configuration:
 
 .. sidebar:: Network Site A
@@ -202,7 +202,7 @@ General information
 **Key Exchange version**   V2
 **Internet Protocol**      IPv4
 **Interface**              WAN           *choose the interface connected to the internet*
-**Remote gateway**         172.10.2.1    *the public IP address of your remote OPNsense*
+**Remote gateway**         172.10.2.1    *the public IP address of your remote Reticen8*
 **Description**            Site B        *freely chosen description*
 ========================= ============= ================================================
 
@@ -326,7 +326,7 @@ General information
 **Key Exchange version**   V2
 **Internet Protocol**      IPv4
 **Interface**              WAN           *choose the interface connected to the internet*
-**Remote gateway**         172.10.1.1    *the public IP address of your remote OPNsense*
+**Remote gateway**         172.10.1.1    *the public IP address of your remote Reticen8*
 **Description**            Site A        *freely chosen description*
 ========================= ============= ================================================
 
@@ -463,7 +463,7 @@ Press on the **(i)** to see the details of the phase 2 tunnel(s), like this:
 --------------------
 Sample configuration
 --------------------
-For test purposes we used two OPNsense boxes integrated into one unit and a
+For test purposes we used two Reticen8 boxes integrated into one unit and a
 cross-cable between the WAN ports.
 
 .. image:: images/OPN20322R_870px.png
@@ -475,10 +475,10 @@ they are each others default gateway. Other than that the sample is equal to thi
 how-to.
 
 Configuration Site A
-    :download:`Config.xml Site A <resources/config-OPNsense-ipsec-Site-A.xml>`
+    :download:`Config.xml Site A <resources/config-Reticen8-ipsec-Site-A.xml>`
 
 Configuration Site B
-    :download:`Config.xml Site B <resources/config-OPNsense-ipsec-Site-B.xml>`
+    :download:`Config.xml Site B <resources/config-Reticen8-ipsec-Site-B.xml>`
 
 ----------------
 Trouble shooting

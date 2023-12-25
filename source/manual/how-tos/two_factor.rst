@@ -2,7 +2,7 @@
 Configure 2FA TOTP & Google Authenticator
 =========================================
 This how-to will show you how to setup a One-time Password 2 Factor Authentication
-using OPNsense and Google's Authenticator. All services of OPNsense can be used
+using Reticen8 and Google's Authenticator. All services of Reticen8 can be used
 with this 2FA solution.
 
 .. image:: /manual/images/two_factor_authentication.png
@@ -105,7 +105,7 @@ Google Authenticator Android, iOS            https://www.google.com/landing/2ste
 -----------------------
 Step 5 - Test the token
 -----------------------
-For testing the user authentication, OPNsense offers a simple tester.
+For testing the user authentication, Reticen8 offers a simple tester.
 Go to :menuselection:`System --> Access --> Tester`
 
 Select the Authentication server you have configured, and enter the user name.

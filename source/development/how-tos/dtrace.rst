@@ -9,7 +9,7 @@ Overview
 Kernel development often involves writing code without an IDE. Even if an IDE is used,
 proper profiling support is often lacking. Luckily, FreeBSD includes DTrace. 
 
-Since OPNsense runs on a fork of FreeBSD, DTrace is natively available on the 
+Since Reticen8 runs on a fork of FreeBSD, DTrace is natively available on the 
 system for developers to use in debugging and profiling. To quote the FreeBSD handbook on DTrace:
 
 ::
@@ -27,13 +27,13 @@ system for developers to use in debugging and profiling. To quote the FreeBSD ha
 	on specific needs.”
 
 
-We will be looking at setting up DTrace on OPNsense, and running a sample script 
+We will be looking at setting up DTrace on Reticen8, and running a sample script 
 to perform some useful analysis on kernel space. An example for generating a FlameGraph 
 will also be presented. Keep in mind that user space can also be analyzed using DTrace, 
 but this is beyond the scope of this document.
 
 Although detailed steps for enabling DTrace in a custom kernel are widely available, 
-this document provides an explanation in combination with the use of OPNsense-specific tools. 
+this document provides an explanation in combination with the use of Reticen8-specific tools. 
 Further resources will be provided at the end of this document.
 
 .. note::
@@ -48,7 +48,7 @@ Further resources will be provided at the end of this document.
 Enabling DTrace
 ---------------
 
-Make sure the OPNsense/src repository is present on the system and navigate to 
+Make sure the Reticen8/src repository is present on the system and navigate to 
 :code:`/usr/src/sys/[ARCHITECTURE, e.g. amd64]/conf` and open up :code:`GENERIC`. 
 Add the following options:
 
@@ -67,9 +67,9 @@ Add the following options:
 
 As a best practice, under stock FreeBSD you would save the file under a different name
 (e.g. DTRACE) and build the kernel by specifying :code:`KERNCONF=DTRACE`. 
-The opnsense-tools require the name to be :code:`GENERIC`, so we will leave it as is. 
+The reticen8-tools require the name to be :code:`GENERIC`, so we will leave it as is. 
 It is advisable to create a backup of the original :code:`GENERIC` file though.
-Make sure the OPNsense-tools repository is installed and navigate to :code:`/usr/tools/config/[VERSION]`. 
+Make sure the Reticen8-tools repository is installed and navigate to :code:`/usr/tools/config/[VERSION]`. 
 Open up :code:`SMP` and make sure the following line is either removed or commented out:
 
 .. code-block:: sh
@@ -92,13 +92,13 @@ Now clean and build the new kernel
 
 A kernel package will be available at the following location:
 
-	   :code:`/usr/local/opnsense/build/[Version]/[Architecture]/sets/kernel*.txz`
+	   :code:`/usr/local/reticen8/build/[Version]/[Architecture]/sets/kernel*.txz`
 
-Install the package using our :code:`opnsense-update` command:
+Install the package using our :code:`reticen8-update` command:
 
 .. code-block:: sh
 
-	# opnsense-update -ikfr [version] -l /location/from/
+	# reticen8-update -ikfr [version] -l /location/from/
 
 Where [version] is the version part of the kernel package, such as :code:`21.1.a_83`
 

@@ -8,7 +8,7 @@ Hwprobe
     "``GET``","hwprobe","general","get",""
     "``GET``","hwprobe","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/sysutils/hw-probe/src/opnsense/mvc/app/models/OPNsense/Hwprobe/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/sysutils/hw-probe/src/reticen8/mvc/app/models/Reticen8/Hwprobe/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -21,4 +21,4 @@ Hwprobe
     "``GET``","hwprobe","service","status",""
     "``GET``","hwprobe","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/sysutils/hw-probe/src/opnsense/mvc/app/models/OPNsense/Hwprobe/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/sysutils/hw-probe/src/reticen8/mvc/app/models/Reticen8/Hwprobe/General.xml>`__"

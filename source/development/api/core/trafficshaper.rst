@@ -34,4 +34,4 @@ Trafficshaper
     "``POST``","trafficshaper","settings","toggleQueue","$uuid,$enabled=null"
     "``POST``","trafficshaper","settings","toggleRule","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `TrafficShaper.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/TrafficShaper/TrafficShaper.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `TrafficShaper.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/TrafficShaper/TrafficShaper.xml>`__"

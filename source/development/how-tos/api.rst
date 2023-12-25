@@ -6,12 +6,12 @@ Use the API
 Overview
 --------
 
-All components that are using the full architecture of OPNsense
+All components that are using the full architecture of Reticen8
 automatically receive API capabilities, for this simple tutorial we use
 the firmware module but others will function in the same way. API access
 is part of the local user authentication system, but uses key/secret
 pairs to separate account information from machine to machine
-communication. Secrets are not stored on OPNsense and can be downloaded
+communication. Secrets are not stored on Reticen8 and can be downloaded
 only once, if lost, a new key has to be generated for your application.
 
 A user can have multiple keys, our advice is to create a unique key for
@@ -44,7 +44,7 @@ For the python code sample we use the nice "requests" library
 (http://docs.python-requests.org/en/latest/), which makes HTTP calls
 very easy.
 
-Before you can start, make sure your OPNsense has a valid SSL
+Before you can start, make sure your Reticen8 has a valid SSL
 certificate (or choose to ignore it for testing purposes by setting
 verify=False), don't forget to verify that the selected user may access
 the firmware page.
@@ -76,14 +76,14 @@ response.
  
    # request data
    r = requests.get(url,
-                    verify='OPNsense.pem',
+                    verify='Reticen8.pem',
                     auth=(api_key, api_secret))
 
    if r.status_code == 200:
        response = json.loads(r.text)
 
        if response['status'] == 'ok':
-           print ('OPNsense can be upgraded')
+           print ('Reticen8 can be upgraded')
            print ('download size : %s' % response['download_size'])
            print ('number of packages : %s' % response['updates'])
            if response['upgrade_needs_reboot'] == '1':

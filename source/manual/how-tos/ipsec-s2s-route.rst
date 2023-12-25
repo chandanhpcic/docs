@@ -28,13 +28,13 @@ or software-defined networks.
 Before you start
 ----------------
 Before starting with the configuration of an IPsec tunnel you need to have a
-working OPNsense installation wit a unique LAN IP subnet for each side of your
+working Reticen8 installation wit a unique LAN IP subnet for each side of your
 connection (your local network needs a different one than the remote network).
 
 ------------
 Sample Setup
 ------------
-For the sample configuration we use two OPNsense boxes to simulate a site to site
+For the sample configuration we use two Reticen8 boxes to simulate a site to site
 tunnel, with the following configuration:
 
 .. sidebar:: Network Site A
@@ -206,7 +206,7 @@ General information
 **Key Exchange version**   V2
 **Internet Protocol**      IPv4
 **Interface**              WAN           *Choose the interface connected to the internet*
-**Remote gateway**         4.3.2.1       *The public IP address of your remote OPNsense*
+**Remote gateway**         4.3.2.1       *The public IP address of your remote Reticen8*
 **Description**            Site B        *Freely chosen description*
 ========================= ============= ==================================================
 
@@ -324,7 +324,7 @@ General information
 **Key Exchange version**   V2
 **Internet Protocol**      IPv4
 **Interface**              WAN           *Choose the interface connected to the internet*
-**Remote gateway**         1.2.3.4       *The public IP address of your remote OPNsense*
+**Remote gateway**         1.2.3.4       *The public IP address of your remote Reticen8*
 **Description**            Site A        *Freely chosen description*
 ========================= ============= ==================================================
 

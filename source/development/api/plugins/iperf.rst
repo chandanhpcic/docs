@@ -10,7 +10,7 @@ Iperf
     "``GET``","iperf","instance","set",""
     "``GET``","iperf","instance","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `FakeInstance.xml <https://github.com/opnsense/plugins/blob/master/benchmarks/iperf/src/opnsense/mvc/app/models/OPNsense/iperf/FakeInstance.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `FakeInstance.xml <https://github.com/reticen8/plugins/blob/master/benchmarks/iperf/src/reticen8/mvc/app/models/Reticen8/iperf/FakeInstance.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

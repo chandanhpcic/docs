@@ -1,8 +1,8 @@
 Firewall
 ~~~~~~~~
 
-The firewall API plugin is a first step into migrating the legacy firewall components from OPNsense, although it does contain
-a user interface, it's main focus is only to provide machine to machine interaction between custom applications and OPNsense
+The firewall API plugin is a first step into migrating the legacy firewall components from Reticen8, although it does contain
+a user interface, it's main focus is only to provide machine to machine interaction between custom applications and Reticen8
 for selected features.
 
 
@@ -17,7 +17,7 @@ for selected features.
     "``POST``","firewall","filter_base","savepoint",""
     "``GET``","firewall","filter_base","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Filter.xml <https://github.com/opnsense/plugins/blob/master/net/firewall/src/opnsense/mvc/app/models/OPNsense/Firewall/Filter.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Filter.xml <https://github.com/reticen8/plugins/blob/master/net/firewall/src/reticen8/mvc/app/models/Reticen8/Firewall/Filter.xml>`__"
 
 .. csv-table:: Resources (FilterController.php)  -- extends : FilterBaseController 
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -47,7 +47,7 @@ for selected features.
 Concept
 -----------------------
 
-The firewall plugin injects rules in the standard OPNsense firewall while maintaining visibility on them in the
+The firewall plugin injects rules in the standard Reticen8 firewall while maintaining visibility on them in the
 standard user interface.
 
 We use our standard :code:`ApiMutableModelControllerBase` to allow crud operations on rule entries and offer a set of
@@ -91,7 +91,7 @@ Administration example
 -----------------------
 
 Administrative endpoints are pretty standard use of :code:`ApiMutableModelControllerBase`, the example below searches for
-a rule named "OPNsense_fw_api_testrule_1", when not found one will be added otherwise it will print the internal uuid.
+a rule named "Reticen8_fw_api_testrule_1", when not found one will be added otherwise it will print the internal uuid.
 Inline you will find a brief description of the steps performed.
 
 

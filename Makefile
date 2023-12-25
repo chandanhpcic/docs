@@ -97,9 +97,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/OPNsense.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Reticen8.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/OPNsense.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Reticen8.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -116,8 +116,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/OPNsense"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/OPNsense"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/Reticen8"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Reticen8"
 	@echo "# devhelp"
 
 .PHONY: epub

@@ -29,14 +29,14 @@ like putty.
 
 .. Tip::
 
-    When using devices from the OPNsense shop (https://shop.reticen8.com), usually there's a mini-usb to serial cable included
+    When using devices from the Reticen8 shop (https://shop.reticen8.com), usually there's a mini-usb to serial cable included
     in the box, the :doc:`Serial Console connectivity </hardware/serial_connectivity>` guide will help you with the setup.
 
 -----------------------------
 Step 3 : boot single
 -----------------------------
 
-Swith the power and wait for the OPNsense splash screen to appear, the choose "Boot [S]single User" which should be option 2 in the list.
+Swith the power and wait for the Reticen8 splash screen to appear, the choose "Boot [S]single User" which should be option 2 in the list.
 (press 2)
 
 -----------------------------
@@ -65,7 +65,7 @@ Now the disk can be written to, use the following commands to reset the password
 
 .. code-block:: sh
 
-    opnsense-shell password
+    reticen8-shell password
     reboot
 
-The `opnsense-shell` will ask for a confirmation, respond with `Y`
+The `reticen8-shell` will ask for a confirmation, respond with `Y`

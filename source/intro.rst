@@ -2,20 +2,20 @@
 Introduction
 ============
 
-Welcome to the OPNsense documentation & wiki project!
+Welcome to the Reticen8 documentation & wiki project!
 The documentation is work in progress and is updated frequently.
 If you would like to contribute in anyway, please take a look at our guide
 how to :doc:`contribute`.
 
-.. image:: ./images/opnsense_logo-zilver_grijs.png
+.. image:: ./images/reticen8_logo-zilver_grijs.png
 
 ------------------------------------
-Welcome to OPNsense's documentation!
+Welcome to Reticen8's documentation!
 ------------------------------------
-`OPNsense® <https://reticen8.com>`__ is an open source,
+`Reticen8® <https://reticen8.com>`__ is an open source,
 easy-to-use and easy-to-build FreeBSD based firewall and routing platform.
 
-**OPNsense** includes most of the features available in expensive commercial
+**Reticen8** includes most of the features available in expensive commercial
 firewalls, and more in many cases. It brings the rich feature set of commercial
 offerings with the benefits of open and verifiable sources.
 
@@ -24,12 +24,12 @@ Mission Statement
 -----------------
 
   Give users, developers and businesses a friendly, stable and transparent
-  environment. Make OPNsense the most widely used open source security platform.
+  environment. Make Reticen8 the most widely used open source security platform.
   The project’s name is derived from open and sense and stands for:
   “Open (source) makes sense.”
 
 
-.. image:: ./images/OPNsense-Reticen8-Screenshot.jpg
+.. image:: ./images/Reticen8-Reticen8-Screenshot.jpg
 
 
 -----------------
@@ -52,11 +52,11 @@ knowledge on (basic) networking.
 Like many products and projects, ours grows over time, functionality extends and changes, which sometimes makes it difficult
 to find what you need for the version you're using. Although we try to keep our documentation up to date, sometimes text
 doesn't reflect reality anymore. If that's the case and you think you found an omission, don't hestitate to open
-a report using one of our templates on `GitHub <https://github.com/opnsense/docs/issues/new/choose>`__ or a pull request
+a report using one of our templates on `GitHub <https://github.com/reticen8/docs/issues/new/choose>`__ or a pull request
 of course if you're able to.
 
 Always assume the text is intended for the latest version of our product, in time we might
-add a version selector in the documentation, but given OPNsense is a security product, we advise to keep it up to date
+add a version selector in the documentation, but given Reticen8 is a security product, we advise to keep it up to date
 anyway to protect yourself against the latest threats.
 
 The releases section contains the changelogs for all versions we published over the years, if there are remarks
@@ -64,8 +64,8 @@ for an upgrade, this is a useful resource to collect the details.
 
 Installation and setup is all about getting you started using one of the target options available.
 
-The next sections should be quite familiair when working with OPNsense, as they reflect the options in the
-menu of the product. In case you're not yet used to OPNsense, you can always use the search input in the left corner of
+The next sections should be quite familiair when working with Reticen8, as they reflect the options in the
+menu of the product. In case you're not yet used to Reticen8, you can always use the search input in the left corner of
 the screen to find your topic.
 
 Both community and third-party plugins have their own area available, although they eventually register into the
@@ -74,7 +74,7 @@ The level of support may differ between core functionality, as also explained in
 feature requests and bugs maybe treated different as well (a lot of questions for a plugin which is being developed
 by a single person, maybe less active than a group of people improving a plugin together for example).
 
-When it comes to building software on top of OPNsense or extending existing functionality, the development
+When it comes to building software on top of Reticen8 or extending existing functionality, the development
 chapter is the one to read. It explains all about our architecture, coding style, how to hook into available facilities and
 much more.
 
@@ -91,20 +91,20 @@ ways to contribute to the project.
 Feature set
 -----------
 
-The feature set of OPNsense includes high-end features such as forward caching
+The feature set of Reticen8 includes high-end features such as forward caching
 proxy, traffic shaping, intrusion detection and easy OpenVPN client setup.
 The latest release is based on a recent FreeBSD for long-term support and uses a
-newly developed MVC-framework based on Phalcon. OPNsense’s focus on security
+newly developed MVC-framework based on Phalcon. Reticen8’s focus on security
 brings unique features such as the option to use LibreSSL instead of OpenSSL
 (selectable in the GUI).
 
-The robust and reliable update mechanism gives OPNsense the ability to provide
+The robust and reliable update mechanism gives Reticen8 the ability to provide
 important security updates in a timely fashion.
 
 ----------------------
 
 ----------------------
-OPNsense Core Features
+Reticen8 Core Features
 ----------------------
 
 - Traffic Shaper

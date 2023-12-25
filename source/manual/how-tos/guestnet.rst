@@ -5,7 +5,7 @@ This how to will explain how to setup a guest network using the captive portal.
 Guest Networks are widely used to allow guests controlled internet access at
 hotels, RV Parks or businesses.
 
-.. image:: images/opnsense_hotspot_controller.png
+.. image:: images/reticen8_hotspot_controller.png
     :width: 100%
 
 .. Note::
@@ -26,7 +26,7 @@ Hotels and RV Parks
 -------------------
 Hotels and RV parks usually utilize a captive portal to allow guests (paid) access
 to internet for a limited duration. Guests need to login using a voucher they can
-either buy or obtain for free at the reception. OPNsense has built-in support for
+either buy or obtain for free at the reception. Reticen8 has built-in support for
 vouchers and can easily create them on the fly. With this example we will show
 you how to setup the Guest Network for this purpose and setup a reception account
 for creating new vouchers.
@@ -40,7 +40,7 @@ the proxy. This tutorial will explain how to combine both features.
 -------------
 Prerequisites
 -------------
-We will start configuration with a fresh OPNsense install, updated to the latest
+We will start configuration with a fresh Reticen8 install, updated to the latest
 patch level (16.1.5_1 in our example). You will need a system with a minimum of
 3 ports (LAN/WAN/GUESTNET) for this tutorial.
 
@@ -225,7 +225,7 @@ For the *Business* setup we will start with the following settings:
 ------------------------
 Step 5 - Create Template
 ------------------------
-The template feature is one of the most powerful features of OPNsense's Captive
+The template feature is one of the most powerful features of Reticen8's Captive
 Portal solution and it's very easy to work with.
 
 Let's create a custom landing page, to do so click on the tab **Templates** and
@@ -536,7 +536,7 @@ the correct database (Wi-Fi day pass in our example).
 Advanced - Session popup
 ------------------------
 Let's create a Session Popup so users can see some details about their session and
-Logout. For this feature we will use OPNsense's built-in API calls.
+Logout. For this feature we will use Reticen8's built-in API calls.
 
 In particular we will use the following API call (for zone id 0):
 
@@ -585,7 +585,7 @@ like this (shown with a bit of context):
 -----------------------------
 Advanced - CLI Session Status
 -----------------------------
-OPNsense has a very powerful CLI that is particularly useful for debugging purposes.
+Reticen8 has a very powerful CLI that is particularly useful for debugging purposes.
 For this example we will use the cli to list the status off all active sessions.
 
 Type the following on the cli prompt to do so (for zone id 0):

@@ -30,7 +30,7 @@ All of this allows packets of the same origin/destination (a.k.a. flows) to be q
 
 The implementation of RSS is coupled with `PCBGROUP <https://www.freebsd.org/cgi/man.cgi?query=PCBGROUP>`__
 – an implementation which introduces notions of CPU affinity for connections.
-While the latter will be of lesser importance for OPNsense, since it specifically applies to connections
+While the latter will be of lesser importance for Reticen8, since it specifically applies to connections
 built up in userland using sockets (which is relevant to servers, not middleboxes),
 the idea of distributing work on a lower level with hardware support provides a myriad of benefits.
 
@@ -136,6 +136,6 @@ The correct working of netisr can be verified by running:
 **Note regarding IPS**
 =====================================================================================================================
 
-When Suricata is running in IPS mode, Netmap is utilized to fetch packets off the line for inspection. By default, OPNsense has configured Suricata in such a way that the packet which
+When Suricata is running in IPS mode, Netmap is utilized to fetch packets off the line for inspection. By default, Reticen8 has configured Suricata in such a way that the packet which
 has passed inspection will be re-injected into the host networking stack for routing/firewalling purposes. The current Suricata/Netmap implementation limits this re-injection to one thread only.
 Work is underway to address this issue since the new Netmap API (V14+) is now capable of increasing this thread count. Until then, no benefit is gained from RSS when using IPS.

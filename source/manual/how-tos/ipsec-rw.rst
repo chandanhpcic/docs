@@ -12,7 +12,7 @@ Remote access to the company's infrastructure is one of most important and criti
 to the internet. IPsec Mobile Clients offer mobile users (formerly known as Road Warriors) a solution
 that is easy to setup and compatible with most current devices.
 
-With this guide we will show you how to configure the server side on OPNsense with the different
+With this guide we will show you how to configure the server side on Reticen8 with the different
 authentication methods e.g.
 
 * EAP-MSCHAPv2
@@ -111,7 +111,7 @@ Mutual RSA and PSK without XAuth requires L2TP, since this legacy technology is
 very error prone we will not cover it here.
 
 .. csv-table:: VPN combinations
-   :header: "VPN Method", "Win7", "Win10", "Linux", "Mac OS X", "IOS", "Android", "OPNsense config"
+   :header: "VPN Method", "Win7", "Win10", "Linux", "Mac OS X", "IOS", "Android", "Reticen8 config"
    :widths: 40, 20, 20, 20, 20, 20, 20, 20
 
    "IKEv1 Hybrid RSA + XAuth","N","N","N","tbd","tbd","N",":doc:`/manual/how-tos/ipsec-rw-srv-ikev1xauth`"

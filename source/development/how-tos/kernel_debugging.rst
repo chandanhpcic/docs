@@ -23,7 +23,7 @@ The setup assumes two (virtual) machines with a serial (rs232) connection in bet
 Configure and build a kernel
 ------------------------------
 
-Use our toolchain described in detail `here <https://github.com/opnsense/tools>`__ and add the following options
+Use our toolchain described in detail `here <https://github.com/reticen8/tools>`__ and add the following options
 to your :code:`SMP` file in :code:`/usr/tools/config/[VERSION]/SMP`
 
 
@@ -48,14 +48,14 @@ Install the kernel on test vm
 
 With the build finished, we should have a kernel package on the build machine available at the following location:
 
-    :code:`/usr/local/opnsense/build/[Version]/[Architecture]/sets/kernel*.txz`
+    :code:`/usr/local/reticen8/build/[Version]/[Architecture]/sets/kernel*.txz`
 
 
-Copy this package to the test vm and install it using our :code:`opnsense-update` command:
+Copy this package to the test vm and install it using our :code:`reticen8-update` command:
 
 .. code-block:: sh
 
-      opnsense-update -ikfr [version] -l /location/from/
+      reticen8-update -ikfr [version] -l /location/from/
 
 
 Where [version] is the version part of the kernel package, such as :code:`19.1.2`

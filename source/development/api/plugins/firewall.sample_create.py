@@ -7,7 +7,7 @@ api_key="3RhWOno+HwvtmT406I6zw8of8J6n9FOKlWK6U0B+K7stt/fDaJg7bjeF3QAshlScYqC+3o5
 api_secret="uaBk27NKhQCZSDpfAlG6YJ473MzvsCNiED6kzbYuykzU05fCRkcJADhDm5nxbZt8yREC74ZpvD/vbcEx"
 
 # define the basics, hostname to use and description used to identify our test rule
-rule_description='OPNsense_fw_api_testrule_1'
+rule_description='Reticen8_fw_api_testrule_1'
 remote_uri="https://192.168.1.1"
 
 # search for rule
