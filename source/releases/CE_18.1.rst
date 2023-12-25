@@ -4,14 +4,14 @@
 
 
 
-For more than 3 years now, OPNsense is driving innovation through
+For more than 3 years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, HardenedBSD
 security, fast adoption of upstream software updates as well as
 clear and stable 2-Clause BSD licensing.
 
 We humbly present to you the sum of another major iteration of the
-OPNsense firewall.  Over the second half of 2017 well over 500 changes
+Reticen8 firewall.  Over the second half of 2017 well over 500 changes
 have made it into this release, nicknamed "Groovy Gecko".  Most notably,
 the firewall NAT rules have been reworked to be more flexible and usable
 via plugins, which is going to pave the way for subsequent API works on
@@ -46,15 +46,15 @@ These are the most prominent changes since version 17.7:
 * Fully rewritten firewall live log in MVC (also available via API)
 * New plugins: zerotier, mdns-repeater, collectd, telegraf, clamav, c-icap, tor, siproxd, web-proxy-sso, web-proxy-useracl, postfix, rspamd, redis, iperf, arp-scan, zabbix-proxy, frr, node_exporter
 
-Download links, an installation guide `[2] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the
+Download links, an installation guide `[2] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the
 images can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/18.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/18.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/18.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/18.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/18.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/18.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/18.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/18.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/18.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/18.1/
+* Full mirror list: https://reticen8.org/download/
 
 
 --------------------------------------------------------------------------
@@ -128,7 +128,7 @@ Here is the full list of changes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 18.1.11 (July 02, 2018)
@@ -188,7 +188,7 @@ Here are the full patch notes:
 * system: userid 0 has trouble with %s in redirects, use %d instead
 * system: QR code quiet zone support `[1] <https://github.com/jeromeetienne/jquery-qrcode/pull/43>`__ 
 * system: add selectpicker style where previously missing
-* firmware: allow both origin.conf and OPNsense.conf to be used for repository setup
+* firmware: allow both origin.conf and Reticen8.conf to be used for repository setup
 * firmware: exclude password database files from base update as it breaks sudo
 * interfaces: clean up reload structure for single interfaces
 * interfaces: remove unused interface reload script
@@ -246,11 +246,11 @@ which is now also available in the development version.
 
 Last but not least we want to mention the work done on allowing detached
 UI development which is now included in the release.  For more information
-check out the UI development tools `[1] <https://github.com/opnsense/ui_devtools>`__  that have been released alongside.
+check out the UI development tools `[1] <https://github.com/reticen8/ui_devtools>`__  that have been released alongside.
 
 There is more preparation underway for 18.7, but that info will have to
 wait as it eludes the context of this announcement.  Feel free to
-frequently check the milestone progress in the forums `[2] <https://forum.opnsense.org/index.php?topic=8597.0>`__  in the meantime.
+frequently check the milestone progress in the forums `[2] <https://forum.reticen8.org/index.php?topic=8597.0>`__  in the meantime.
 
 Here is the full list of changes:
 
@@ -281,11 +281,11 @@ Here is the full list of changes:
 * ipsec: set ignore_acquire_ts to allow ASA compatibility
 * ipsec: add ike_name to syslog output
 * openvpn: improve validation between TCP, TCP4, TCP6, UDP, UDP4 and UDP6
-* console: manual pages for opnsense-importer and opnsense-installer
-* console: let opnsense-installer set up an early runtime environment
+* console: manual pages for reticen8-importer and reticen8-installer
+* console: let reticen8-installer set up an early runtime environment
 * console: show firmware reboot hint prior to update when applicable
-* console: longer timeout for opnsense-importer invoke on first boot
-* console: proper return values for opnsense-importer in edge cases
+* console: longer timeout for reticen8-importer invoke on first boot
+* console: proper return values for reticen8-importer in edge cases
 * mvc: support multiple directories for detached UI development
 * mvc: add AddressFamily option to NetworkField
 * mvc: non-functional menu node name tweaks
@@ -294,9 +294,9 @@ Here is the full list of changes:
 * ui: serve 404 when page was not found
 * ui: add and use SVG logo support
 * ui: upgrade nvd3 to version 1.8.6
-* plugins: os-acme-client 1.15 `[3] <https://github.com/opnsense/plugins/pull/682>`__  (contributed by Frank Wall and Omar Khalil)
+* plugins: os-acme-client 1.15 `[3] <https://github.com/reticen8/plugins/pull/682>`__  (contributed by Frank Wall and Omar Khalil)
 * plugins: os-freeradius 1.7.0 (contributed by Michael Muenz)
-* plugins: os-haproxy 2.7 `[4] <https://github.com/opnsense/plugins/pull/579>`__  (contributed by Frank Wall)
+* plugins: os-haproxy 2.7 `[4] <https://github.com/reticen8/plugins/pull/579>`__  (contributed by Frank Wall)
 * plugins: os-postfix 1.3 (contributed by Michael Muenz)
 * plugins: os-siproxd 1.3 (contributed by Michael Muenz)
 * plugins: os-telegraf 1.4.0 (contributed by Michael Muenz)
@@ -471,7 +471,7 @@ Here are the full patch notes:
 * plugins: os-web-proxy-useracl 1.1._1 reworks IDN support
 * plugins: os-zabbix-agent 1.3 adds working default values (contributed by Frank Wall)
 * ports: enable previously defunct AES-NI acceleration in LibreSSL 2.6
-* ports: switch from dhcp6 to our own lightweight dhcp6c `[1] <https://github.com/opnsense/dhcp6c>`__ 
+* ports: switch from dhcp6 to our own lightweight dhcp6c `[1] <https://github.com/reticen8/dhcp6c>`__ 
 * ports: sudo upstream patch to correct a FreeBSD issue `[2] <https://bugzilla.sudo.ws/show_bug.cgi?id=831>`__ 
 * ports: openldap 2.4.46 `[3] <https://www.openldap.org/software/release/changes.html>`__ 
 * ports: openssh 7.7p1 `[4] <https://www.openssh.com/txt/release-7.7>`__ 
@@ -482,7 +482,7 @@ Here are the full patch notes:
 
 A hotfix release was issued as 18.1.7_1:
 
-* mvc: fix regression in model relation load order `[9] <https://github.com/opnsense/core/issues/2389>`__ 
+* mvc: fix regression in model relation load order `[9] <https://github.com/reticen8/core/issues/2389>`__ 
 
 
 
@@ -497,7 +497,7 @@ security advisories and assorted changes.
 Three mentionable changes are included: We are switching back to
 single-source automatic outbound NAT on the primary IP instead of
 using all additional VIPs on the interface as was the case with
-OPNsense 17.7 and earlier.  The hardware-assisted VLAN capability
+Reticen8 17.7 and earlier.  The hardware-assisted VLAN capability
 check was removed from the system enabling e.g. XEN users to create
 VLANs.  And the multi-WAN traffic shaping experience has been
 corrected for non-default interfaces within the scope of shared
@@ -523,8 +523,8 @@ Here are the full patch notes:
 * reporting: add insight aggregator to service list
 * dashboard: large CPU usage widget (contributed by Team Rebellion)
 * dhcp: fix display of DUID in IPv6 leases
-* firmware: let opnsense-patch apply chmod even in partially failed patches
-* firmware: let opnsense-code fetch all remotes as well as prune them
+* firmware: let reticen8-patch apply chmod even in partially failed patches
+* firmware: let reticen8-code fetch all remotes as well as prune them
 * intrusion detection: provide custom.yaml for user edits
 * web proxy: fix pid file pointer for service status probe
 * ui: help data-for attribute (contributed by NOYB)
@@ -554,7 +554,7 @@ Here are the full patch notes:
 * ports: squid 3.5.27 adds LDAP authentication
 
 We are also happy to announce the immediate availability of the renewed
-OPNsense 18.1 images based on version 18.1.6.  Apart from the numerous
+Reticen8 18.1 images based on version 18.1.6.  Apart from the numerous
 improvements since the initial release, the images contain three
 relevant fixes:
 
@@ -562,26 +562,26 @@ relevant fixes:
 * Disable Health Reporting (RRD) by default on Nano images to reduce write cycles
 * Disable TRIM by default on Nano images to prevent corruptions of the file system
 
-The full list of changes of the OPNsense 18.1 series can be reviewed
+The full list of changes of the Reticen8 18.1 series can be reviewed
 using their original announcements:
 
-* 18.1: https://forum.opnsense.org/index.php?topic=7044.0
-* 18.1.1: https://forum.opnsense.org/index.php?topic=7138.0
-* 18.1.2: https://forum.opnsense.org/index.php?topic=7219.0
-* 18.1.3: https://forum.opnsense.org/index.php?topic=7492.0
-* 18.1.4: https://forum.opnsense.org/index.php?topic=7543.0
-* 18.1.5: https://forum.opnsense.org/index.php?topic=7679.0
+* 18.1: https://forum.reticen8.org/index.php?topic=7044.0
+* 18.1.1: https://forum.reticen8.org/index.php?topic=7138.0
+* 18.1.2: https://forum.reticen8.org/index.php?topic=7219.0
+* 18.1.3: https://forum.reticen8.org/index.php?topic=7492.0
+* 18.1.4: https://forum.reticen8.org/index.php?topic=7543.0
+* 18.1.5: https://forum.reticen8.org/index.php?topic=7679.0
 * 18.1.6: this document
 
-Download links, an installation guide `[9] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the
+Download links, an installation guide `[9] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the
 images can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/18.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/18.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/18.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/18.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/18.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/18.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/18.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/18.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/18.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/18.1/
+* Full mirror list: https://reticen8.org/download/
 
 All images are provided with SHA-256 signatures, which can be verified
 against the distributed public key:
@@ -614,17 +614,17 @@ The public key for the 18.1 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-18.1.6-OpenSSL-dvd-amd64.iso.bz2) = ee296edf026abd23b01d04c2aee7b9a0578ad4b3aa039e50eb40f720f13eac58
-    # SHA256 (OPNsense-18.1.6-OpenSSL-nano-amd64.img.bz2) = 204e87a93b5bd0f7742e90bef8ae20bfd7c362a73ee29054a96356e9649572b3
-    # SHA256 (OPNsense-18.1.6-OpenSSL-serial-amd64.img.bz2) = 063dc97b4177a932ba0bb243bec54b6b568ed84e515445b3eae7ba54f087478f
-    # SHA256 (OPNsense-18.1.6-OpenSSL-vga-amd64.img.bz2) = 9be03dccce94705c35c476ea7ca0e2f42c70049ecc5c681a6dfe92b7f21d7c34
+    # SHA256 (Reticen8-18.1.6-OpenSSL-dvd-amd64.iso.bz2) = ee296edf026abd23b01d04c2aee7b9a0578ad4b3aa039e50eb40f720f13eac58
+    # SHA256 (Reticen8-18.1.6-OpenSSL-nano-amd64.img.bz2) = 204e87a93b5bd0f7742e90bef8ae20bfd7c362a73ee29054a96356e9649572b3
+    # SHA256 (Reticen8-18.1.6-OpenSSL-serial-amd64.img.bz2) = 063dc97b4177a932ba0bb243bec54b6b568ed84e515445b3eae7ba54f087478f
+    # SHA256 (Reticen8-18.1.6-OpenSSL-vga-amd64.img.bz2) = 9be03dccce94705c35c476ea7ca0e2f42c70049ecc5c681a6dfe92b7f21d7c34
 
 .. code-block::
 
-    # SHA256 (OPNsense-18.1.6-OpenSSL-dvd-i386.iso.bz2) = 06883a48295529bb7fae9fff4a77bbb95df9fcb08554f4c73aa3e0b894a4158b
-    # SHA256 (OPNsense-18.1.6-OpenSSL-nano-i386.img.bz2) = ea87270fb5c83943c7cccae12ae9579f4f3a82489a901881cd4a786b7e09009d
-    # SHA256 (OPNsense-18.1.6-OpenSSL-serial-i386.img.bz2) = 3ccbdf4fd31913afc93b0b51b4784df01d22ec03156659efe78d36ab2dcf222f
-    # SHA256 (OPNsense-18.1.6-OpenSSL-vga-i386.img.bz2) = 252b16aae7592faf3d5912b5394124e494db7797ebeec7d6b7fae9a52ad28cd4
+    # SHA256 (Reticen8-18.1.6-OpenSSL-dvd-i386.iso.bz2) = 06883a48295529bb7fae9fff4a77bbb95df9fcb08554f4c73aa3e0b894a4158b
+    # SHA256 (Reticen8-18.1.6-OpenSSL-nano-i386.img.bz2) = ea87270fb5c83943c7cccae12ae9579f4f3a82489a901881cd4a786b7e09009d
+    # SHA256 (Reticen8-18.1.6-OpenSSL-serial-i386.img.bz2) = 3ccbdf4fd31913afc93b0b51b4784df01d22ec03156659efe78d36ab2dcf222f
+    # SHA256 (Reticen8-18.1.6-OpenSSL-vga-i386.img.bz2) = 252b16aae7592faf3d5912b5394124e494db7797ebeec7d6b7fae9a52ad28cd4
 
 --------------------------------------------------------------------------
 18.1.5 (March 21, 2018)
@@ -658,8 +658,8 @@ Here are the full patch notes:
 * firewall: add VIP gateway option for PPPoE interfaces
 * firewall: add update interval option to log widget (contributed by NOYB)
 * firewall: respect mask in traffic shaper queue config (contributed by Michael Muenz)
-* firmware: fix opnsense-code for src.git and ABI probing
-* firmware: fix opnsense-patch file permission apply for plugins
+* firmware: fix reticen8-code for src.git and ABI probing
+* firmware: fix reticen8-patch file permission apply for plugins
 * intrusion detection: support request headers in ruleset metadata
 * openvpn: switch status to version 3 to avoid wrong parsing of commas
 * openvpn: parse all states to retrieve all relevant connection status info
@@ -709,7 +709,7 @@ Here are the full patch notes:
 * intrusion detection: proper syslog with drops, requires log file reset
 * intrusion detection: backend refactor
 * plugins: os-frr 1.2 adds OSPF interface type (contributed by Marius Halden)
-* plugins: os-haproxy 2.6 `[1] <https://github.com/opnsense/plugins/pull/575>`__  (contributed by Frank Wall)
+* plugins: os-haproxy 2.6 `[1] <https://github.com/reticen8/plugins/pull/575>`__  (contributed by Frank Wall)
 * ports: isc-dhcp 4.3.6P1 `[2] <https://kb.isc.org/article/AA-01570/0/DHCP-4.3.6-P1-Release-Notes.html>`__ 
 * ports: krb5 1.16 `[3] <https://web.mit.edu/kerberos/krb5-1.16/>`__ 
 * ports: pkg 1.10.5
@@ -763,7 +763,7 @@ Here are the full patch notes:
 * rc: recover all known shells
 * plugins: os-clamav 1.5 fixes log file parsing
 * plugins: os-frr 1.1 fixes service start on boot
-* plugins: os-haproxy 2.5 `[1] <https://github.com/opnsense/plugins/pull/541>`__  with PROXY support and HAProxy 1.8 (contributed by Frank Wall)
+* plugins: os-haproxy 2.5 `[1] <https://github.com/reticen8/plugins/pull/541>`__  with PROXY support and HAProxy 1.8 (contributed by Frank Wall)
 * plugins: os-monit 1.5 (contributed by Frank Brendel)
 * ports: mpd 5.8 `[2] <https://reviews.freebsd.org/D9848>`__ 
 * ports: ntp 4.2.8p11 `[3] <http://support.ntp.org/bin/view/Main/SecurityNotice#February_2018_ntp_4_2_8p11_NTP_S>`__ 
@@ -852,14 +852,14 @@ Here are the full patch notes:
 --------------------------------------------------------------------------
 
 
-For more than 3 years now, OPNsense is driving innovation through
+For more than 3 years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, HardenedBSD
 security, fast adoption of upstream software updates as well as
 clear and stable 2-Clause BSD licensing.
 
 We humbly present to you the sum of another major iteration of the
-OPNsense firewall.  Over the second half of 2017 well over 500 changes
+Reticen8 firewall.  Over the second half of 2017 well over 500 changes
 have made it into this release, nicknamed "Groovy Gecko".  Most notably,
 the firewall NAT rules have been reworked to be more flexible and usable
 via plugins, which is going to pave the way for subsequent API works on
@@ -894,15 +894,15 @@ These are the most prominent changes since version 17.7:
 * Fully rewritten firewall live log in MVC (also available via API)
 * New plugins: zerotier, mdns-repeater, collectd, telegraf, clamav, c-icap, tor, siproxd, web-proxy-sso, web-proxy-useracl, postfix, rspamd, redis, iperf, arp-scan, zabbix-proxy, frr, node_exporter
 
-Download links, an installation guide `[2] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the
+Download links, an installation guide `[2] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the
 images can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/18.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/18.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/18.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/18.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/18.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/18.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/18.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/18.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/18.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/18.1/
+* Full mirror list: https://reticen8.org/download/
 
 Here is the full list of changes against version 18.1-RC2:
 
@@ -921,7 +921,7 @@ Here is the full list of changes against version 18.1-RC2:
 * network time: use all our time servers and prefer the first
 * ui: revert menu positioning improvements
 * plugins: os-freeradius 1.5.1 adds LDAP search filter (contributed by Michael Muenz)
-* plugins: os-haproxy 2.4 `[3] <https://github.com/opnsense/plugins/pull/483>`__  (contributed by Frank Wall)
+* plugins: os-haproxy 2.4 `[3] <https://github.com/reticen8/plugins/pull/483>`__  (contributed by Frank Wall)
 * plugins: os-node_exporter 1.0 (contributed by David Harrigan)
 * plugins: os-postfix 1.0 (contributed by Michael Muenz)
 * plugins: os-rspamd 1.0 (contributed by Fabian Franz)
@@ -970,17 +970,17 @@ The public key for the 18.1 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-18.1-OpenSSL-dvd-amd64.iso.bz2) = 3988c506c818c0861bb9beb38166123e9aca0814c0ef508779c1ebe9a8400c9c
-    # SHA256 (OPNsense-18.1-OpenSSL-nano-amd64.img.bz2) = ab284cfd62f095b8f745604099ee8b4f0b5cda06ec67ec72a3ffa921328635d5
-    # SHA256 (OPNsense-18.1-OpenSSL-serial-amd64.img.bz2) = 31eb6f7c44126258eb1b062d44dd92b1b0e3ebf57777c899f2df8858e5321b13
-    # SHA256 (OPNsense-18.1-OpenSSL-vga-amd64.img.bz2) = 714b347c3c62a9a1178f0b77661fa7e7ad8b0d06c1e174af1085fda761639505
+    # SHA256 (Reticen8-18.1-OpenSSL-dvd-amd64.iso.bz2) = 3988c506c818c0861bb9beb38166123e9aca0814c0ef508779c1ebe9a8400c9c
+    # SHA256 (Reticen8-18.1-OpenSSL-nano-amd64.img.bz2) = ab284cfd62f095b8f745604099ee8b4f0b5cda06ec67ec72a3ffa921328635d5
+    # SHA256 (Reticen8-18.1-OpenSSL-serial-amd64.img.bz2) = 31eb6f7c44126258eb1b062d44dd92b1b0e3ebf57777c899f2df8858e5321b13
+    # SHA256 (Reticen8-18.1-OpenSSL-vga-amd64.img.bz2) = 714b347c3c62a9a1178f0b77661fa7e7ad8b0d06c1e174af1085fda761639505
 
 .. code-block::
 
-    # SHA256 (OPNsense-18.1-OpenSSL-dvd-i386.iso.bz2) = 10d27b8d0e5b4dde46be413088440db47e49f4eea3de53cc7339976c6471d26a
-    # SHA256 (OPNsense-18.1-OpenSSL-nano-i386.img.bz2) = 5c4289940f4c7f03eaf4c00d3b673bc85cb366a5f12334d00d19183dbafc221b
-    # SHA256 (OPNsense-18.1-OpenSSL-serial-i386.img.bz2) = ff63e759cdab3960119db159141a96f7e98ed0a427621585edc8362b9abf7a33
-    # SHA256 (OPNsense-18.1-OpenSSL-vga-i386.img.bz2) = c43712c87a3381102d33f2606fc666fdffde54d81a0f0b8c70cf334eddd4047c
+    # SHA256 (Reticen8-18.1-OpenSSL-dvd-i386.iso.bz2) = 10d27b8d0e5b4dde46be413088440db47e49f4eea3de53cc7339976c6471d26a
+    # SHA256 (Reticen8-18.1-OpenSSL-nano-i386.img.bz2) = 5c4289940f4c7f03eaf4c00d3b673bc85cb366a5f12334d00d19183dbafc221b
+    # SHA256 (Reticen8-18.1-OpenSSL-serial-i386.img.bz2) = ff63e759cdab3960119db159141a96f7e98ed0a427621585edc8362b9abf7a33
+    # SHA256 (Reticen8-18.1-OpenSSL-vga-i386.img.bz2) = c43712c87a3381102d33f2606fc666fdffde54d81a0f0b8c70cf334eddd4047c
 
 --------------------------------------------------------------------------
 18.1.r2 (January 15, 2018)
@@ -1023,7 +1023,7 @@ Here are the full patch notes:
 * ui: HTML compliance for license page and dashboard widgets (contributed by NOYB)
 * mvc: new validators for host names
 * plugins: pass update type on configure to avoid spurious syslog reloads
-* plugins: acme-client 1.13 `[1] <https://github.com/opnsense/plugins/pull/482>`__  (contributed by Frank Wall)
+* plugins: acme-client 1.13 `[1] <https://github.com/reticen8/plugins/pull/482>`__  (contributed by Frank Wall)
 * plugins: c-icap 1.5 fixes startup race with clamav plugin
 * plugins: frr 1.0_1 fixes service probing
 * plugins: iperf 1.0 (contributed by Fabian Franz)
@@ -1042,14 +1042,14 @@ The list of currently known issues 18.1-RC2:
 --------------------------------------------------------------------------
 
 
-For more than 3 years now, OPNsense is driving innovation through
+For more than 3 years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, HardenedBSD
 security, fast adoption of upstream software updates as well as
 clear and stable 2-Clause BSD licensing.
 
 We humbly present to you the sum of another major iteration of the
-OPNsense firewall.  Over the second half of 2017 well over 500 changes
+Reticen8 firewall.  Over the second half of 2017 well over 500 changes
 have made it into this first release candidate.  Most notably, the
 firewall NAT rules have been reworked to be more flexible and usable
 via plugins, which is going to pave the way for subsequent API works
@@ -1060,15 +1060,15 @@ Meltdown and Spectre patches are currently being worked on in FreeBSD `[1] <http
 but there is no reliable timeline.  We will keep you up to date through
 the usual channels as more news become available.  Hang in there!
 
-Download links, an installation guide `[2] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the
+Download links, an installation guide `[2] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the
 images can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/18.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/18.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/18.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/18.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/18.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/18.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/18.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/18.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/18.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/18.1/
+* Full mirror list: https://reticen8.org/download/
 
 Here is the full list of changes against version 17.7.11:
 
@@ -1115,7 +1115,7 @@ Here is the full list of changes against version 17.7.11:
 * ipsec: removed obsolete dynamic host name support
 * ipsec: local group authentication setting
 * ipsec: removed the obsolete "IPsec XAUTH dialin" privilege
-* network time: OPNsense NTP pool is now available and used in default configuration
+* network time: Reticen8 NTP pool is now available and used in default configuration
 * network time: fix for valid negative offset in health graph
 * network time: fix parsing of overly overlong lines
 * openvpn: backend code cleanup
@@ -1201,14 +1201,14 @@ and subsequent release candidates.  Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-dvd-amd64.iso.bz2) = 2a92811d93bcad7de7752a650f9bf934a4d92b190c673bb8d0314474984a5b11
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-nano-amd64.img.bz2) = e2a8026c20a3a91b63b1b1195eab689254dbfa80f05e98b8cd24d9b2b6c35356
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-serial-amd64.img.bz2) = 944a05acefe1466a8189b2318faa48e39a2e5226853557397c0dcefff8023f26
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-vga-amd64.img.bz2) = f8a763ad3b566be3bafa1291210145050431fc79c9f91d151166b57f6ff3e956
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-dvd-amd64.iso.bz2) = 2a92811d93bcad7de7752a650f9bf934a4d92b190c673bb8d0314474984a5b11
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-nano-amd64.img.bz2) = e2a8026c20a3a91b63b1b1195eab689254dbfa80f05e98b8cd24d9b2b6c35356
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-serial-amd64.img.bz2) = 944a05acefe1466a8189b2318faa48e39a2e5226853557397c0dcefff8023f26
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-vga-amd64.img.bz2) = f8a763ad3b566be3bafa1291210145050431fc79c9f91d151166b57f6ff3e956
 
 .. code-block::
 
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-dvd-i386.iso.bz2) = 0d29b20a9f806a1a8e443c7d0ebcab0edab8f5c7a9f8fb629fb136956c15994e
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-nano-i386.img.bz2) = 65bcad5ebe84a7246a361638436fb1052647ab0b0de44ca57e6a7a1c2a143461
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-serial-i386.img.bz2) = 751db8e6d94b7c453b8a37c856725e4299fb929fbf74ae7700fbbe9e56bff0b9
-    # SHA256 (OPNsense-18.1.r1-OpenSSL-vga-i386.img.bz2) = 9bb56ca458d54d6cf50c767c3e389e14aa26b27246ae5e266d2d689939c34137
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-dvd-i386.iso.bz2) = 0d29b20a9f806a1a8e443c7d0ebcab0edab8f5c7a9f8fb629fb136956c15994e
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-nano-i386.img.bz2) = 65bcad5ebe84a7246a361638436fb1052647ab0b0de44ca57e6a7a1c2a143461
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-serial-i386.img.bz2) = 751db8e6d94b7c453b8a37c856725e4299fb929fbf74ae7700fbbe9e56bff0b9
+    # SHA256 (Reticen8-18.1.r1-OpenSSL-vga-i386.img.bz2) = 9bb56ca458d54d6cf50c767c3e389e14aa26b27246ae5e266d2d689939c34137

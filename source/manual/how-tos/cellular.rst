@@ -1,7 +1,7 @@
 ===========================
 Configuring Cellular Modems
 ===========================
-OPNsense supports a wide range of USB and miniPCIe cellular modems that can be used
+Reticen8 supports a wide range of USB and miniPCIe cellular modems that can be used
 as primary internet (WAN) connection or as failover for a fixed/ethernet connection.
 
 With this guide we show you how to easily add a new modem and configure it to be
@@ -11,7 +11,7 @@ used as primary WAN connection.
 Supported devices
 -----------------
 
-In general, OPNsense should support all cellular modems that are supported by the
+In general, Reticen8 should support all cellular modems that are supported by the
 respective FreeBSD kernel. However, not all devices behave the same way, you might
 have to tweak your card with specific AT commands, for example in the init string.
 
@@ -36,7 +36,7 @@ be considered, see for example `this guide <https://www.specialistantennas.co.uk
 .. Note::
 
   Make sure to connect the antenna to the cellular modem once you start
-  configuring the modem in OPNsense. There is little chance that you
+  configuring the modem in Reticen8. There is little chance that you
   get any signal without antenna.
 
 --------------------------------------
@@ -178,4 +178,4 @@ network connection is not working well.
 
 In case you were not successful, you might have to check manually what is going
 on. Read the `Troubleshooting PPP Connections <https://www.freebsd.org/doc/handbook/ppp-troubleshoot.html>`_ section in the FreeBSD manual for more information and
-consult the OPNsense support forum.
+consult the Reticen8 support forum.

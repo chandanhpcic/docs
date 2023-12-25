@@ -4,7 +4,7 @@
 
 
 
-For over 5 years now, OPNsense is driving innovation through modularising
+For over 5 years now, Reticen8 is driving innovation through modularising
 and hardening the open source firewall, with simple and reliable firmware
 upgrades, multi-language support, HardenedBSD security, fast adoption of
 upstream software updates as well as clear and stable 2-Clause BSD licensing.
@@ -17,15 +17,15 @@ latest versions.  The logging frontend was rewritten for MVC with seamless
 API support.  On the far side the documentation increased in quality as well
 as quantity and now presents itself in a familiar menu layout.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/20.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/20.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/20.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/20.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/20.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/20.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/20.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/20.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/20.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/20.1/
+* Full mirror list: https://reticen8.org/download/
 
 
 --------------------------------------------------------------------------
@@ -47,12 +47,12 @@ Here are the full patch notes:
 * network time: NMEA GPS clock messages latitude and longitude parsing fix (contributed by mikahe)
 * network time: prevent widget PHP warnings if no GPS fix was returned in NMEA message (contributed by mikahe)
 * mvc: LegacyLinkField not allowed to return null in __toString()
-* plugins: os-collectd 1.3 `[1] <https://github.com/opnsense/plugins/blob/stable/20.1/net-mgmt/collectd/pkg-descr>`__ 
-* plugins: os-dyndns 1.22 `[2] <https://github.com/opnsense/plugins/pull/1654>`__ 
-* plugins: os-telegraf 1.8.1 `[3] <https://github.com/opnsense/plugins/blob/stable/20.1/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-collectd 1.3 `[1] <https://github.com/reticen8/plugins/blob/stable/20.1/net-mgmt/collectd/pkg-descr>`__ 
+* plugins: os-dyndns 1.22 `[2] <https://github.com/reticen8/plugins/pull/1654>`__ 
+* plugins: os-telegraf 1.8.1 `[3] <https://github.com/reticen8/plugins/blob/stable/20.1/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-theme-rebellion 1.8.6 (contributed by Team Rebellion)
-* plugins: os-tinc fixes switch mode `[4] <https://github.com/opnsense/plugins/pull/1733>`__ 
-* plugins: os-wireguard 1.2 `[5] <https://github.com/opnsense/plugins/pull/1865>`__ 
+* plugins: os-tinc fixes switch mode `[4] <https://github.com/reticen8/plugins/pull/1733>`__ 
+* plugins: os-wireguard 1.2 `[5] <https://github.com/reticen8/plugins/pull/1865>`__ 
 * ports: ca_root_nss 3.54
 * ports: curl 7.71.1 `[6] <https://curl.se/changes.html#7_71_1>`__ 
 * ports: dnsmasq 2.82 `[7] <https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__ 
@@ -99,15 +99,15 @@ Here are the full patch notes:
 * web proxy: fix wrong button label for Download ACLs (contributed by 90er)
 * mvc: add sort_flags optional parameter support (contributed by NOYB)
 * rc: add full PATH to rc.syshook invoke
-* plugins: os-acme-client `[1] <https://github.com/opnsense/plugins/pull/1851>`__  `[2] <https://github.com/opnsense/plugins/pull/1880>`__ 
-* plugins: os-dnscrypt-proxy 1.8 `[3] <https://github.com/opnsense/plugins/blob/stable/20.1/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-acme-client `[1] <https://github.com/reticen8/plugins/pull/1851>`__  `[2] <https://github.com/reticen8/plugins/pull/1880>`__ 
+* plugins: os-dnscrypt-proxy 1.8 `[3] <https://github.com/reticen8/plugins/blob/stable/20.1/dns/dnscrypt-proxy/pkg-descr>`__ 
 * plugins: os-dyndns 1.21 improves Cloudflare support (contributed by Andreas Rupper)
-* plugins: os-freeradius 1.9.7 `[4] <https://github.com/opnsense/plugins/pull/1726>`__ 
-* plugins: os-haproxy 2.23 `[5] <https://github.com/opnsense/plugins/pull/1883>`__ 
+* plugins: os-freeradius 1.9.7 `[4] <https://github.com/reticen8/plugins/pull/1726>`__ 
+* plugins: os-haproxy 2.23 `[5] <https://github.com/reticen8/plugins/pull/1883>`__ 
 * plugins: os-intrusion-detection-content-snort-vrt 1.1
-* plugins: os-stunnel 1.0 `[6] <https://docs.opnsense.org/manual/how-tos/stunnel.html>`__  (sponsored by Incenter Technology)
-* plugins: os-tayga 1.1 `[7] <https://github.com/opnsense/plugins/pull/1826>`__ 
-* plugins: os-theme-rebellion 1.8.4 `[8] <https://github.com/opnsense/plugins/pull/1892>`__ 
+* plugins: os-stunnel 1.0 `[6] <https://docs.reticen8.org/manual/how-tos/stunnel.html>`__  (sponsored by Incenter Technology)
+* plugins: os-tayga 1.1 `[7] <https://github.com/reticen8/plugins/pull/1826>`__ 
+* plugins: os-theme-rebellion 1.8.4 `[8] <https://github.com/reticen8/plugins/pull/1892>`__ 
 * ports: ca_root_nss 3.53
 * ports: curl 7.71.0 `[9] <https://curl.se/changes.html#7_71_0>`__ 
 * ports: hostapd / wpa_supplicant UPnP SUBSCRIBE advisory `[10] <https://w1.fi/security/2020-1/upnp-subscribe-misbehavior-wps-ap.txt>`__ 
@@ -179,11 +179,11 @@ Quick update as planned.  Here are the full patch notes:
 * firewall: avoid greedy matching with live log parsing regression from 20.1.5
 * firmware: detect runtime defaults when using "make upgrade" with core.git
 * firmware: clean up packaging code and support ".link" file extension
-* firmware: use CORE_FLAVOUR instead of FLAVOUR when using opnsense-bootstrap
-* firmware: enable to optionally reach master branch when using opnsense-boostrap
-* firmware: allow overriding CORE_ABI when using opnsense-bootstrap
-* firmware: copy make.conf instead of linking when using opnsense-code
-* firmware: always fetch tools.git when using opnsense-code
+* firmware: use CORE_FLAVOUR instead of FLAVOUR when using reticen8-bootstrap
+* firmware: enable to optionally reach master branch when using reticen8-boostrap
+* firmware: allow overriding CORE_ABI when using reticen8-bootstrap
+* firmware: copy make.conf instead of linking when using reticen8-code
+* firmware: always fetch tools.git when using reticen8-code
 * rc: use "onifexists" for VGA TTY instead of "on"
 * rc: missing ntpd user on 20.7 / 12.1
 * plugins: os-unbound-plus DoT validation fix (contributed by Michael Muenz)
@@ -234,10 +234,10 @@ Here are the full patch notes:
 * mvc. add "migration_prefix" attribute to model
 * mvc: catch ArgumentCountError
 * mvc: skip empty gateway artefact
-* plugins: os-acme-client 1.31 `[1] <https://github.com/opnsense/plugins/pull/1784>`__ 
+* plugins: os-acme-client 1.31 `[1] <https://github.com/reticen8/plugins/pull/1784>`__ 
 * plugins: os-firewall 1.0 API supplemental package
-* plugins: os-haproxy 2.22 `[2] <https://github.com/opnsense/plugins/pull/1783>`__ 
-* plugins: os-unbound-plus 1.1 `[3] <https://github.com/opnsense/plugins/blob/master/dns/unbound-plus/pkg-descr>`__ 
+* plugins: os-haproxy 2.22 `[2] <https://github.com/reticen8/plugins/pull/1783>`__ 
+* plugins: os-unbound-plus 1.1 `[3] <https://github.com/reticen8/plugins/blob/master/dns/unbound-plus/pkg-descr>`__ 
 * plugins: os-wol 2.3 adds case insensitive matching in widget (contributed by Gauss23)
 * ports: ca_root_nss 3.51.1
 * ports: dnsmasq 2.81 `[4] <https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__ 
@@ -268,7 +268,7 @@ Here are the full patch notes:
 * interfaces: use primary IPv6 and support VIP tracking
 * interfaces: multiple changes in radvd.conf setup (contributed by maurice-w)
 * dhcp: fix DDNS support in DHCPv6 (contributed by Wagner Sartori Junior)
-* firmware: mirror opnsense.ieji.de renamed to opn.sense.nz
+* firmware: mirror reticen8.ieji.de renamed to opn.sense.nz
 * openvpn: improve openvpn_port_used() logic
 * unbound: minor cleanup in /api/unbound/diagnostics/stats endpoint
 * unbound: remove 192.0.0.0/24 from rebinding prevention list (contributed by maurice-w)
@@ -280,16 +280,16 @@ Here are the full patch notes:
 * mvc: init errorMessage to prevent crash reports
 * shell: use interfaces_primary_address6() for correct IPv6 display
 * shell: append a newline in pluginctl -g mode
-* plugins: os-acme-client 1.30 `[1] <https://github.com/opnsense/plugins/pull/1753>`__ 
-* plugins: os-bind 1.13 `[2] <https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.6 `[3] <https://github.com/opnsense/plugins/blob/master/net/freeradius/pkg-descr>`__ 
-* plugins: os-haproxy 2.21 `[4] <https://github.com/opnsense/plugins/pull/1755>`__ 
-* plugins: os-maltrail 1.5 `[5] <https://github.com/opnsense/plugins/blob/master/security/maltrail/pkg-descr>`__ 
-* plugins: os-nginx 1.19 `[6] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
-* plugins: os-nut 1.7 `[7] <https://github.com/opnsense/plugins/blob/master/sysutils/nut/pkg-descr>`__ 
-* plugins: os-postfix 1.14 `[8] <https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-descr>`__ 
+* plugins: os-acme-client 1.30 `[1] <https://github.com/reticen8/plugins/pull/1753>`__ 
+* plugins: os-bind 1.13 `[2] <https://github.com/reticen8/plugins/blob/master/dns/bind/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.6 `[3] <https://github.com/reticen8/plugins/blob/master/net/freeradius/pkg-descr>`__ 
+* plugins: os-haproxy 2.21 `[4] <https://github.com/reticen8/plugins/pull/1755>`__ 
+* plugins: os-maltrail 1.5 `[5] <https://github.com/reticen8/plugins/blob/master/security/maltrail/pkg-descr>`__ 
+* plugins: os-nginx 1.19 `[6] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-nut 1.7 `[7] <https://github.com/reticen8/plugins/blob/master/sysutils/nut/pkg-descr>`__ 
+* plugins: os-postfix 1.14 `[8] <https://github.com/reticen8/plugins/blob/master/mail/postfix/pkg-descr>`__ 
 * plugins: os-tayga 1.0 (contributed by Michael Muenz)
-* plugins: os-telegraf 1.7.7 `[9] <https://github.com/opnsense/plugins/blob/master/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.7.7 `[9] <https://github.com/reticen8/plugins/blob/master/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-unbound-plus 1.0 (contributed by Michael Muenz and Petr Kejval)
 * lang: multiple updates to supported languages
 * lang: new Turkish translation (contributed by Aydin Yakar)
@@ -379,7 +379,7 @@ Here are the full patch notes:
 * rc: join CARP early startup scripts
 * plugins: os-dnscrypt-proxy fix for setup.sh on reboot
 * plugins: os-dyndns 1.20 fixes verify restrictions, GratisDNS and missing break for Linode (contributed by NOYB, Johan Pramming, Andrew Gunnerson)
-* plugins: os-maltrail 1.4 `[1] <https://github.com/opnsense/plugins/blob/master/security/maltrail/pkg-descr>`__ 
+* plugins: os-maltrail 1.4 `[1] <https://github.com/reticen8/plugins/blob/master/security/maltrail/pkg-descr>`__ 
 * plugins: os-nrpe fix for setup.sh on reboot
 * plugins: os-tinc 1.5 fixes bug in IPv6 support (contributed by vnxme)
 * src: fix imprecise ordering of SSP canary initialization `[2] <https://www.freebsd.org/security/advisories/FreeBSD-EN-20:01.ssp.asc>`__ 
@@ -412,9 +412,9 @@ Here are the full patch notes:
 * reporting: fix missing separator in NetFlow configuration
 * firmware: add Quantum mirror in Hungary
 * openvpn: fix ifconfig-ipv6-push format
-* plugins: os-dnscrypt-proxy 1.7 `[1] <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
-* plugins: os-net-snmp 1.4 `[2] <https://github.com/opnsense/plugins/blob/master/net-mgmt/net-snmp/pkg-descr>`__ 
-* plugins: os-nginx 1.18 `[3] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.7 `[1] <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-net-snmp 1.4 `[2] <https://github.com/reticen8/plugins/blob/master/net-mgmt/net-snmp/pkg-descr>`__ 
+* plugins: os-nginx 1.18 `[3] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
 * plugins: os-theme-vicuna 1.0 (contributed by Team Rebellion)
 * ports: lighttpd 1.4.55 `[4] <https://www.lighttpd.net/2020/1/31/1.4.55/>`__ 
 * ports: openldap 2.4.49 `[5] <https://www.openldap.org/software/release/changes.html>`__ 
@@ -428,7 +428,7 @@ Here are the full patch notes:
 --------------------------------------------------------------------------
 
 
-For over 5 years now, OPNsense is driving innovation through modularising
+For over 5 years now, Reticen8 is driving innovation through modularising
 and hardening the open source firewall, with simple and reliable firmware
 upgrades, multi-language support, HardenedBSD security, fast adoption of
 upstream software updates as well as clear and stable 2-Clause BSD licensing.
@@ -441,15 +441,15 @@ latest versions.  The logging frontend was rewritten for MVC with seamless
 API support.  On the far side the documentation increased in quality as well
 as quantity and now presents itself in a familiar menu layout.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/20.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/20.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/20.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/20.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/20.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/20.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/20.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/20.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/20.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/20.1/
+* Full mirror list: https://reticen8.org/download/
 
 These are the most prominent changes since version 19.7:
 
@@ -473,11 +473,11 @@ And here are the full patch notes against version 20.1-RC1:
 
 * installer: welcome users as genuine 20.1 installer
 * rc: revert growfs change since Nano does not grow anymore
-* plugins: os-mail-backup 1.1 `[2] <https://github.com/opnsense/plugins/pull/1671>`__ 
+* plugins: os-mail-backup 1.1 `[2] <https://github.com/reticen8/plugins/pull/1671>`__ 
 * plugins: os-nrpe 1.0 (contributed by Michael Muenz)
 * plugins: os-theme-rebellion 1.8.3 (contributed by Team Rebellion)
-* plugins: os-vnstat 1.2 `[3] <https://github.com/opnsense/plugins/blob/stable/20.1/net/vnstat/pkg-descr>`__ 
-* plugins: zabbix4-proxy 1.2 `[4] <https://github.com/opnsense/plugins/blob/stable/20.1/net-mgmt/zabbix4-proxy/pkg-descr>`__ 
+* plugins: os-vnstat 1.2 `[3] <https://github.com/reticen8/plugins/blob/stable/20.1/net/vnstat/pkg-descr>`__ 
+* plugins: zabbix4-proxy 1.2 `[4] <https://github.com/reticen8/plugins/blob/stable/20.1/net-mgmt/zabbix4-proxy/pkg-descr>`__ 
 * ports: ca_root_nss 3.49.2
 * ports: curl 7.68.0 `[5] <https://curl.se/changes.html#7_68_0>`__ 
 * ports: isc-dhcp 4.4.2 `[6] <https://downloads.isc.org/isc/dhcp/4.4.2/dhcp-4.4.2-RELNOTES>`__ 
@@ -488,7 +488,7 @@ Known issues and limitations:
 
 * HardenedBSD 12.1 has been postponed to the next major release
 * Legacy MPD5 plugins os-l2tp, os-pppoe and os-pptp have been deprecated and will no longer receive updates
-* To prevent stale configuration files for remote syslog we advise to setup the new targets first `[9] <https://docs.opnsense.org/manual/settingsmenu.html#logging-targets>`__  and disable the old ones under System: Settings: Logging
+* To prevent stale configuration files for remote syslog we advise to setup the new targets first `[9] <https://docs.reticen8.org/manual/settingsmenu.html#logging-targets>`__  and disable the old ones under System: Settings: Logging
 * i386 has not been deprecated for the time being ;)
 
 The public key for the 20.1 series is:
@@ -514,24 +514,24 @@ The public key for the 20.1 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-20.1-OpenSSL-dvd-amd64.iso.bz2) = 4b15e9b3d72732d325c5eaf46ba34575d4de8cdc3e3ac1b10666c7372563be6d
-    # SHA256 (OPNsense-20.1-OpenSSL-nano-amd64.img.bz2) = 27544a78ae03d480a483cfd2e7cfa703b60e50938a1ed188ec3ccde6c426fefe
-    # SHA256 (OPNsense-20.1-OpenSSL-serial-amd64.img.bz2) = f93bbcbe92059c5de49f22d485da292952b48658a28d1cdaf83191e8c95c03c2
-    # SHA256 (OPNsense-20.1-OpenSSL-vga-amd64.img.bz2) = 019a877c4b4cb96cfda62d041774a91c030c5a8ecd58f8c3fd0067c7ac392982
+    # SHA256 (Reticen8-20.1-OpenSSL-dvd-amd64.iso.bz2) = 4b15e9b3d72732d325c5eaf46ba34575d4de8cdc3e3ac1b10666c7372563be6d
+    # SHA256 (Reticen8-20.1-OpenSSL-nano-amd64.img.bz2) = 27544a78ae03d480a483cfd2e7cfa703b60e50938a1ed188ec3ccde6c426fefe
+    # SHA256 (Reticen8-20.1-OpenSSL-serial-amd64.img.bz2) = f93bbcbe92059c5de49f22d485da292952b48658a28d1cdaf83191e8c95c03c2
+    # SHA256 (Reticen8-20.1-OpenSSL-vga-amd64.img.bz2) = 019a877c4b4cb96cfda62d041774a91c030c5a8ecd58f8c3fd0067c7ac392982
 
 .. code-block::
 
-    # SHA256 (OPNsense-20.1-OpenSSL-dvd-i386.iso.bz2) = 36146d0a066d9d696433599487e2a538ee5575a6b3d631293ad9e14e5fbbc6e0
-    # SHA256 (OPNsense-20.1-OpenSSL-nano-i386.img.bz2) = 0980f49d1b3445505fd1db27ab070886a706388d3aa16d7c8d953f279b7e3b11
-    # SHA256 (OPNsense-20.1-OpenSSL-serial-i386.img.bz2) = 322adbafe331ef7232c08d839a6f355ee633f5a662009b1801ebad0edab03d73
-    # SHA256 (OPNsense-20.1-OpenSSL-vga-i386.img.bz2) = 8bdd109015d7d54d382c7293bdf8fac6397a6c2e37662b73647c276e98c19d64
+    # SHA256 (Reticen8-20.1-OpenSSL-dvd-i386.iso.bz2) = 36146d0a066d9d696433599487e2a538ee5575a6b3d631293ad9e14e5fbbc6e0
+    # SHA256 (Reticen8-20.1-OpenSSL-nano-i386.img.bz2) = 0980f49d1b3445505fd1db27ab070886a706388d3aa16d7c8d953f279b7e3b11
+    # SHA256 (Reticen8-20.1-OpenSSL-serial-i386.img.bz2) = 322adbafe331ef7232c08d839a6f355ee633f5a662009b1801ebad0edab03d73
+    # SHA256 (Reticen8-20.1-OpenSSL-vga-i386.img.bz2) = 8bdd109015d7d54d382c7293bdf8fac6397a6c2e37662b73647c276e98c19d64
 
 --------------------------------------------------------------------------
 20.1.r1 (January 24, 2020)
 --------------------------------------------------------------------------
 
 
-For over 5 years now, OPNsense is driving innovation through modularising
+For over 5 years now, Reticen8 is driving innovation through modularising
 and hardening the open source firewall, with simple and reliable firmware
 upgrades, multi-language support, HardenedBSD security, fast adoption of
 upstream software updates as well as clear and stable 2-Clause BSD licensing.
@@ -539,15 +539,15 @@ upstream software updates as well as clear and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/20.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/20.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/20.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/20.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/20.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/20.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/20.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/20.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/20.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/20.1/
+* Full mirror list: https://reticen8.org/download/
 
 Here are the full patch notes against 19.7.9_1:
 
@@ -559,7 +559,7 @@ Here are the full patch notes against 19.7.9_1:
 * system: deprecate the use of services.inc
 * system: opt-out on "Allow DNS server list to be overridden by DHCP/PPP on WAN" for selected interfaces
 * system: increase PHP memory limit to 512 MB
-* system: opnsense-auth can now respond with extended properties in JSON on successful authentication
+* system: reticen8-auth can now respond with extended properties in JSON on successful authentication
 * interfaces: loopback device support
 * interfaces: VXLAN device support
 * interfaces: first steps toward fully pluggable device infrastructure
@@ -576,8 +576,8 @@ Here are the full patch notes against 19.7.9_1:
 * mvc: BaseListField ignoring empty selected field
 * ui: jQuery 3.4.1
 * plugins: os-dyndns 1.19 adds dynv6 and Azure DNS support (contributed by Ralf Zerres and martgras)
-* plugins: os-haproxy 2.20 `[2] <https://github.com/opnsense/plugins/pull/1646>`__ 
-* plugins: os-zabbix-agent 1.7 `[3] <https://github.com/opnsense/plugins/pull/1578>`__  `[4] <https://github.com/opnsense/plugins/pull/1618>`__ 
+* plugins: os-haproxy 2.20 `[2] <https://github.com/reticen8/plugins/pull/1646>`__ 
+* plugins: os-zabbix-agent 1.7 `[3] <https://github.com/reticen8/plugins/pull/1578>`__  `[4] <https://github.com/reticen8/plugins/pull/1618>`__ 
 * ports: ca_root_nss 3.49.1
 * ports: curl 7.68.0 `[5] <https://curl.se/changes.html#7_68_0>`__ 
 * ports: openssl 1.1.1d `[6] <https://www.openssl.org/news/openssl-1.1.1-notes.html>`__ 
@@ -615,14 +615,14 @@ Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-dvd-amd64.iso.bz2) = fed43e5cc5092da5adcfcb2ccdddf51a1cea6a69f06b764fcd9c3d36e0705d4a
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-nano-amd64.img.bz2) = bf825455cc09e2a410cbe702a0c1c5b454546c476c7e90ae87ab64fc3eee6a78
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-serial-amd64.img.bz2) = 906103fb4cc3e573a9e2d560a6365baa7162077b8933a253bb45fd23a154dd87
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-vga-amd64.img.bz2) = 3308412597f5b95f9b9e854ddbeb5f49735109d846af553dbe2553dedf73cb9b
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-dvd-amd64.iso.bz2) = fed43e5cc5092da5adcfcb2ccdddf51a1cea6a69f06b764fcd9c3d36e0705d4a
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-nano-amd64.img.bz2) = bf825455cc09e2a410cbe702a0c1c5b454546c476c7e90ae87ab64fc3eee6a78
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-serial-amd64.img.bz2) = 906103fb4cc3e573a9e2d560a6365baa7162077b8933a253bb45fd23a154dd87
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-vga-amd64.img.bz2) = 3308412597f5b95f9b9e854ddbeb5f49735109d846af553dbe2553dedf73cb9b
 
 .. code-block::
 
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-dvd-i386.iso.bz2) = a110e2ed48228d918909daca5d93d8acafccdc4426e3e928d8561f7ad4180289
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-nano-i386.img.bz2) = 201b757b0d719e8f3c4aa473b414005a5544a4b1553ca9d79c1743610d67b460
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-serial-i386.img.bz2) = 74a8f6bc5cdf885f5ff906ad2dfd05584f8e217212f90cd2e3a3269a5a9b604a
-    # SHA256 (OPNsense-20.1.r1-OpenSSL-vga-i386.img.bz2) = 1779ca5aeb37d2d97bd7e053421d64206b27189db74711600b93e458d858caff
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-dvd-i386.iso.bz2) = a110e2ed48228d918909daca5d93d8acafccdc4426e3e928d8561f7ad4180289
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-nano-i386.img.bz2) = 201b757b0d719e8f3c4aa473b414005a5544a4b1553ca9d79c1743610d67b460
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-serial-i386.img.bz2) = 74a8f6bc5cdf885f5ff906ad2dfd05584f8e217212f90cd2e3a3269a5a9b604a
+    # SHA256 (Reticen8-20.1.r1-OpenSSL-vga-i386.img.bz2) = 1779ca5aeb37d2d97bd7e053421d64206b27189db74711600b93e458d858caff

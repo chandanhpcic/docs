@@ -35,7 +35,7 @@ and how these are tied into services. It's also a key component in comparing con
         {
           "description": "Aliases",
           "help": "Synchronize the aliases over to the other HA host.",
-          "section": "OPNsense.Firewall.Alias",
+          "section": "Reticen8.Firewall.Alias",
           "services": [
             "pf"
           ],
@@ -67,14 +67,14 @@ Example usage of this endpoint is provided below.
       "secret":"uaBk27NKhQCZSDpfAlG6YJ473MzvsCNiED6kzbYuykzU05fCRkcJADhDm5nxbZt8yREC74ZpvD/vbcEx"
     }
     r = requests.get(
-        'https://127.0.0.1/api/opncentral/sync/read_config/OPNsense.Firewall.Alias',
+        'https://127.0.0.1/api/opncentral/sync/read_config/Reticen8.Firewall.Alias',
         auth=(auth['key'], auth['secret']),
         verify=False    # use for localhost testing only
     )
     print(r.text)
 
 
-When executed, this will dump the contents of the configuration path :code:`OPNsense.Firewall.Alias` into a named array
+When executed, this will dump the contents of the configuration path :code:`Reticen8.Firewall.Alias` into a named array
 with serialisable content.
 
 

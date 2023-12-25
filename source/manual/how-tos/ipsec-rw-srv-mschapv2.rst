@@ -1,5 +1,5 @@
 ============================================
-IPsec: Setup OPNsense for IKEv2 EAP-MSCHAPv2
+IPsec: Setup Reticen8 for IKEv2 EAP-MSCHAPv2
 ============================================
 
 .. contents:: Index

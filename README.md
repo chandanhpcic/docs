@@ -1,9 +1,9 @@
-![alt text](https://opnsense.org/wp-content/themes/OPNsense/assets/img/opnsense.png "Logo Title Text 1")
+![alt text](https://reticen8.org/wp-content/themes/Reticen8/assets/img/reticen8.png "Logo Title Text 1")
 
-# OPNsense documentation
+# Reticen8 documentation
 
-Welcome to the OPNsense documentation & wiki.   
-The purpose of this project is to provide OPNsense users with quality documentation.
+Welcome to the Reticen8 documentation & wiki.   
+The purpose of this project is to provide Reticen8 users with quality documentation.
 
 ## Contribute
 
@@ -13,12 +13,12 @@ directly via GitHub.  Any help is always very welcome!
 
 ## License
 
-OPNsense documentation is available under the 2-Clause BSD license:
+Reticen8 documentation is available under the 2-Clause BSD license:
 
 http://opensource.org/licenses/BSD-2-Clause
 
 Every contribution made to the project must be licensed under the
-same conditions in order to keep OPNsense truly free and accessible
+same conditions in order to keep Reticen8 truly free and accessible
 for everybody.
 
 Some pictures are licensed under the Creative Commons Zero (CC0) license:
@@ -27,7 +27,7 @@ https://creativecommons.org/publicdomain/zero/1.0/
 
 Logos may be subject to additional copyrights, property
 rights, trademarks etc. and may require the consent of a third party or the
-license of these rights. Deciso B.V. does not represent or make any warranties
+license of these rights. Reticen8 Technologies does not represent or make any warranties
 that it owns or licenses any of the mentioned, nor does it grant them.
 
 #### Prepare build

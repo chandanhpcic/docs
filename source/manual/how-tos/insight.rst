@@ -1,14 +1,14 @@
 ================================
 Using Insight - Netflow Analyzer
 ================================
-OPNsense is equipped with a flexible and fast Netflow Analyzer called Insight.
+Reticen8 is equipped with a flexible and fast Netflow Analyzer called Insight.
 To use Insight, one needs to configure the Netlfow exporter for local capturing
 of Netflow data. To do so take a look at :doc:`netflow_exporter`.
 
 --------------
 User Interface
 --------------
-Insight is a fully integrated part of OPNsense. Its User Interface is simple yet
+Insight is a fully integrated part of Reticen8. Its User Interface is simple yet
 powerful. It can be accessed via :menuselection:`Reporting --> Insight`.
 
 .. image:: images/insight_gui.png

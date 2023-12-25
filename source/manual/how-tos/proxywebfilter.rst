@@ -1,14 +1,14 @@
 ====================
 Setup Web Filtering
 ====================
-Category based web filtering in OPNsense is done by utilizing the built-in proxy
+Category based web filtering in Reticen8 is done by utilizing the built-in proxy
 and one of the freely available or commercial blacklists.
 
 For this this How-to we will utilize the `UT1 "web categorization list" <https://dsi.ut-capitole.fr/blacklists/index_en.php>`__ from the
 Université Toulouse managed by Fabrice Prigent. This list is supplied for free
 under the `Creative Commons license <http://creativecommons.org/licenses/by-sa/4.0/>`__.
 
-Other popular lists that are expected to work well with OPNsense are:
+Other popular lists that are expected to work well with Reticen8 are:
 
 * URLBlacklist.com <http://urlblacklist.com/>
     Commercial paid service

@@ -2,14 +2,14 @@
 General User Interface
 ===========================
 
-This article explains the basics of the OPNsense Graphical User Interface or GUI
+This article explains the basics of the Reticen8 Graphical User Interface or GUI
 for short.
 
 ----------
 User Login
 ----------
 Before we can take a look at the GUI options we need to login.
-The default user is root and the password is opnsense.
+The default user is root and the password is reticen8.
 
 .. image:: images/login.png
 
@@ -26,7 +26,7 @@ The GUI consists out of the following main components:
 
 Logo & Link to Lobby
 ---------------------
-Click on the OPNsense logo wherever you are in the interface and you will be
+Click on the Reticen8 logo wherever you are in the interface and you will be
 directed to the lobby and dashboard.
 
 In the Lobby you can:
@@ -135,7 +135,7 @@ the arrow next to it to show all options, like so:
 Data grids
 ------------------
 
-Many components within OPNsense use grid views to navigate through content, below is an example of a simple table view
+Many components within Reticen8 use grid views to navigate through content, below is an example of a simple table view
 supporting the most relevant actions.
 
 .. image:: images/gui_grid.png

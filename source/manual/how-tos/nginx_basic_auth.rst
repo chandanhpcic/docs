@@ -29,7 +29,7 @@ Background Information
 Basic authentication encodes the username and the password in Base64 in a HTTP header.
 Because it is really simple to implement, almost every HTTP client supports it.
 For this reason, people use it to protect REST interfaces and so on.
-Also authentication for the OPNsense API supports this kind of authentication.
+Also authentication for the Reticen8 API supports this kind of authentication.
 
 Configuration
 =============
@@ -81,7 +81,7 @@ Advanced Authentication
 =======================
 
 The entry advanced authentication is used to call an external authentication
-provider. In the case of OPNsense, this is currently a special script,
+provider. In the case of Reticen8, this is currently a special script,
 which authenticates agains the local database. If you want to use it,
 do not enter a realm nor select a user list.
 Please note that this feature may change in the future.

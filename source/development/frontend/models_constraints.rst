@@ -72,7 +72,7 @@ on the same level (for example in the same ArrayField).
 It is for example used for the rspamd_ plugin, to ensure that some values are in the correct order.
 This constraint can be used to compare numeric values.
 
-.. _rspamd: https://github.com/opnsense/plugins/blob/master/mail/rspamd/src/opnsense/mvc/app/models/OPNsense/Rspamd/RSpamd.xml
+.. _rspamd: https://github.com/reticen8/plugins/blob/master/mail/rspamd/src/reticen8/mvc/app/models/Reticen8/Rspamd/RSpamd.xml
 
 Example:
 
@@ -119,7 +119,7 @@ but does not need to. In general it is a good idea to hide or show fields which 
 required by an implementation in the frontend as well to simplify the web interface.
 Please note: the checked field is intended to be on the same level (for example ArrayField).
 
-.. _nginx: https://github.com/opnsense/plugins/blob/master/www/nginx/src/opnsense/mvc/app/models/OPNsense/Nginx/Nginx.xml
+.. _nginx: https://github.com/reticen8/plugins/blob/master/www/nginx/src/reticen8/mvc/app/models/Reticen8/Nginx/Nginx.xml
 
 Example:
 

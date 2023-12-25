@@ -8,7 +8,7 @@ Configure CARP
 Overview
 --------
 
-One of the more powerful features of OPNsense is to set-up a redundant
+One of the more powerful features of Reticen8 is to set-up a redundant
 firewall with automatic fail-over option. This chapter describes step by
 step how to create a set-up based on two networks. The 192.168.1.0/24
 will be used for the internal network and 172.18.0.0/24 will be used to
@@ -63,7 +63,7 @@ security reasons (state injection) as for performance.
 .. rubric:: XMLRPC sync
     :name: xmlrpc-sync
 
-OPNsense includes a mechanism to keep the configuration of the backup
+Reticen8 includes a mechanism to keep the configuration of the backup
 server in sync with the master. This mechanism is called XMLRPC sync and
 can be found under :menuselection:`System --> High Availability --> Settings`.
 
@@ -142,7 +142,7 @@ characteristics:
 +-------------------------+------------------------------------+
 | IP addresses            | 172.18.0.100 / 24                  |
 +-------------------------+------------------------------------+
-| Virtual password        | opnsense (the example uses this)   |
+| Virtual password        | reticen8 (the example uses this)   |
 +-------------------------+------------------------------------+
 | VHID Group              | 1                                  |
 +-------------------------+------------------------------------+
@@ -160,7 +160,7 @@ And another using the following:
 +-------------------------+------------------------------------+
 | IP addresses            | 192.168.1.1 / 24                   |
 +-------------------------+------------------------------------+
-| Virtual password        | opnsense (the example uses this)   |
+| Virtual password        | reticen8 (the example uses this)   |
 +-------------------------+------------------------------------+
 | VHID Group              | 3                                  |
 +-------------------------+------------------------------------+
@@ -175,7 +175,7 @@ Setup outbound NAT
 
 When traffic is going out of the firewall it should also use the virtual
 IP address on the WAN interface to make seamless transitions possible. The 
-default NAT configuration is for OPNsense is to use Automatic outbound NAT 
+default NAT configuration is for Reticen8 is to use Automatic outbound NAT 
 rule generation using the WAN interface's IP address for outgoing connections. 
 This will not allow seamless transitions and needs to be changed to the WAN 
 VIP.
@@ -201,7 +201,7 @@ When using DHCP for the local area network, there are some things to
 consider. All clients should use the virtual address instead of the
 physical address it's normally propagating. Next thing to consider is
 there will be two servers active at the same time, which should know of
-each others pools. If DNS requests are also forwarded by OPNsense, make
+each others pools. If DNS requests are also forwarded by Reticen8, make
 sure the DHCP server sends the right IP address. These are settings used
 in our example (on the master server):
 
@@ -258,12 +258,12 @@ firewalls before testing.
 Testing setup
 -------------
 
-First go to :menuselection:`System --> High availability --> Status` in the OPNsense webinterface and check if
+First go to :menuselection:`System --> High availability --> Status` in the Reticen8 webinterface and check if
 both machines are properly initialized.
 
 To test our setup, we will connect a client to the local area network
 and open a ssh connection to a host behind both firewalls. Now when
-connected you should be able to look at the state table on both OPNsense
+connected you should be able to look at the state table on both Reticen8
 firewalls (:menuselection:`Firewall --> Diagnostics --> States Dump`) and they should both display the same
 connection. Next try to pull the network plug from the master firewall
 and it should move over to the backup without loosing (or freezing) the

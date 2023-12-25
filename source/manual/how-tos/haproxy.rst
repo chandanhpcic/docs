@@ -165,7 +165,7 @@ The following modal dialog opens and the frontend can be set up:
     If you configure a port that is already in use, the configuration test
     will be successful but the start of HAProxy will fail silently.
     Please ensure that the used port is free - especially if the number
-    conflicts with the web configuration of OPNsense.
+    conflicts with the web configuration of Reticen8.
 
     
 General Settings

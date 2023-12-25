@@ -11,7 +11,7 @@ Zabbixagent
     "``GET``","zabbixagent","service","status",""
     "``GET``","zabbixagent","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `ZabbixAgent.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/zabbix-agent/src/opnsense/mvc/app/models/OPNsense/ZabbixAgent/ZabbixAgent.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `ZabbixAgent.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/zabbix-agent/src/reticen8/mvc/app/models/Reticen8/ZabbixAgent/ZabbixAgent.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -32,4 +32,4 @@ Zabbixagent
     "``POST``","zabbixagent","settings","toggleAlias","$uuid"
     "``POST``","zabbixagent","settings","toggleUserparameter","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `ZabbixAgent.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/zabbix-agent/src/opnsense/mvc/app/models/OPNsense/ZabbixAgent/ZabbixAgent.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `ZabbixAgent.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/zabbix-agent/src/reticen8/mvc/app/models/Reticen8/ZabbixAgent/ZabbixAgent.xml>`__"

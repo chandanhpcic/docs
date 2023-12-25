@@ -4,7 +4,7 @@
 
 
 
-For more than four years now, OPNsense is driving innovation through
+For more than four years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple and
 reliable firmware upgrades, multi-language support, HardenedBSD security,
 fast adoption of upstream software updates as well as clear and stable
@@ -20,15 +20,15 @@ has been completed.  2FA now works with a remote LDAP / local TOTP
 combination.  And the OpenVPN client export was rewritten for full API
 support as well.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/19.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/19.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/19.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/19.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/19.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/19.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/19.1/
+* Full mirror list: https://reticen8.org/download/
 
 
 --------------------------------------------------------------------------
@@ -56,9 +56,9 @@ Here are the full patch notes:
 * web proxy: correct syslog export
 * plugins: os-dyndns 1.6 DigitalOcean support (contributed by Dune Heishman)
 * plugins: os-etpro-telemetry Python 3 support
-* plugins: os-frr 1.11 `[1] <https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__ 
-* plugins: os-nginx 1.14 `[2] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
-* plugins: os-rspamd 1.7 `[3] <https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-descr>`__ 
+* plugins: os-frr 1.11 `[1] <https://github.com/reticen8/plugins/blob/master/net/frr/pkg-descr>`__ 
+* plugins: os-nginx 1.14 `[2] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-rspamd 1.7 `[3] <https://github.com/reticen8/plugins/blob/master/mail/rspamd/pkg-descr>`__ 
 * plugins: os-tinc Python 3 support
 * ports: ca_root_nss 3.44.1
 * ports: curl 7.65.1 `[4] <https://curl.haxx.se/changes.html>`__ 
@@ -112,14 +112,14 @@ Here are the full patch notes:
 * unbound: leases watcher file rotation issue
 * web proxy: squid log in readable date format (contributed by nhirokinet)
 * web proxy: fix non-local authentication regression of 19.1.7
-* plugins: os-bind 1.5 `[2] <https://github.com/opnsense/plugins/blob/master/dns/bind/pkg-descr>`__ 
-* plugins: os-clamav 1.7 `[3] <https://github.com/opnsense/plugins/blob/master/security/clamav/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.4 `[4] <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-bind 1.5 `[2] <https://github.com/reticen8/plugins/blob/master/dns/bind/pkg-descr>`__ 
+* plugins: os-clamav 1.7 `[3] <https://github.com/reticen8/plugins/blob/master/security/clamav/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.4 `[4] <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
 * plugins: os-dyndns clouldflare wildcard domain support
-* plugins: os-nginx 1.13 `[5] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
-* plugins: os-openconnect 1.4.0 `[6] <https://github.com/opnsense/plugins/blob/master/security/openconnect/pkg-descr>`__ 
-* plugins: os-redis 1.1 `[7] <https://github.com/opnsense/plugins/blob/master/databases/redis/pkg-descr>`__ 
-* plugins: os-rspamd 1.6 `[8] <https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-descr>`__ 
+* plugins: os-nginx 1.13 `[5] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-openconnect 1.4.0 `[6] <https://github.com/reticen8/plugins/blob/master/security/openconnect/pkg-descr>`__ 
+* plugins: os-redis 1.1 `[7] <https://github.com/reticen8/plugins/blob/master/databases/redis/pkg-descr>`__ 
+* plugins: os-rspamd 1.6 `[8] <https://github.com/reticen8/plugins/blob/master/mail/rspamd/pkg-descr>`__ 
 * plugins: os-theme-cicada 1.18 (contributed by Team Rebellion)
 * plugins: os-theme-tukan 1.18 (contributed by Team Rebellion)
 * ports: curl 7.65.0 `[9] <https://curl.haxx.se/changes.html>`__ 
@@ -149,7 +149,7 @@ Here are the full patch notes:
 * system: introduce and use userIsAdmin() helper function instead of checking for "page-all" privilege directly
 * system: use absolute path in widget ACLs (reported by Netgate)
 * system: RRD-related cleanups for less code exposure
-* interfaces: add EN DUID Generation using OPNsense PEN (contributed by Team Rebellion)
+* interfaces: add EN DUID Generation using Reticen8 PEN (contributed by Team Rebellion)
 * interfaces: replace legacy_getall_interface_addresses() usage
 * firewall: fix port validation in aliases with leading / trailing spaces
 * firewall: fix outbound NAT translation display in overview page
@@ -171,7 +171,7 @@ Here are the full patch notes:
 * unbound: only admins may edit custom options field
 * wizard: translate typehint as well
 * plugins: os-freeradius 1.9.3 fixes string interpolation in LDAP filters (contributed by theq86)
-* plugins: os-nginx 1.12 `[2] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-nginx 1.12 `[2] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
 * plugins: os-theme-cicada 1.17 (contributed by Team Rebellion)
 * plugins: os-theme-tukan 1.17 (contributed by Team Rebellion)
 * src: timezone database information update `[3] <https://www.freebsd.org/security/advisories/FreeBSD-EN-19:08.tzdata.asc>`__ 
@@ -261,9 +261,9 @@ Without further ado, here are the full patch notes:
 * mvc: pluggable PAM-based authentication framework
 * mvc: add filter closure to searchBase()
 * plugins: introduce plugins_run() for collecting structured data from plugins
-* plugins: os-clamav 1.6 `[1] <https://github.com/opnsense/plugins/blob/master/security/clamav/pkg-descr>`__ 
+* plugins: os-clamav 1.6 `[1] <https://github.com/reticen8/plugins/blob/master/security/clamav/pkg-descr>`__ 
 * plugins: os-dyndns 1.5 fixes CloudFlare zone ID lookup behaviour (contributed by George Johnson)
-* plugins: os-frr 1.10 `[2] <https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__ 
+* plugins: os-frr 1.10 `[2] <https://github.com/reticen8/plugins/blob/master/net/frr/pkg-descr>`__ 
 * plugins: os-netdata 1.0 (contributed by Michael Muenz)
 * plugins: os-nginx 1.11_2 fixes ACME support (contributed by Frank Wall)
 * plugins: os-rfc2136 1.5 removes unused gateway group related code
@@ -296,7 +296,7 @@ usage in 19.7.
 Here are the full patch notes:
 
 * system: let dashboard only accept its own POST requests
-* system: remove obsolete symlink to opnsense-auth
+* system: remove obsolete symlink to reticen8-auth
 * system: skip PHP E_WARNING log level until 19.7
 * system: numerous PHP 7.2 warning fixes
 * dhcp: DHCPD server check in relay only if interface is active
@@ -306,7 +306,7 @@ Here are the full patch notes:
 * mvc: controller cleanups in firewall shaper, web proxy and captive portal
 * plugins: numerous PHP 7.2 warning fixes
 * plugins: os-freeradius 1.9.2 fixes LDAP group filter and EAP certificates write (contributed by Alexander Harm)
-* plugins: os-nginx 1.11 `[1] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-nginx 1.11 `[1] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
 * ports: php 7.2.17 `[2] <https://php.net/ChangeLog-7.php#7.2.17>`__ 
 * ports: py-certifi 2019.3.9 `[3] <https://pypi.org/project/certifi/2019.3.9/>`__ 
 
@@ -360,18 +360,18 @@ These are the full patch notes:
 * mvc: obey "user-config-readonly" privilege in mutable controllers
 * mvc: support overlays in setBase() / addBase()
 * ui: remove jquery-bootgrid converters which are now included in the library
-* plugins: os-acmle-client 1.23 `[1] <https://github.com/opnsense/plugins/pull/1166>`__  `[2] <https://github.com/opnsense/plugins/pull/1212>`__  `[3] <https://github.com/opnsense/plugins/pull/1263>`__ 
+* plugins: os-acmle-client 1.23 `[1] <https://github.com/reticen8/plugins/pull/1166>`__  `[2] <https://github.com/reticen8/plugins/pull/1212>`__  `[3] <https://github.com/reticen8/plugins/pull/1263>`__ 
 * plugins: os-dyndns 1.14 supports wildcards for Google Domains
 * plugins: os-etpro-telemetry 1.3 uses HOME_NET to anonymization
-* plugins: os-freeradius 19.1.0 `[4] <https://github.com/opnsense/plugins/blob/master/net/freeradius/pkg-descr>`__ 
-* plugins: os-frr 1.9 `[5] <https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__ 
-* plugins: os-nginx 1.10 `[6] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
-* plugins: os-postfix 1.9 `[7] <https://github.com/opnsense/plugins/blob/master/mail/postfix/pkg-descr>`__ 
-* plugins: os-rspamd 1.5 `[8] <https://github.com/opnsense/plugins/blob/master/mail/rspamd/pkg-descr>`__ 
-* plugins: os-telegraf 1.7.5 `[9] <https://github.com/opnsense/plugins/blob/master/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-freeradius 19.1.0 `[4] <https://github.com/reticen8/plugins/blob/master/net/freeradius/pkg-descr>`__ 
+* plugins: os-frr 1.9 `[5] <https://github.com/reticen8/plugins/blob/master/net/frr/pkg-descr>`__ 
+* plugins: os-nginx 1.10 `[6] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-postfix 1.9 `[7] <https://github.com/reticen8/plugins/blob/master/mail/postfix/pkg-descr>`__ 
+* plugins: os-rspamd 1.5 `[8] <https://github.com/reticen8/plugins/blob/master/mail/rspamd/pkg-descr>`__ 
+* plugins: os-telegraf 1.7.5 `[9] <https://github.com/reticen8/plugins/blob/master/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-theme-cicada 1.15 (contributed by Team Rebellion)
 * plugins: os-theme-tukan 1.14 (contributed by Team Rebellion)
-* plugins: os-zabbix-agent 1.5 `[10] <https://github.com/opnsense/plugins/pull/1262>`__ 
+* plugins: os-zabbix-agent 1.5 `[10] <https://github.com/reticen8/plugins/pull/1262>`__ 
 * ports: ca_root_nss 3.43
 * ports: curl 7.64.1
 * ports: libucl 0.8.1
@@ -423,7 +423,7 @@ Here are the full patch notes:
 * plugins: os-telegraf missed invoke of setup.sh
 * plugins: os-frr adds validator to OSPF prefix lists (contributed by Michael Muenz)
 * plugins: os-dmidecode 1.1 fixes data parsing (contributed by Smart-Soft)
-* plugins: os-nginx 1.9 `[1] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-nginx 1.9 `[1] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
 * src: do not pass pf(4) IPv6 fragments with malformed extension headers (reported by Synacktiv)
 * src: revert upstream commit "protect the kernel text, data, and BSS" to fix certain UEFI boots
 * ports: monit 5.25.3 `[2] <https://mmonit.com/monit/changes/>`__ 
@@ -431,29 +431,29 @@ Here are the full patch notes:
 * ports: php 7.1.27 `[4] <https://php.net/ChangeLog-7.php#7.1.27>`__ 
 * ports: suricata 4.1.3 `[5] <https://suricata-ids.org/2019/03/07/suricata-4-1-3-released/>`__ 
 
-The full list of changes of the OPNsense 19.1 series can be reviewed using
+The full list of changes of the Reticen8 19.1 series can be reviewed using
 their original announcements:
 
-* 19.1: https://forum.opnsense.org/index.php?topic=11398.0
-* 19.1.1: https://forum.opnsense.org/index.php?topic=11469.0
-* 19.1.2: https://forum.opnsense.org/index.php?topic=11849.0
-* 19.1.3: https://forum.opnsense.org/index.php?topic=11941.0
+* 19.1: https://forum.reticen8.org/index.php?topic=11398.0
+* 19.1.1: https://forum.reticen8.org/index.php?topic=11469.0
+* 19.1.2: https://forum.reticen8.org/index.php?topic=11849.0
+* 19.1.3: https://forum.reticen8.org/index.php?topic=11941.0
 
-We would also like to use this opportunity to remind everyone that OPNsense
+We would also like to use this opportunity to remind everyone that Reticen8
 is and always will be free software.  All of its source code and associated
 build tools can be found here:
 
-https://github.com/opnsense
+https://github.com/reticen8
 
-Download links, an installation guide `[6] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[6] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/19.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/19.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/19.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/19.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/19.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/19.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/19.1/
+* Full mirror list: https://reticen8.org/download/
 
 The public key for the 19.1 series is:
 
@@ -478,17 +478,17 @@ The public key for the 19.1 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-19.1.4-OpenSSL-dvd-amd64.iso.bz2) = 5f2e64797fce03d4d47050894c38e8e176fda6281009abd36f60d788d3e29d42
-    # SHA256 (OPNsense-19.1.4-OpenSSL-nano-amd64.img.bz2) = ee5171fb837884fffd29c6e75cb089dc4020fb89459143bd9e7b859b1da3fd89
-    # SHA256 (OPNsense-19.1.4-OpenSSL-serial-amd64.img.bz2) = 07868978903220bf9dee26c936d25140df07ec9c02cb8c480bd8619e69c562a0
-    # SHA256 (OPNsense-19.1.4-OpenSSL-vga-amd64.img.bz2) = e473bc645778c95596639056ecc8ef92a12a7fd1cdc52cd0b1f6294a64561311
+    # SHA256 (Reticen8-19.1.4-OpenSSL-dvd-amd64.iso.bz2) = 5f2e64797fce03d4d47050894c38e8e176fda6281009abd36f60d788d3e29d42
+    # SHA256 (Reticen8-19.1.4-OpenSSL-nano-amd64.img.bz2) = ee5171fb837884fffd29c6e75cb089dc4020fb89459143bd9e7b859b1da3fd89
+    # SHA256 (Reticen8-19.1.4-OpenSSL-serial-amd64.img.bz2) = 07868978903220bf9dee26c936d25140df07ec9c02cb8c480bd8619e69c562a0
+    # SHA256 (Reticen8-19.1.4-OpenSSL-vga-amd64.img.bz2) = e473bc645778c95596639056ecc8ef92a12a7fd1cdc52cd0b1f6294a64561311
 
 .. code-block::
 
-    # SHA256 (OPNsense-19.1.4-OpenSSL-dvd-i386.iso.bz2) = 9f40b591c27d90a86c60ec0b539f228999953f947573e2e575c2936c3993d7c0
-    # SHA256 (OPNsense-19.1.4-OpenSSL-nano-i386.img.bz2) = c624d50b19f2ae4d471076c53f5c516e3a523ff41b69d0bfa779b5fff6415f81
-    # SHA256 (OPNsense-19.1.4-OpenSSL-serial-i386.img.bz2) = 62bff974ae4238dfc2e830a32fbf4bd357ff418d15be99b89ac129f839e10eaf
-    # SHA256 (OPNsense-19.1.4-OpenSSL-vga-i386.img.bz2) = ca893277a02b93129e6a30125107f7ad4fc01673b722f54ce6e5cb7eb438cae4
+    # SHA256 (Reticen8-19.1.4-OpenSSL-dvd-i386.iso.bz2) = 9f40b591c27d90a86c60ec0b539f228999953f947573e2e575c2936c3993d7c0
+    # SHA256 (Reticen8-19.1.4-OpenSSL-nano-i386.img.bz2) = c624d50b19f2ae4d471076c53f5c516e3a523ff41b69d0bfa779b5fff6415f81
+    # SHA256 (Reticen8-19.1.4-OpenSSL-serial-i386.img.bz2) = 62bff974ae4238dfc2e830a32fbf4bd357ff418d15be99b89ac129f839e10eaf
+    # SHA256 (Reticen8-19.1.4-OpenSSL-vga-i386.img.bz2) = ca893277a02b93129e6a30125107f7ad4fc01673b722f54ce6e5cb7eb438cae4
 
 --------------------------------------------------------------------------
 19.1.3 (March 07, 2019)
@@ -517,7 +517,7 @@ Here are the full patch notes:
 * interfaces: probe media before applying new settings
 * interfaces: correctly compare MAC addresses
 * dhcp: added TFTP bootfile-name (contributed by Bjorn Kalkbrenner)
-* firmware: move duty to return the correct set name / ID to opnsense-version
+* firmware: move duty to return the correct set name / ID to reticen8-version
 * firmware: finally revoke 18.7 fingerprint
 * intrusion detection: minor template cleanups using helpers.empty()
 * ipsec: peer identifier can now fall back to remote-gateway in manual SPD entries
@@ -534,15 +534,15 @@ Here are the full patch notes:
 * ui: improve escaping of displayed data in static pages
 * ui: escape button values in static pages
 * ui: avoid short PHP tags
-* plugins: os-dnscrypt-proxy 1.3 `[1] <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
-* plugins: os-frr brings in missing area range code `[2] <https://github.com/opnsense/plugins/blob/master/net/frr/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.3 `[1] <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-frr brings in missing area range code `[2] <https://github.com/reticen8/plugins/blob/master/net/frr/pkg-descr>`__ 
 * plugins: os-postfix log file ACL and wrapper mode typo fix (contributed by Michael Muenz)
 * plugins: os-theme-cicada IPsec widget colour fix (contributed by Team Rebellion)
 * plugins: os-theme-tukan IPsec widget colour fix (contributed by Team Rebellion)
-* plugins: os-vnstat /var MFS fix `[3] <https://github.com/opnsense/plugins/blob/master/net/vnstat/pkg-descr>`__ 
+* plugins: os-vnstat /var MFS fix `[3] <https://github.com/reticen8/plugins/blob/master/net/vnstat/pkg-descr>`__ 
 * plugins: os-zabbix4-proxy 1.0 (contributed by Michael Muenz)
 * ports: openssl 1.0.2r `[4] <https://www.openssl.org/news/secadv/20190226.txt>`__ 
-* ports: pam_opnsense 19.1.3 uses setuid for privilege separation
+* ports: pam_reticen8 19.1.3 uses setuid for privilege separation
 * ports: phalcon 3.4.3 `[5] <https://github.com/phalcon/cphalcon/releases/tag/v3.4.3>`__ 
 
 
@@ -573,7 +573,7 @@ Here are the full patch notes:
 * system: move session files into their own directory (forces the current sessions to expire)
 * system: add validation check for time period for Dpinger (contributed by Team Rebellion)
 * system: hide "show certificate info" button of pending CSR (contributed by nhirokinet)
-* system: move opnsense-auth to libexec, but keep a symlink in sbin directory
+* system: move reticen8-auth to libexec, but keep a symlink in sbin directory
 * system: escaping issue in gateway edit page
 * system: fix ACL for halt and reboot pages
 * firewall: fix alias entry replacement in utility page
@@ -612,21 +612,21 @@ Here are the full patch notes:
 * ui: hardening of gettext() invokes in HTML tags
 * ui: fix setFormData() HTML decode
 * plugins: os-bind safe search google domain updates (contributed by Michael Muenz)
-* plugins: os-dnscrypt-proxy 1.2 `[2] <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.2 `[2] <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/pkg-descr>`__ 
 * plugins: os-dyndns 1.13 IPv6 device lookup fix
 * plugins: os-etpro-telemetry 1.2 reduces telemetry data collection
 * plugins: os-frr 1.8 adds route summarization via area range (contributed by Michael Muenz)
-* plugins: os-haproxy 2.15 `[3] <https://github.com/opnsense/plugins/pull/1167>`__  `[4] <https://github.com/opnsense/plugins/pull/1209>`__ 
-* plugins: os-nginx 1.8 `[5] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
-* plugins: os-ntopng 1.2 `[6] <https://github.com/opnsense/plugins/blob/master/net/ntopng/pkg-descr>`__ 
+* plugins: os-haproxy 2.15 `[3] <https://github.com/reticen8/plugins/pull/1167>`__  `[4] <https://github.com/reticen8/plugins/pull/1209>`__ 
+* plugins: os-nginx 1.8 `[5] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-ntopng 1.2 `[6] <https://github.com/reticen8/plugins/blob/master/net/ntopng/pkg-descr>`__ 
 * src: clear callee-preserved registers on amd64 syscall exit `[7] <https://www.freebsd.org/security/advisories/FreeBSD-SA-19:01.syscall.asc>`__ 
 * ports: cpdup 1.20
 * ports: curl 7.64.0 `[8] <https://curl.haxx.se/changes.html>`__ 
 * ports: libressl 2.8.3 `[9] <https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.8.3-relnotes.txt>`__ 
 * ports: openvpn 2.4.7 `[10] <https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn24>`__ 
-* ports: pam_opnsense manual page addition
+* ports: pam_reticen8 manual page addition
 * ports: sqlite 3.27.1 `[11] <https://sqlite.org/releaselog/3_27_1.html>`__ 
-* ports: squid forgery check avoidance `[12] <https://github.com/opnsense/ports/issues/66>`__ 
+* ports: squid forgery check avoidance `[12] <https://github.com/reticen8/ports/issues/66>`__ 
 * ports: strongswan 5.7.2 `[13] <https://wiki.strongswan.org/versions/72>`__ 
 * ports: unbound 1.9.0 `[14] <https://nlnetlabs.nl/projects/unbound/download/>`__ 
 
@@ -643,7 +643,7 @@ fixed.  And the Python request library was patched due to CVE 2018-18074.
 
 Here are the full patch notes:
 
-* system: address XSS-prone escaping issues `[1] <https://packetstormsecurity.com/files/151381/OPNsense-18.7-Cross-Site-Scripting.html>`__ 
+* system: address XSS-prone escaping issues `[1] <https://packetstormsecurity.com/files/151381/Reticen8-18.7-Cross-Site-Scripting.html>`__ 
 * firewall: add port range validation to shaper inputs
 * firewall: drop description validation constraints
 * interfaces: DHCP override MTU option (contributed by Team Rebellion)
@@ -652,10 +652,10 @@ Here are the full patch notes:
 * ipsec: allow same local subnet if used in different phase 1 (contributed by Max Weller)
 * openvpn: multiple client export fixes
 * web proxy: add ESD files to Windows cache option (contributed by R-Adrian)
-* plugins: os-acme-client 1.20 `[2] <https://github.com/opnsense/plugins/pull/1157>`__ 
+* plugins: os-acme-client 1.20 `[2] <https://github.com/reticen8/plugins/pull/1157>`__ 
 * plugins: os-dyndns fix for themed colours (contributed by Team Rebellion)
 * plugins: os-etpro-telemetry 1.1 adds random delay to telemetry data send
-* plugins: os-nginx 1.7 `[3] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-nginx 1.7 `[3] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
 * plugins: os-rspamd reads DKIM keys via Redis (contributed by Garrod Alwood)
 * plugins: os-theme-cicada 1.14 (contributed by Team Rebellion)
 * plugins: os-theme-tukan 1.13 (contributed by Team Rebellion)
@@ -670,7 +670,7 @@ Here are the full patch notes:
 --------------------------------------------------------------------------
 
 
-For more than four years now, OPNsense is driving innovation through
+For more than four years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple and
 reliable firmware upgrades, multi-language support, HardenedBSD security,
 fast adoption of upstream software updates as well as clear and stable
@@ -686,15 +686,15 @@ has been completed.  2FA now works with a remote LDAP / local TOTP
 combination.  And the OpenVPN client export was rewritten for full API
 support as well.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/19.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/19.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/19.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/19.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/19.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/19.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/19.1/
+* Full mirror list: https://reticen8.org/download/
 
 These are the most prominent changes since version 18.7:
 
@@ -705,7 +705,7 @@ These are the most prominent changes since version 18.7:
 * WPAD / PAC and parent proxy support in the web proxy
 * P12 certificate export with custom passwords
 * Dpinger is now the default gateway monitor
-* ET Pro Telemetry edition plugin `[2] <https://docs.opnsense.org/manual/etpro_telemetry.html>`__ 
+* ET Pro Telemetry edition plugin `[2] <https://docs.reticen8.org/manual/etpro_telemetry.html>`__ 
 * extended IPv6 DUID support
 * Dnsmasq DNSSEC support
 * OpenVPN client export API
@@ -728,7 +728,7 @@ Here are the full changes against version 19.1-RC2:
 * plugins: os-frr 1.7 updates OSPF outbound rules (contributed by Fabian Franz)
 * plugins: os-telegraf 1.7.4 fixes packet filter input
 * plugins: os-theme-rebellion 1.8.2 adds image colour invert
-* plugins: os-vnstat 1.1 `[3] <https://github.com/opnsense/plugins/blob/master/net/vnstat/pkg-descr>`__ 
+* plugins: os-vnstat 1.1 `[3] <https://github.com/reticen8/plugins/blob/master/net/vnstat/pkg-descr>`__ 
 * plugins: os-zabbix-agent now uses Zabbix version 4.0
 * src: revert mmc_calculate_clock() as HS200/HS400 support breaks legacy support
 * src: update sqlite3-3.20.0 to sqlite3-3.26.0 `[4] <https://www.freebsd.org/security/advisories/FreeBSD-EN-19:03.sqlite.asc>`__ 
@@ -743,9 +743,9 @@ Migration notes and minor incompatibilities to look out for:
 * Gateway health graphs may need a manual reset due to the Apinger to Dpinger migration.  Apinger is no longer available.
 * Intrusion detection GeoIP rules are automatically deactivated and need to be manually migrated to firewall alias GeoIP.
 * Quagga plugin has been superseded by FRR plugin.  A binary quagga package has been conserved for the time being.
-* Please read the FRR documentation with regard to the required system tunables `[8] <https://docs.opnsense.org/manual/dynamic_routing.html>`__ .
-* Bhyve VM boot may fail as a guest.  Use the "-w" parameter `[9] <https://forum.opnsense.org/index.php?topic=11492.0>`__  to boot.
-* Boot may fail due to Meltdown/Spectre mitigation.  A workaround `[10] <https://github.com/opnsense/core/issues/3177>`__  exists.
+* Please read the FRR documentation with regard to the required system tunables `[8] <https://docs.reticen8.org/manual/dynamic_routing.html>`__ .
+* Bhyve VM boot may fail as a guest.  Use the "-w" parameter `[9] <https://forum.reticen8.org/index.php?topic=11492.0>`__  to boot.
+* Boot may fail due to Meltdown/Spectre mitigation.  A workaround `[10] <https://github.com/reticen8/core/issues/3177>`__  exists.
 * SNMP plugin has been superseded by Net-SNMP plugin.
 
 The public key for the 19.1 series is:
@@ -771,17 +771,17 @@ The public key for the 19.1 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-19.1-OpenSSL-dvd-amd64.iso.bz2) = 0a9e02954da1ddd1f0b7673394bbf81cfa74a1d5378600a87d3a9e6a26d3104d
-    # SHA256 (OPNsense-19.1-OpenSSL-nano-amd64.img.bz2) = 2c4b0056ca26053c8d5e4efe196e512af618bad4fa136ba0e2528083a6263528
-    # SHA256 (OPNsense-19.1-OpenSSL-serial-amd64.img.bz2) = c71274cea2b910cd4b3454b4ad29f7f70503fcb52ffa5b7f65ea96a27ac9e10d
-    # SHA256 (OPNsense-19.1-OpenSSL-vga-amd64.img.bz2) = 37164481a413716d8786676d30bb709f8b967e53a47a36d10118214304d14bb9
+    # SHA256 (Reticen8-19.1-OpenSSL-dvd-amd64.iso.bz2) = 0a9e02954da1ddd1f0b7673394bbf81cfa74a1d5378600a87d3a9e6a26d3104d
+    # SHA256 (Reticen8-19.1-OpenSSL-nano-amd64.img.bz2) = 2c4b0056ca26053c8d5e4efe196e512af618bad4fa136ba0e2528083a6263528
+    # SHA256 (Reticen8-19.1-OpenSSL-serial-amd64.img.bz2) = c71274cea2b910cd4b3454b4ad29f7f70503fcb52ffa5b7f65ea96a27ac9e10d
+    # SHA256 (Reticen8-19.1-OpenSSL-vga-amd64.img.bz2) = 37164481a413716d8786676d30bb709f8b967e53a47a36d10118214304d14bb9
 
 .. code-block::
 
-    # SHA256 (OPNsense-19.1-OpenSSL-dvd-i386.iso.bz2) = 17d0aadf671bc2d99b57f0371e4fadfca0e2e9c8d27d6545674a610fc1f59c7a
-    # SHA256 (OPNsense-19.1-OpenSSL-nano-i386.img.bz2) = 0c4e7616c93f14f5988df84b9b620543cb23a89c1f91505527b6c999d2dc7889
-    # SHA256 (OPNsense-19.1-OpenSSL-serial-i386.img.bz2) = 93306e5349c7448ad3fdc03d9349ebf98e4d7c677201dcbec111f917c72dca24
-    # SHA256 (OPNsense-19.1-OpenSSL-vga-i386.img.bz2) = 03d21319a784f93a7940d35168a35d15005e6f4579ac5b1c7a6ff606beb062a6
+    # SHA256 (Reticen8-19.1-OpenSSL-dvd-i386.iso.bz2) = 17d0aadf671bc2d99b57f0371e4fadfca0e2e9c8d27d6545674a610fc1f59c7a
+    # SHA256 (Reticen8-19.1-OpenSSL-nano-i386.img.bz2) = 0c4e7616c93f14f5988df84b9b620543cb23a89c1f91505527b6c999d2dc7889
+    # SHA256 (Reticen8-19.1-OpenSSL-serial-i386.img.bz2) = 93306e5349c7448ad3fdc03d9349ebf98e4d7c677201dcbec111f917c72dca24
+    # SHA256 (Reticen8-19.1-OpenSSL-vga-i386.img.bz2) = 03d21319a784f93a7940d35168a35d15005e6f4579ac5b1c7a6ff606beb062a6
 
 --------------------------------------------------------------------------
 19.1.r2 (January 23, 2019)
@@ -802,14 +802,14 @@ These are the changes in detail:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 19.1.r1 (January 21, 2019)
 --------------------------------------------------------------------------
 
 
-For almost four years now, OPNsense is driving innovation through
+For almost four years now, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, HardenedBSD
 security, fast adoption of upstream software updates as well as clear
@@ -818,15 +818,15 @@ and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.org/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/19.1/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/19.1/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/19.1/
-* South America: http://mirror.upb.edu.co/opnsense/releases/19.1/
-* South-East Asia: https://ftp.yzu.edu.tw/opnsense/releases/19.1/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/19.1/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/19.1/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/19.1/
+* South America: http://mirror.upb.edu.co/reticen8/releases/19.1/
+* South-East Asia: https://ftp.yzu.edu.tw/reticen8/releases/19.1/
+* Full mirror list: https://reticen8.org/download/
 
 Here are the full changes against version 18.7.10:
 
@@ -908,16 +908,16 @@ Here are the full changes against version 18.7.10:
 * mvc: volt template JavaScript cleanups
 * ui: updated bootstrap-select to version 1.13.3
 * ui: collapsible sidebar support in default theme (contributed by Team Rebellion)
-* plugins: os-acme-client 1.19 `[2] <https://github.com/opnsense/plugins/pull/1134>`__ 
+* plugins: os-acme-client 1.19 `[2] <https://github.com/reticen8/plugins/pull/1134>`__ 
 * plugins: os-c-icap 1.7 adds template support (contributed by Michael Muenz)
 * plugins: os-dmidecode 1.0 hardware information widget (contributed by Smart-Soft)
 * plugins: os-dyndns 1.12 changes HE tunnel broker to newer API (contributed by Dusan Dragic)
 * plugins: os-frr switches to FRR 5.0.2, please see below
 * plugins: os-l2tp 1.8 interface now selects reachable server address
 * plugins: os-pptp 1.8 interface now selects reachable server address
-* plugins: os-openconnect 1.3.3 `[3] <https://github.com/opnsense/plugins/blob/master/security/openconnect/pkg-descr>`__ 
+* plugins: os-openconnect 1.3.3 `[3] <https://github.com/reticen8/plugins/blob/master/security/openconnect/pkg-descr>`__ 
 * plugins: os-quagga removed, please use os-frr instead
-* plugins: os-nginx 1.6 `[4] <https://github.com/opnsense/plugins/blob/master/www/nginx/pkg-descr>`__ 
+* plugins: os-nginx 1.6 `[4] <https://github.com/reticen8/plugins/blob/master/www/nginx/pkg-descr>`__ 
 * plugins: os-rspamd 1.4 allows to set manual spam scores and subject (contributed by Michael Muenz and Fabian Franz)
 * plugins: os-snmp removed, please use os-net-snmp instead
 * plugins: os-theme-cicada 1.13
@@ -941,10 +941,10 @@ Known issues and limitations:
 
 * Gateway health graphs may need a manual reset due to the Apinger to Dpinger migration.
 * Intrusion detection GeoIP rules are automatically deactivated and need to be manually migrated to firewall alias GeoIP.
-* Monit general settings do not save.  A patch exists `[12] <https://github.com/opnsense/core/commit/a2899594>`__  to remedy this problem: opnsense-patch a2899594
+* Monit general settings do not save.  A patch exists `[12] <https://github.com/reticen8/core/commit/a2899594>`__  to remedy this problem: reticen8-patch a2899594
 * Issue with IDS migration code creating a spurious crash report.  Patch already done for the final 19.1.
 * Quagga plugin has been superseded by FRR plugin.  A binary quagga package has been conserved for the time being.
-* Please read the FRR documentation with regard to the required system tunables `[13] <https://docs.opnsense.org/manual/dynamic_routing.html>`__ .
+* Please read the FRR documentation with regard to the required system tunables `[13] <https://docs.reticen8.org/manual/dynamic_routing.html>`__ .
 * SNMP plugin has been superseded by Net-SNMP plugin.
 * ZFS guided installation pending.
 
@@ -973,14 +973,14 @@ Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-dvd-amd64.iso.bz2) = 7c0c6cf529cb2f8aa9c29b3645b4ec1e218c292f722941ae9880b009c93e6364
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-nano-amd64.img.bz2) = b355355fc6d10475af2b1c22daa2fd5f5ab78bb375aaf8100a51f087d2447289
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-serial-amd64.img.bz2) = f4d40b1ece162aac97505f8ad1e16271126df11fb1a317a9f431ff4737fe5da8
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-vga-amd64.img.bz2) = f8c860a7e3eb9be61d33da92b021a0f337ad50e00a6ffc1cca793277f1890b63
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-dvd-amd64.iso.bz2) = 7c0c6cf529cb2f8aa9c29b3645b4ec1e218c292f722941ae9880b009c93e6364
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-nano-amd64.img.bz2) = b355355fc6d10475af2b1c22daa2fd5f5ab78bb375aaf8100a51f087d2447289
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-serial-amd64.img.bz2) = f4d40b1ece162aac97505f8ad1e16271126df11fb1a317a9f431ff4737fe5da8
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-vga-amd64.img.bz2) = f8c860a7e3eb9be61d33da92b021a0f337ad50e00a6ffc1cca793277f1890b63
 
 .. code-block::
 
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-dvd-i386.iso.bz2) = c7b5ced64623416bd56e5337d5212c9af25292a48eb1bb298321e4bb79056c94
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-nano-i386.img.bz2) = 1313645407d810dd7a5dedf4978deaa7c14f4655dee679de572d7a9e853749c0
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-serial-i386.img.bz2) = f44203f5bb6e2dbfe5b524b37e9e53baab0665684cbc215bdc3015e11a79c2bd
-    # SHA256 (OPNsense-19.1.r1-OpenSSL-vga-i386.img.bz2) = a6cfc14b9675563053d6e7733011c381f39e8fb2e10a8a64d60cc7de421ac2db
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-dvd-i386.iso.bz2) = c7b5ced64623416bd56e5337d5212c9af25292a48eb1bb298321e4bb79056c94
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-nano-i386.img.bz2) = 1313645407d810dd7a5dedf4978deaa7c14f4655dee679de572d7a9e853749c0
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-serial-i386.img.bz2) = f44203f5bb6e2dbfe5b524b37e9e53baab0665684cbc215bdc3015e11a79c2bd
+    # SHA256 (Reticen8-19.1.r1-OpenSSL-vga-i386.img.bz2) = a6cfc14b9675563053d6e7733011c381f39e8fb2e10a8a64d60cc7de421ac2db

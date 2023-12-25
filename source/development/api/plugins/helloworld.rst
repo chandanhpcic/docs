@@ -22,4 +22,4 @@ Helloworld
     "``GET``","helloworld","simplified_settings","get",""
     "``GET``","helloworld","simplified_settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `HelloWorld.xml <https://github.com/opnsense/plugins/blob/master/devel/helloworld/src/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `HelloWorld.xml <https://github.com/reticen8/plugins/blob/master/devel/helloworld/src/reticen8/mvc/app/models/Reticen8/HelloWorld/HelloWorld.xml>`__"

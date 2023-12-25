@@ -10,7 +10,7 @@ dpinger:.. sendto error: XXX
 ---------------------------------
 
 Usually found in :menuselection:`System --> Log Files --> General`, every code has a meaning, usually explained in
-`errno.h <https://github.com/opnsense/src/blob/master/sys/sys/errno.h>`__ (:code:`man errno`)
+`errno.h <https://github.com/reticen8/src/blob/master/sys/sys/errno.h>`__ (:code:`man errno`)
 
 Some common ones are explained in the :ref:`errno` section.
 

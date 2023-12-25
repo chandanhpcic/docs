@@ -12,7 +12,7 @@ only use simple flat files for everything). We used Ubuntu linux for
 this setup, a different operating system might result in some paths
 being different.
 
-User limits on the OPNsense firewall are set right after login, the
+User limits on the Reticen8 firewall are set right after login, the
 Radius server should tell the firewall how many resources are left for
 the user that logged in successfully. A normal login sequence look like
 this:

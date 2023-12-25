@@ -1,6 +1,6 @@
 Firmware
 ~~~~~~~~
-OPNsense has several API calls to get and set the firmware configuration:
+Reticen8 has several API calls to get and set the firmware configuration:
 
 .. csv-table::
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -25,20 +25,20 @@ Examples:
 
 .. code-block:: sh
 
-    curl -k -u "$key":"$secret" https://opnsense.local/api/core/firmware/getfirmwareconfig -v
+    curl -k -u "$key":"$secret" https://reticen8.local/api/core/firmware/getfirmwareconfig -v
 
 .. code-block:: sh
 
-    curl -k -u "$key":"$secret" https://opnsense.local/api/core/firmware/status -v
+    curl -k -u "$key":"$secret" https://reticen8.local/api/core/firmware/status -v
 
 .. code-block:: sh
 
-    curl -d '' -k -u "$key":"$secret" https://opnsense.local/api/core/firmware/changelog/18.1 -v
+    curl -d '' -k -u "$key":"$secret" https://reticen8.local/api/core/firmware/changelog/18.1 -v
 
 
 Packages
 ........
-You can manage the packages and plugins in OPNsense, using these API calls:
+You can manage the packages and plugins in Reticen8, using these API calls:
 
 .. csv-table::
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -56,8 +56,8 @@ Examples:
 
 .. code-block:: sh
 
-    curl -d '' -k -u "$key":"$secret" https://opnsense.local/api/core/firmware/lock/os-xen -v
+    curl -d '' -k -u "$key":"$secret" https://reticen8.local/api/core/firmware/lock/os-xen -v
 
 .. code-block:: sh
 
-    curl -d '' -k -u "$key":"$secret" https://opnsense.local/api/core/firmware/license/acme.sh -v
+    curl -d '' -k -u "$key":"$secret" https://reticen8.local/api/core/firmware/license/acme.sh -v

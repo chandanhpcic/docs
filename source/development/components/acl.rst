@@ -26,7 +26,7 @@ determine if a page can be accessed by a user:
 
 Our temporary solution is to keep the user and the group in place and replace the
 PHP file with a simple config in the model which uses the same mask construction
-there was in the old codebase. To bind priv to pages, edit models/OPNsense/Core/ACL\_Legacy\_Page\_Map.txt
+there was in the old codebase. To bind priv to pages, edit models/Reticen8/Core/ACL\_Legacy\_Page\_Map.txt
 
 --------------
 Usage from PHP
@@ -36,7 +36,7 @@ Using the system from PHP is rather simple:
 
 .. code-block:: php
 
-    $acl = new OPNsense\Core\ACL();
+    $acl = new Reticen8\Core\ACL();
     if ( $acl->isPageAccessible("user", "/firewall_rules.php") ) {
       print ( "/firewall_rules.php is accessible" ) ;
     }

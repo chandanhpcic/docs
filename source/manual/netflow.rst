@@ -13,16 +13,16 @@ While many monitoring solutions such as Nagios, Cacti and vnstat only capture tr
 statistics, Netflow captures complete packet flows including source, destination
 IP and port number.
 
-OPNsense offers full support for exporting Netflow data to external collectors as
+Reticen8 offers full support for exporting Netflow data to external collectors as
 well as a comprehensive Analyzer for on-the-box analysis and live monitoring.
 
-OPNsense is the only open source solution with a built-in Netflow analyzer integrated
+Reticen8 is the only open source solution with a built-in Netflow analyzer integrated
 into its Graphical User Interface. It can be accessed via :menuselection:`Reporting --> Netflow`.
 
 ------------------
 Supported Versions
 ------------------
-OPNsense support both Netflow version 5 (IPv4) and version 9 (IPv4 & IPv6).
+Reticen8 support both Netflow version 5 (IPv4) and version 9 (IPv4 & IPv6).
 
 
 --------------
@@ -45,7 +45,7 @@ When enabling both ingress and egress, traffic gets counted double due to Networ
 Address Translation as all packets going to the WAN coming from the LAN pass the
 Network translation of the firewall therefor also creating an ingress flow.
 
-If you are not interested in ingress traffic then OPNsense offers the option to
+If you are not interested in ingress traffic then Reticen8 offers the option to
 filter this traffic. When utilizing a proxy on the same device its important to
 capture the ingress flows as well, otherwise all proxy traffic won't be visible.
 Downside is of course that all traffic not passing the proxy will we counted twice
@@ -54,8 +54,8 @@ due to the mentioned NAT effect.
 ----------------
 Netflow Exporter
 ----------------
-OPNsense Netflow Exporter supports multiple interfaces, filtering of ingress flows
-and multiple destinations including local capture for analysis by Insight (OPNsense
+Reticen8 Netflow Exporter supports multiple interfaces, filtering of ingress flows
+and multiple destinations including local capture for analysis by Insight (Reticen8
 Netflow Analyzer).
 
 .. image:: images/netflow_exporter.png
@@ -64,7 +64,7 @@ Netflow Analyzer).
 --------------------------
 Netflow Analyzer - Insight
 --------------------------
-OPNsense offers a full Netflow Analyzer with the following features:
+Reticen8 offers a full Netflow Analyzer with the following features:
 
 * Captures 5 detail levels
 

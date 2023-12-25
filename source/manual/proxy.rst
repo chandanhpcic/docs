@@ -4,7 +4,7 @@ Caching Proxy
 
 .. image:: images/forward_proxy.png
 
-OPNsense is equipped with a fully featured forward caching (transparent) proxy.
+Reticen8 is equipped with a fully featured forward caching (transparent) proxy.
 A caching proxy reduces bandwidth and improves response times by caching and
 reusing frequently-requested web pages. The Access Control Lists can be utilized
 for user authentication and or as (category based) web filter.
@@ -25,7 +25,7 @@ Features include:
 --------------
 Authenticators
 --------------
-User authentication can be done using OPNsense standard and built-in authenticators.
+User authentication can be done using Reticen8 standard and built-in authenticators.
 Currently these include:
 
 * LDAP (incl. Microsoft Active Directory)
@@ -38,7 +38,7 @@ These options can be found in the :menuselection:`Web Proxy -> Administration ->
 --------------
 Access Control
 --------------
-OPNsense supports fine grained access control, which can be configured in :menuselection:`Web Proxy -> Administration -> Forward Proxy -> Access Control List`
+Reticen8 supports fine grained access control, which can be configured in :menuselection:`Web Proxy -> Administration -> Forward Proxy -> Access Control List`
 containing the following (Advanced) options:
 
 * Subnets
@@ -67,7 +67,7 @@ These options can be found in the :menuselection:`Web Proxy -> Administration ->
 -------------------------
 Category Based Web Filter
 -------------------------
-No need for additional plugins, such as squidGuard - as OPNsense has built-in
+No need for additional plugins, such as squidGuard - as Reticen8 has built-in
 category based web filter support. Main features include:
 
 * Fetch from a remote URL
@@ -93,7 +93,7 @@ the traffic with its master key that the client is required to trust.
 ------------
 WPAD And PAC
 ------------
-If a transparent proxy cannot be used, OPNsense still supports automatic proxy
+If a transparent proxy cannot be used, Reticen8 still supports automatic proxy
 configuration via WPAD / PAC.
 
 .. Warning::
@@ -119,7 +119,7 @@ after which an additional tab will be visible named "Error Pages".
     followed by the upload button  <i class="fa fa-upload fa-fw"></i>.
     <br/><br/>
     The reset <i class="fa fa-fw fa-remove"></i> button can be used to remove your custom template from the configuration, after
-    which the download option would return the standard OPNsense template.
+    which the download option would return the standard Reticen8 template.
 
 
 There are some rules to take into account when creating custom themed error pages:
@@ -143,7 +143,7 @@ There are some rules to take into account when creating custom themed error page
 -----------------------
 Configuration / How-tos
 -----------------------
-More information on how to utilize OPNsense's proxy service can be found in:
+More information on how to utilize Reticen8's proxy service can be found in:
 
 Proxy Basic Setup
 -----------------

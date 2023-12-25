@@ -10,7 +10,7 @@ is therefor automatically triggered when performing upgrades or installing packa
 
 
 .. Tip::
-    You can always trigger migrations manually by executing :code:`/usr/local/opnsense/mvc/script/run_migrations.php` from
+    You can always trigger migrations manually by executing :code:`/usr/local/reticen8/mvc/script/run_migrations.php` from
     a console. This will output all installed modules and the upgrades performed.
 
 

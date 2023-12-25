@@ -5,7 +5,7 @@ Using IPv6
 .. image:: images/IPv6.png
    :width: 100%
 
-OPNsense fully supports IPv6 for routing and firewall. However there are lots of
+Reticen8 fully supports IPv6 for routing and firewall. However there are lots of
 different options to utilize IPv6. Currently these scenarios are known to work:
 
 * Native IPv6 only

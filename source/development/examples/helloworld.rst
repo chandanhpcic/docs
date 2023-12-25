@@ -42,17 +42,17 @@ Guidelines
 .. rubric:: Guidelines and coding style
    :name: guidelines-and-coding-style
 
-For all OPNsense modules and applications there are some basic style and
+For all Reticen8 modules and applications there are some basic style and
 coding guides which you should use.
 
 Naming
 ------
 
 
-When creating modules for OPNsense, always name your components like
+When creating modules for Reticen8, always name your components like
 this: VendorName/ModuleName
 
-In our sample case this will be: OPNsense/HelloWorld
+In our sample case this will be: Reticen8/HelloWorld
 
 PHP code
 --------
@@ -96,19 +96,19 @@ For our sample application we want to setup some configuration data,
 which for all new style projects should live in it’s own model.
 
 First we start by creating two files inside the
-models/OPNsense/HelloWorld directory.
+models/Reticen8/HelloWorld directory.
 
 The first one is the boilerplate for the model class, which should
 contain model specific methods and (by deriving it from BaseModel)
 automatically understands the second file.
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.php
+    :caption: /usr/local/reticen8/mvc/app/models/Reticen8/HelloWorld/HelloWorld.php
 
     <?php
-    namespace OPNsense\HelloWorld;
+    namespace Reticen8\HelloWorld;
      
-    use OPNsense\Base\BaseModel;
+    use Reticen8\Base\BaseModel;
      
     class HelloWorld extends BaseModel
     {
@@ -123,12 +123,12 @@ Which is the model XML template, our skeleton starts with something like
 this:
 
 .. code-block:: xml
-    :caption: /usr/local/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.xml
+    :caption: /usr/local/reticen8/mvc/app/models/Reticen8/HelloWorld/HelloWorld.xml
 
     <model>
-        <mount>//OPNsense/helloworld</mount>
+        <mount>//Reticen8/helloworld</mount>
         <description>
-            the OPNsense "Hello World" application
+            the Reticen8 "Hello World" application
         </description>
         <items>
         </items>
@@ -154,12 +154,12 @@ View
 We should add a (Volt) template to use for the index page of our module;
 we will use the same naming convention here.
 
-Create a template named index.volt inside the views/OPNsense/HelloWorld
+Create a template named index.volt inside the views/Reticen8/HelloWorld
 directory containing the following data:
 
 
 .. code-block:: html
-    :caption: /usr/local/opnsense/mvc/app/views/OPNsense/HelloWorld/index.volt
+    :caption: /usr/local/reticen8/mvc/app/views/Reticen8/HelloWorld/index.volt
 
     <h1>Hello World!</h1>
 
@@ -171,25 +171,25 @@ Next step is to add controllers, which will be automatically picked up
 by the system routing. A controller connects the user interaction to
 logic and presentation.
 
-Every OPNsense module should separate presentation from logic, that’s
+Every Reticen8 module should separate presentation from logic, that’s
 why there should always be multiple controllers per module.
 
 Our first controller handles the template rendering to the user and
 connects the user view we just created. We start by creating a PHP file
-in controllers/OPNsense/HelloWorld/ with the following name
+in controllers/Reticen8/HelloWorld/ with the following name
 IndexController.php and contents:
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/IndexController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/IndexController.php
 
     <?php
-    namespace OPNsense\HelloWorld;
-    class IndexController extends \OPNsense\Base\IndexController
+    namespace Reticen8\HelloWorld;
+    class IndexController extends \Reticen8\Base\IndexController
     {
         public function indexAction()
         {
             // pick the template to serve to our users.
-            $this->view->pick('OPNsense/HelloWorld/index');
+            $this->view->pick('Reticen8/HelloWorld/index');
         }
     }
 
@@ -220,12 +220,12 @@ SettingsController.php and ServiceController.php) Both should look like
 this (replace Settings with Service for the other one):
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/SettingsController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/SettingsController.php
 
     <?php
-    namespace OPNsense\HelloWorld\Api;
+    namespace Reticen8\HelloWorld\Api;
      
-    use \OPNsense\Base\ApiControllerBase;
+    use \Reticen8\Base\ApiControllerBase;
     class SettingsController extends ApiControllerBase
     {
     }
@@ -301,7 +301,7 @@ list of attributes for our application can be translated to this:
     ………
 
 All available field types can be found in the
-models/OPNsense/Base/FieldTypes directory. If specific field types
+models/Reticen8/Base/FieldTypes directory. If specific field types
 support additional parameters, for example for validation, they should
 be registered in the model as well (just like the default tag in
 Enabled).
@@ -320,7 +320,7 @@ your controller directory using the sub directory forms and name it
 general.xml. Next copy in the following content:
 
 .. code-block:: xml
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/forms/general.xml
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/forms/general.xml
 
     <form>
         <field>
@@ -401,14 +401,14 @@ in the “use” section:
 
 .. code-block:: php
 
-    use \OPNsense\HelloWorld\HelloWorld;
+    use \Reticen8\HelloWorld\HelloWorld;
 
 Which includes our model into the controller. Next we create an action
 to get data from our system, and put it into a json object for the
 client (browser) to parse, by using the wrappers already in our model.
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/SettingsController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/SettingsController.php
 
     * retrieve HelloWorld general settings
      * @return array general settings
@@ -441,7 +441,7 @@ For saving the data back, we need a similar kind of call, let’s name it
 “set” and add this to the same php file:
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/SettingsController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/SettingsController.php
 
     /**
      * update HelloWorld settings
@@ -480,7 +480,7 @@ And include the Config class from our base system by adding this to the
 
 .. code-block:: php
 
-    use \OPNsense\Core\Config;
+    use \Reticen8\Core\Config;
 
 
 [Create API calls] Simplify a recurring pattern
@@ -497,7 +497,7 @@ lead to the same result. For comparison we have added a different endpoint in :c
     class SimplifiedSettingsController extends ApiMutableModelControllerBase
     {
         protected static $internalModelName = 'helloworld';
-        protected static $internalModelClass = 'OPNsense\HelloWorld\HelloWorld';
+        protected static $internalModelClass = 'Reticen8\HelloWorld\HelloWorld';
     }
 
 
@@ -520,7 +520,7 @@ Support jQuery API calls
    :name: update-the-view-to-support-the-api-calls-using-jquery
 
 Now we need to link the events to the backend code to be able to load
-and save our form, by using the OPNsense libraries you can validate your
+and save our form, by using the Reticen8 libraries you can validate your
 data automatically.
 
 Add this to the index.volt template from the HelloWorld module:
@@ -602,7 +602,7 @@ templates:
 
 ::
 
-    /usr/local/opnsense/service/templates/OPNsense/HelloWorld/
+    /usr/local/reticen8/service/templates/Reticen8/HelloWorld/
 
 First we add a content definition, by creating a file named +TARGETS,
 which should hold the following information:
@@ -622,23 +622,23 @@ enabled.
 
 .. code-block:: html+jinja
 
-    {% if helpers.exists('OPNsense.helloworld.general') and OPNsense.helloworld.general.Enabled|default("0") == "1" %}
+    {% if helpers.exists('Reticen8.helloworld.general') and Reticen8.helloworld.general.Enabled|default("0") == "1" %}
     [general]
-    SMTPHost={{ OPNsense.helloworld.general.SMTPHost|default("") }}
-    FromEmail={{ OPNsense.helloworld.general.FromEmail|default("") }}
-    ToEmail={{ OPNsense.helloworld.general.ToEmail|default("") }}
-    Subject={{ OPNsense.helloworld.general.Description|default("") }}
+    SMTPHost={{ Reticen8.helloworld.general.SMTPHost|default("") }}
+    FromEmail={{ Reticen8.helloworld.general.FromEmail|default("") }}
+    ToEmail={{ Reticen8.helloworld.general.ToEmail|default("") }}
+    Subject={{ Reticen8.helloworld.general.Description|default("") }}
     {% endif %}
 
 Now we need to be able to reload this module (or in real life, this
 would probably be a service) by adding a service action into our
 ServiceController. Edit
-controllers/OPNsense/HelloWorld/Api/ServiceController.php and add the
+controllers/Reticen8/HelloWorld/Api/ServiceController.php and add the
 backend module to the use section, like this:
 
 .. code-block:: php
 
-    use \OPNsense\Core\Backend;
+    use \Reticen8\Core\Backend;
 
 
 By doing this we can use the backend communication in this class. Next
@@ -646,14 +646,14 @@ add a new action to the class called “reloadAction” using this piece of
 code:
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/ServiceController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/ServiceController.php
 
     public function reloadAction()
     {
         $status = "failed";
         if ($this->request->isPost()) {
             $backend = new Backend();
-            $bckresult = trim($backend->configdRun("template reload OPNsense/HelloWorld"));
+            $bckresult = trim($backend->configdRun("template reload Reticen8/HelloWorld"));
             if ($bckresult == "OK") {
                 $status = "ok";
             }
@@ -720,21 +720,21 @@ configuration can be run from the command line by running:
 
 ::
 
-  configctl template reload OPNsense/HelloWorld
+  configctl template reload Reticen8/HelloWorld
 
 First thing to do when registering new actions to the system for a new
 application is to create a config template.
 
 ::
 
-    /usr/local/opnsense/service/conf/actions.d/actions_helloworld.conf
+    /usr/local/reticen8/service/conf/actions.d/actions_helloworld.conf
 
 And add a command to the template like this:
 
 ::
 
     [test]
-    command:/usr/local/opnsense/scripts/OPNsense/HelloWorld/testConnection.py
+    command:/usr/local/reticen8/scripts/Reticen8/HelloWorld/testConnection.py
     parameters:
     type:script_output
     message:hello world module test
@@ -759,7 +759,7 @@ testAction and let it pass json data to our clients when using a POST
 type request.
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/ServiceController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/ServiceController.php
 
     public function testAction()
     {
@@ -795,7 +795,7 @@ elements:
 (in HTML section)
 
 .. code-block:: xml
-    :caption: /usr/local/opnsense/mvc/app/views/OPNsense/HelloWorld/index.volt
+    :caption: /usr/local/reticen8/mvc/app/views/Reticen8/HelloWorld/index.volt
 
     <div class="alert alert-info hidden" role="alert" id="responseMsg">
      
@@ -812,7 +812,7 @@ press test to see some results.
 Multi language / Translations
 -----------------------------
 
-OPNsense is available in may different languages like english, german or japanese.
+Reticen8 is available in may different languages like english, german or japanese.
 This works because we are using the gettext library which is available to all GUI components.
 While the XML based user interfaces are supporting it automatically,
 there may still the need to call it manually (buttons, tabs etc.).
@@ -847,7 +847,7 @@ And for volt templates it works this way:
 
 .. Note::
     You should NEVER split strings which should belong together like a sentence.
-    This makes plugins hard to translate and will decrease the quality of OPNsense in other languages.
+    This makes plugins hard to translate and will decrease the quality of Reticen8 in other languages.
 
 
 -------------------------
@@ -908,11 +908,11 @@ grant access to this module from the system user manager.
 Create an installable plugin
 ----------------------------
 
-All files are created in their original locations (on the OPNsense
+All files are created in their original locations (on the Reticen8
 machine /usr/local/…), now we are ready to create a package from them.
 To fully use this process and create the actual package, it’s best to
 setup a full build environment (explained over here:
-https://github.com/opnsense/tools )
+https://github.com/reticen8/tools )
 
 When everything is in place, we will create a new plugin directory. For
 this example we will use the following:
@@ -946,24 +946,24 @@ directory, which results in the following file listing:
 
 ::
 
-    src/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/ServiceController.php
-    src/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/SettingsController.php
-    src/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/SimplifiedSettingsController.php
-    src/opnsense/mvc/app/controllers/OPNsense/HelloWorld/IndexController.php
-    src/opnsense/mvc/app/controllers/OPNsense/HelloWorld/forms/general.xml
-    src/opnsense/mvc/app/models/OPNsense/HelloWorld/ACL/ACL.xml
-    src/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.php
-    src/opnsense/mvc/app/models/OPNsense/HelloWorld/HelloWorld.xml
-    src/opnsense/mvc/app/models/OPNsense/HelloWorld/Menu/Menu.xml
-    src/opnsense/mvc/app/views/OPNsense/HelloWorld/index.volt
-    src/opnsense/scripts/OPNsense/HelloWorld/testConnection.py
-    src/opnsense/service/templates/OPNsense/HelloWorld/+TARGETS
-    src/opnsense/service/templates/OPNsense/HelloWorld/helloworld.conf
-    src/opnsense/service/conf/actions.d/actions_helloworld.conf
+    src/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/ServiceController.php
+    src/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/SettingsController.php
+    src/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/SimplifiedSettingsController.php
+    src/reticen8/mvc/app/controllers/Reticen8/HelloWorld/IndexController.php
+    src/reticen8/mvc/app/controllers/Reticen8/HelloWorld/forms/general.xml
+    src/reticen8/mvc/app/models/Reticen8/HelloWorld/ACL/ACL.xml
+    src/reticen8/mvc/app/models/Reticen8/HelloWorld/HelloWorld.php
+    src/reticen8/mvc/app/models/Reticen8/HelloWorld/HelloWorld.xml
+    src/reticen8/mvc/app/models/Reticen8/HelloWorld/Menu/Menu.xml
+    src/reticen8/mvc/app/views/Reticen8/HelloWorld/index.volt
+    src/reticen8/scripts/Reticen8/HelloWorld/testConnection.py
+    src/reticen8/service/templates/Reticen8/HelloWorld/+TARGETS
+    src/reticen8/service/templates/Reticen8/HelloWorld/helloworld.conf
+    src/reticen8/service/conf/actions.d/actions_helloworld.conf
 
 With everything in place, you could build the plugin package using the
 “make plugins” command in the /usr/tools directory. The result of this
-will be a standard pkg package, which you can install on any OPNsense
+will be a standard pkg package, which you can install on any Reticen8
 system and will be usable right after installing. All plugins are
 prefixed with os-, our new package file will be called:
 
@@ -977,15 +977,15 @@ prefixed with os-, our new package file will be called:
    :name: reference
 
 -  source of this example :
-   https://github.com/opnsense/plugins/tree/master/devel/helloworld
--  build instructions : https://github.com/opnsense/tools
--  practical frontend development : https://github.com/opnsense/ui_devtools
+   https://github.com/reticen8/plugins/tree/master/devel/helloworld
+-  build instructions : https://github.com/reticen8/tools
+-  practical frontend development : https://github.com/reticen8/ui_devtools
 -  frontend template language reference (Volt) :
    https://docs.phalconphp.com/en/latest/reference/volt.html
 -  configuration template language reference (mostly the same as Volt) :
    http://jinja.pocoo.org/docs/dev/
--  OPNsense architecture :doc:`Architecture <../architecture>`
--  OPNsense creating models
+-  Reticen8 architecture :doc:`Architecture <../architecture>`
+-  Reticen8 creating models
    `Develop:Frontend/Creating\_models </index.php/Develop:Frontend/Creating_models>`__
 
 .. |overview| image:: images/Helloworld_overview.png

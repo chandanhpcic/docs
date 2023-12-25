@@ -14,7 +14,7 @@ Radsecproxy
     "``POST``","radsecproxy","clients","setItem","$uuid"
     "``POST``","radsecproxy","clients","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -23,7 +23,7 @@ Radsecproxy
     "``GET``","radsecproxy","general","get",""
     "``GET``","radsecproxy","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"
 
 .. csv-table:: Resources (RealmsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -38,7 +38,7 @@ Radsecproxy
     "``POST``","radsecproxy","realms","setItem","$uuid"
     "``POST``","radsecproxy","realms","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"
 
 .. csv-table:: Resources (RewritesController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -53,7 +53,7 @@ Radsecproxy
     "``POST``","radsecproxy","rewrites","setItem","$uuid"
     "``POST``","radsecproxy","rewrites","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"
 
 .. csv-table:: Resources (ServersController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -68,7 +68,7 @@ Radsecproxy
     "``POST``","radsecproxy","servers","setItem","$uuid"
     "``POST``","radsecproxy","servers","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -80,7 +80,7 @@ Radsecproxy
     "``GET``","radsecproxy","service","status",""
     "``GET``","radsecproxy","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"
 
 .. csv-table:: Resources (TlsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -95,4 +95,4 @@ Radsecproxy
     "``POST``","radsecproxy","tls","setItem","$uuid"
     "``POST``","radsecproxy","tls","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/opnsense/plugins/blob/master/net/radsecproxy/src/opnsense/mvc/app/models/OPNsense/RadSecProxy/RadSecProxy.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `RadSecProxy.xml <https://github.com/reticen8/plugins/blob/master/net/radsecproxy/src/reticen8/mvc/app/models/Reticen8/RadSecProxy/RadSecProxy.xml>`__"

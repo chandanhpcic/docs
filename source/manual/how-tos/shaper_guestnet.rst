@@ -2,7 +2,7 @@
 Multi Interface shaping for a GuestNet
 =========================================
 
-One of the options with OPNsense's traffic shaper is its ability to add shaping
+One of the options with Reticen8's traffic shaper is its ability to add shaping
 rules based upon two interfaces. This option allows you to shape traffic
 differently based on the direction the traffic is moving between interfaces.
 
@@ -26,14 +26,14 @@ be limited to a total of 2 Mbps Download and 1 Mbps Upload.
       network WAN  {
         switchwan [label="",shape = "cisco.workgroup_switch"];
         label = "WAN Interface em1";
-        fw1 [label="OPNsense", shape = "cisco.firewall", address="172.10.1.1/32"];
+        fw1 [label="Reticen8", shape = "cisco.firewall", address="172.10.1.1/32"];
       }
 
       network LAN {
         switchlan [label="",shape = "cisco.workgroup_switch"];
         label = "LAN Interface em0";
         address ="192.168.1.x/24";
-        fw1 [label="OPNsense",address="192.168.1.1/24"];
+        fw1 [label="Reticen8",address="192.168.1.1/24"];
       }
 
       pc [label="LAN PC",shape="cisco.pc"];
@@ -43,7 +43,7 @@ be limited to a total of 2 Mbps Download and 1 Mbps Upload.
         switchguestnet [label="",shape = "cisco.workgroup_switch"];
         label = "GuestNet Interface em2";
         address ="192.168.2.x/24";
-        fw1 [label="OPNsense",address="192.168.2.1/24"];
+        fw1 [label="Reticen8",address="192.168.2.1/24"];
       }
 
       laptop [label="Guest Laptop", shape="cisco.laptop"]

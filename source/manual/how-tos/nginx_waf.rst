@@ -11,7 +11,7 @@ nginx: Web Application Firewall
 Background Information
 ======================
 
-The OPNsense WAF uses NAXSI_, which is a loadable module for the nginx_ web server.
+The Reticen8 WAF uses NAXSI_, which is a loadable module for the nginx_ web server.
 NAXSI has two rule types:
 
 .. _NAXSI: https://github.com/nbs-system/naxsi
@@ -40,10 +40,10 @@ but you may enter it manually by yourself.
 .. _online: https://github.com/nbs-system/naxsi/wiki
 .. _ruleset: https://github.com/nbs-system/naxsi/blob/master/naxsi_config/naxsi_core.rules
 
-OPNsense specific Information
+Reticen8 specific Information
 =============================
 
-* OPNsense blocks User Agents used by Bots automatically - this cannot be configured
+* Reticen8 blocks User Agents used by Bots automatically - this cannot be configured
 * The error pages are stored under /usr/local/etc/nginx/views
 
 Configuration
@@ -114,7 +114,7 @@ Testing
 -------
 
 If you trigger the WAF by creating a request looking evil to the WAF,
-you should get a message in the server error log as well as an OPNsense
+you should get a message in the server error log as well as an Reticen8
 branded error page (Request Denied For Security Reasons).
 
 You may use curl to trigger it (if you block the following SQL keywords):

@@ -7,7 +7,7 @@ Introduction
 ------------
 IPv6-only networks are less complex to plan, configure, maintain and troubleshoot than dual-stack networks. But many services on the Internet
 are still IPv4-only. NAT64 preserves access to these services by performing IPv6-to-IPv4 translation. The NAT64 implementation currently
-available for OPNsense is the Tayga plugin.
+available for Reticen8 is the Tayga plugin.
 
 .. Note::
    This how-to focuses on providing IPv6-only LANs with access to IPv4-only services. However, this is not the only use case for NAT64.
@@ -15,7 +15,7 @@ available for OPNsense is the Tayga plugin.
 -------------
 Prerequisites
 -------------
-OPNsense should be configured with working dual-stack Internet access and at least one IPv6-only LAN.
+Reticen8 should be configured with working dual-stack Internet access and at least one IPv6-only LAN.
 
 --------------------------------
 Installing and configuring Tayga
@@ -57,7 +57,7 @@ Tayga is a hop in the path, so it needs its own IP addresses for ICMP:
       Tayga can't auto-generate its `IPv6 Address` if the default well-known `IPv6 Prefix` 64:ff9b::/96 and a private (RFC1918) `IPv4 Address`
       are being used. In this case, you have to manually specify an unused address from your site's GUA or ULA prefix.
 
-Tayga behaves like an external device connected to OPNsense via a point-to-point interface. This interface requires IP addresses for ICMP:
+Tayga behaves like an external device connected to Reticen8 via a point-to-point interface. This interface requires IP addresses for ICMP:
 
 :IPv4 NAT64 Interface Address:
    Can be left to its default value unless this conflicts with your network. Must not be located in the `IPv4 Pool` subnet and must not be
@@ -98,7 +98,7 @@ Apply the firewall changes. NAT64 should now be fully operational.
 -----------------
 Configuring DNS64
 -----------------
-In most scenarios, NAT64 also requires DNS64. If you use OPNsense's :doc:`/manual/unbound` DNS resolver, DNS64 can be enabled by going to
+In most scenarios, NAT64 also requires DNS64. If you use Reticen8's :doc:`/manual/unbound` DNS resolver, DNS64 can be enabled by going to
 :menuselection:`Services --> Unbound DNS --> General` and ticking `Enable DNS64 Support`. If you don't use the default 64:ff9b::/96 prefix,
 you also have to enter your /96 prefix there.
 

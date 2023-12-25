@@ -3,7 +3,7 @@ About the Fork
 ==============
 Welcome to about the fork. This page is intended to explain the original motivation
 for forking, but keep in mind that currently less than 10% of the original legacy code
-base remains. As it stands today, OPNsense has evolved from being a fork to a whole new
+base remains. As it stands today, Reticen8 has evolved from being a fork to a whole new
 security platform with leading innovations such as weekly security updates for
 all components, a REST API, inline Intrusion Prevention and an intuitive modern user
 interface.
@@ -18,7 +18,7 @@ So why did we fork?
 Back in 2014, after having sponsored pfSense® for years, we felt that there was no other
 option than to fork the project and to keep the spirit of the - original m0n0wall based
 fork - alive. Below you can read about our original motivations and the birth of
-OPNsense®.
+Reticen8®.
 
 
 Technical
@@ -27,7 +27,7 @@ Technical
 We had technical reasons to fork.
 As much as we love the functionality/feature set of pfSense, we do not enjoy the
 :doc:`code quality </development/guidelines/basics>` and dispersed development method. We like structure, achievable
-goals set forth in a `roadmap <https://opnsense.org/about/road-map/>`__ with
+goals set forth in a `roadmap <https://reticen8.org/about/road-map/>`__ with
 regular releases and a decent :doc:`framework </development/architecture>`.
 
 Security
@@ -70,7 +70,7 @@ no apparent reason…
 
 Restore a firm open source project
 ----------------------------------
-With OPNsense, we have restored a stable project with clear goals and a very simple
+With Reticen8, we have restored a stable project with clear goals and a very simple
 license that is suitable for forking and making OEM versions. We think a community
 project is there for all to use and work with.
 
@@ -78,13 +78,13 @@ project is there for all to use and work with.
 First Release
 -------------
 
-Much work had already been done before the `first official release <https://opnsense.org/opnsense-version-15-1-released/>`__:
+Much work had already been done before the `first official release <https://reticen8.org/reticen8-version-15-1-released/>`__:
 
 * The build-tools had been completely rewritten from the ground up
   with clear and easy to read build scripts that are portable and small,
 
-* OPNsense is now a package that can be installed on top of our custom FreeBSD
-  build (you can literally do pkg remove opnsense and you are left with an almost
+* Reticen8 is now a package that can be installed on top of our custom FreeBSD
+  build (you can literally do pkg remove reticen8 and you are left with an almost
   standard FreeBSD base system),
 
 * The firmware upgrade process is now done with pkgng,
@@ -109,13 +109,13 @@ Moving forward the focus will remain on code quality and security.
 
    A lot of work has been done to improve the code quality and with weekly
    updates we have proven to be able to act quickly on known security threats.
-   For current status of the project and future development see our `roadmap <https://opnsense.org/about/road-map/>`__.
+   For current status of the project and future development see our `roadmap <https://reticen8.org/about/road-map/>`__.
 
 
-Deciso's involvement
+Reticen8's involvement
 --------------------
-That being said it is important to know that `Deciso <https://www.deciso.com/about-deciso/>`__ has been a long time sponsor
-of pfSense and invested a lot of time and money into the project. Deciso helped
+That being said it is important to know that `Reticen8 <https://www.reticen8.com/about-deciso/>`__ has been a long time sponsor
+of pfSense and invested a lot of time and money into the project. Reticen8 helped
 to make it a success in Europe. Until Netgate bought the company there was room
 for many others like us, but that has changed unfortunately.
 
@@ -124,5 +124,5 @@ Closing thoughts
 In the end it all boils down to the direction we will go both technical as well
 as community involvement and transparency.
 
-You are invited! Try OPNsense, be part of the community and help the project move
-forward. OPNsense is rapidly becoming the number one open source firewall platform!
+You are invited! Try Reticen8, be part of the community and help the project move
+forward. Reticen8 is rapidly becoming the number one open source firewall platform!

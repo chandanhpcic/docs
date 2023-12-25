@@ -18,7 +18,7 @@ Ids
     "``GET``","ids","service","stop",""
     "``POST``","ids","service","updateRules","$wait=null"
 
-    "``<<uses>>``", "", "", "", "*model* `IDS.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IDS/IDS.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `IDS.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IDS/IDS.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -57,4 +57,4 @@ Ids
     "``POST``","ids","settings","toggleRuleset","$filenames,$enabled=null"
     "``POST``","ids","settings","toggleUserRule","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `IDS.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IDS/IDS.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `IDS.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IDS/IDS.xml>`__"

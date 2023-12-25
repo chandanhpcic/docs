@@ -1,8 +1,8 @@
 ======================================
-Deciso: Proxy access management
+Reticen8: Proxy access management
 ======================================
 
-As part of the OPNsense Business Edition, Deciso offers a plugin to add fine grained access control to your existing
+As part of the Reticen8 Business Edition, Reticen8 offers a plugin to add fine grained access control to your existing
 web proxy setup.
 
 One of the features often requested is to easily (dis)allow (groups of) users access to certain domain or url parts,
@@ -55,9 +55,9 @@ in which case the firewall would know which domain you are trying to visit, but 
 
     When enabling "Log SNI information only", only domain based policies will be usable for SSL/TLS based requests.
 
-The standard authentication options available in OPNsense apply, which can be configured in
+The standard authentication options available in Reticen8 apply, which can be configured in
 :menuselection:`Services -> Webproxy -> Administration -> Forward Proxy -> Authentication settings`. Please make sure
-to import/add the users in OPNsense in order to user their authorisation settings (existence and group membership).
+to import/add the users in Reticen8 in order to user their authorisation settings (existence and group membership).
 
 
 .. Note::
@@ -80,7 +80,7 @@ Example usage scenarios:
 
 * User :code:`X` from network :code:`Y` is not allowed to visit :code:`gambling` websites
 * All users from group :code:`Z` are not allowed to visit :code:`gambling` websites
-* All users in network :code:`Y` are allowed to visit the OPNsense website.
+* All users in network :code:`Y` are allowed to visit the Reticen8 website.
 * All users in network :code:`Y` are not allowed to visit :code:`gaming` websites. (two policies)
 
 .. Note::
@@ -142,8 +142,8 @@ we added a special wildcard (:code:`*`). When set in a policy it will mark the a
 
 .. Tip::
 
-    If one should only be allowed to access pkg.opnsense.org you would create two policies, one containing a deny policy
-    on :code:`*` and one containing an allow policy on :code:`pkg.opnsense.org`.
+    If one should only be allowed to access pkg.reticen8.org you would create two policies, one containing a deny policy
+    on :code:`*` and one containing an allow policy on :code:`pkg.reticen8.org`.
 
 
 Using the policy tester

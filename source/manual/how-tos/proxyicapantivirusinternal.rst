@@ -1,7 +1,7 @@
 ==================================================
-Setup Anti Virus Protection using OPNsense Plugins
+Setup Anti Virus Protection using Reticen8 Plugins
 ==================================================
-OPNsense can offer HTTP and HTTPS protection by utilizing its highly flexible
+Reticen8 can offer HTTP and HTTPS protection by utilizing its highly flexible
 proxy and the industry standard ICAP. An external engine from one of the known
 vendors is used to offer maximum protection against malware, such as ransomware,
 trojans and viruses. This protection can be further enhanced by the built-in Intrusion

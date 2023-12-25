@@ -8,7 +8,7 @@ Chrony
     "``GET``","chrony","general","get",""
     "``GET``","chrony","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/chrony/src/opnsense/mvc/app/models/OPNsense/Chrony/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/chrony/src/reticen8/mvc/app/models/Reticen8/Chrony/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -24,4 +24,4 @@ Chrony
     "``GET``","chrony","service","status",""
     "``GET``","chrony","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/chrony/src/opnsense/mvc/app/models/OPNsense/Chrony/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/chrony/src/reticen8/mvc/app/models/Reticen8/Chrony/General.xml>`__"

@@ -8,7 +8,7 @@ Cicap
     "``GET``","cicap","antivirus","get",""
     "``GET``","cicap","antivirus","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Antivirus.xml <https://github.com/opnsense/plugins/blob/master/www/c-icap/src/opnsense/mvc/app/models/OPNsense/CICAP/Antivirus.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Antivirus.xml <https://github.com/reticen8/plugins/blob/master/www/c-icap/src/reticen8/mvc/app/models/Reticen8/CICAP/Antivirus.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -17,7 +17,7 @@ Cicap
     "``GET``","cicap","general","get",""
     "``GET``","cicap","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/www/c-icap/src/opnsense/mvc/app/models/OPNsense/CICAP/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/www/c-icap/src/reticen8/mvc/app/models/Reticen8/CICAP/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -30,4 +30,4 @@ Cicap
     "``GET``","cicap","service","status",""
     "``GET``","cicap","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/www/c-icap/src/opnsense/mvc/app/models/OPNsense/CICAP/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/www/c-icap/src/reticen8/mvc/app/models/Reticen8/CICAP/General.xml>`__"

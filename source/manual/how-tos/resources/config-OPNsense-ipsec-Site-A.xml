@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<opnsense>
+<reticen8>
   <version>11.2</version>
-  <theme>opnsense</theme>
+  <theme>reticen8</theme>
   <sysctl>
     <item>
       <descr>Disable the pf ftp proxy handler.</descr>
@@ -186,7 +186,7 @@
   </sysctl>
   <system>
     <optimization>normal</optimization>
-    <hostname>OPNsense</hostname>
+    <hostname>Reticen8</hostname>
     <domain>localdomain</domain>
     <dnsallowoverride/>
     <group>
@@ -615,4 +615,4 @@
       <defaultgw>1</defaultgw>
     </gateway_item>
   </gateways>
-</opnsense>
+</reticen8>

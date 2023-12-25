@@ -2,12 +2,12 @@
 Trust
 ==================
 
-In OPNsense, certificates are used for ensuring trust between peers. To make using them easier, OPNsense allows creating
+In Reticen8, certificates are used for ensuring trust between peers. To make using them easier, Reticen8 allows creating
 certificates from the front-end. In addition to that, it also allows creating certificates for other purposes,
-avoiding the need to use the ``openssl`` command line tool. Certificates in OPNsense can be managed from
+avoiding the need to use the ``openssl`` command line tool. Certificates in Reticen8 can be managed from
 :menuselection:`System --> Trust --> Certificates`.
 
-Examples of OPNsense components that use certificates:
+Examples of Reticen8 components that use certificates:
 * OpenVPN
 * IPsec
 * Captive Portal
@@ -17,14 +17,14 @@ Examples of OPNsense components that use certificates:
 Certificate types
 -----------------
 
-The following types of certificate can be generated in OPNsense:
+The following types of certificate can be generated in Reticen8:
 
 * Client
 * Server
 * Combined Client/Server
 * Certificate Authority
 
-In addition to this, OPNsense can generate a Certificate Signing Request (CSR). This can be used if you want to create a
+In addition to this, Reticen8 can generate a Certificate Signing Request (CSR). This can be used if you want to create a
 certficate signed by an external CA.
 
 .. warning::

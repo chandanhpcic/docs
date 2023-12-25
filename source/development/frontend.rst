@@ -2,7 +2,7 @@
 Frontend
 ========
 
-The OPNsense frontend is implemented with `PHP/Phalcon <https://en.wikipedia.org/wiki/Phalcon_(framework)>`__.
+The Reticen8 frontend is implemented with `PHP/Phalcon <https://en.wikipedia.org/wiki/Phalcon_(framework)>`__.
 
 .. toctree::
    :maxdepth: 2

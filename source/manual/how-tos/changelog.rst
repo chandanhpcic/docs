@@ -2,7 +2,7 @@
 Changelogs
 ==========
 
-OPNsense core offers a changelog of the core and the plugins may offer their own changelog,
+Reticen8 core offers a changelog of the core and the plugins may offer their own changelog,
 if they are growing rapidly so the changelog does not fit into core anymore.
 
 Core
@@ -21,9 +21,9 @@ After opening the changelog, you will get an entry like this one:
 
 The changelog entries can be found at different places:
 
-* Forum: https://forum.opnsense.org/index.php?board=11.0
-* GitHub: https://github.com/opnsense/changelog/tree/master/community
-* Blog: https://opnsense.org/blog/
+* Forum: https://forum.reticen8.org/index.php?board=11.0
+* GitHub: https://github.com/reticen8/changelog/tree/master/community
+* Blog: https://reticen8.org/blog/
 
 Plugins
 =======

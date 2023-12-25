@@ -1,14 +1,14 @@
 ==================================
-OPNsense Azure Virtual Appliance
+Reticen8 Azure Virtual Appliance
 ==================================
 
-OPNsense is a fully featured security platform that secures your network with high-end features such as
+Reticen8 is a fully featured security platform that secures your network with high-end features such as
 inline intrusion prevention, virtual private networking, two factor authentication,
 captive portal and filtering web proxy. The optional high availability setup ensures stable network performance
 with automatic failover and synchronised states, minimising disruption.
 Keep your network secure and the good packets flowing.
 
-The Virtual Appliance is available on the Microsoft Azure Marketplace (`here <https://azuremarketplace.microsoft.com/en-en/marketplace/apps/decisosalesbv.opnsense?tab=Overview>`__).
+The Virtual Appliance is available on the Microsoft Azure Marketplace (`here <https://azuremarketplace.microsoft.com/en-en/marketplace/apps/decisosalesbv.reticen8?tab=Overview>`__).
 
 .. image:: images/azure_offer.png
     :width: 100%

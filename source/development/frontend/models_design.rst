@@ -2,13 +2,13 @@
 Designing the model
 -------------------
 
-Creating models for OPNsense is divided into two separate blocks:
+Creating models for Reticen8 is divided into two separate blocks:
 
 #. A PHP class describing the actions on our data (also acts as a
    wrapper to our data),
 #. The definition of the data and the rules it should apply to.
 
-Every model's class should be derived from OPNsense\\Base\\BaseModel, a very
+Every model's class should be derived from Reticen8\\Base\\BaseModel, a very
 simple model without any (additional) logic is defined with:
 
 .. code-block:: php
@@ -16,7 +16,7 @@ simple model without any (additional) logic is defined with:
     <?php
     namespace myVendorName\myModule;
      
-    use OPNsense\Base\BaseModel;
+    use Reticen8\Base\BaseModel;
      
     class myModel extends BaseModel
     {
@@ -26,7 +26,7 @@ simple model without any (additional) logic is defined with:
 This class should be placed inside the model directory of our project, in this
 case the full path for our class file would be
 
--  /usr/local/opnsense/mvc/app/models/**myVendorName/myModule/myModel.php**
+-  /usr/local/reticen8/mvc/app/models/**myVendorName/myModule/myModel.php**
 
 When you design a model, the next thing to do is to figure out what data is
 relevant for your application or module and think of the rules it should comply
@@ -37,7 +37,7 @@ base name of our model suffixed by .xml.
 
 Using the same model, we would create the following file:
 
--  /usr/local/opnsense/mvc/app/models/**myVendorName/myModule/myModel.xml**
+-  /usr/local/reticen8/mvc/app/models/**myVendorName/myModule/myModel.xml**
 
 And start describing our (information) model, like this:
 
@@ -104,7 +104,7 @@ From top to bottom we find the following nodes in our tree:
    validation
 
 The fieldtypes are easily extendable in the base system and all common ones live in
-their own namespace at *OPNsense\\Base\\FieldTypes* deriving from *BaseField*.
+their own namespace at *Reticen8\\Base\\FieldTypes* deriving from *BaseField*.
 
 .. Note::
 

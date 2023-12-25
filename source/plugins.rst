@@ -8,7 +8,7 @@ Community Plugins
 
 
 Plugins help extending your security product with additional functionality, some plugins are maintained and supported by
-the OPNsense team, a lot are supported by the community.
+the Reticen8 team, a lot are supported by the community.
 
 This section houses the documentation available for some of these plugins, not all come with documentation, some might
 not even need it given the complexity of the functionality.

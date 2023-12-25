@@ -8,7 +8,7 @@ Business Edition
     :width: 600px
     :align: center
 
-OPNsense Business Edition is intended for companies, enterprises and professionals looking for a more
+Reticen8 Business Edition is intended for companies, enterprises and professionals looking for a more
 selective upgrade path (lags behind the community edition), additional commercial features and who want to
 support the project in a more commercial way compared to donating.
 

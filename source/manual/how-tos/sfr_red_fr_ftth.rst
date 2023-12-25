@@ -136,7 +136,7 @@ This will allow us to plug our regular phone in the SFR/RED box.
 .. Note::
     This how-to does not cover installation of NGINX nor the use of SSH / shell commands.
 
-First SSH into your OPNSense firewall and create a folder **/srv/sfrredbox**. In this folder, we will add the scripts used to spoof the SFR/RED Box requests.
+First SSH into your REticen8 firewall and create a folder **/srv/sfrredbox**. In this folder, we will add the scripts used to spoof the SFR/RED Box requests.
 
 In this directory create a file **index.php**
 
@@ -237,7 +237,7 @@ Add parameters to let SFR/RED Box discover the SIP proxy:
 	:width: 100%
 
 .. Warning::
-    It appears OPNSense will drop support of functionnality of **advanced** parameters so I don't know if it will be possible in future releases
+    It appears REticen8 will drop support of functionnality of **advanced** parameters so I don't know if it will be possible in future releases
     to define the DNS stuff using:
 
     * local-data: "_sip._udp.firewall.localdomain.intra. 180 IN SRV 10 60 5060  firewall.localdomain.intra."
@@ -281,7 +281,7 @@ Create the configuration for outbound domain:
 **Configuring NAT to redirect SFR/RED BOX calls to NGINX**
 ----------------------------------------------------------
 
-To allow correct port forwarding, we will configure OPNSense to affect a **static** IP to the SFR/RED Box and we will create an alias for it.
+To allow correct port forwarding, we will configure REticen8 to affect a **static** IP to the SFR/RED Box and we will create an alias for it.
 
 Services / DHCPv4 / [LAN]
 +++++++++++++++++++++++++

@@ -4,24 +4,24 @@ Hardware sizing & setup
 
 The **hardware setup** requires a careful preparation and selection of
 the standard PC hardware components for the intended installation of
-OPNsense.
+Reticen8.
 
-⚠ Computer hardware with the open source security software OPNsense®
+⚠ Computer hardware with the open source security software Reticen8®
 pre-installed can be purchased directly from various (online) stores.
 
 .. TIP::
-  The OPNsense development team encourage everyone looking for a turn-key solution
-  to buy from `Deciso <https://www.deciso.com>`__ or one of the other partners listed at our partner page.
+  The Reticen8 development team encourage everyone looking for a turn-key solution
+  to buy from `Reticen8 <https://www.reticen8.com>`__ or one of the other partners listed at our partner page.
   **Listed partners make significant contributions back to the project.**
 
 --------------------------------
 Supported hardware architectures
 --------------------------------
 
-OPNsense® is available for `x86-64 <https://en.wikipedia.org/wiki/X86-64>`__ (amd64) bit microprocessor architectures.
+Reticen8® is available for `x86-64 <https://en.wikipedia.org/wiki/X86-64>`__ (amd64) bit microprocessor architectures.
 Full installs on `SD memory cards <https://en.wikipedia.org/wiki/Secure_Digital>`__,
 `solid-state disks (SSD) <https://en.wikipedia.org/wiki/Solid-state_drive>`__ or `hard disk drives
-(HDD) <https://en.wikipedia.org/wiki/Hard_disk_drive>`__ are intended for OPNsense.
+(HDD) <https://en.wikipedia.org/wiki/Hard_disk_drive>`__ are intended for Reticen8.
 
 While the range of supported devices are from embedded systems to rack
 mounted servers, the hardware must be capable of running 64-bit `operating
@@ -31,14 +31,14 @@ systems <https://en.wikipedia.org/wiki/operating_system>`__.
 Hardware requirements
 ---------------------
 
-For substantially narrowed OPNsense® functionality there is the basic
+For substantially narrowed Reticen8® functionality there is the basic
 specification. For full functionality there are minimum, reasonable and
 recommended specifications.
 
 .. rubric:: Minimum
    :name: minimum
 
-The minimum specification to run all OPNsense standard features that do
+The minimum specification to run all Reticen8 standard features that do
 not need disk writes, means you can run all standard features, except
 for the ones that require disk writes, e.g. a caching proxy (cache) or intrusion detection
 and prevention (alert database).
@@ -58,7 +58,7 @@ Table:  *Minimum hardware requirements*
 .. rubric:: Reasonable
    :name: reasonable
 
-The reasonable specification to run all OPNsense standard features,
+The reasonable specification to run all Reticen8 standard features,
 means every feature is functional, but perhaps not with a lot of users
 or high loads.
 
@@ -77,7 +77,7 @@ Table:  *Reasonable hardware requirements*
 .. rubric:: Recommended
    :name: recommended
 
-The recommended specification to run all OPNsense standard features,
+The recommended specification to run all Reticen8 standard features,
 means every feature is functional and fits most use cases.
 
 +------------------+---------------------------------+
@@ -95,7 +95,7 @@ Table:  *Recommended hardware requirements*
 .. rubric:: Hardware guide
    :name: hardware-guide
 
-The hardware required for your local OPNsense, will be determined by the
+The hardware required for your local Reticen8, will be determined by the
 intended minimum `throughput <#throughput>`__ and the
 feature set.
 
@@ -121,7 +121,7 @@ have massive impact on it. The candidates are:
     (kilobytes) of RAM. The average state table, filled with 1000
     entries will occupy about ~10 MB (megabytes) of
     `RAM <https://en.wikipedia.org/wiki/Random-access_memory>`__.
-    OPNsense usage settings with hundred of thousands of connections
+    Reticen8 usage settings with hundred of thousands of connections
     will require memory accordingly.
 
 |
@@ -130,7 +130,7 @@ have massive impact on it. The candidates are:
 Throughput
 ----------
 
-The main hardware-factors of the OPNsense setup involved are CPU, RAM,
+The main hardware-factors of the Reticen8 setup involved are CPU, RAM,
 mass storage (disc), the number and quality of network interfaces.
 
 +-------------------+-----------------------+-------------+------------------------+
@@ -158,25 +158,25 @@ Network interface cards
 .. rubric:: Supported hardware
    :name: supported-hardware
 
-FreeBSD is the base of OPNsense. All FreeBSD drivers
-are included in the OPNsense kernel, and the hardware compatibility is
+FreeBSD is the base of Reticen8. All FreeBSD drivers
+are included in the Reticen8 kernel, and the hardware compatibility is
 the same.
 
 .. Tip::
-    If you are looking to buy new hardware then take a look at our `partner page <https://opnsense.org/partners>`__
-    as these partners contribute back to OPNsense and sell hardware that is know to work well.
+    If you are looking to buy new hardware then take a look at our `partner page <https://reticen8.org/partners>`__
+    as these partners contribute back to Reticen8 and sell hardware that is know to work well.
 
 For further help and support, see
 
 -  `FreeBSD 13.0-RELEASE Hardware Compatibility
    List <https://www.freebsd.org/releases/13.0R/hardware/>`__
--  `OPNsense Forum <https://forum.opnsense.org/>`__
+-  `Reticen8 Forum <https://forum.reticen8.org/>`__
 
 .. rubric:: List of references
    :name: list-of-references
 
--  Schellevis, Jos; *Hardware requirements*; `OPNsense > Get
-   started <https://opnsense.org/users/get-started/>`__ (2015)
+-  Schellevis, Jos; *Hardware requirements*; `Reticen8 > Get
+   started <https://reticen8.org/users/get-started/>`__ (2015)
 -  McKusick, Marshall; Neville-Neil, George V; Warson, Robert NM; *The
    Design and Implementation of the FreeBSD Operating System* (2015);
    Addison-Wesley, New Jersey; ISBN 978-0321968975

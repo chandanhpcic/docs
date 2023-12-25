@@ -14,7 +14,7 @@ Nrpe
     "``POST``","nrpe","command","setCommand","$uuid"
     "``POST``","nrpe","command","toggleCommand","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Command.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/nrpe/src/opnsense/mvc/app/models/OPNsense/Nrpe/Command.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Command.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/nrpe/src/reticen8/mvc/app/models/Reticen8/Nrpe/Command.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -23,7 +23,7 @@ Nrpe
     "``GET``","nrpe","general","get",""
     "``GET``","nrpe","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/nrpe/src/opnsense/mvc/app/models/OPNsense/Nrpe/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/nrpe/src/reticen8/mvc/app/models/Reticen8/Nrpe/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -35,4 +35,4 @@ Nrpe
     "``GET``","nrpe","service","status",""
     "``GET``","nrpe","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/nrpe/src/opnsense/mvc/app/models/OPNsense/Nrpe/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/nrpe/src/reticen8/mvc/app/models/Reticen8/Nrpe/General.xml>`__"

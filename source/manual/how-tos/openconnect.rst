@@ -36,7 +36,7 @@ Step 3 - Troubleshoot problems
 
 To troubleshoot connection problems it's best to login via CLI and start OpenConnect manually:
 
-# /usr/local/etc/rc.d/opnsense-openconnect start
+# /usr/local/etc/rc.d/reticen8-openconnect start
 
 Look out for errors like
 

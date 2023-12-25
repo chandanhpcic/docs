@@ -1,7 +1,7 @@
-# OPNsense documentation
+# Reticen8 documentation
 The documentation is licensed under a 2-clause BSD Licnse:
 
-Copyright (c) Deciso B.V.
+Copyright (c) Reticen8 Technologies
 Copyright (c) 2017-2018 Franco Fichtner
 Copyright (c) 2017-2018 Fabian Franz
 Copyright (c) 2017-2018 David Harrigan
@@ -25,7 +25,7 @@ documentation and/or other materials provided with the distribution.
 THIS DOCUMENTATION IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-IN NO EVENT SHALL THE OPNSENSE DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT,
+IN NO EVENT SHALL THE RETICEN8 DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT,
 INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
 BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
 DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
@@ -41,5 +41,5 @@ https://creativecommons.org/publicdomain/zero/1.0/
 # Logos
 Logos may be subject to additional copyrights, property
 rights, trademarks etc. and may require the consent of a third party or the
-license of these rights. Deciso B.V. does not represent or make any warranties
+license of these rights. Reticen8 Technologies does not represent or make any warranties
 that it owns or licenses any of the mentioned, nor does it grant them.

@@ -5,7 +5,7 @@ Relayd
 The relayd plugin offers a load balancer which is capable of handling OSI layer 3 or 7 forwarding services to
 various backend servers while validating their availability.
 
-One of the main advantages over other forwarding services available for OPNsense is that relayd offers a transparant
+One of the main advantages over other forwarding services available for Reticen8 is that relayd offers a transparant
 forwarding mode in layer 3 (redirection), which is lightweight and forwards the unmodified session to the target host.
 
 

@@ -15,7 +15,7 @@ you will need to swap the LAN  connection at a certain point.
 
 **Step One**
 -----------------
-Configure OPNsense as normal, with a single LAN interface, make sure that it works correctly.
+Configure Reticen8 as normal, with a single LAN interface, make sure that it works correctly.
 It's a good idea to add the extra NIC interfaces ( OPTx ) during installation.
 
 **Step Two**

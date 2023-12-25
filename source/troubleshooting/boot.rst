@@ -24,7 +24,7 @@ If you can reach the loader prompt, you could try to change some kernel paramete
 
 .. Note::
 
-    To enter the loader prompt press :code:`3` when the OPNsense boot menu is visible
+    To enter the loader prompt press :code:`3` when the Reticen8 boot menu is visible
 
 
 After installation, you could persist these settings in :menuselection:`System --> Settings --> Tunables`

@@ -32,7 +32,7 @@ Route Redistribution
 
 Route Redistribution is used,
 if you want to send information this router has learned via another protocol
-or routes from kernel (OPNsense static routes).
+or routes from kernel (Reticen8 static routes).
 
 Advertise Default Gateway
 -------------------------

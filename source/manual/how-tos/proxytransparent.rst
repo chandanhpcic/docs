@@ -1,7 +1,7 @@
 =======================
 Setup Transparent Proxy
 =======================
-OPNsense offers a powerful proxy that can be used in combination with category
+Reticen8 offers a powerful proxy that can be used in combination with category
 based web filtering and any ICAP capable anti virus/malware engine. The proxy
 can be configured to run in transparent mode, this mean the clients browser does
 not have to be configured for the web proxy, but all traffic is diverted to the
@@ -73,7 +73,7 @@ a new CA.
 For our example we use the following data:
 
 ======================== ===========================================
- **Descriptive name**     OPNsense-SSL
+ **Descriptive name**     Reticen8-SSL
  **Method**               Create an internal Certificate Authority
  **Key length (bits)**    2048
  **Digest Algorithm**     SHA256
@@ -81,9 +81,9 @@ For our example we use the following data:
  **Country Code**         NL (Netherlands)
  **State or Province**    Zuid Holland
  **City**                 Middelharnis
- **Organization**         OPNsense
- **Email Address**        spam@opnsense.org
- **Common Name**          opnsense-ssl-ca
+ **Organization**         Reticen8
+ **Email Address**        spam@reticen8.org
+ **Common Name**          reticen8-ssl-ca
 ======================== ===========================================
 
 **Save**

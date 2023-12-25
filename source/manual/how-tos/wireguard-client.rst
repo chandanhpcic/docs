@@ -8,7 +8,7 @@ Introduction
 
 WireGuard is a simple, fast VPN protocol using modern `cryptography <https://www.wireguard.com/protocol>`__. It aims to be faster and less complex than IPsec whilst also being a considerably more performant alternative to OpenVPN. Initially released for the Linux kernel, it is now cross-platform and widely deployable.
 
-This how-to describes setting up a central WireGuard server on OPNsense and configuring one or more clients to create a tunnel to it. 
+This how-to describes setting up a central WireGuard server on Reticen8 and configuring one or more clients to create a tunnel to it. 
 
 -------------------------------------
 Step 1 - Install the WireGuard plugin
@@ -42,7 +42,7 @@ Step 2 - Configure the local peer (server)
 
 .. Note::
 
-    Leave the DNS Server field (which appears if :code:`advanced mode` is selected) blank. Otherwise WireGuard will overwrite OPNsense's DNS configuration
+    Leave the DNS Server field (which appears if :code:`advanced mode` is selected) blank. Otherwise WireGuard will overwrite Reticen8's DNS configuration
 
 - **Save** the Local peer configuration, and then click **Save** again
 - Re-open the Local peer configuration
@@ -84,7 +84,7 @@ Step 5 - Assignments and routing
 
 .. Note::
 
-    The steps outlined in Steps 5(a) and 5(b) below may not be required at all in your circumstances. Strictly speaking, if you only intend for your clients to use the tunnel to access local IPs/subnets behind OPNsense, then neither step is actually necessary. If you intend to use the WireGuard tunnel to also access IPs outside of the local network, for example the public internet, then at least one, and perhaps both, of the steps will be required. This is explained below
+    The steps outlined in Steps 5(a) and 5(b) below may not be required at all in your circumstances. Strictly speaking, if you only intend for your clients to use the tunnel to access local IPs/subnets behind Reticen8, then neither step is actually necessary. If you intend to use the WireGuard tunnel to also access IPs outside of the local network, for example the public internet, then at least one, and perhaps both, of the steps will be required. This is explained below
 
     **However**, it is useful to complete Step 5(a) anyway, for the reasons explained in that step
 
@@ -99,7 +99,7 @@ Step 5(a) - Assign an interface to WireGuard (recommended)
     
     Second, it automatically adds an IPv4 outbound NAT rule, which will allow the tunnel to access IPv4 IPs outside of the local network (if that is desired), without needing to manually add a rule
     
-    Finally, it allows separation of the firewall rules of each WireGuard instance (each :code:`wgX` device). Otherwise they all need to be configured on the default WireGuard group that OPNsense creates. This is more an organisational aesthetic, rather than an issue of substance    
+    Finally, it allows separation of the firewall rules of each WireGuard instance (each :code:`wgX` device). Otherwise they all need to be configured on the default WireGuard group that Reticen8 creates. This is more an organisational aesthetic, rather than an issue of substance    
 
 - Go to :menuselection:`Interfaces --> Assignments`
 - In the dropdown next to “New interface:”, select the WireGuard device (:code:`wg0` if this is your first one)
@@ -136,7 +136,7 @@ Step 5(b) - Create an outbound NAT rule
 
 .. Hint::
 
-    This step is only necessary (if at all) to allow client peers to access IPs outside of the local IPs/subnets behind OPNsense - see the note under Step 5. If an interface has already been assigned under Step 5(a), then it is not necessary for IPv4 traffic, and is only necessary for IPv6 traffic if the tunnel uses IPv6 ULAs (IPv6 GUAs don't need NAT). So in many use cases this step can be skipped
+    This step is only necessary (if at all) to allow client peers to access IPs outside of the local IPs/subnets behind Reticen8 - see the note under Step 5. If an interface has already been assigned under Step 5(a), then it is not necessary for IPv4 traffic, and is only necessary for IPv6 traffic if the tunnel uses IPv6 ULAs (IPv6 GUAs don't need NAT). So in many use cases this step can be skipped
 
 - Go to :menuselection:`Firewall --> NAT --> Outbound`
 - Select "Hybrid outbound NAT rule generation” if it is not already selected, and click **Save** and then **Apply changes**
@@ -168,7 +168,7 @@ Step 5(b) - Create an outbound NAT rule
 Step 6 - Create firewall rules
 ------------------------------
 
-This will involve two steps - first creating a firewall rule on the WAN interface to allow clients to connect to the OPNsense WireGuard server, and then creating a firewall rule to allow access by the clients to whatever IPs they are intended to have access to.
+This will involve two steps - first creating a firewall rule on the WAN interface to allow clients to connect to the Reticen8 WireGuard server, and then creating a firewall rule to allow access by the clients to whatever IPs they are intended to have access to.
 
 - Go to :menuselection:`Firewall --> Rules --> WAN`
 - Click **Add** to add a new rule
@@ -227,13 +227,13 @@ Client configuration is largely beyond the scope of this how-to since there is s
 
     ====================== ====================================================================================================
      **[Interface]**
-     **Address**            *Refers to the IP(s) specified as Allowed IPs in the Endpoint configuration on OPNsense. For example, 10.10.10.2/32*
-     **PublicKey**          *Refers to the public key that (along with a private key) needs to be manually or automatically generated on the client. The public key must then be copied into the Endpoint configuration on OPNsense for the relevant client peer - see Step 3*
+     **Address**            *Refers to the IP(s) specified as Allowed IPs in the Endpoint configuration on Reticen8. For example, 10.10.10.2/32*
+     **PublicKey**          *Refers to the public key that (along with a private key) needs to be manually or automatically generated on the client. The public key must then be copied into the Endpoint configuration on Reticen8 for the relevant client peer - see Step 3*
      **DNS**                *Refers to the DNS servers that the client should use for the tunnel - see note below*
 
      **[Peer]**
-     **PublicKey**          *Refers to the public key that is generated on OPNsense. Copy the public key from the Local configuration on OPNsense - see Step 2*
-     **Endpoint**           *Refers to the public IP address or publicly resolvable domain name of your OPNsense host, and the port specified in the Local configuration on OPNsense*
+     **PublicKey**          *Refers to the public key that is generated on Reticen8. Copy the public key from the Local configuration on Reticen8 - see Step 2*
+     **Endpoint**           *Refers to the public IP address or publicly resolvable domain name of your Reticen8 host, and the port specified in the Local configuration on Reticen8*
      **AllowedIPs**         *Refers to the traffic (by destination IPs/subnets) that is to be sent via the tunnel. For example, if all traffic on the client is to be sent through the tunnel, specify 0.0.0.0/0 (IPv4) and/or ::/0 (IPv6)*
     ====================== ====================================================================================================
 
@@ -261,7 +261,7 @@ An example client configuration file:
     [Peer]
     PublicKey = OwdegSTyhlpw7Dbpg8VSUBKXF9CxoQp2gAOdwgqtPVI=
     AllowedIPs = 0.0.0.0/0, ::/0
-    Endpoint = opnsense.example.com:51820
+    Endpoint = reticen8.example.com:51820
 
 An example server configuration file:
 

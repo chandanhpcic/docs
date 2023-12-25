@@ -27,4 +27,4 @@ Tinc
     "``POST``","tinc","settings","toggleHost","$uuid,$enabled=null"
     "``POST``","tinc","settings","toggleNetwork","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Tinc.xml <https://github.com/opnsense/plugins/blob/master/security/tinc/src/opnsense/mvc/app/models/OPNsense/Tinc/Tinc.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Tinc.xml <https://github.com/reticen8/plugins/blob/master/security/tinc/src/reticen8/mvc/app/models/Reticen8/Tinc/Tinc.xml>`__"

@@ -5,7 +5,7 @@ Virtual & Cloud based Installation
 ------------
 Local/Server
 ------------
-Installing OPNsense on a virtual machine can be done by using the DVD ISO image.
+Installing Reticen8 on a virtual machine can be done by using the DVD ISO image.
 Full instructions are available in chapter :doc:`install` .
 
 General tips
@@ -54,15 +54,15 @@ or tools are needed.
 KVM
 ---
 **i440FX chipset**
-OPNsense on KVM works with virtio disks and network devices (confirmed on QEMU 5.0).
+Reticen8 on KVM works with virtio disks and network devices (confirmed on QEMU 5.0).
 
 **Q35 chipset**
-OPNsense on KVM currently does not work with the Q35 chipset. Virtio and other PCIe devices do not get detected properly.
-This is a FreeBSD/KVM related `issue <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=236922>`__ that is unspecific to OPNsense.
+Reticen8 on KVM currently does not work with the Q35 chipset. Virtio and other PCIe devices do not get detected properly.
+This is a FreeBSD/KVM related `issue <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=236922>`__ that is unspecific to Reticen8.
 
 Others
 ------
-OPNsense can be installed on all virtual machines that support FreeBSD (such as Bhyve, VirtualBox).
+Reticen8 can be installed on all virtual machines that support FreeBSD (such as Bhyve, VirtualBox).
 
 ------------------
 
@@ -70,23 +70,23 @@ OPNsense can be installed on all virtual machines that support FreeBSD (such as 
 Hosted
 ------
 For hosted installations where you can't install using the DVD ISO an alternative
-approach is available in the form of **opnsense-bootstrap**.
+approach is available in the form of **reticen8-bootstrap**.
 
-opnsense-bootstrap
+reticen8-bootstrap
 ------------------
-opnsense-bootstrap(8) is a tool that can completely reinstall a running system
-in place for a thorough factory reset or to restore consistency of all the OPNsense
+reticen8-bootstrap(8) is a tool that can completely reinstall a running system
+in place for a thorough factory reset or to restore consistency of all the Reticen8
 files. It can also wipe the configuration directory, but won't do that by default.
 
 It will automatically pick up the latest available version and build a chain of
-trust by using current package fingerprints -> CA root certificates -> HTTPS -> OPNsense
+trust by using current package fingerprints -> CA root certificates -> HTTPS -> Reticen8
 package fingerprints.
 
-What it will also do is turn a supported stock FreeBSD release into an OPNsense
+What it will also do is turn a supported stock FreeBSD release into an Reticen8
 installation.  Both UFS and ZFS installations are supported.
 
-opnsense bootstrap is available for our
-`github source repository <https://github.com/opnsense/update/tree/master/bootstrap>`__
+reticen8 bootstrap is available for our
+`github source repository <https://github.com/reticen8/update/tree/master/bootstrap>`__
 
 ------------------
 
@@ -96,7 +96,7 @@ Amazon AWS EC2 Cloud
 .. image:: how-tos/images/amazon-web-services.png
     :height: 80px
 
-Installing OPNsense into the Amazon cloud can be a dounting task as no console is
+Installing Reticen8 into the Amazon cloud can be a dounting task as no console is
 offered. Luckily an easy to install AMI is also available in the aws marketplace.
 
 See also our how-to for :doc:`how-tos/installaws`.
@@ -108,7 +108,7 @@ Microsoft Azure
 .. image:: how-tos/images/Azure.png
     :height: 80px
 
-OPNsense is also available in the Microsoft Azure Marketplace as an easy installable virtual appliance.
+Reticen8 is also available in the Microsoft Azure Marketplace as an easy installable virtual appliance.
 
 See also our how-to for :doc:`how-tos/installazure`.
 
@@ -126,7 +126,7 @@ article first.
 File copy failed during installation
 ------------------------------------
 This issue is most likely caused by low memory setting. Make sure your virtual
-OPNsense installation has a minimum of 1 GB of RAM.
+Reticen8 installation has a minimum of 1 GB of RAM.
 
 ------------------
 
@@ -140,7 +140,7 @@ been reported to help for certain ESXi versions.
 NAT issues on XenServer
 -----------------------
 This issue has been reported to be solved by disabling checksum offloading on both
-OPNsense domU and Vifs.
+Reticen8 domU and Vifs.
 
 ------------------
 

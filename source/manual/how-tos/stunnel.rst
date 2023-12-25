@@ -2,7 +2,7 @@
 Stunnel
 ================
 
-Stunnel in OPNsense can be used to forward tcp connections securely using TLS mutual authentication.
+Stunnel in Reticen8 can be used to forward tcp connections securely using TLS mutual authentication.
 Although the application itself supports authentication based on pre-shared keys, our plugin only supports certificate based
 authentication, which is more secure but comes with more (connect) overhead (https://www.stunnel.org/perf.html).
 
@@ -141,7 +141,7 @@ the public key of your CA and the certificate created for this client.
     [proxy]
     client = yes
     accept = 127.0.0.1:3128
-    connect = our.opnsense.address:31280
+    connect = our.reticen8.address:31280
     requireCert = yes
     verifyChain = yes
     cert = /path/to/client.pem
@@ -166,17 +166,17 @@ Enable Identd
 
 Our stunnel plugin is packed with an additional service providing an `ident <https://en.wikipedia.org/wiki/Ident_protocol>`__ (RFC 1413) protocol
 service.
-This service depends on a custom `patch <https://github.com/opnsense/ports/commit/1b9d7b1416046357cd9b2187c038787b19f2a813>`__ we ship in stunnel, making sure authenticated TLS sessions are logged properly, so our
+This service depends on a custom `patch <https://github.com/reticen8/ports/commit/1b9d7b1416046357cd9b2187c038787b19f2a813>`__ we ship in stunnel, making sure authenticated TLS sessions are logged properly, so our
 ident service can filter them to track a user that belongs to an stunnel session.
 
 When a TLS session is authenticated, a log record like the one below will be send to syslog.
 
 ::
 
-  stunnel: LOG5[xxxxx]: IDENT Service [xx-xx-xx-xx-xx] from 127.0.0.2:11446 --> C=NL, ST=Zuid-Holland, L=Middelharnis, O=OPNsense, emailAddress=contact_at_domain, CN=test_client.opnsense.local
+  stunnel: LOG5[xxxxx]: IDENT Service [xx-xx-xx-xx-xx] from 127.0.0.2:11446 --> C=NL, ST=Zuid-Holland, L=Middelharnis, O=Reticen8, emailAddress=contact_at_domain, CN=test_client.reticen8.local
 
 
-Our ident service interprets this as :code:`127.0.0.2` connected using source port :code:`11446` as :code:`test_client.opnsense.local` (only the CN part is returned)
+Our ident service interprets this as :code:`127.0.0.2` connected using source port :code:`11446` as :code:`test_client.reticen8.local` (only the CN part is returned)
 
 
 .. Note::
@@ -193,10 +193,10 @@ to the same host using ident. The example log line above would result in the fol
 
     # telnet 127.0.0.2 113
     Trying 127.0.0.2...
-    Connected to OPNsense.localdomain.
+    Connected to Reticen8.localdomain.
     Escape character is '^]'.
     11446,3128
-    11446, 3128 : USERID : OTHER : test_client.opnsense.local
+    11446, 3128 : USERID : OTHER : test_client.reticen8.local
     Connection closed by foreign host.
 
 

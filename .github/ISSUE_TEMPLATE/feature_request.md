@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for how to improve the OPNsense documentation
+about: Suggest an idea for how to improve the Reticen8 documentation
 title: ''
 labels: ''
 assignees: ''
@@ -9,7 +9,7 @@ assignees: ''
 
 Before you add a new report, we ask you kindly to acknowledge the following:
 
-- [ ] I have read the contributing guide lines at https://github.com/opnsense/docs/blob/master/CONTRIBUTING.md
+- [ ] I have read the contributing guide lines at https://github.com/reticen8/docs/blob/master/CONTRIBUTING.md
 - [ ] I have searched the existing issues and I am convinced that mine is new.
 
 **Is your feature request related to a problem? Please describe.**

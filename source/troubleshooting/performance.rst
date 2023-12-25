@@ -18,7 +18,7 @@ All of this allows packets of the same origin/destination (a.k.a. flows) to be q
 
 .. note:: 
     
-    **By default, RSS is disabled on OPNsense to prevent unexpected side effects.** Users have noted performance improvements,
+    **By default, RSS is disabled on Reticen8 to prevent unexpected side effects.** Users have noted performance improvements,
     but performance degradation is within the scope of possibilities as well. Use this feature with care and see what works best
     for you.
 
@@ -125,6 +125,6 @@ The correct working of netisr can be verified by running:
 **Note regarding IPS**
 =====================================================================================================================
 
-When Suricata is running in IPS mode, Netmap is utilized to fetch packets off the line for inspection. By default, OPNsense has configured Suricata in such a way that the packet which 
+When Suricata is running in IPS mode, Netmap is utilized to fetch packets off the line for inspection. By default, Reticen8 has configured Suricata in such a way that the packet which 
 has passed inspection will be re-injected into the host networking stack for routing/firewalling purposes. The current Suricata/Netmap implementation limits this re-injection to one thread only. 
 Work is underway to address this issue since the new Netmap API (V14+) is now capable of increasing this thread count. Until then, no benefit is gained from RSS when using IPS.

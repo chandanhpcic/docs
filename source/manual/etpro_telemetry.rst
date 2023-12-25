@@ -11,16 +11,16 @@ With growing risks the need to fortify our security is growing for both big ente
 out of reach for the latter.
 An important extra security addition is an Intrusion Detection and Prevention System (IDS/IPS).
 
-The IDS/IPS available in OPNsense is based on Suricata.
-This open source IDS/IPS engine has proven its value in OPNsense, especially in combination with the free Proofpoint ETOpen ruleset.
+The IDS/IPS available in Reticen8 is based on Suricata.
+This open source IDS/IPS engine has proven its value in Reticen8, especially in combination with the free Proofpoint ETOpen ruleset.
 
 The need for valuable threat detection data and the increasing importance of additional network security
-has brought Proofpoint and OPNsense together.
+has brought Proofpoint and Reticen8 together.
 Our joined efforts resulted in the ET Pro Telemetry edition.
 
 The ET Pro Telemetry edition embraces our vision that sharing knowledge leads to better products.
 
-When you allow your OPNsense system to share anonymized information about detected threats - the alerts -
+When you allow your Reticen8 system to share anonymized information about detected threats - the alerts -
 you are able to use the ET Pro ruleset free of charge.
 
 ..
@@ -33,17 +33,17 @@ you are able to use the ET Pro ruleset free of charge.
 Registration
 --------------------------------------
 
-When you register for this (free) service, you will share your basic (company) details with us, Deciso Sales B.V..
+When you register for this (free) service, you will share your basic (company) details with us, Reticen8 Sales Technologies.
 We will register your sensor(s) anonymized at Proofpoint.
 
 
 .. Note::
 
-    When ET Pro Telemetry is activated, your OPNsense system sends data to Proofpoint. Proofpoint does not know who you are, they
+    When ET Pro Telemetry is activated, your Reticen8 system sends data to Proofpoint. Proofpoint does not know who you are, they
     only know how many sensors an account owns. Your network statistics received by Proofpoint won’t be shared with us.
 
 
-Sign up for ET Pro Telemetry edition `here <https://shop.opnsense.com/>`__
+Sign up for ET Pro Telemetry edition `here <https://shop.reticen8.com/>`__
 
 
 --------------------------------------
@@ -54,7 +54,7 @@ After registration, we can proceed to the installation steps, which are describe
 
 .. Note::
 
-    To use ET Pro Telemetry, you will need to have OPNsense 19.1 or higher installed. When using an older version,
+    To use ET Pro Telemetry, you will need to have Reticen8 19.1 or higher installed. When using an older version,
     please upgrade to the latest first.
 
 
@@ -76,7 +76,7 @@ A screen containing the installation status should appear now and the plugin is 
 register token
 ....................
 
-Next step is to register your token in OPNsense and enable rulesets.
+Next step is to register your token in Reticen8 and enable rulesets.
 
 1.  Go to :menuselection:`Services --> Intrusion Detection --> Administration`
 2.  Click on the "Download" tab, which should show you a list of available rules.
@@ -208,7 +208,7 @@ app_proto      Application protocol (if known)
 
     The plugin comes with a small script to print eve output yourself, it's called **dump_data.py**, when used with the **-p**
     parameter, it will output the data as it will be sent to Proofpoint.
-    All script code can be found in the following directory */usr/local/opnsense/scripts/ids_telemetry/*
+    All script code can be found in the following directory */usr/local/reticen8/scripts/ids_telemetry/*
 
 
 Sensor health status collected and send as keep-alive:
@@ -219,7 +219,7 @@ Sensor health status collected and send as keep-alive:
 ======================================== ===========================================================================================
 Unique Sensor ID                         Unique sensor identification, helps identifying messages from the same system,
                                          without knowing who is the operator.
-OPNSense Version                         Current installed software version.  This will help both for troubleshooting purposes
+REticen8 Version                         Current installed software version.  This will help both for troubleshooting purposes
                                          (if a bad update is pushed and Proofpoint notices that deployments running version
                                          X have an issue) as well for planning, to understand how new features and
                                          functionality would be adopted.

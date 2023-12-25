@@ -6,7 +6,7 @@ Bootup / autorun options
 syshook
 -------
 
-OPNsense offers an easy method to plug in custom scripts during boot stages and assorted system events.
+Reticen8 offers an easy method to plug in custom scripts during boot stages and assorted system events.
 
 Syshook scripts should be installed in:
 
@@ -64,7 +64,7 @@ Do not forget to set executable permissions on your syshook files.
 rc(8)
 -----
 
-Part of the bootup process of OPNsense is probing the available rc(8) configuration files in */etc/rc.conf.d/*, when a daemon is enabled, the system will call the regular rc(8) start command.
+Part of the bootup process of Reticen8 is probing the available rc(8) configuration files in */etc/rc.conf.d/*, when a daemon is enabled, the system will call the regular rc(8) start command.
 
 In case the daemon needs some extra preparation, an additional "bootup" script can be provided, which will be run before executing normal "start".
 
@@ -73,7 +73,7 @@ Example (from a configured squid proxy server using */etc/rc.conf.d/squid*):
 ::
 
     squid_enable=YES
-    squid_opnsense_bootup_run="/usr/local/opnsense/scripts/proxy/setup.sh"
+    squid_reticen8_bootup_run="/usr/local/reticen8/scripts/proxy/setup.sh"
 
 
 The configd template system can be used to generate the necessary configuration file(s).
