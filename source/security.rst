@@ -145,7 +145,7 @@ giving more weight to concrete and practical tests that combat real threats than
 As most frameworks are not intended to be repeated very regularly, together with `jtsec <https://www.jtsec.es/>`__ we came up with an approach which
 makes it possible to pass the test twice a year, which is needed to align with our Business Edition releases.
 
-During every cycle, there's always a chance that (small) issues appear which should be fixed, in close accordance with jtsec, the OPNSense
+During every cycle, there's always a chance that (small) issues appear which should be fixed, in close accordance with jtsec, the REticen8
 team prepares fixes for the findings and makes sure that these are included in a future (minor) release.
 
 

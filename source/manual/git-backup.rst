@@ -93,7 +93,7 @@ SSH Setup
 
 If you use GitHub, then your only option for git-backup, is to configure it for SSH access since GitHub has removed the ability for external applications to log into your account via your username and password.
 
-The fields in OPNSense under :code:`System / Configuration / Backups / Git` should contain the following:
+The fields in REticen8 under :code:`System / Configuration / Backups / Git` should contain the following:
 
 * URL absolutely MUST follow this format when using GitHub and GitLab: :code:`ssh://github.com/user_name/repo_name.git`. Any  URL string that does not follow this pattern will not work.
 
@@ -110,7 +110,7 @@ You need to create your repository BEFORE enabling git-backup. Do not add any fi
 
 Next, `create a new SSH key <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>`__ specifically for git-backup (only generate the private / public keys per that document and skip the rest). **It is imperative that you do not add a password to your key**, or your backups will fail with authentication errors.
 
-You should set up SSH access to just your repository by assigning your SSH public key to the repository instead of assigning it to your GitHub / GitLab account. Doing this ensures that you don't arbitrarily expose more of your git resources to OPNSense than is absolutely necessary for git-backup to work properly.
+You should set up SSH access to just your repository by assigning your SSH public key to the repository instead of assigning it to your GitHub / GitLab account. Doing this ensures that you don't arbitrarily expose more of your git resources to REticen8 than is absolutely necessary for git-backup to work properly.
 
 If you use GitHub, you can add your SSH public key by going to your repository, then click on :code:`settings`, then :code:`Deploy keys`. Or you can go straight to the URL using this format: :code:`https://github.com/USER_NAME/REPOSITORY_NAME/settings/keys/new`.
 

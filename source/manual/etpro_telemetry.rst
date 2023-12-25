@@ -232,7 +232,7 @@ Sensor health status collected and send as keep-alive:
 ======================================== ===========================================================================================
 Unique Sensor ID                         Unique sensor identification, helps identifying messages from the same system,
                                          without knowing who is the operator.
-OPNSense Version                         Current installed software version.  This will help both for troubleshooting purposes
+REticen8 Version                         Current installed software version.  This will help both for troubleshooting purposes
                                          (if a bad update is pushed and Proofpoint notices that deployments running version
                                          X have an issue) as well for planning, to understand how new features and
                                          functionality would be adopted.

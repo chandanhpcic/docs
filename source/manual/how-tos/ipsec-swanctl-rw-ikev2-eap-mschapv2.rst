@@ -644,7 +644,7 @@ For full control over DNS, you should either use Unbound on the Reticen8 or the 
 
 **Enable** Unbound and leave the *Network Interfaces* on *All (recommended)*. Next go to *Query Forwarding* and input your *Custom forwarding* servers. For example your Samba or Microsoft Active Directory Domain Controllers.
 
-Unbound listens on port 53 UDP/TCP on all network interfaces of the Opnsense. If you followed all prior steps, access to your LAN is already permitted from the IPsec Network. You can use the IP addresses of the Reticen8 in that network as target for the DNS queries.
+Unbound listens on port 53 UDP/TCP on all network interfaces of the ReTicen8. If you followed all prior steps, access to your LAN is already permitted from the IPsec Network. You can use the IP addresses of the Reticen8 in that network as target for the DNS queries.
 
 In this example they are: ``192.168.1.1`` and ``2001:db8:1234:1::1``.
 

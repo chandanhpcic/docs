@@ -179,7 +179,7 @@ OpenSSL is used for image file verification.  4 files are needed for verificatio
 
 Use one of the Reticen8 mirrors to download these files:
 
-1. Go to the bottom of OPNSense `download <https://reticen8.com/download>`__ page.
+1. Go to the bottom of REticen8 `download <https://reticen8.com/download>`__ page.
 2. Click one of the available mirrors closest to your location.
 3. Download one of each file mentioned above for your Image type.
 

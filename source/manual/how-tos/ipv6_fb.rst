@@ -8,9 +8,9 @@ Introduction
 ------------
 
 The `AVM Fritz!Box`, or FB for short, is a popular home router for
-DSL, Cable and Fiber in Germany. This guide will setup a OPNSense
+DSL, Cable and Fiber in Germany. This guide will setup a REticen8
 behind a FB, handover delegated prefixes from the provider and
-configure local interfaces on the OPNSense to cope with dynamically changing IPv6 prefixes.
+configure local interfaces on the REticen8 to cope with dynamically changing IPv6 prefixes.
 
 This guide is based on a Vodafone Cable connection (formerly Kabel-BW) and an
 `AVM Fritz!Box Cable 6591` running `Fritz!OS 7.29`.
@@ -48,7 +48,7 @@ in order to make your delegated internal subnets available via Internet.
 Step 2 - configure the WAN interface
 ------------------------------------
 
-On the OPNSense go to :menuselection:`Interfaces --> WAN` and set the configuration type for IPv6 to **DHCPv6**. On the bottom part of the dialog in
+On the REticen8 go to :menuselection:`Interfaces --> WAN` and set the configuration type for IPv6 to **DHCPv6**. On the bottom part of the dialog in
 **DHCPv6 Client configuration** make sure to select 
 
 * checkbox: **Request only an IPv6 prefix**
@@ -60,7 +60,7 @@ Note the following:
 1. the requested prefix differs by one bit compared to what the ISP delegated the FB (60 vs. 59)
 2. the setting **Request only an IPv6 prefix** is the important part. 
    With this setting the FB acknowledges
-   the Reticen8 as a router and really delegates a prefix. The OPNSense will only get a link-local `0xfe80`
+   the Reticen8 as a router and really delegates a prefix. The REticen8 will only get a link-local `0xfe80`
    address but that is fine. If this checkbox is not selected the FB considers the Reticen8 as an end-user device
    and plainly refuses to delegate a prefix to it. The Reticen8 end up with an valid IPv6 address but with `/64`
    netmask so nothing to delegate into the internal network.
@@ -125,7 +125,7 @@ But wait! The prefix is dynamic. How to deal with that?
 
 Easy. Just omit the variable prefix and configure the DHCPv6 range to be `::1:0` --> `::1:ffff`
 
-OPNSense will automatically prefix this pattern with the dynamically acquired prefix.
+REticen8 will automatically prefix this pattern with the dynamically acquired prefix.
 
 Repeat for all the other subnets. Do not forget to configure the `Domain search list` to match the SOHO internal DNS domain if applicable.
 

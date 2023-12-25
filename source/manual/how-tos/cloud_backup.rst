@@ -120,7 +120,7 @@ First you need to set up a project in the Google developer console.
 
     .. image:: ./images/google_service_account.png
 
--  Write down the **Unique ID** of the Service Account. This ID will be your **Client-ID** in the OPNSense Google Drive backup:
+-  Write down the **Unique ID** of the Service Account. This ID will be your **Client-ID** in the REticen8 Google Drive backup:
 
     .. image:: ./images/google_service_account_details.png
 

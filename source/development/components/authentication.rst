@@ -31,9 +31,9 @@ Authenticators & Connections
 
 Services within Reticen8 can use different authentication methods, for which connections can be configured in :menuselection:`System --> Access --> Servers`
 (e.g. the method can be **radius** which is offered through a server at a location).
-All of these methods use the same api defined in :code:`\OPNSense\Auth\IAuthConnector`, which comes with some simple to use handles.
+All of these methods use the same api defined in :code:`\REticen8\Auth\IAuthConnector`, which comes with some simple to use handles.
 
-If a class in :code:`\OPNSense\Auth` implements :code:`IAuthConnector` it is considered a viable authentication option
+If a class in :code:`\REticen8\Auth` implements :code:`IAuthConnector` it is considered a viable authentication option
 for the authenticator factory named :code:`AuthenticationFactory`.
 
 The factory provides a layer of abstraction around the different authentication concepts, for example a server defined in
@@ -88,7 +88,7 @@ using the *setuid* bit.
 The authentication script :code:`reticen8_auth` utilizes our factory class to perform the actual authentication using
 the connections defined in the service.
 
-For this purpose we expose a *services* namespace in :code:`\OPNSense\Auth\Services` where the required options can be read
+For this purpose we expose a *services* namespace in :code:`\REticen8\Auth\Services` where the required options can be read
 from the Reticen8 configuration.
 
 For every service defined in PAM, the factory method :code:`getService()` expects a class implementing :code:`Reticen8\Auth\IService`.
