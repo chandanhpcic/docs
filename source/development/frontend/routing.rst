@@ -19,14 +19,14 @@ This part of the routing is handled by lighthttpd using mod\_alias and mod\_rewr
 User interface Routing
 ----------------------
 
-If you look at the controller directory in OPNsense, you will notice
+If you look at the controller directory in Reticen8, you will notice
 there are different directory levels under the root controller directory
-in /usr/local/opnsense/mvc/app/controllers. To support different apps
+in /usr/local/reticen8/mvc/app/controllers. To support different apps
 and vendors eventually, we already used a structure which is
 automatically used to setup the routing.
 
 At the first level we use the vendor of the app, in our case that will
-always be OPNsense.
+always be Reticen8.
 
 The next level is used to name the topic (or app), for example we use
 Sample for our example application.
@@ -40,7 +40,7 @@ The complete path of the helloworld page would eventually be:
 
 ::
 
-  /usr/local/opnsense/mvc/app/controllers/OPNsense/Sample/helloworldController.php
+  /usr/local/reticen8/mvc/app/controllers/Reticen8/Sample/helloworldController.php
 
 When publishing the page, the vendor part of the controller is not used in the
 mapping, so in this example the helloworld index page will be at:
@@ -52,7 +52,7 @@ mapping, so in this example the helloworld index page will be at:
 All the parts of the url are automatically converted to lower-case, so **S**\ample
 will be mapped to **s**\ample.
 
-This routing is setup via the index page of our new code base and uses :code:`/usr/local/opnsense/mvc/app/config/services.php` to wire it all together.
+This routing is setup via the index page of our new code base and uses :code:`/usr/local/reticen8/mvc/app/config/services.php` to wire it all together.
 
 -----------
 API routing
@@ -63,14 +63,14 @@ just create a Api directory under the app path and place a controller
 class to handle the request. The only major difference is that it's
 handled by a separate PHP file (called api.php) instead of the
 index.php file used to configure the ui part, details of the routing can
-be found in /usr/local/opnsense/mvc/app/config/services\_api.php .
+be found in /usr/local/reticen8/mvc/app/config/services\_api.php .
 
 If our sample app needs an API to echo something back via a controller called
 tools it could be put into a file called:
 
 ::
 
-  /usr/local/opnsense/mvc/app/controllers/OPNsense/Sample/Api/toolsController.api
+  /usr/local/reticen8/mvc/app/controllers/Reticen8/Sample/Api/toolsController.api
 
 And called via the following url:
 

@@ -21,7 +21,7 @@ Diagnostics
     "``GET``","diagnostics","dns_diagnostics","set",""
     "``POST``","diagnostics","dns_diagnostics","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `DnsDiagnostics.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/DnsDiagnostics.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `DnsDiagnostics.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/DnsDiagnostics.xml>`__"
 
 .. csv-table:: Resources (FirewallController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -74,7 +74,7 @@ Diagnostics
     "``POST``","diagnostics","lvtemplate","set",""
     "``POST``","diagnostics","lvtemplate","setItem","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Lvtemplate.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Lvtemplate.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Lvtemplate.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/Lvtemplate.xml>`__"
 
 .. csv-table:: Resources (NetflowController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -111,7 +111,7 @@ Diagnostics
     "``POST``","diagnostics","packet_capture","stop","$jobid"
     "``GET``","diagnostics","packet_capture","view","$jobid,$detail='normal'"
 
-    "``<<uses>>``", "", "", "", "*model* `PacketCapture.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/PacketCapture.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `PacketCapture.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/PacketCapture.xml>`__"
 
 .. csv-table:: Service (PingController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -125,7 +125,7 @@ Diagnostics
     "``POST``","diagnostics","ping","start","$jobid"
     "``POST``","diagnostics","ping","stop","$jobid"
 
-    "``<<uses>>``", "", "", "", "*model* `Ping.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Ping.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Ping.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/Ping.xml>`__"
 
 .. csv-table:: Service (PortprobeController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -135,7 +135,7 @@ Diagnostics
     "``GET``","diagnostics","portprobe","set",""
     "``POST``","diagnostics","portprobe","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Portprobe.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Portprobe.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Portprobe.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/Portprobe.xml>`__"
 
 .. csv-table:: Resources (SystemController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -159,7 +159,7 @@ Diagnostics
     "``GET``","diagnostics","traceroute","set",""
     "``POST``","diagnostics","traceroute","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Traceroute.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Diagnostics/Traceroute.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Traceroute.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Diagnostics/Traceroute.xml>`__"
 
 .. csv-table:: Resources (TrafficController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

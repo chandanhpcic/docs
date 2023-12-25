@@ -8,7 +8,7 @@ Netsnmp
     "``GET``","netsnmp","general","get",""
     "``POST``","netsnmp","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/net-snmp/src/opnsense/mvc/app/models/OPNsense/Netsnmp/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/net-snmp/src/reticen8/mvc/app/models/Reticen8/Netsnmp/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -20,7 +20,7 @@ Netsnmp
     "``GET``","netsnmp","service","status",""
     "``POST``","netsnmp","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/net-snmp/src/opnsense/mvc/app/models/OPNsense/Netsnmp/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/net-snmp/src/reticen8/mvc/app/models/Reticen8/Netsnmp/General.xml>`__"
 
 .. csv-table:: Resources (UserController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -35,4 +35,4 @@ Netsnmp
     "``POST``","netsnmp","user","setUser","$uuid"
     "``POST``","netsnmp","user","toggleUser","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `User.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/net-snmp/src/opnsense/mvc/app/models/OPNsense/Netsnmp/User.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `User.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/net-snmp/src/reticen8/mvc/app/models/Reticen8/Netsnmp/User.xml>`__"

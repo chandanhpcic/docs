@@ -5,15 +5,15 @@ API Reference
 Introduction
 ------------
 
-The OPNsense API calls are structured in the form:
+The Reticen8 API calls are structured in the form:
 
 .. code-block:: sh
 
-     https://opnsense.local/api/<module>/<controller>/<command>/[<param1>/[<param2>/...]]
+     https://reticen8.local/api/<module>/<controller>/<command>/[<param1>/[<param2>/...]]
 
-There are two HTTP verbs used in the OPNsense API:
+There are two HTTP verbs used in the Reticen8 API:
 
-    - ``GET``  Retrieves data from OPNsense
+    - ``GET``  Retrieves data from Reticen8
     - ``POST``  Creates new data, updates existing data or executes an action
 
 The body of the HTTP POST request and response is an 'application/json' object.

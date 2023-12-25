@@ -33,7 +33,7 @@ Crowdsec
     "``GET``","crowdsec","general","get",""
     "``POST``","crowdsec","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/security/crowdsec/src/opnsense/mvc/app/models/OPNsense/CrowdSec/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/security/crowdsec/src/reticen8/mvc/app/models/Reticen8/CrowdSec/General.xml>`__"
 
 .. csv-table:: Resources (MachinesController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

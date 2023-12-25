@@ -134,7 +134,7 @@ to it for the lifetime of the firewall. When for some reason a backup needs to b
 stick to the same git repository, manual conflict resolution might be an option. Support on these scenario's is
 not offered.
 
-The repository is available on the OPNsense machine in the following directory :code:`/conf/backup/git`.
+The repository is available on the Reticen8 machine in the following directory :code:`/conf/backup/git`.
 
 
 .. Note::

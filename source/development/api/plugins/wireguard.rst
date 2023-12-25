@@ -14,7 +14,7 @@ Wireguard
     "``POST``","wireguard","client","setClient","$uuid"
     "``POST``","wireguard","client","toggleClient","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Client.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard-go/src/opnsense/mvc/app/models/OPNsense/Wireguard/Client.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Client.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard-go/src/reticen8/mvc/app/models/Reticen8/Wireguard/Client.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -24,7 +24,7 @@ Wireguard
     "``GET``","wireguard","general","getStatus",""
     "``POST``","wireguard","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard-go/src/opnsense/mvc/app/models/OPNsense/Wireguard/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard-go/src/reticen8/mvc/app/models/Reticen8/Wireguard/General.xml>`__"
 
 .. csv-table:: Resources (ServerController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -39,7 +39,7 @@ Wireguard
     "``POST``","wireguard","server","setServer","$uuid=null"
     "``POST``","wireguard","server","toggleServer","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard-go/src/opnsense/mvc/app/models/OPNsense/Wireguard/Server.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard-go/src/reticen8/mvc/app/models/Reticen8/Wireguard/Server.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -53,7 +53,7 @@ Wireguard
     "``GET``","wireguard","service","status",""
     "``POST``","wireguard","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard-go/src/opnsense/mvc/app/models/OPNsense/Wireguard/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard-go/src/reticen8/mvc/app/models/Reticen8/Wireguard/General.xml>`__"
 
 .. csv-table:: Resources (ClientController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -68,7 +68,7 @@ Wireguard
     "``POST``","wireguard","client","setClient","$uuid"
     "``POST``","wireguard","client","toggleClient","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Client.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard/src/opnsense/mvc/app/models/OPNsense/Wireguard/Client.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Client.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard/src/reticen8/mvc/app/models/Reticen8/Wireguard/Client.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -78,7 +78,7 @@ Wireguard
     "``GET``","wireguard","general","getStatus",""
     "``POST``","wireguard","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard/src/opnsense/mvc/app/models/OPNsense/Wireguard/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard/src/reticen8/mvc/app/models/Reticen8/Wireguard/General.xml>`__"
 
 .. csv-table:: Resources (ServerController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -94,7 +94,7 @@ Wireguard
     "``POST``","wireguard","server","setServer","$uuid=null"
     "``POST``","wireguard","server","toggleServer","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard/src/opnsense/mvc/app/models/OPNsense/Wireguard/Server.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard/src/reticen8/mvc/app/models/Reticen8/Wireguard/Server.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -110,4 +110,4 @@ Wireguard
     "``GET``","wireguard","service","status",""
     "``POST``","wireguard","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net/wireguard/src/opnsense/mvc/app/models/OPNsense/Wireguard/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net/wireguard/src/reticen8/mvc/app/models/Reticen8/Wireguard/General.xml>`__"

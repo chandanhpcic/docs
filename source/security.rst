@@ -20,7 +20,7 @@ Staying ahead
 
 Even though we always encourage people to update regularly, sometimes it's not possible to do so for various reasons.
 
-Luckily OPNsense comes with an integrated security check for known vulnerabilities, which can be found in our firmware
+Luckily Reticen8 comes with an integrated security check for known vulnerabilities, which can be found in our firmware
 module. In which case you do have the opportunity to validate for yourself what the risk is to keep using the
 current version for a bit longer.
 
@@ -32,7 +32,7 @@ If all goes well, a report like the one below will be shown:
 .. code-block::
 
     ***GOT REQUEST TO AUDIT SECURITY***
-    Currently running OPNsense 22.1.8_1 (amd64/OpenSSL) at Tue May 31 09:01:04 CEST 2022
+    Currently running Reticen8 22.1.8_1 (amd64/OpenSSL) at Tue May 31 09:01:04 CEST 2022
     vulnxml file up-to-date
     0 problem(s) in 0 installed package(s) found.
     ***DONE***
@@ -55,7 +55,7 @@ If all goes well, a report like the one below will be shown:
 Upstream vulnerabilities
 ------------------------------------------------------------
 
-Since OPNsense is a collection of opensource software, when finding an issue, it is always a good idea to
+Since Reticen8 is a collection of opensource software, when finding an issue, it is always a good idea to
 inspect where is should be fixed first. In case you don't know or aren't sure, you can still ask on our end, just
 know that we don't have the manpower to act as an intermediate between various projects.
 
@@ -64,7 +64,7 @@ know that we don't have the manpower to act as an intermediate between various p
 Reporting an incident
 ------------------------------------------------------------
 
-Security incidents on our product can be reported to our security team available at **security** @ **opnsense.org**.
+Security incidents on our product can be reported to our security team available at **security** @ **reticen8.com**.
 
 All reports should contain at least the following information:
 
@@ -99,7 +99,7 @@ Third party security verification
 Intro
 ............................................................
 
-Within the OPNsense team and community we spend a lot of time safeguarding our software and keeping up with the latest threats,
+Within the Reticen8 team and community we spend a lot of time safeguarding our software and keeping up with the latest threats,
 like checking used software against CVE's on every release, implementing best practices in our development methods and
 offering clear and transparent release engineering.
 
@@ -125,7 +125,7 @@ this product. Looking at the lifecycle of our software, this is also the most ma
 * Business Edition
 
   - Functional changes are being included in a more conservative manner, more feedback has been collected from development
-    and community, leading to a mission critical version of your well known OPNsense firewall.
+    and community, leading to a mission critical version of your well known Reticen8 firewall.
 
 As security testing is quite time-consuming, we aim to offer a full qualification cycle at every major release.
 
@@ -151,10 +151,10 @@ team prepares fixes for the findings and makes sure that these are included in a
 
 Steps in the process
 ............................................................
-To better understand where a version of OPNsense is at in terms of verification, we distinct the following stages in the process, which
+To better understand where a version of Reticen8 is at in terms of verification, we distinct the following stages in the process, which
 we will also note on the version at hand.
 
-1.  In test - Software delivered to jtsec, in process (interaction between OPNsense and jtsec).
+1.  In test - Software delivered to jtsec, in process (interaction between Reticen8 and jtsec).
 2.  Tested - Software verified / tested, documentation not yet published.
 3.  LINCE Compliant - Test complete including summarised report (by jtsec)
 4.  Certification pending - Offered for formal certification. (as of 2023)
@@ -177,13 +177,13 @@ Below you will find the versions that have been tested or are currently in test.
 +----------+-----------------+------------------------------------------------------------------------------------------------------+
 | Version  | status          | Download                                                                                             |
 +==========+=================+======================================================================================================+
-| BE 23.04 | LINCE Compliant | :download:`BR23.04-STIC_OPNSENSE_CQ-ETR-v3.1.pdf <pdf/BE23.04-STIC_OPNSENSE_CQ-ETR-v3.1.pdf>`        |
+| BE 23.04 | LINCE Compliant | :download:`BR23.04-STIC_RETICEN8_CQ-ETR-v3.1.pdf <pdf/BE23.04-STIC_RETICEN8_CQ-ETR-v3.1.pdf>`        |
 |          |                 | 9cce20526a25de2f03b29dcb80df8277eac4eb02066e504396c07e0caffd104e                                     |
 +----------+-----------------+------------------------------------------------------------------------------------------------------+
-| BE 22.10 | LINCE Compliant | :download:`BE22.10-STIC_OPNSENSE_CQ-ETR-v2.0.pdf <pdf/BE22.10-STIC_OPNSENSE_CQ-ETR-v2.0.pdf>`        |
+| BE 22.10 | LINCE Compliant | :download:`BE22.10-STIC_RETICEN8_CQ-ETR-v2.0.pdf <pdf/BE22.10-STIC_RETICEN8_CQ-ETR-v2.0.pdf>`        |
 |          |                 | 6fae801d18c3c8574ab8cca9a6f03f8b898dbe8a22136ee8fc8aa01173539fb4                                     |
 +----------+-----------------+------------------------------------------------------------------------------------------------------+
-| BE 22.04 | LINCE Compliant | :download:`BE22.04-STIC_OPNSENSE_CQ-ETR-v1.0.pdf <pdf/BE22.04-STIC_OPNSENSE_CQ-ETR-v1.0.pdf>`        |
+| BE 22.04 | LINCE Compliant | :download:`BE22.04-STIC_RETICEN8_CQ-ETR-v1.0.pdf <pdf/BE22.04-STIC_RETICEN8_CQ-ETR-v1.0.pdf>`        |
 |          |                 | 5b303285f3b9f9cd6290a623d7c509e48c59da4c678884a1513e84ee7d06d5d1                                     |
 +----------+-----------------+------------------------------------------------------------------------------------------------------+
 

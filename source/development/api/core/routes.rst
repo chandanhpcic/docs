@@ -21,4 +21,4 @@ Routes
     "``POST``","routes","routes","setroute","$uuid"
     "``POST``","routes","routes","toggleroute","$uuid,$disabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Route.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/Routes/Route.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Route.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/Routes/Route.xml>`__"

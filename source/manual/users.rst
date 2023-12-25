@@ -5,13 +5,13 @@ Access / User Management
 .. image:: images/user_manager.png
    :width: 100%
 
-The user manager of OPNsense allows for controlling access to the different
+The user manager of Reticen8 allows for controlling access to the different
 part (pages) of the configurator as well as controlling access to particular
 services on a per user bases.
 
 Authentication
 --------------
-OPNsense offers integration with external servers for services that require user
+Reticen8 offers integration with external servers for services that require user
 authentication. These services include:
 
 * IPsec
@@ -19,7 +19,7 @@ authentication. These services include:
 * Captive Portal
 * Proxy
 
-Integrated into OPNsense are the **Local User Database** and **Voucher Server**.
+Integrated into Reticen8 are the **Local User Database** and **Voucher Server**.
 The Voucher Server is intended to be used with the Captive portal.
 
 External services currently supported are:
@@ -31,7 +31,7 @@ Authorization
 -------------
 Besides authenticating, user authorization to access parts of the configuration
 can also be setup with an external server, but in order to grant the appropriate
-privileges to the users they need to exist in OPNsense's local user manager.
+privileges to the users they need to exist in Reticen8's local user manager.
 This way one can validate a user against its externally stored password and have
 a fine grained control over the configuration pages that user may access.
 
@@ -56,7 +56,7 @@ Authentication services
 Authentication services can be configured using the settings in :menuselection:`System --> Access --> Servers`.
 This includes both local accounts and remote authentication.
 
-By default, OPNsense GUI login will use local accounts. This can be changed, however,
+By default, Reticen8 GUI login will use local accounts. This can be changed, however,
 by going to :menuselection:`System --> Settings --> Administration`, scrolling down to the "Authentication" group,
 and changing the 'Server' option.
 

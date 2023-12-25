@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 """
-    Copyright (c) 2020-2021 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2020-2021 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -36,7 +36,7 @@ from packaging import version
 from jinja2 import Template
 
 def download_zip(target_filename):
-    req = requests.get("https://github.com/opnsense/changelog/archive/master.zip", stream=True)
+    req = requests.get("https://github.com/reticen8/changelog/archive/master.zip", stream=True)
     if req.status_code == 200:
         req.raw.decode_content = True
         with open(target_filename, 'wb') as f_out:
@@ -72,7 +72,7 @@ def parse_change_log(payload, this_version, links):
         elif first_line is False and line.strip() != "":
             # strip tag line
             first_line = idx
-            if line.find('OPNsense') > -1:
+            if line.find('Reticen8') > -1:
                 content_line = line
         elif line == '--':
             # chop tagine
@@ -97,9 +97,9 @@ def parse_change_log(payload, this_version, links):
                 result['prelude'].append(content_line)
 
         # prelude exit
-        if prelude_line and line.find('https://opnsense.org/download/') > -1:
+        if prelude_line and line.find('https://reticen8.com/download/') > -1:
             prelude_line = False
-        elif prelude_line and line.find('https://downloads.opnsense.com') > -1: # BE
+        elif prelude_line and line.find('https://downloads.reticen8.com') > -1: # BE
             prelude_line = False
 
     result["content"] = "\n".join(result["content"])

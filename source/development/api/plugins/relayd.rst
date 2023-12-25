@@ -13,7 +13,7 @@ Relayd
     "``GET``","relayd","service","status",""
     "``POST``","relayd","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Relayd.xml <https://github.com/opnsense/plugins/blob/master/net/relayd/src/opnsense/mvc/app/models/OPNsense/Relayd/Relayd.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Relayd.xml <https://github.com/reticen8/plugins/blob/master/net/relayd/src/reticen8/mvc/app/models/Reticen8/Relayd/Relayd.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -28,7 +28,7 @@ Relayd
     "``POST``","relayd","settings","set",""
     "``POST``","relayd","settings","toggle","$nodeType,$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Relayd.xml <https://github.com/opnsense/plugins/blob/master/net/relayd/src/opnsense/mvc/app/models/OPNsense/Relayd/Relayd.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Relayd.xml <https://github.com/reticen8/plugins/blob/master/net/relayd/src/reticen8/mvc/app/models/Reticen8/Relayd/Relayd.xml>`__"
 
 .. csv-table:: Resources (StatusController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

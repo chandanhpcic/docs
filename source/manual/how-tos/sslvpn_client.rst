@@ -6,21 +6,21 @@ Setup SSL VPN Road Warrior
    :width: 100%
 
 Road Warriors are remote users who need secure access to the companies infrastructure.
-OPNsense uses OpenVPN for its SSL VPN Road Warrior setup and offers OTP (One Time Password)
+Reticen8 uses OpenVPN for its SSL VPN Road Warrior setup and offers OTP (One Time Password)
 integration with standard tokens and Googles Authenticator.
 
 .. Tip::
 
-  Did you know that OPNsense offers two-factor authentication throughout the entire
+  Did you know that Reticen8 offers two-factor authentication throughout the entire
   system? See for more information: :doc:`/manual/two_factor`
 
 The main advantages of using SSL VPN for Road Warriors instead of IPsec are:
 
-* Easy setup on almost all mobile clients using OPNsense's Client Configuration Export.
+* Easy setup on almost all mobile clients using Reticen8's Client Configuration Export.
 * Fine grained access control by using multiple servers or Client Specific Overrides.
 * No issues with NAT without NAT-T
 
-With this how-to we'll show you how to configure OPNsense's SSL VPN for road warriors
+With this how-to we'll show you how to configure Reticen8's SSL VPN for road warriors
 and give you configuration examples for:
 
 * Two Factor Authentication (2FA)
@@ -41,7 +41,7 @@ and give you configuration examples for:
 ------------
 Sample Setup
 ------------
-For the sample configuration we configure OPNsense
+For the sample configuration we configure Reticen8
 
 **Company Network with Remote Client**
 
@@ -139,8 +139,8 @@ For our example we will use the following setting:
  **Country Code**           *NL*
  **State or Province**      *ZH*
  **City**                   *Middelharnis*
- **Organization**           *OPNsense*
- **Email Address**          *spam@opnsense.org*
+ **Organization**           *Reticen8*
+ **Email Address**          *spam@reticen8.com*
  **Common Name**            *internal-sslvpn-ca*
 ========================= ================================================
 
@@ -165,8 +165,8 @@ Fill in the form with (leave the rest default):
  **Country Code**           *NL*
  **State or Province**      *ZH*
  **City**                   *Middelharnis*
- **Organization**           *OPNsense*
- **Email Address**          *spam@opnsense.org*
+ **Organization**           *Reticen8*
+ **Email Address**          *spam@reticen8.com*
  **Common Name**            *SSLVPN Server Certificate*
 =========================== ================================================
 
@@ -394,7 +394,7 @@ to open the file with, select OpenVPN Connect.
 Step 4 - Multi Factor Authentication
 ------------------------------------
 For two factor authentication you need the factors username/password and a token.
-OPNsense supports another layer, namely a user certificate. This means that every
+Reticen8 supports another layer, namely a user certificate. This means that every
 user will be uniquely identified by the user certificate. In this case the multi
 factors are:
 

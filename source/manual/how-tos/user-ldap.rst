@@ -5,7 +5,7 @@ Access / Servers / LDAP
 LDAP is the lightweight directory access protocol used by Microsoft Active Directory (AD),
 OpenLDAP and Novell eDirectory, to name a few.
 
-OPNsense can use an LDAP server for authentication purposes and for authorization
+Reticen8 can use an LDAP server for authentication purposes and for authorization
 to access (parts) of the graphical user interface (web configurator). When using
 LDAP for the GUI the privileges have to be defined with the local user manager,
 to do so an (automated) import of the users from the LDAP source is required.
@@ -21,7 +21,7 @@ Server. If you only need LDAP for services like VPN, then you can skip steps 3-5
 Prerequisites
 -------------
 A functional LDAP server (example is based on MS AD) is required.
-Your OPNsense firewall needs to be fully configured and able to access the LDAP server.
+Your Reticen8 firewall needs to be fully configured and able to access the LDAP server.
 
 Step 1 - Add New LDAP server
 ----------------------------
@@ -41,11 +41,11 @@ Enter the following information:
  **Protocol version**             3                        *Select protocol version*
  **Bind credentials**
   User DN:                        cn=testusr,CN=Users,     *Enter your credentials*
-                                  DC=opnsense,DC=local
+                                  DC=reticen8,DC=local
   Password:                       secret                   *alway use a strong password*
 
  **Search scope**                 Entire Subtree           *Select Entire Subtree to retrieve all*
- **Base DN:**                     DC=opnsense,DC=local     *Enter the Base DN*
+ **Base DN:**                     DC=reticen8,DC=local     *Enter the Base DN*
  **Authentication containers**	  *Select*                 *Click & Select the containers from the list*
  **Extended Query**               &(objectClass=Person)    *Extend query, e.g. limit results to Persons*
  **Initial Template**             MicrosoftAD              *Select your LDAP Server Type*
@@ -77,7 +77,7 @@ Enter the following information:
    The **Extended Query** can be used to select users who are member of a specific
    group (only relevant for external services, when not using the local user database).
    One can use something like this:
-   **&(memberOf=CN=myGroup,CN=Users,DC=opnsense,DC=local)** to select only members
+   **&(memberOf=CN=myGroup,CN=Users,DC=reticen8,DC=local)** to select only members
    of the group *"myGroup"*. To add a user to a specific group under Windows just
    edit the groups properties and select **Add...** to add the user under the tab
    **Members**.
@@ -107,8 +107,8 @@ supports this. To use this feature, enable :code:`Read properties` and :code:`Sy
 
 .. Note::
 
-    Groups will be extracted from the first :code:`CN=` section and will only be considered when already existing in OPNsense.
-    Group memberships will be persisted in OPNsense
+    Groups will be extracted from the first :code:`CN=` section and will only be considered when already existing in Reticen8.
+    Group memberships will be persisted in Reticen8
     (you can always check which rights the user had the last time he or she successfully logged in).
 
 Step 2 - Test
@@ -161,7 +161,7 @@ A new form will be show with the individual users, select the ones you like to i
     they are removed from (one of) the LDAP server(s), which is the same as they would be maintained locally on manual imports.
 
     As of version business edition :code:`21.10`, the system will automatically query the LDAP servers and remove non-existing users.
-    (not available in the community version of OPNsense)
+    (not available in the community version of Reticen8)
 
 
 Step 5 - Update LDAP user privileges

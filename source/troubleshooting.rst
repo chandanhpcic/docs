@@ -14,10 +14,10 @@ General issue workflow
 ...........................
 
 Before reporting issues, please make sure yours still exists on the latest version.
-We generally advice to check the existing `issues <https://github.com/opnsense/core/issues>`__ and our `forum <https://forum.opnsense.org/>`__
+We generally advice to check the existing `issues <https://github.com/reticen8/core/issues>`__ and our `forum <https://forum.reticen8.com/>`__
 before reporting new ones.
 
-In case your issue was introduced after a (minor) upgrade, you can use `opnsense-revert <https://docs.opnsense.org/manual/opnsense_tools.html#opnsense-revert>`__
+In case your issue was introduced after a (minor) upgrade, you can use `reticen8-revert <https://docs.reticen8.com/manual/reticen8_tools.html#reticen8-revert>`__
 to downgrade specific packages installed on the system.
 
 Using the firmware section (:menuselection:`System --> Firmware --> Status`) you can perform a health check on the system, on
@@ -40,13 +40,13 @@ When clicked this outputs something like the following:
     Checking all packages: .......... done
     >>> Check for missing or altered package files
     Checking all packages: ....
-    opnsense-19.7.4_1: checksum mismatch for /usr/local/etc/inc/auth.inc
+    reticen8-19.7.4_1: checksum mismatch for /usr/local/etc/inc/auth.inc
     Checking all packages...
     Checking all packages......... done
     ***DONE***
 
 When mismatches are reported, you can reinstall affected packages in the **Packages** section of the firmware screen.
-In the case above you would reinstall opnsense, since the :code:`auth.inc` looks tainted.
+In the case above you would reinstall reticen8, since the :code:`auth.inc` looks tainted.
 
 .. Note::
 

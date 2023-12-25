@@ -14,7 +14,7 @@ Dnscryptproxy
     "``POST``","dnscryptproxy","cloak","setCloak","$uuid"
     "``POST``","dnscryptproxy","cloak","toggleCloak","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Cloak.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Cloak.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Cloak.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/Cloak.xml>`__"
 
 .. csv-table:: Service (DnsblController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -23,7 +23,7 @@ Dnscryptproxy
     "``GET``","dnscryptproxy","dnsbl","get",""
     "``POST``","dnscryptproxy","dnsbl","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Dnsbl.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Dnsbl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Dnsbl.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/Dnsbl.xml>`__"
 
 .. csv-table:: Resources (ForwardController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -38,7 +38,7 @@ Dnscryptproxy
     "``POST``","dnscryptproxy","forward","setForward","$uuid"
     "``POST``","dnscryptproxy","forward","toggleForward","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Forward.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Forward.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Forward.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/Forward.xml>`__"
 
 .. csv-table:: Service (GeneralController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -47,7 +47,7 @@ Dnscryptproxy
     "``GET``","dnscryptproxy","general","get",""
     "``POST``","dnscryptproxy","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/General.xml>`__"
 
 .. csv-table:: Resources (ServerController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -62,7 +62,7 @@ Dnscryptproxy
     "``POST``","dnscryptproxy","server","setServer","$uuid"
     "``POST``","dnscryptproxy","server","toggleServer","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Server.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/Server.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -75,7 +75,7 @@ Dnscryptproxy
     "``GET``","dnscryptproxy","service","status",""
     "``POST``","dnscryptproxy","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/General.xml>`__"
 
 .. csv-table:: Resources (WhitelistController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -90,4 +90,4 @@ Dnscryptproxy
     "``POST``","dnscryptproxy","whitelist","setWhitelist","$uuid"
     "``POST``","dnscryptproxy","whitelist","toggleWhitelist","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Whitelist.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/OPNsense/Dnscryptproxy/Whitelist.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Whitelist.xml <https://github.com/reticen8/plugins/blob/master/dns/dnscrypt-proxy/src/reticen8/mvc/app/models/Reticen8/Dnscryptproxy/Whitelist.xml>`__"

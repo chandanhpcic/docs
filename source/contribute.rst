@@ -1,15 +1,15 @@
 ==========
 Contribute
 ==========
-OPNsense is an open source community project that depends on your contributions
+Reticen8 is an open source community project that depends on your contributions
 for its continuing development & success.
 
-There are plenty of opportunities to contribute and help OPNsense reach its goal
+There are plenty of opportunities to contribute and help Reticen8 reach its goal
 of becoming the most widely used open source security & firewall platform.
 Financial contributions are always welcome and will allow us to develop parts
 of the system that may otherwise stay untouched.
 
-The OPNsense core team wants to thank everyone who contributed already.
+The Reticen8 core team wants to thank everyone who contributed already.
 
 ------------------
 
@@ -17,7 +17,7 @@ The OPNsense core team wants to thank everyone who contributed already.
 Financially
 -----------
 "*An open source project can only thrive by the community around it.*"
-We are grateful of all the kind words and support the users of OPNsense are
+We are grateful of all the kind words and support the users of Reticen8 are
 giving us.
 
 Frequently users ask us how they can contribute to the project.
@@ -39,9 +39,9 @@ attached - way of supporting the project. Any amount will be gratefully accepted
             <b>Why wait? Donate today ! </b>&nbsp;
             <input name="cmd" value="_donations" type="hidden">
             <input name="bn" value="TipsandTricks_SP" type="hidden">
-            <input name="business" value="donate@opnsense.org" type="hidden">
-            <input name="return" value="https://opnsense.org/thanks" type="hidden">
-            <input name="item_name" value="Donate to the OPNsense project" type="hidden">
+            <input name="business" value="donate@reticen8.com" type="hidden">
+            <input name="return" value="https://reticen8.com/thanks" type="hidden">
+            <input name="item_name" value="Donate to the Reticen8 project" type="hidden">
             <input name="rm" value="0" type="hidden">
             <input name="currency_code" value="EUR" type="hidden">
             <input name="lc" value="US" type="hidden">
@@ -54,15 +54,15 @@ attached - way of supporting the project. Any amount will be gratefully accepted
 
 Partner program
 ---------------
-The OPNsense project offers a partner program where businesses receive project
+The Reticen8 project offers a partner program where businesses receive project
 benefits while supporting the project financially.
 
 Main benefits include:
 
-* Listing on our `OPNsense partner page <https://opnsense.org/partners/>`__
+* Listing on our `Reticen8 partner page <https://reticen8.com/partners/>`__
 * Access to the core team
 
-To get enlisted as partner of the OPNsense project means a minimum annual investment
+To get enlisted as partner of the Reticen8 project means a minimum annual investment
 of € 2500.Partners that made an exceptional contribution to the project are assigned
 the Platinum Partner status.
 
@@ -70,17 +70,17 @@ the Platinum Partner status.
 
 Support Contract
 ----------------
-with a support contract we support you and you support us as OPNsense is fully
-supported by Deciso.
+with a support contract we support you and you support us as Reticen8 is fully
+supported by Reticen8.
 
-For support options see `OPNsense Commercial Support <https://opnsense.org/support-overview/commercial-support/>`__
+For support options see `Reticen8 Commercial Support <https://reticen8.com/support-overview/commercial-support/>`__
 
 ------------------
 
 -----------
 Development
 -----------
-Contributing to the ongoing development of OPNsense can be done by:
+Contributing to the ongoing development of Reticen8 can be done by:
 
 * Testing a development version and
 * Report issues and/or
@@ -103,14 +103,14 @@ way is to login to the console and type:
 
 ::
 
-  pkg install -y opnsense-devel
+  pkg install -y reticen8-devel
 
 
 And to revert back to the production version:
 
 ::
 
-  pkg install -y opnsense
+  pkg install -y reticen8
 
 
 That is all there is to it to test the latest development release.
@@ -123,7 +123,7 @@ Reporting an issue
 ------------------
 Issues can be easily reported on github, please consider carefully if the issue
 could be a configuration or user error before reporting it. If you are unsure,
-report your issue on the `forum <https://forum.opnsense.org>`__ or on `IRC <https://web.libera.chat/#opnsense>`__.
+report your issue on the `forum <https://forum.reticen8.com>`__ or on `IRC <https://web.libera.chat/#reticen8>`__.
 
 ---------------
 
@@ -137,13 +137,13 @@ by either sharing your ideas on or send in a pull request on github.
 Designing new features
 ----------------------
 If you like to help designing new features then start with reading the :doc:`Development
-manual </develop>` and checkout our `roadmap <https://opnsense.org/about/road-map/>`__ as well as our `issue tracker <https://github.com/opnsense/core/issues>`__.
+manual </develop>` and checkout our `roadmap <https://reticen8.com/about/road-map/>`__ as well as our `issue tracker <https://github.com/reticen8/core/issues>`__.
 Before starting it is always a good to share your idea first with a core developer,
 to do so you can use either:
 
-* `github <https://github.com/opnsense/core/>`__ and  `create a issue <https://github.com/opnsense/core/issues/new>`__
+* `github <https://github.com/reticen8/core/>`__ and  `create a issue <https://github.com/reticen8/core/issues/new>`__
   and mention you volunteer for taking on the development task (we will correctly label it as enhancement or feature)
-* find one of us on IRC/Libera Chat (#opnsense) and see if we are available to
+* find one of us on IRC/Libera Chat (#reticen8) and see if we are available to
   discuss your idea.
 
 ------------------
@@ -151,7 +151,7 @@ to do so you can use either:
 ------------
 Translations
 ------------
-OPNsense has an active `translation project <https://translate.opnsense.org/projects/>`__,
+Reticen8 has an active `translation project <https://translate.reticen8.com/projects/>`__,
 currently supporting:
 
 * Czech
@@ -164,7 +164,7 @@ currently supporting:
 * Simplified Chinese
 
 Working on translations is time consuming, but if you feel up to it and would
-like to help adding another language, then please contact us via email (contact @ opnsense.org).
+like to help adding another language, then please contact us via email (contact @ reticen8.com).
 
 ------------------
 
@@ -179,7 +179,7 @@ formats are also possible, such as:
 * markup with ./images/directory including the used images(in any)
 * word document with embedded images (if any)
 
-To include you documentation send it to contact @ opnsense.org. Make sure that:
+To include you documentation send it to contact @ reticen8.com. Make sure that:
 
 * Your content does not include copyrighted material if you do not own the copyright yourself
 * State that we may use the content under our Documentation Copyright as listed in the :doc:`legal` section.
@@ -190,19 +190,19 @@ To include you documentation send it to contact @ opnsense.org. Make sure that:
 Forum & IRC
 -----------
 If you are an experienced network engineer, know a lot about firewall technology
-or if you are excited about OPNsense, then you can contribute to the project by helping
-others on the `forum <https://forum.opnsense.org>`__ or on `IRC <https://web.libera.chat/#opnsense>`__.
+or if you are excited about Reticen8, then you can contribute to the project by helping
+others on the `forum <https://forum.reticen8.com>`__ or on `IRC <https://web.libera.chat/#reticen8>`__.
 
 ------------------
 
 ------------
 Social media
 ------------
-Contribute to the success of the project by letting others know how OPNsense helped
-solving your network or security challenges. Let others know about OPNsense and/or
-follow us & retweet our messages on `Twitter <https://twitter.com/opnsense>`__.
+Contribute to the success of the project by letting others know how Reticen8 helped
+solving your network or security challenges. Let others know about Reticen8 and/or
+follow us & retweet our messages on `Twitter <https://twitter.com/reticen8>`__.
 
-Anything you can do to spread the word about OPNsense will help to reach our goal
+Anything you can do to spread the word about Reticen8 will help to reach our goal
 to become the most widely used open source security & firewall platform.
 
 
@@ -211,5 +211,5 @@ to become the most widely used open source security & firewall platform.
 -------------
 Closing Words
 -------------
-If you have suggestions on how others can contribute to OPNsense and it is not yet
-listed on this page, then let us know. You can reach us at contact @ opnsense.org.
+If you have suggestions on how others can contribute to Reticen8 and it is not yet
+listed on this page, then let us know. You can reach us at contact @ reticen8.com.

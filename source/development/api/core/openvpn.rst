@@ -14,7 +14,7 @@ Openvpn
     "``POST``","openvpn","client_overwrites","set",""
     "``POST``","openvpn","client_overwrites","toggle","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `OpenVPN.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/OpenVPN/OpenVPN.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `OpenVPN.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/OpenVPN/OpenVPN.xml>`__"
 
 .. csv-table:: Resources (ExportController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -46,7 +46,7 @@ Openvpn
     "``POST``","openvpn","instances","setStaticKey","$uuid=null"
     "``POST``","openvpn","instances","toggle","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `OpenVPN.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/OpenVPN/OpenVPN.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `OpenVPN.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/OpenVPN/OpenVPN.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"

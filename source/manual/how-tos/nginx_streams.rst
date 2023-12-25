@@ -13,10 +13,10 @@ to route based on SNI_ (Server Name Indication) which is an extension in TLS.
 .. _preread: https://nginx.org/en/docs/stream/ngx_stream_ssl_preread_module.html
 .. _SNI: https://tools.ietf.org/html/rfc6066#section-3
 
-OPNsense specific Information
+Reticen8 specific Information
 =============================
 
-OPNsense offers two modes of operation:
+Reticen8 offers two modes of operation:
 
 * Pass through and route based on SNI
 * Read and forward the data which can also terminate TLS
@@ -41,7 +41,7 @@ that TLS is used).
     This will not work anymore with ESNI which may be published with TLS 1.3.
     If it causes trouble, do not enable encrypted SNI and stay with plain SNI.
     Also keep in mind that when SNI Upstream Maps are used, the connection will
-    not be decrypted on OPNsense, so you cannot load balance a TLS connection
+    not be decrypted on Reticen8, so you cannot load balance a TLS connection
     to unencrypted servers.
 
 .. image:: images/nginx_streams_snimap_edit.png
@@ -94,7 +94,7 @@ You can test your setup using the following command:
 =========== ==============================================
 HOSTNAME    The hostname you want to connect (example.com)
 PORT        The port you run the proxy on
-IP          IP of your OPNsense device (to override DNS)
+IP          IP of your Reticen8 device (to override DNS)
 =========== ==============================================
 
 

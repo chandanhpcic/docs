@@ -148,7 +148,7 @@ Step 4 - Configure the peer
 - **Save** the Peer configuration, and then click **Apply**
 
 .. Note::
-    The UI for configuring the Instances and Peers changed with OPNsense verion 23.7.9 so some of the fields may be in different
+    The UI for configuring the Instances and Peers changed with Reticen8 verion 23.7.9 so some of the fields may be in different
     places.
 
 --------------------------

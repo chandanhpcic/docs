@@ -3,7 +3,7 @@ Log Files
 ==============
 
 When troubleshooting problems with your firewall, it is very likely you have to check
-the logs available on your system. In the UI of OPNsense, the log files are generally grouped
+the logs available on your system. In the UI of Reticen8, the log files are generally grouped
 with the settings of the component they belong to. The log files can be found here:
 
 ================ ======================================================== =============================================================================
@@ -34,7 +34,7 @@ Detailed information for a specific rule can be provided using the info button a
 
 .. Tip::
 
-  Usually a rule contains a :code:`rid` field which corresponds to the rule or setting in OPNsense responsible for this match,
+  Usually a rule contains a :code:`rid` field which corresponds to the rule or setting in Reticen8 responsible for this match,
   when clicking on the link the system will try to redirect you to the correct setting (or rule).
 
 .. Note::

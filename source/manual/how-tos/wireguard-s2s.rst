@@ -13,7 +13,7 @@ It has fewer lines of code and is more easily audited than other VPN protocols. 
     Wireguard is useful for simple routed site to site tunnels and roadwarrior setups. To this date, it doesn't play too nicely with high availability setups. That's because the peer may keep polling a stale interface and misinterpret the other instance as being the one that is down and keep sending traffic there. Also, because Wireguard is bound to all interfaces (and not explicitely the CARP VIP), both High Availability firewalls will send handshakes and fight against each other for the remote Wireguard peer. This behavior was mitigated in 23.7.6 with Wireguard CARP vhid tracking that disables the Wireguard Instance with CARP VIPs in Backup state. In case of critical workloads and high availability, IPsec could still be the better choice.
     
 .. Note::
-    The following example covers an IPv4 Site to Site Wireguard Tunnel between two OPNsense Firewalls with public IPv4 addresses on their WAN interfaces. You will connect *Site A LAN Net* ``172.16.0.0/24`` to *Site B LAN Net* ``192.168.0.0/24`` using the *Wireguard Transfer Net* ``10.2.2.0/24``. *Site A Public IP* is ``203.0.113.1`` and *Site B Public IP* is ``203.0.113.2``.
+    The following example covers an IPv4 Site to Site Wireguard Tunnel between two Reticen8 Firewalls with public IPv4 addresses on their WAN interfaces. You will connect *Site A LAN Net* ``172.16.0.0/24`` to *Site B LAN Net* ``192.168.0.0/24`` using the *Wireguard Transfer Net* ``10.2.2.0/24``. *Site A Public IP* is ``203.0.113.1`` and *Site B Public IP* is ``203.0.113.2``.
     
 .. Tip::
     You can also easily expand this Site to Site tunnel with IPv6 Global Unicast addresses (GUA) or Unique Local Addresses (ULA) to create a Dual Stack tunnel. Just add these IPv6 Networks (usually with /64 Prefix) to the *allowed IPs* and create Firewall rules to allow the traffic.
@@ -25,7 +25,7 @@ Step 1 - Installation
 Install the os-wireguard plugin in :menuselection:`System --> Firmware --> Plugins`, refresh the GUI and you will soon find :menuselection:`VPN --> WireGuard`.
 
 -----------------------------------------------------
-Step 2a - Setup WireGuard Instance on OPNsense Site A
+Step 2a - Setup WireGuard Instance on Reticen8 Site A
 -----------------------------------------------------
 
 Go to tab **Instances** and press **+** to create a new instance.
@@ -46,7 +46,7 @@ Enable the *advanced mode* toggle.
 Press **Save** and **Apply**.
 
 -----------------------------------------------------
-Step 2b - Setup WireGuard Instance on OPNsense Site B
+Step 2b - Setup WireGuard Instance on Reticen8 Site B
 -----------------------------------------------------
 
 Go to tab **Instance** and press **+** to create a new instance.
@@ -67,7 +67,7 @@ Enable the *advanced mode* toggle.
 Press **Save** and **Apply**.
 
 ------------------------------------------------------
-Step 3a - Setup WireGuard Peer on OPNsense Site A
+Step 3a - Setup WireGuard Peer on Reticen8 Site A
 ------------------------------------------------------
 
 Go to tab **Peers** and press **+** to create a new peer. 
@@ -95,7 +95,7 @@ Go to tab **Instances** and edit *wgopn-site-a*.
 Press **Save** and **Apply**.
 
 ------------------------------------------------------
-Step 3b - Setup WireGuard Peer on OPNsense Site B
+Step 3b - Setup WireGuard Peer on Reticen8 Site B
 ------------------------------------------------------
 
 Go to tab **Peers** and press **+** to create a new peer. 
@@ -214,7 +214,7 @@ Your tunnel is now up and running.
 Step 5 - Allow traffic between Site A LAN Net and Site B LAN Net
 ----------------------------------------------------------------
 
-Go to OPNsense Site A :menuselection:`Firewall --> Rules --> LAN A` add a new rule.
+Go to Reticen8 Site A :menuselection:`Firewall --> Rules --> LAN A` add a new rule.
 
     ====================== ====================================================================================================
      **Action**             *Pass*
@@ -231,7 +231,7 @@ Go to OPNsense Site A :menuselection:`Firewall --> Rules --> LAN A` add a new ru
 
 Press **Save** and **Apply**.
     
-Go to OPNsense Site A :menuselection:`Firewall --> Rules --> Wireguard (Group)` add a new rule.
+Go to Reticen8 Site A :menuselection:`Firewall --> Rules --> Wireguard (Group)` add a new rule.
 
     ====================== ====================================================================================================
      **Action**             *Pass*
@@ -248,7 +248,7 @@ Go to OPNsense Site A :menuselection:`Firewall --> Rules --> Wireguard (Group)` 
 
 Press **Save** and **Apply**.    Allowed IPs
 
-Go to OPNsense Site B :menuselection:`Firewall --> Rules --> LAN A` add a new rule.
+Go to Reticen8 Site B :menuselection:`Firewall --> Rules --> LAN A` add a new rule.
 
     ====================== ====================================================================================================
      **Action**             *Pass*
@@ -265,7 +265,7 @@ Go to OPNsense Site B :menuselection:`Firewall --> Rules --> LAN A` add a new ru
 
 Press **Save** and **Apply**.    
 
-Go to OPNsense Site B :menuselection:`Firewall --> Rules --> Wireguard (Group)` add a new rule.
+Go to Reticen8 Site B :menuselection:`Firewall --> Rules --> Wireguard (Group)` add a new rule.
 
     ====================== ====================================================================================================
      **Action**             *Pass*

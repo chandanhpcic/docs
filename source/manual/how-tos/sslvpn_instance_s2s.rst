@@ -13,7 +13,7 @@ can access network resources in the main office.
 Before you start
 ----------------
 Before starting with the configuration of an OpenVPN SSL tunnel you need to have a
-working OPNsense installation with a unique LAN IP subnet for each side of your
+working Reticen8 installation with a unique LAN IP subnet for each side of your
 connection (your local network needs to be different than that of the remote
 network).
 
@@ -196,7 +196,7 @@ for this example we keep it simple and add one to allow all, in which case we ca
 Create a client instance (Site A)
 ------------------------------------
 
-With the server in place it's time to setup the client on OPNsense, for this we go to :menuselection:`VPN --> OpenVPN --> Instances`
+With the server in place it's time to setup the client on Reticen8, for this we go to :menuselection:`VPN --> OpenVPN --> Instances`
 and add a new instance using the following settings.
 
 ===============================================================

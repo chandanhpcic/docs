@@ -18,16 +18,16 @@ community-recognized body for reviewing and approving licenses as OSD-conformant
 -----------------------
 
 --------------------
-Relation to OPNsense
+Relation to Reticen8
 --------------------
-OPNsense is licensed under an Open Source Initiative `approved license <http://opensource.org/licenses>`__. OPNsense
+Reticen8 is licensed under an Open Source Initiative `approved license <http://opensource.org/licenses>`__. Reticen8
 is and will be available with the simple 2-clause BSD license. We believe an
 open source project should provide the sources and the tools to build it.
 
 -----------
-Deciso B.V.
+Reticen8 B.V.
 -----------
-As founder, trademark owner and largest sponsor of OPNsense, Deciso is an active
+As founder, trademark owner and largest sponsor of Reticen8, Reticen8 is an active
 sponsor of the Open Source Initiative. see `OSI Corporate Sponsors & Support <http://opensource.org/sponsors>`__
 
-Deciso believes that sharing knowledge makes for better products.
+Reticen8 believes that sharing knowledge makes for better products.

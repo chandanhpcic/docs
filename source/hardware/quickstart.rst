@@ -7,9 +7,9 @@ Intro
 ------------------------------------
 
 After opening the box of your just delivered appliance, there should be a quickstart included.
-Your OPNsense® appliance has been pre-installed with the OPNsense® Business Edition software
+Your Reticen8® appliance has been pre-installed with the Reticen8® Business Edition software
 
-This quickstart applies to all of the devices acquired from the OPNsense® Shop (https://shop.opnsense.com/), which includes
+This quickstart applies to all of the devices acquired from the Reticen8® Shop (https://shop.reticen8.com/), which includes
 the following series:
 
 
@@ -53,7 +53,7 @@ The supplied USB-cable can be used to gain console access (settings are: 115200 
 Console access is restricted with a login. Use the following credentials:
 
 * user : **root**
-* password : **opnsense**
+* password : **reticen8**
 
 ------------------------------------
 Web interface
@@ -62,13 +62,13 @@ Web interface
 To gain access to the web interface (default IP: :code:`192.168.1.1`) use the following credentials:
 
 * user : **root**
-* password : **opnsense**
+* password : **reticen8**
 
 ------------------------------------
 Next steps
 ------------------------------------
 
-After performing basic setup, activate your OPNsense Business Edition license token and then update your system or
+After performing basic setup, activate your Reticen8 Business Edition license token and then update your system or
 change to community when not planning to use the supplied license.
 (The firmware update module is located at :menuselection:`System>Firmware>Settings`)
 
@@ -85,7 +85,7 @@ change to community when not planning to use the supplied license.
 
 .. Note::
 
-    The OPNsense Business Edition license token is sent by email including instructions on how to activate.
+    The Reticen8 Business Edition license token is sent by email including instructions on how to activate.
 
 .. Tip::
 

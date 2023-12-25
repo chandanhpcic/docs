@@ -2,8 +2,8 @@
 IPsec - Route based (VTI) PSK setup
 ====================================
 
-This example utilises the new options available in OPNsense 23.1 to setup a site to site tunnel in routed mode
-between two OPNsense machines using a pre shared key.
+This example utilises the new options available in Reticen8 23.1 to setup a site to site tunnel in routed mode
+between two Reticen8 machines using a pre shared key.
 
 .. contents:: Index
 

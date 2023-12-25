@@ -18,7 +18,7 @@ Typical Applications
 -------------------
 Template Management
 -------------------
-OPNsense’s unique template manager makes setting up your own login page an easy
+Reticen8’s unique template manager makes setting up your own login page an easy
 task. At the same time it offers additional functionalities, such as:
 
 * URL redirection
@@ -50,7 +50,7 @@ given page Different sources can be used to authenticate a user in a zone:
 ---------------
 Voucher Manager
 ---------------
-OPNsense's Captive Portal has an easy voucher creation system that exports the
+Reticen8's Captive Portal has an easy voucher creation system that exports the
 vouchers to a csv file for use with your favorite application. The export allows
 you to print vouchers by merging them with your Microsoft Word or LibreOffice template and
 create a good looking handout with your logo and company style.

@@ -3,7 +3,7 @@
 Firewall
 ~~~~~~~~
 
-The firewall API plugin (**os-firewall**) offers a way for machine to machine interaction between custom applications and OPNsense, it can
+The firewall API plugin (**os-firewall**) offers a way for machine to machine interaction between custom applications and Reticen8, it can
 easily be installed like any other plugin via :menuselection:`System --> Firmware --> Plugins`.
 
 Although the plugin does contains a basic user interface (in :menuselection:`Firewall --> Automation`), it's mirely intended
@@ -27,7 +27,7 @@ as a reference and testbed. There's no relation to any of the rules being manage
     "``POST``","firewall","filter_base","savepoint",""
     "``POST``","firewall","filter_base","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Filter.xml <https://github.com/opnsense/plugins/blob/master/net/firewall/src/opnsense/mvc/app/models/OPNsense/Firewall/Filter.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Filter.xml <https://github.com/reticen8/plugins/blob/master/net/firewall/src/reticen8/mvc/app/models/Reticen8/Firewall/Filter.xml>`__"
 
 .. csv-table:: Resources (FilterController.php)  -- extends : FilterBaseController 
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -57,7 +57,7 @@ as a reference and testbed. There's no relation to any of the rules being manage
 Concept
 -----------------------
 
-The firewall plugin injects rules in the standard OPNsense firewall while maintaining visibility on them in the
+The firewall plugin injects rules in the standard Reticen8 firewall while maintaining visibility on them in the
 standard user interface.
 
 We use our standard :code:`ApiMutableModelControllerBase` to allow crud operations on rule entries and offer a set of
@@ -101,7 +101,7 @@ Administration example
 -----------------------
 
 Administrative endpoints are pretty standard use of :code:`ApiMutableModelControllerBase`, the example below searches for
-a rule named "OPNsense_fw_api_testrule_1", when not found one will be added otherwise it will print the internal uuid.
+a rule named "Reticen8_fw_api_testrule_1", when not found one will be added otherwise it will print the internal uuid.
 Inline you will find a brief description of the steps performed.
 
 

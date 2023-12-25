@@ -20,7 +20,7 @@ The following steps determine if a page can be accessed by a user:
 #. One or more groups for that user, stored in system/group which contains priv sections as well.
 #. An XML file (:code:`ACL.xml`) linking logical acl keys to uri patterns
 
-Access controls for most legacy components are stored in models/OPNsense/Core/ACL/ACL.xml, most new components add their own
+Access controls for most legacy components are stored in models/Reticen8/Core/ACL/ACL.xml, most new components add their own
 ACL's in the model belonging to the component. All stored :code:`ACL.xml` files combined determine the full set of options available
 in the user/group manager. There is no expicit requirement which model services which ACL.
 
@@ -33,7 +33,7 @@ in the user/group manager. There is no expicit requirement which model services 
 ACL format
 ---------------
 
-Each ACL file is stored in the model location (/usr/local/opnsense/mvc/app/models/) where :code:`ACL.xml` files
+Each ACL file is stored in the model location (/usr/local/reticen8/mvc/app/models/) where :code:`ACL.xml` files
 are stored in the location [VENDOR]/[MODULE]/ACL/ACL.xml. The format of the file is as follows:
 
 .. code-block:: html
@@ -56,7 +56,7 @@ Using the system from PHP is rather simple:
 
 .. code-block:: php
 
-    $acl = new OPNsense\Core\ACL();
+    $acl = new Reticen8\Core\ACL();
     if ( $acl->isPageAccessible("user", "/firewall_rules.php") ) {
       print ( "/firewall_rules.php is accessible" ) ;
     }

@@ -16,7 +16,7 @@ can access network resources in the main office.
 Before you start
 ----------------
 Before starting with the configuration of an OpenVPN SSL tunnel you need to have a
-working OPNsense installation with a unique LAN IP subnet for each side of your
+working Reticen8 installation with a unique LAN IP subnet for each side of your
 connection (your local network needs to be different than that of the remote
 network).
 
@@ -34,7 +34,7 @@ network).
 ------------
 Sample Setup
 ------------
-For the sample configuration we use two OPNsense boxes to simulate a site to site
+For the sample configuration we use two Reticen8 boxes to simulate a site to site
 tunnel, with the following configuration:
 
 .. sidebar:: Network Site A

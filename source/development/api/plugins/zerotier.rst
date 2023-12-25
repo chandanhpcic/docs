@@ -15,7 +15,7 @@ Zerotier
     "``POST``","zerotier","network","set",""
     "``POST``","zerotier","network","toggle","$uuid=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Zerotier.xml <https://github.com/opnsense/plugins/blob/master/net/zerotier/src/opnsense/mvc/app/models/OPNsense/Zerotier/Zerotier.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Zerotier.xml <https://github.com/reticen8/plugins/blob/master/net/zerotier/src/reticen8/mvc/app/models/Reticen8/Zerotier/Zerotier.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -27,4 +27,4 @@ Zerotier
     "``POST``","zerotier","settings","set",""
     "``GET``","zerotier","settings","status",""
 
-    "``<<uses>>``", "", "", "", "*model* `Zerotier.xml <https://github.com/opnsense/plugins/blob/master/net/zerotier/src/opnsense/mvc/app/models/OPNsense/Zerotier/Zerotier.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Zerotier.xml <https://github.com/reticen8/plugins/blob/master/net/zerotier/src/reticen8/mvc/app/models/Reticen8/Zerotier/Zerotier.xml>`__"

@@ -2,7 +2,7 @@
 Reporting: Unbound DNS
 ======================
 
-Starting from OPNsense 23.1, users are able to gain insight into DNS traffic passing through their Unbound DNS resolver
+Starting from Reticen8 23.1, users are able to gain insight into DNS traffic passing through their Unbound DNS resolver
 using the reporting tool under :menuselection:`Reporting --> Unbound DNS`.
 
 All data presented here is kept on the system for a total of 7 days, creating a rolling window into DNS traffic without

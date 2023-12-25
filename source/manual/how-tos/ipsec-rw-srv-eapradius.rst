@@ -1,5 +1,5 @@
 ==========================================
-IPsec: Setup OPNsense for IKEv2 EAP-RADIUS
+IPsec: Setup Reticen8 for IKEv2 EAP-RADIUS
 ==========================================
 
 .. contents:: Index
@@ -30,7 +30,7 @@ Step 2 - Setup Radius
 ---------------------
 
 If you already have a local Radius server, add a new client with the IP address of your Firewall,
-set a shared secret, go to OPNsense UI to :menuselection:`System --> Access --> Servers` and add a new instance:
+set a shared secret, go to Reticen8 UI to :menuselection:`System --> Access --> Servers` and add a new instance:
 
 ============================ ================ ====================================
  **Descriptive Name**         Name             *Give it a name*
@@ -39,7 +39,7 @@ set a shared secret, go to OPNsense UI to :menuselection:`System --> Access --> 
  **Shared Secret**            s3cureP4ssW0rd   *Choose a secure password*
 ============================ ================ ====================================
 
-When you do not have an own Radius instance just use the OPNsense plugin and follow this guide:
+When you do not have an own Radius instance just use the Reticen8 plugin and follow this guide:
 :doc:`freeradius`
 
 -----------------------

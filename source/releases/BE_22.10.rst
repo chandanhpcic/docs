@@ -3,24 +3,24 @@
 ===========================================================================================
 
 
-The OPNsense business edition transitions to this 22.10 release including
+The Reticen8 business edition transitions to this 22.10 release including
 the upgrade to FreeBSD 13.1, PHP 8.0, Phalcon 5, MVC/API conversions for IPsec,
 Unbound and notifications, firewall alias support for BGP ASN, new APCUPSD and
 CrowdSec plugins plus much more.
 
 Please make sure to read the migration notes before upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 
 --------------------------------------------------------------------------
 22.10.2 (February 20, 2023)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 22.7.11 community version
+This business release is based on the Reticen8 22.7.11 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -48,7 +48,7 @@ A hotfix release was issued as 22.10.2_1:
 22.10.1 (February 01, 2023)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 22.7.11 community version
+This business release is based on the Reticen8 22.7.11 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -70,7 +70,7 @@ Here are the full patch notes:
 * system: show and search ACL endpoints in privilege selector
 * system: replace a number of log_error() calls with log_msg() equivalent
 * system: improve SSH lockout behaviour
-* system: fix a few minor Coverity Scan reports in PHP and Python `[1] <https://scan.coverity.com/projects/opnsense-core>`__ 
+* system: fix a few minor Coverity Scan reports in PHP and Python `[1] <https://scan.coverity.com/projects/reticen8-core>`__ 
 * interfaces: show attached interface for VLAN device in overview
 * interfaces: packet capture MVC/API replacement
 * interfaces: fix ARP table name resolve backend issue (contributed by soif)
@@ -135,23 +135,23 @@ Here are the full patch notes:
 * ui: unicode content for tokenizer (contributed by kulikov-a)
 * plugins: migrate all plugins to NAME_setup script use
 * plugins: $verbose argument in plugins_run() is spurious
-* plugins: os-acme-client 3.15 `[2] <https://github.com/opnsense/plugins/blob/stable/22.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-apcupsd 1.1 `[3] <https://github.com/opnsense/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__ 
-* plugins: os-clamav 1.8 `[4] <https://github.com/opnsense/plugins/blob/stable/22.7/security/clamav/pkg-descr>`__ 
-* plugins: os-ddclient IPv6 parsing fix `[5] <https://github.com/opnsense/plugins/blob/stable/22.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-acme-client 3.15 `[2] <https://github.com/reticen8/plugins/blob/stable/22.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-apcupsd 1.1 `[3] <https://github.com/reticen8/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__ 
+* plugins: os-clamav 1.8 `[4] <https://github.com/reticen8/plugins/blob/stable/22.7/security/clamav/pkg-descr>`__ 
+* plugins: os-ddclient IPv6 parsing fix `[5] <https://github.com/reticen8/plugins/blob/stable/22.7/dns/ddclient/pkg-descr>`__ 
 * plugins: os-freeradius is no longer available for LibreSSL to allow updates of FreeRADIUS software
-* plugins: os-frr 1.31 `[6] <https://github.com/opnsense/plugins/blob/stable/22.7/net/frr/pkg-descr>`__ 
-* plugins: os-haproxy 3.12 `[7] <https://github.com/opnsense/plugins/blob/stable/22.7/net/haproxy/pkg-descr>`__ 
-* plugins: os-maltrail 1.10 `[8] <https://github.com/opnsense/plugins/blob/stable/22.7/security/maltrail/pkg-descr>`__ 
-* plugins: os-nginx 1.31 `[9] <https://github.com/opnsense/plugins/blob/stable/22.7/www/nginx/pkg-descr>`__ 
-* plugins: os-openconnect 1.4.3 `[10] <https://github.com/opnsense/plugins/blob/stable/22.7/security/openconnect/pkg-descr>`__ 
+* plugins: os-frr 1.31 `[6] <https://github.com/reticen8/plugins/blob/stable/22.7/net/frr/pkg-descr>`__ 
+* plugins: os-haproxy 3.12 `[7] <https://github.com/reticen8/plugins/blob/stable/22.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-maltrail 1.10 `[8] <https://github.com/reticen8/plugins/blob/stable/22.7/security/maltrail/pkg-descr>`__ 
+* plugins: os-nginx 1.31 `[9] <https://github.com/reticen8/plugins/blob/stable/22.7/www/nginx/pkg-descr>`__ 
+* plugins: os-openconnect 1.4.3 `[10] <https://github.com/reticen8/plugins/blob/stable/22.7/security/openconnect/pkg-descr>`__ 
 * plugins: os-rfc2136 1.7 fixes key format issue with latest bind-tools update
 * plugins: os-stunnel fixes missing include in certificate script
-* plugins: os-telegraf 1.12.7 `[11] <https://github.com/opnsense/plugins/blob/stable/22.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.7 `[11] <https://github.com/reticen8/plugins/blob/stable/22.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-theme-cicada 1.31 (contributed by Team Rebellion)
 * plugins: os-theme-vicuna 1.43 (contributed by Team Rebellion)
 * plugins: os-tor 1.9 enables hardware acceleration (contributed by haarp)
-* plugins: os-wireguard 1.13 `[12] <https://github.com/opnsense/plugins/blob/stable/22.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-wireguard 1.13 `[12] <https://github.com/reticen8/plugins/blob/stable/22.7/net/wireguard/pkg-descr>`__ 
 * ports: curl 7.87.0 `[13] <https://curl.se/changes.html#7_87_0>`__ 
 * ports: dnsmasq 2.88 `[14] <https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__ 
 * ports: expat 2.5.0 `[15] <https://github.com/libexpat/libexpat/blob/R_2_5_0/expat/Changes>`__ 
@@ -176,19 +176,19 @@ Here are the full patch notes:
 22.10 (October 26, 2022)
 --------------------------------------------------------------------------
 
-The OPNsense business edition transitions to this 22.10 release including
+The Reticen8 business edition transitions to this 22.10 release including
 the upgrade to FreeBSD 13.1, PHP 8.0, Phalcon 5, MVC/API conversions for IPsec,
 Unbound and notifications, firewall alias support for BGP ASN, new APCUPSD and
 CrowdSec plugins plus much more.
 
 Please make sure to read the migration notes before upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
-This business release is based on the OPNsense 22.7.6 community version
+This business release is based on the Reticen8 22.7.6 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -297,7 +297,7 @@ Here are the full patch notes:
 * interfaces: migrate wireless creation to legacy_interface_listget()
 * interfaces: port 6RD/6to4 to ifctl use
 * interfaces: optionally use reverse DNS resolution for ARP table hostnames (contributed by soif)
-* interfaces: allow user-configurable VLAN device names with certain restrictions `[2] <https://github.com/opnsense/core/issues/6038>`__ 
+* interfaces: allow user-configurable VLAN device names with certain restrictions `[2] <https://github.com/reticen8/core/issues/6038>`__ 
 * interfaces: small cleanup on get_real_interface()
 * firewall: improved port alias performance
 * firewall: obsoleted notices inside the synchronization code
@@ -307,7 +307,7 @@ Here are the full patch notes:
 * firewall: performance improvement for reading live log
 * firewall: add general firewall log for alias and filter system log messages
 * firewall: do not emit link-local address on IPv6 network outbound NAT
-* firewall: add BGP ASN type to aliases `[3] <https://docs.opnsense.org/manual/aliases.html#bgp-asn>`__ 
+* firewall: add BGP ASN type to aliases `[3] <https://docs.reticen8.com/manual/aliases.html#bgp-asn>`__ 
 * firewall: implement a router file read fallback for new ifctl :slaac suffix
 * firewall: stick-address only in effect with pool option and multiple routers
 * firewall: remove dead pptpd server code
@@ -340,16 +340,16 @@ Here are the full patch notes:
 * firmware: disable crash reporter in development deployment mode
 * firmware: limit changelog-based update check on dashboard to release version
 * firmware: provide an upgrade log audit
-* firmware: opnsense-patch: only remove ".sh" suffix for installer and update repos
-* firmware: opnsense-update: only set packages marker after successful upgrade
-* firmware: opnsense-bootstrap: set correct packages marker
+* firmware: reticen8-patch: only remove ".sh" suffix for installer and update repos
+* firmware: reticen8-update: only set packages marker after successful upgrade
+* firmware: reticen8-bootstrap: set correct packages marker
 * firmware: revoke 22.1 fingerprint
 * firmware: major upgrade "pkgs" set was still unknown to plugin sync
-* firmware: opnsense-update: return subscription key via -K if it exists
+* firmware: reticen8-update: return subscription key via -K if it exists
 * firmware: display license validity when applicable in business edition
 * firmware: remove faulty changelog to force a clean refetch
 * intrusion detection: fix enable rule button and present active detail overwrite if present
-* intrusion detection: missing OPNsense categories
+* intrusion detection: missing Reticen8 categories
 * ipsec: add "IPv4+6" protocol for mobile phase 1 entries (contributed by vnxme)
 * ipsec: mobile property boolean duplication in phase 2
 * ipsec: remember phase 1 setting for next action
@@ -391,27 +391,27 @@ Here are the full patch notes:
 * ui: fix assorted typos in the code base (contributed by Josh Soref)
 * ui: handle HTTP 500 error gracefully in MVC pages
 * ui: fix type cast issue in Bootgrid
-* plugins: os-acme-client 3.13 `[4] <https://github.com/opnsense/plugins/blob/stable/22.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-apcupsd 1.0 `[5] <https://github.com/opnsense/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__  (contributed by David Berry, Dan Lundqvist and Nicola Pellegrini)
-* plugins: os-bind 1.24 `[6] <https://github.com/opnsense/plugins/blob/stable/22.7/dns/bind/pkg-descr>`__ 
-* plugins: os-boot-delay is no longer available `[7] <https://github.com/opnsense/plugins/blob/b31bcb92106/sysutils/boot-delay/Makefile#L6>`__ 
-* plugins: os-crowdsec 1.0.1 `[8] <https://github.com/opnsense/plugins/blob/stable/22.7/security/crowdsec/pkg-descr>`__ 
-* plugins: os-ddclient 1.9 `[9] <https://github.com/opnsense/plugins/blob/stable/22.7/dns/ddclient/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.21 `[10] <https://github.com/opnsense/plugins/blob/stable/22.7/net/freeradius/pkg-descr>`__ 
-* plugins: os-frr 1.30 `[11] <https://github.com/opnsense/plugins/blob/stable/22.7/net/frr/pkg-descr>`__ 
+* plugins: os-acme-client 3.13 `[4] <https://github.com/reticen8/plugins/blob/stable/22.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-apcupsd 1.0 `[5] <https://github.com/reticen8/plugins/blob/stable/22.7/sysutils/apcupsd/pkg-descr>`__  (contributed by David Berry, Dan Lundqvist and Nicola Pellegrini)
+* plugins: os-bind 1.24 `[6] <https://github.com/reticen8/plugins/blob/stable/22.7/dns/bind/pkg-descr>`__ 
+* plugins: os-boot-delay is no longer available `[7] <https://github.com/reticen8/plugins/blob/b31bcb92106/sysutils/boot-delay/Makefile#L6>`__ 
+* plugins: os-crowdsec 1.0.1 `[8] <https://github.com/reticen8/plugins/blob/stable/22.7/security/crowdsec/pkg-descr>`__ 
+* plugins: os-ddclient 1.9 `[9] <https://github.com/reticen8/plugins/blob/stable/22.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.21 `[10] <https://github.com/reticen8/plugins/blob/stable/22.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-frr 1.30 `[11] <https://github.com/reticen8/plugins/blob/stable/22.7/net/frr/pkg-descr>`__ 
 * plugins: os-git-backup fixes git binary variable use and hides SSH keys by default
 * plugins: os-haproxy fixes deprecation notes in PHP 8 (contributed by Gavin Chappell)
-* plugins: os-haproxy 3.11 `[12] <https://github.com/opnsense/plugins/blob/stable/22.7/net/haproxy/pkg-descr>`__ 
-* plugins: os-maltrail 1.9 `[13] <https://github.com/opnsense/plugins/blob/stable/22.7/security/maltrail/pkg-descr>`__ 
-* plugins: os-munin-node 1.1 `[14] <https://github.com/opnsense/plugins/blob/stable/22.7/sysutils/munin-node/pkg-descr>`__ 
-* plugins: os-netdata 1.2 `[15] <https://github.com/opnsense/plugins/blob/stable/22.7/net-mgmt/netdata/pkg-descr>`__ 
-* plugins: os-nginx 1.30 `[16] <https://github.com/opnsense/plugins/blob/stable/22.7/www/nginx/pkg-descr>`__ 
-* plugins: os-postfix disables GSSAPI for the time being `[17] <https://github.com/opnsense/plugins/blob/stable/22.7/mail/postfix/pkg-descr>`__ 
-* plugins: os-tayga 1.2 `[18] <https://github.com/opnsense/plugins/blob/stable/22.7/net/tayga/pkg-descr>`__ 
+* plugins: os-haproxy 3.11 `[12] <https://github.com/reticen8/plugins/blob/stable/22.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-maltrail 1.9 `[13] <https://github.com/reticen8/plugins/blob/stable/22.7/security/maltrail/pkg-descr>`__ 
+* plugins: os-munin-node 1.1 `[14] <https://github.com/reticen8/plugins/blob/stable/22.7/sysutils/munin-node/pkg-descr>`__ 
+* plugins: os-netdata 1.2 `[15] <https://github.com/reticen8/plugins/blob/stable/22.7/net-mgmt/netdata/pkg-descr>`__ 
+* plugins: os-nginx 1.30 `[16] <https://github.com/reticen8/plugins/blob/stable/22.7/www/nginx/pkg-descr>`__ 
+* plugins: os-postfix disables GSSAPI for the time being `[17] <https://github.com/reticen8/plugins/blob/stable/22.7/mail/postfix/pkg-descr>`__ 
+* plugins: os-tayga 1.2 `[18] <https://github.com/reticen8/plugins/blob/stable/22.7/net/tayga/pkg-descr>`__ 
 * plugins: os-web-proxy-useracl is no longer available, no updates since 2017
-* plugins: os-wireguard 1.12 `[19] <https://github.com/opnsense/plugins/blob/stable/22.7/net/wireguard/pkg-descr>`__ 
-* plugins: os-zabbix-agent 1.13 `[20] <https://github.com/opnsense/plugins/blob/stable/22.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
-* plugins: os-zabbix-proxy 1.9 `[21] <https://github.com/opnsense/plugins/blob/stable/22.7/net-mgmt/zabbix-proxy/pkg-descr>`__ 
+* plugins: os-wireguard 1.12 `[19] <https://github.com/reticen8/plugins/blob/stable/22.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-zabbix-agent 1.13 `[20] <https://github.com/reticen8/plugins/blob/stable/22.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
+* plugins: os-zabbix-proxy 1.9 `[21] <https://github.com/reticen8/plugins/blob/stable/22.7/net-mgmt/zabbix-proxy/pkg-descr>`__ 
 * src: axgbe: also validate configuration register in GPIO expander
 * src: pf: ensure that pfiio_name is always nul terminated
 * src: pf: make sure that pfi_update_status() always zeros counters
@@ -504,8 +504,8 @@ The public key for the 22.10 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-business-22.10-OpenSSL-dvd-amd64.iso.bz2) = e1e3fb3186f599cb967bc957467e7c932ed9758c38ad443f10246dd63b36940b
-    # SHA256 (OPNsense-business-22.10-OpenSSL-nano-amd64.img.bz2) = 03a73277dbea8a1befb955dae39342aac6793ba4edca9418e5bfe0cb1e075f1c
-    # SHA256 (OPNsense-business-22.10-OpenSSL-serial-amd64.img.bz2) = 2774f6783d8a8cf944bcd5928899fb8c2fbe4659a7d18c9ca44df46b47a79c5d
-    # SHA256 (OPNsense-business-22.10-OpenSSL-vga-amd64.img.bz2) = de9527abb2831f09baf476b2c1db5ba8d4f39655cef37447b72fb2a34b341915
+    # SHA256 (Reticen8-business-22.10-OpenSSL-dvd-amd64.iso.bz2) = e1e3fb3186f599cb967bc957467e7c932ed9758c38ad443f10246dd63b36940b
+    # SHA256 (Reticen8-business-22.10-OpenSSL-nano-amd64.img.bz2) = 03a73277dbea8a1befb955dae39342aac6793ba4edca9418e5bfe0cb1e075f1c
+    # SHA256 (Reticen8-business-22.10-OpenSSL-serial-amd64.img.bz2) = 2774f6783d8a8cf944bcd5928899fb8c2fbe4659a7d18c9ca44df46b47a79c5d
+    # SHA256 (Reticen8-business-22.10-OpenSSL-vga-amd64.img.bz2) = de9527abb2831f09baf476b2c1db5ba8d4f39655cef37447b72fb2a34b341915
 

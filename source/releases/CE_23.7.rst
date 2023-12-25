@@ -4,7 +4,7 @@
 
 
 
-For more than 8 and a half years now, OPNsense is driving innovation
+For more than 8 and a half years now, Reticen8 is driving innovation
 through modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, fast adoption
 of upstream software updates as well as clear and stable 2-Clause BSD
@@ -15,15 +15,15 @@ including the new OpenVPN "instances" configuration option, OpenVPN group
 alias support, deferred authentication for OpenVPN, FreeBSD 13.2, PHP 8.2
 plus much more.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/23.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/23.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/23.7/
-* South America: http://mirror.ueb.edu.ec/opnsense/releases/23.7/
-* East Asia: https://mirror.ntct.edu.tw/opnsense/releases/23.7/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/23.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/23.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/23.7/
+* South America: http://mirror.ueb.edu.ec/reticen8/releases/23.7/
+* East Asia: https://mirror.ntct.edu.tw/reticen8/releases/23.7/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -49,16 +49,16 @@ Here are the full patch notes:
 * firewall: improve alias write behaviour by checking for changes beforehand
 * firewall: fix preg_replace() to avoid truncated network display in rules listing
 * firewall: add an ifconfig.debug file
-* firmware: switch bogons/changelog set base URL to portable "opnsense-update -X" call
+* firmware: switch bogons/changelog set base URL to portable "reticen8-update -X" call
 * ipsec: move save button on mobile page into its own container
 * ipsec: add support for RADIUS class groups in instances
 * unbound: use tls-system-cert instead of tls-cert-bundle
 * web proxy: fix setting unknown language directory
 * ui: upgrade jqTree to version 1.7.5
-* plugins: os-ddclient 1.18 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
-* plugins: os-dec-hw 1.0 is a Deciso hardware specific dashboard widget
+* plugins: os-ddclient 1.18 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-dec-hw 1.0 is a Reticen8 hardware specific dashboard widget
 * plugins: os-net-snmp fix for directory setup (contributed by doktornotor)
-* plugins: os-telegraf 1.12.10 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.10 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-upnp now reloads on newwanip event
 * plugins: os-wireguard fix for missing firewall reload
 * plugins: os-wireguard-go fix for device registration
@@ -132,8 +132,8 @@ Here are the full patch notes:
 * firmware: stop manually adjusting firmware config structure during factory reset
 * firmware: clear stray "pkgsave" and "pkgtemp" pkg-upgrade leftovers
 * firmware: changed LeaseWeb and NYC BUG mirrors to use HTTPS (contributed by jeremiah-rs)
-* firmware: opnsense-update: new "-X" mode for canonical bogons/changelog set fetch URL
-* firmware: opnsense-version: support base/kernel hash info
+* firmware: reticen8-update: new "-X" mode for canonical bogons/changelog set fetch URL
+* firmware: reticen8-version: support base/kernel hash info
 * ipsec: mute ipsec.conf related load errors
 * ipsec: fix typo in VTI protocol family parsing
 * ipsec: add secondary tunnel address pair for VTI dual-stack purposes
@@ -145,8 +145,8 @@ Here are the full patch notes:
 * mvc: split tree-view template and javascript and hook via controllers
 * ui: upgrade bootstrap-select to v1.13.18
 * ui: improve saveFormToEndpoint() UX
-* plugins: os-ddclient 1.17 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
-* plugins: os-frr 1.37 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
+* plugins: os-ddclient 1.17 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-frr 1.37 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
 * plugins: os-squid adds a meta package for web proxy core removal in 24.1
 * ports: openvpn 2.6.8 `[3] <https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn26#Changesin2.6.8>`__ 
 * ports: sqlite 3.44.0 `[4] <https://sqlite.org/releaselog/3_44_0.html>`__ 
@@ -202,9 +202,9 @@ Here are the full patch notes:
 * mvc: config should be locked before calling checkAndThrowSafeDelete()
 * ui: prevent form submit for MVC pages
 * ui: improve default modal padding
-* plugins: os-bind 1.28 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/bind/pkg-descr>`__ 
-* plugins: os-openconnect 1.4.5 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/security/openconnect/pkg-descr>`__ 
-* plugins: os-wireguard 2.5 `[3] <https://github.com/opnsense/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-bind 1.28 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/bind/pkg-descr>`__ 
+* plugins: os-openconnect 1.4.5 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/security/openconnect/pkg-descr>`__ 
+* plugins: os-wireguard 2.5 `[3] <https://github.com/reticen8/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
 * src: pfctl: fix incorrect mask on dynamic address
 * src: libpfctl: assorted improvements
 * src: msdosfs: zero partially valid extended cluster `[4] <https://www.freebsd.org/security/advisories/FreeBSD-SA-23:12.msdosfs.asc>`__ 
@@ -256,7 +256,7 @@ our user base and voicing our reservations where it matters.
 
 You can also find and follow us on Bluesky now:
 
-https://bsky.app/profile/opnsense.org
+https://bsky.app/profile/reticen8.com
 
 Here are the full patch notes:
 
@@ -299,11 +299,11 @@ Here are the full patch notes:
 * mvc: style update in diagnostics, firewall, intrusion detection and ipsec models
 * ui: fix the styling of the base form button when overriding the label
 * ui: trigger change message on toggle and delete
-* plugins: os-nginx 1.32.2 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/www/nginx/pkg-descr>`__ 
+* plugins: os-nginx 1.32.2 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/www/nginx/pkg-descr>`__ 
 * plugins: os-radsecproxy fixes for stale rc script / pidfile issues
-* plugins: os-rspamd 1.13 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/mail/rspamd/pkg-descr>`__ 
+* plugins: os-rspamd 1.13 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/mail/rspamd/pkg-descr>`__ 
 * plugins: os-theme-ciada fix for previous regression
-* plugins: os-wireguard 2.4 `[3] <https://github.com/opnsense/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-wireguard 2.4 `[3] <https://github.com/reticen8/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
 * src: pf: enable the syncookie feature for IPv6
 * src: pflog: log packet dropped by default rule with drop
 * src: re: add Realtek Killer Ethernet E2600 IDs
@@ -327,7 +327,7 @@ Here are the full patch notes:
 A hotfix release was issued as 23.7.7_1:
 
 * firmware: speed up saving the firmware settings by avoiding the newly extended trust store rewrite
-* firmware: opnsense-update: fix mirror replacement broken by pkg 1.20 compatibility effort
+* firmware: reticen8-update: fix mirror replacement broken by pkg 1.20 compatibility effort
 
 A hotfix release was issued as 23.7.7_3:
 
@@ -347,7 +347,7 @@ efforts to provide better MVC integration for the gateways abstraction as
 well as working towards better MVC model consistency.
 
 We would like to thank GitHub user Monviech for his special contributions
-in the documentation on the subject of reflection and hairpin NAT `[1] <https://docs.opnsense.org/manual/how-tos/nat_reflection.html>`__ .
+in the documentation on the subject of reflection and hairpin NAT `[1] <https://docs.reticen8.com/manual/how-tos/nat_reflection.html>`__ .
 
 Here are the full patch notes:
 
@@ -390,11 +390,11 @@ Here are the full patch notes:
 * mvc: propagate isFieldChanged() from connected children in ArrayField
 * ui: remove the bootstrap-select version from the provided file in the default theme
 * plugins: remove the bootstrap-select version from the provided file in all themes
-* plugins: os-crowdsec 1.0.7 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/security/crowdsec/pkg-descr>`__ 
+* plugins: os-crowdsec 1.0.7 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/security/crowdsec/pkg-descr>`__ 
 * plugins: os-smart reverts the use of smartctl to gather disks
-* plugins: os-telegraf 1.12.9 `[3] <https://github.com/opnsense/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.9 `[3] <https://github.com/reticen8/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-theme-rebellion 1.8.9 fixes Unbound DNS reporting page
-* plugins: os-wireguard 2.3 `[4] <https://github.com/opnsense/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-wireguard 2.3 `[4] <https://github.com/reticen8/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
 * ports: php 8.2.11 `[5] <https://www.php.net/ChangeLog-8.php#8.2.11>`__ 
 * ports: syslog-ng 4.4.0 `[6] <https://github.com/syslog-ng/syslog-ng/releases/tag/syslog-ng-4.4.0>`__ 
 
@@ -517,9 +517,9 @@ Here are the full patch notes:
 * mvc: remove "non-functional" hints from form input elements
 * mvc: uppercase default label in BaseListField is more likely
 * ui: add bytes format to standard formatters list
-* plugins: os-ddclient 1.16 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
-* plugins: os-frr 1.36 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
-* plugins: os-wireguard 2.1 `[3] <https://github.com/opnsense/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-ddclient 1.16 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-frr 1.36 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
+* plugins: os-wireguard 2.1 `[3] <https://github.com/reticen8/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
 * plugins: os-tinc 1.7 adds support for "StrictSubnets" variable (contributed by andrewhotlab)
 * lang: update translations and add Polish
 * src: bring back netmap tun(4) ethernet header emulation (contributed by Sunny Valley Networks)
@@ -585,8 +585,8 @@ Here are the full patch notes:
 * mvc: extend PortField to optionally allow port type aliases
 * lang: update all languages and add Korean
 * plugins: os-firewall 1.4 adds port alias support
-* plugins: os-frr 1.35 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
-* plugins: os-wireguard 2.0 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-frr 1.35 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
+* plugins: os-wireguard 2.0 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/net/wireguard/pkg-descr>`__ 
 * ports: filterlog fix to prevent crash on default rule number -1
 
 
@@ -623,10 +623,10 @@ Here are the full patch notes:
 * openvpn: bring instances into server field
 * openvpn: fix separator for redirect-gateway attribute in instances and CSO
 * unbound: fixed configuration when custom blocks are used (contributed by Evgeny Grin)
-* plugins: os-ddclient 1.15 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-ddclient 1.15 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
 * plugins: os-iperf adds rubygem-rexml dependency (contributed by Hannah Kiekens)
 * plugins: os-relayd 2.7 now supports newer upstream release of relayd
-* plugins: os-wazuh-agent 1.0 `[2] <https://docs.opnsense.org/manual/wazuh-agent.html>`__ 
+* plugins: os-wazuh-agent 1.0 `[2] <https://docs.reticen8.com/manual/wazuh-agent.html>`__ 
 * src: remove if_wg from kernel modules to unbreak current wireguard-go use
 * src: axgbe: LED control for A30 platform
 * src: gif: revert in{,6}_gif_output() misalignment handling
@@ -679,8 +679,8 @@ Here are the full patch notes:
 * unbound: migration of empty nodes failed from 23.1.11 to 23.7
 * unbound: fix regression when disabling first domain override
 * mvc: fix empty item selection issue in BaseListField
-* plugins: os-ddclient 1.14 `[1] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
-* plugins: os-acme-client 3.19 `[2] <https://github.com/opnsense/plugins/blob/stable/23.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-ddclient 1.14 `[1] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/ddclient/pkg-descr>`__ 
+* plugins: os-acme-client 3.19 `[2] <https://github.com/reticen8/plugins/blob/stable/23.7/security/acme-client/pkg-descr>`__ 
 * src: bhyve: fully reset the fwctl state machine if the guest requests a reset `[3] <https://www.freebsd.org/security/advisories/FreeBSD-SA-23:07.bhyve.asc>`__ 
 * src: frag6: avoid a possible integer overflow in fragment handling `[4] <https://www.freebsd.org/security/advisories/FreeBSD-SA-23:06.ipv6.asc>`__ 
 * src: amdtemp: Fix missing 49 degree offset on current EPYC CPUs
@@ -707,7 +707,7 @@ A hotfix release was issued as 23.7.1_3:
 --------------------------------------------------------------------------
 
 
-For more than 8 and a half years now, OPNsense is driving innovation
+For more than 8 and a half years now, Reticen8 is driving innovation
 through modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, fast adoption
 of upstream software updates as well as clear and stable 2-Clause BSD
@@ -718,15 +718,15 @@ including the new OpenVPN "instances" configuration option, OpenVPN group
 alias support, deferred authentication for OpenVPN, FreeBSD 13.2, PHP 8.2
 plus much more.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/23.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/23.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/23.7/
-* South America: http://mirror.ueb.edu.ec/opnsense/releases/23.7/
-* East Asia: https://mirror.ntct.edu.tw/opnsense/releases/23.7/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/23.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/23.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/23.7/
+* South America: http://mirror.ueb.edu.ec/reticen8/releases/23.7/
+* East Asia: https://mirror.ntct.edu.tw/reticen8/releases/23.7/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 23.1.11:
 
@@ -746,8 +746,8 @@ Here are the full patch notes against 23.1.11:
 * system: sanitize $act parameter in trust pages
 * system: add severity filter in system log widget (contributed by kulikov-a)
 * system: mute openssl errors pushed to stderr
-* system: add opnsense-crypt utility to encrypt/decrypt a config.xml
-* system: call opnsense-crypt from opnsense-import to deal with encrypted imports
+* system: add reticen8-crypt utility to encrypt/decrypt a config.xml
+* system: call reticen8-crypt from reticen8-import to deal with encrypted imports
 * interfaces: extend/modify IPv6 primary address behaviour
 * interfaces: fix bug with reported number of flapping LAGG ports (contributed by Neil Greatorex)
 * interfaces: introduce a lock and DAD timer into newwanip for IPv6
@@ -767,7 +767,7 @@ Here are the full patch notes against 23.1.11:
 * dhcp: align router advertisements VIP code and exclude /128
 * dhcp: allow "." for DNSSL in router advertisements
 * dhcp: print interface identifier and underlying device in "found no suitable address" warnings
-* firmware: opnsense-version: remove obsolete "-f" option stub
+* firmware: reticen8-version: remove obsolete "-f" option stub
 * firmware: properly escape crash reports shown
 * firmware: fix a faulty JSON construction during partial upgrade check
 * firmware: fetch bogons/changelogs from amd64 ABI only
@@ -780,7 +780,7 @@ Here are the full patch notes against 23.1.11:
 * ipsec: clean up SPDField and VTIField types to use new getStaticChildren()
 * ipsec: add passthrough networks when specified to prevent overlapping "connections" missing them
 * monit: fix alert script includes
-* openvpn: rewrote OpenVPN configuration as "Instances" using MVC/API available as a separate configuration option `[2] <https://docs.opnsense.org/manual/vpnet.html>`__ 
+* openvpn: rewrote OpenVPN configuration as "Instances" using MVC/API available as a separate configuration option `[2] <https://docs.reticen8.com/manual/vpnet.html>`__ 
 * openvpn: rewrote client specific overrides using MVC/API
 * unbound: rewrote general settings and ACL handling using MVC/API
 * unbound: add forward-tcp-upstream in advanced settings
@@ -797,13 +797,13 @@ Here are the full patch notes against 23.1.11:
 * mvc: implement new Trust class usage in OpenVPN client export, captive portal and Syslog-ng
 * mvc: add generic static record definition for ArrayField
 * ui: introduce collapsible table headers for MVC forms
-* plugins: os-acme-client 3.18 `[3] <https://github.com/opnsense/plugins/blob/stable/23.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-bind 1.27 `[4] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/bind/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.14 `[5] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-acme-client 3.18 `[3] <https://github.com/reticen8/plugins/blob/stable/23.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-bind 1.27 `[4] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/bind/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.14 `[5] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/dnscrypt-proxy/pkg-descr>`__ 
 * plugins: os-dyndns removed due to unmaintained code base
-* plugins: os-frr 1.34 `[6] <https://github.com/opnsense/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
+* plugins: os-frr 1.34 `[6] <https://github.com/reticen8/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
 * plugins: os-firewall 1.3 allows floating rules without interface set (contributed by Michael Muenz)
-* plugins: os-telegraf 1.12.8 `[7] <https://github.com/opnsense/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.8 `[7] <https://github.com/reticen8/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-zabbix62-agent removed due to Zabbix 6.2 EoL
 * plugins: os-zabbix62-proxy removed due to Zabbix 6.2 EoL
 * src: axgbe: enable RSF to prevent zero-length packets while in Netmap mode
@@ -852,10 +852,10 @@ Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-23.7-dvd-amd64.iso.bz2) = bf67374d04fb00a29d80f9870ac86491b0a87d5dd386c2bd97def0691547e263
-    # SHA256 (OPNsense-23.7-nano-amd64.img.bz2) = 4adbbd69d0ce1766395555475ea29713f9043735a0c9067206d9945cb626200a
-    # SHA256 (OPNsense-23.7-serial-amd64.img.bz2) = 03c774f53520414c73cdcaa4fe3b34c4165395963bef74c533c3878a07b80138
-    # SHA256 (OPNsense-23.7-vga-amd64.img.bz2) = 8a235d2cba717b9b2ea4d5588028c087adc6ff472ae8efd381a26a9640298c67
+    # SHA256 (Reticen8-23.7-dvd-amd64.iso.bz2) = bf67374d04fb00a29d80f9870ac86491b0a87d5dd386c2bd97def0691547e263
+    # SHA256 (Reticen8-23.7-nano-amd64.img.bz2) = 4adbbd69d0ce1766395555475ea29713f9043735a0c9067206d9945cb626200a
+    # SHA256 (Reticen8-23.7-serial-amd64.img.bz2) = 03c774f53520414c73cdcaa4fe3b34c4165395963bef74c533c3878a07b80138
+    # SHA256 (Reticen8-23.7-vga-amd64.img.bz2) = 8a235d2cba717b9b2ea4d5588028c087adc6ff472ae8efd381a26a9640298c67
 
 --------------------------------------------------------------------------
 23.7.r3 (July 26, 2023)
@@ -875,7 +875,7 @@ Here are the full patch notes:
 
 
 Stay safe,
-Your OPNsense team
+Your Reticen8 team
 
 --------------------------------------------------------------------------
 23.7.r2 (July 24, 2023)
@@ -891,8 +891,8 @@ Still on track for the final release on July 31.
 Here are the full patch notes:
 
 * system: mute openssl errors pushed to stderr
-* system: add opnsense-crypt utility to encrypt/decrypt a config.xml
-* system: call opnsense-crypt from opnsense-import to deal with encrypted imports
+* system: add reticen8-crypt utility to encrypt/decrypt a config.xml
+* system: call reticen8-crypt from reticen8-import to deal with encrypted imports
 * interfaces: rewrite LAGG pages via MVC/API
 * interfaces: allow manual protocol selection for VLANs
 * interfaces: remove null_service toggle as empty service name in PPPoE works fine
@@ -910,7 +910,7 @@ Here are the full patch notes:
 --------------------------------------------------------------------------
 
 
-For more than 8 and a half years now, OPNsense is driving innovation
+For more than 8 and a half years now, Reticen8 is driving innovation
 through modularising and hardening the open source firewall, with simple
 and reliable firmware upgrades, multi-language support, fast adoption
 of upstream software updates as well as clear and stable 2-Clause BSD
@@ -919,15 +919,15 @@ licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.  <3
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/23.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/23.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/23.7/
-* South America: http://mirror.ueb.edu.ec/opnsense/releases/23.7/
-* East Asia: https://mirror.ntct.edu.tw/opnsense/releases/23.7/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/23.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/23.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/23.7/
+* South America: http://mirror.ueb.edu.ec/reticen8/releases/23.7/
+* East Asia: https://mirror.ntct.edu.tw/reticen8/releases/23.7/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 23.1.11:
 
@@ -959,7 +959,7 @@ Here are the full patch notes against 23.1.11:
 * dhcp: allow underscores in DNS names from DHCP leases in Dnsmasq and Unbound watchers (contributed by bugfixin)
 * dhcp: align router advertisements VIP code and exclude /128
 * dhcp: allow "." for DNSSL in router advertisements
-* firmware: opnsense-version: remove obsolete "-f" option stub
+* firmware: reticen8-version: remove obsolete "-f" option stub
 * firmware: properly escape crash reports shown
 * ipsec: add missing config section for HA sync
 * ipsec: add RADIUS server selection for "Connections" when RADIUS is not defined in legacy tunnel configuration
@@ -968,7 +968,7 @@ Here are the full patch notes against 23.1.11:
 * ipsec: fix RSA key pair generation with size other than 2048
 * ipsec: deprecating tunnel configuration in favour of new connections GUI
 * ipsec: clean up SPDField and VTIField types to use new getStaticChildren()
-* openvpn: rewrote OpenVPN configuration as "Instances" using MVC/API available as a separate configuration option `[2] <https://docs.opnsense.org/manual/vpnet.html>`__ 
+* openvpn: rewrote OpenVPN configuration as "Instances" using MVC/API available as a separate configuration option `[2] <https://docs.reticen8.com/manual/vpnet.html>`__ 
 * openvpn: rewrote client specific overrides using MVC/API
 * unbound: rewrote general settings and ACL handling using MVC/API
 * unbound: add forward-tcp-upstream in advanced settings
@@ -982,11 +982,11 @@ Here are the full patch notes against 23.1.11:
 * mvc: implement new Trust class usage in OpenVPN client export, captive portal and Syslog-ng
 * mvc: add generic static record definition for ArrayField
 * ui: introduce collapsible table headers for MVC forms
-* plugins: os-acme-client 3.18 `[3] <https://github.com/opnsense/plugins/blob/stable/23.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.14 `[4] <https://github.com/opnsense/plugins/blob/stable/23.7/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-acme-client 3.18 `[3] <https://github.com/reticen8/plugins/blob/stable/23.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.14 `[4] <https://github.com/reticen8/plugins/blob/stable/23.7/dns/dnscrypt-proxy/pkg-descr>`__ 
 * plugins: os-dyndns removed due to unmaintained code base
-* plugins: os-frr 1.34 `[5] <https://github.com/opnsense/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
-* plugins: os-telegraf 1.12.8 `[6] <https://github.com/opnsense/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-frr 1.34 `[5] <https://github.com/reticen8/plugins/blob/stable/23.7/net/frr/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.8 `[6] <https://github.com/reticen8/plugins/blob/stable/23.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-zabbix62-agent removed due to Zabbix 6.2 EoL
 * plugins: os-zabbix62-proxy removed due to Zabbix 6.2 EoL
 * src: axgbe: enable RSF to prevent zero-length packets while in Netmap mode
@@ -1034,7 +1034,7 @@ Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-23.7.r1-dvd-amd64.iso.bz2) = ffc2fe24b16bf45b84223ccf78780e94715e695d6ef50bbb041dc1697dcd7862
-    # SHA256 (OPNsense-23.7.r1-nano-amd64.img.bz2) = d2e3de7d7919b0aaafe80c92ec944b94ebb005220e46ed71d8f816236bf4feab
-    # SHA256 (OPNsense-23.7.r1-serial-amd64.img.bz2) = 61b594799c1ab9c2daab9adcff93793bf54f875067a7ddec070ade1d67db3689
-    # SHA256 (OPNsense-23.7.r1-vga-amd64.img.bz2) = 5e90b9fd076a206409474d3667ee11439ecb86f44dbcb1bc339e96b5a83c5a28
+    # SHA256 (Reticen8-23.7.r1-dvd-amd64.iso.bz2) = ffc2fe24b16bf45b84223ccf78780e94715e695d6ef50bbb041dc1697dcd7862
+    # SHA256 (Reticen8-23.7.r1-nano-amd64.img.bz2) = d2e3de7d7919b0aaafe80c92ec944b94ebb005220e46ed71d8f816236bf4feab
+    # SHA256 (Reticen8-23.7.r1-serial-amd64.img.bz2) = 61b594799c1ab9c2daab9adcff93793bf54f875067a7ddec070ade1d67db3689
+    # SHA256 (Reticen8-23.7.r1-vga-amd64.img.bz2) = 5e90b9fd076a206409474d3667ee11439ecb86f44dbcb1bc339e96b5a83c5a28

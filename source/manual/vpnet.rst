@@ -14,14 +14,14 @@ you can create large secure networks that can act as one private network.
 Companies use this technology for connecting branch offices and remote users
 (road warriors).
 
-OPNsense supports VPN connections for branch offices as well as remote users.
+Reticen8 supports VPN connections for branch offices as well as remote users.
 
 Creating a single secured private network with multiple branch offices connecting
 to a single site can easily be setup from within the graphical user interface.
 For remote users, certificates can be created and revoked and a simple to use export
 utility makes the client configuration a breeze.
 
-OPNsense offers a wide range of VPN technologies ranging from modern SSL VPNs to
+Reticen8 offers a wide range of VPN technologies ranging from modern SSL VPNs to
 well known IPsec as well as WireGuard and Zerotier via the use of plugins.
 
 .. image:: images/vpn.png
@@ -48,7 +48,7 @@ have existed since we started. No timeline has been set, only a feature freeze o
 One of the main goals for the long run is to better align the gui components so they reflect the reality underneath, as we use
 `strongswan <https://www.strongswan.org/>`__, our aim is to follow their terminology more closely than we previously did.
 
-The following functions are available in the menu (as of OPNsense 23.1):
+The following functions are available in the menu (as of Reticen8 23.1):
 
 * Connections
 
@@ -103,7 +103,7 @@ The following functions are available in the menu (as of OPNsense 23.1):
 Migrating from tunnels to connections
 -------------------------------------------
 
-Having used the tunnel settings from the early OPNsense days, some terminology might be a bit confusing when moving into the new options offered.
+Having used the tunnel settings from the early Reticen8 days, some terminology might be a bit confusing when moving into the new options offered.
 This paragraph aims to explain some of the common terms from the tunnel section and their new place in the connections.
 For a full list of changes, the upstream migration `documentation <https://wiki.strongswan.org/projects/strongswan/wiki/Fromipsecconf>`__
 is an interesting read as well.
@@ -132,9 +132,9 @@ is an interesting read as well.
 
 .. Tip::
 
-  Since OPNsense uses the new Strongswan format also for legacy tunnels, it is rather easy to convert a tunnel manually
+  Since Reticen8 uses the new Strongswan format also for legacy tunnels, it is rather easy to convert a tunnel manually
   when downloading the :code:`swanctf.conf` file from the machine. You can find it in :code:`/usr/local/etc/swanctl/swanctl.conf`
-  and the format is almost identical to the connections gui available in OPNsense.
+  and the format is almost identical to the connections gui available in Reticen8.
 
 
 Combining legacy tunnels and connections
@@ -260,15 +260,15 @@ The advantage of this type of setup is one can use standard or advanced routing 
 Road Warriors / Mobile users
 .................................
 
-IPsec may also be used to service remote workers connecting to OPNsense from various clients, such as Windows, MacOS, iOS and Android.
+IPsec may also be used to service remote workers connecting to Reticen8 from various clients, such as Windows, MacOS, iOS and Android.
 The type of client usually determines the authentication scheme(s) being used.
 
 In case clients should be offered default settings, these can be configured from :menuselection:`VPN -> IPsec -> Mobile Clients`.
 Pool options (Virtual IPvX Address Pool) on this page will be used by the legacy tunnel configuration only, when using the new connections
 module one may configure different pools per connection.
 
-The examples section contains various options available in OPNsense. When using the new "connections" option available
-as of OPNsense 23.1, different `examples from Strongswan <https://docs.strongswan.org/docs/5.9/interop/windowsClients.html>`__
+The examples section contains various options available in Reticen8. When using the new "connections" option available
+as of Reticen8 23.1, different `examples from Strongswan <https://docs.strongswan.org/docs/5.9/interop/windowsClients.html>`__
 are usually quite easy to implement as we follow the `swantcl.conf <https://docs.strongswan.org/docs/5.9/swanctl/swanctlConf.html>`__
 format quite closely in the new module.
 
@@ -378,7 +378,7 @@ when NAT is used, the additional SPD entries should be visible here as well.
 
 
 When troubleshooting problems with your firewall, it is very likely you have to check
-the logs available on your system. In the UI of OPNsense, the log files are generally grouped
+the logs available on your system. In the UI of Reticen8, the log files are generally grouped
 with the settings of the component they belong to. The log files can be found in the "Log file" menu item.
 
 .. Tip::
@@ -397,7 +397,7 @@ do support standard includes.
 While the :code:`swanctl.conf` and the legacy :code:`ipsec.conf` configuration files are well suited to define IPsec-related configuration parameters,
 it is not useful for other strongSwan applications to read options from these files.
 To configure these other components, it is possible to manually append options to our default template, in which case files
-may be placed in the directory :code:`/usr/local/etc/strongswan.opnsense.d/` using the file extention :code:`.conf`
+may be placed in the directory :code:`/usr/local/etc/strongswan.reticen8.d/` using the file extention :code:`.conf`
 
 IPsec configurations are managed in `swantcl.conf <https://docs.strongswan.org/docs/5.9/swanctl/swanctlConf.html>`__ format (as of 23.1), merging your own additions is possible by
 placing files with a :code:`.conf` extension in the directory :code:`/usr/local/etc/swanctl/conf.d/`.
@@ -409,8 +409,8 @@ placing files with a :code:`.conf` extension in the directory :code:`/usr/local/
 
 .. Note::
 
-    Prior to version 23.1 it was also possible to add secrets and ipsec configurations in :code:`/usr/local/etc/ipsec.secrets.opnsense.d/`
-    and :code:`/usr/local/etc/ipsec.opnsense.d/`, with the switch to 23.1 these files are deprecated and should be manually migrated into swanctl.conf
+    Prior to version 23.1 it was also possible to add secrets and ipsec configurations in :code:`/usr/local/etc/ipsec.secrets.reticen8.d/`
+    and :code:`/usr/local/etc/ipsec.reticen8.d/`, with the switch to 23.1 these files are deprecated and should be manually migrated into swanctl.conf
     format.
 
 
@@ -431,23 +431,23 @@ Since the start of our project we organized the openvpn menu section into server
 for the same OpenVPN process. As our legacy system has some disadvantages which are difficult to fix in a migration, we have chosen
 to add a new component named :code:`Instances` in version 23.7 which offers access to OpenVPN's configuration in a similar way as
 the upstream `documentation <https://openvpn.net/community-resources/reference-manual-for-openvpn-2-6/>`__ describes it.
-This new component will eventually replace the existing client and server options in a future version of OPNsense, leaving
+This new component will eventually replace the existing client and server options in a future version of Reticen8, leaving
 enough time to migrate older setups.
 
 .. Tip::
 
-  When upgrading into a new major version of OPNsense, always make sure to read the release notes to check if your setup
+  When upgrading into a new major version of Reticen8, always make sure to read the release notes to check if your setup
   requires changes.
 
 .. Note::
 
-  OpenVPN on OPNsense can also be used to create a tunnel between two locations, similar to what IPsec offers. Generally
+  OpenVPN on Reticen8 can also be used to create a tunnel between two locations, similar to what IPsec offers. Generally
   the performance of IPsec is higher which usually makes this a less common choice.
   Mobile usage is really where OpenVPN excells, with various (multifactor) authentication options and
   a high flexibility in available network options.
 
 
-The following functions are available in the menu (as of OPNsense 23.7):
+The following functions are available in the menu (as of Reticen8 23.7):
 
 * Instances
 
@@ -494,7 +494,7 @@ To allow traffic to the tunnel on any interface, a firewall rule is needed to al
 The default port for OpenVPN is :code:`1194` using protocol :code:`UDP`.
 
 After communication has been established, it's time to allow traffic inside the tunnel. All OpenVPN interfaces defined in
-OPNsense are  :doc:`grouped <firewall_groups>` as `OpenVPN`.
+Reticen8 are  :doc:`grouped <firewall_groups>` as `OpenVPN`.
 
 .. Tip::
 
@@ -667,7 +667,7 @@ High availability (using CARP)
 .................................
 
 When using wireguard on active/passive high availability clusters, only one instance at a time is allowed to communicate to the
-other party. In OPNsense this can be reached by selecting a :code:`vhid` to track as instance dependancy {Depend on (CARP)}.
+other party. In Reticen8 this can be reached by selecting a :code:`vhid` to track as instance dependancy {Depend on (CARP)}.
 
 If an instance depends on a CARP vhid, it will query the current status and determine if the interface should be usable (when MASTER), the
 interface status (up/down) will be toggled accordingly.

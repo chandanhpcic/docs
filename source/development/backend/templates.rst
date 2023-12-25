@@ -11,9 +11,9 @@ config.xml data to templates written in Jinja2
 (http://jinja.pocoo.org/docs/dev/).
 
 All available templates should be installed at the following location on
-the OPNsense system:
+the Reticen8 system:
 
-#. /usr/local/opnsense/service/templates/
+#. /usr/local/reticen8/service/templates/
 
 
 -----------------
@@ -24,7 +24,7 @@ All templates should be put into a directory structure containing the
 vendor and package/application name, our sample application is placed
 inside the directory:
 
-/usr/local/opnsense/service/templates/*OPNsense/Sample*
+/usr/local/reticen8/service/templates/*Reticen8/Sample*
 
 Template package content
 
@@ -73,16 +73,16 @@ Target overwrites
 -----------------
 
 Every template package can specify overwrites, which can be used by vendors who implement and maintain their own templates
-for features in OPNsense.
+for features in Reticen8.
 
 Simply add files using the target definition in the **+TARGETS.D** directory of the templates folder using as extension **.TARGET**.
 
-For example an overwrite for OPNsense/Sample can use the following name and location
-:code:`/usr/local/opnsense/service/templates/OPNsense/Sample/+TARGETS.D/custom.TARGET`
+For example an overwrite for Reticen8/Sample can use the following name and location
+:code:`/usr/local/reticen8/service/templates/Reticen8/Sample/+TARGETS.D/custom.TARGET`
 
 .. Note::
     Be vey careful using this feature, you need to maintain these templates yourself and features may break after upgrades
-    of OPNsense.
+    of Reticen8.
 
 ---------
 Templates
@@ -90,7 +90,7 @@ Templates
 
 For more information of the template language itself, please look at
 http://jinja.pocoo.org/docs/dev/ and the examples installed in
-/usr/local/opnsense/service/templates/OPNsense/Sample.
+/usr/local/reticen8/service/templates/Reticen8/Sample.
 
 There's one special case when using the template engine, every wildcard
 used for the output file generation is also provided to the template, so
@@ -108,15 +108,15 @@ Test usage
 ----------
 
 The templates can be rendered via the backend service (configd), to test
-this functionality on a running OPNsense system, use:
+this functionality on a running Reticen8 system, use:
 
 
 ::
 
     # generate template package
-    configctl template reload OPNsense/Sample
+    configctl template reload Reticen8/Sample
     # cleanup files
-    configctl template cleanup OPNsense/Sample
+    configctl template cleanup Reticen8/Sample
 
 |
 
@@ -139,8 +139,8 @@ configd, to use (or test) the system without the daemon, use:
     conf = config.Config('/config.xml')
     tmpl.set_config(conf.get())
      
-    # generate output for OPNsense/Sample
-    generated_filenames = tmpl.generate('OPNsense/Sample')
+    # generate output for Reticen8/Sample
+    generated_filenames = tmpl.generate('Reticen8/Sample')
      
     # print results
     for filename in generated_filenames:

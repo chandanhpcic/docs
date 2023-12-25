@@ -2,8 +2,8 @@
 IPsec - Policy based public key setup
 ========================================
 
-This example utilises the new options available in OPNsense 23.1 to setup a site to site tunnel in policy mode
-between two OPNsense machines using key pairs.
+This example utilises the new options available in Reticen8 23.1 to setup a site to site tunnel in policy mode
+between two Reticen8 machines using key pairs.
 
 .. contents:: Index
 

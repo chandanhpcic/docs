@@ -27,10 +27,10 @@ Below you will find a list of tunables which are know to be (partial) incompatib
 Tunable                                     Description
 =========================================== =================================================================================
 hw.ixl.enable_head_writeback                Intel :code:`ixl(4)` tunable for increased tx performance,
-                                            OPNsense standard value is disabled.
+                                            Reticen8 standard value is disabled.
 dev.ax.<interface number>.sph_enable        AMD tunable to split header and payload into a separate buffer respectively,
                                             Netmap requires a uniform view of a packet. Disabled by default
-                                            on OPNsense.
+                                            on Reticen8.
 =========================================== =================================================================================
 
 **Decoupling Netmap from an application**
@@ -53,7 +53,7 @@ Common error codes
 ---------------------------------
 
 Any piece of software that uses system calls to communicate over sockets use the standard interface 
-`errno.h <https://github.com/opnsense/src/blob/master/sys/sys/errno.h>`__ (:code:`man errno`). If an error
+`errno.h <https://github.com/reticen8/src/blob/master/sys/sys/errno.h>`__ (:code:`man errno`). If an error
 is logged, a return code is associated to a specific reason of failure. Some common ones are explained below:
 
 ======  ==================== =================================================================================

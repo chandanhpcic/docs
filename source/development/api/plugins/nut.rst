@@ -17,7 +17,7 @@ Nut
     "``GET``","nut","service","status",""
     "``POST``","nut","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Nut.xml <https://github.com/opnsense/plugins/blob/master/sysutils/nut/src/opnsense/mvc/app/models/OPNsense/Nut/Nut.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Nut.xml <https://github.com/reticen8/plugins/blob/master/sysutils/nut/src/reticen8/mvc/app/models/Reticen8/Nut/Nut.xml>`__"
 
 .. csv-table:: Service (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -26,4 +26,4 @@ Nut
     "``GET``","nut","settings","get",""
     "``POST``","nut","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Nut.xml <https://github.com/opnsense/plugins/blob/master/sysutils/nut/src/opnsense/mvc/app/models/OPNsense/Nut/Nut.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Nut.xml <https://github.com/reticen8/plugins/blob/master/sysutils/nut/src/reticen8/mvc/app/models/Reticen8/Nut/Nut.xml>`__"

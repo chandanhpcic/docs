@@ -32,7 +32,7 @@ through 254. This means a subnet mask of 255.255.255.0. The range can also be wr
 the third group can also be another number, and there are also other ranges available for private use. These are
 described in `RFC 1918 <https://tools.ietf.org/html/rfc1918#section-3>`_.)
 
-The LAN IP of the OPNsense device that serves DHCP to the LAN should fall in the same DHCP IP range. Typically, it gets
+The LAN IP of the Reticen8 device that serves DHCP to the LAN should fall in the same DHCP IP range. Typically, it gets
 the address ending in .1 (so 192.168.1.1 in this example).
 
 To set the LAN IP, go to :menuselection:`Interfaces --> [LAN]`, set “IPv4 Configuration Type” to “Static”, and under
@@ -56,7 +56,7 @@ Always make sure  :doc:`Router advertisements </manual/radvd>` are properly conf
 daemons depend on eachother.
 
 If a Prefix Delegation Range is specified, downstream routers may request prefixes (IA_PD). Routing a delegated prefix to a downstream
-router requires OPNsense to be aware of the router's IPv6 WAN address. This can be achieved in two ways:
+router requires Reticen8 to be aware of the router's IPv6 WAN address. This can be achieved in two ways:
 
 * **Dynamic DHCPv6 address lease**: If an address range is specified in the DHCPv6 service settings and the downstream router requests both an address (IA_NA) and prefix (IA_PD), the prefix will be routed to the leased address.
 * **Static mapping**: If the DUID of an active prefix lease matches the DUID of a DHCPv6 static mapping, the delegated prefix will be unconditionally routed to the static mapping's IPv6 address. The DHCPv6 service doesn't have to be configured with an address range and the downstream router doesn't have to request an address. The address in the static mapping may be a GUA, ULA or link-local address. This allows downstream prefix delegation to routers which only request a prefix, not an address.
@@ -66,7 +66,7 @@ Advanced settings
 -------------------------
 
 To configure options that are not available in the GUI one can add custom configuration files on the firewall itself.
-Files can be added in :code:`/usr/local/etc/dhcpd.opnsense.d/` for IPv4 and :code:`/usr/local/etc/dhcpd6.opnsense.d/`
+Files can be added in :code:`/usr/local/etc/dhcpd.reticen8.d/` for IPv4 and :code:`/usr/local/etc/dhcpd6.reticen8.d/`
 for IPv6, these should use as extension .conf (e.g. custom-options.conf). When more files are placed inside the directory,
 all will be included in alphabetical order.
 

@@ -8,7 +8,7 @@ Maltrail
     "``GET``","maltrail","general","get",""
     "``POST``","maltrail","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/security/maltrail/src/reticen8/mvc/app/models/Reticen8/Maltrail/General.xml>`__"
 
 .. csv-table:: Service (SensorController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -17,7 +17,7 @@ Maltrail
     "``GET``","maltrail","sensor","get",""
     "``POST``","maltrail","sensor","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Sensor.xml <https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/Sensor.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Sensor.xml <https://github.com/reticen8/plugins/blob/master/security/maltrail/src/reticen8/mvc/app/models/Reticen8/Maltrail/Sensor.xml>`__"
 
 .. csv-table:: Service (ServerController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -26,7 +26,7 @@ Maltrail
     "``GET``","maltrail","server","get",""
     "``POST``","maltrail","server","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/Server.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/reticen8/plugins/blob/master/security/maltrail/src/reticen8/mvc/app/models/Reticen8/Maltrail/Server.xml>`__"
 
 .. csv-table:: Service (ServerserviceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -38,7 +38,7 @@ Maltrail
     "``GET``","maltrail","serverservice","status",""
     "``POST``","maltrail","serverservice","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/Server.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/reticen8/plugins/blob/master/security/maltrail/src/reticen8/mvc/app/models/Reticen8/Maltrail/Server.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -50,4 +50,4 @@ Maltrail
     "``GET``","maltrail","service","status",""
     "``POST``","maltrail","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Sensor.xml <https://github.com/opnsense/plugins/blob/master/security/maltrail/src/opnsense/mvc/app/models/OPNsense/Maltrail/Sensor.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Sensor.xml <https://github.com/reticen8/plugins/blob/master/security/maltrail/src/reticen8/mvc/app/models/Reticen8/Maltrail/Sensor.xml>`__"

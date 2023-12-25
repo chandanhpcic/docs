@@ -11,16 +11,16 @@ Networks used in this How-To section
 =========  ===================  ===============================  ======================================
 Interface  IPv4 Subnet          Hosts                            Gateway
 =========  ===================  ===============================  ======================================
-WAN        ``203.0.113.0/24``   ``203.0.113.1`` - OPNsense       ``203.0.113.254`` - OPNsense
-DMZ        ``172.16.1.0/24``    ``172.16.1.1`` - Webserver       ``172.16.1.254`` - OPNsense
-LAN        ``192.168.1.0/24``   ``192.168.1.1`` - Client         ``192.168.1.254`` - OPNsense
+WAN        ``203.0.113.0/24``   ``203.0.113.1`` - Reticen8       ``203.0.113.254`` - Reticen8
+DMZ        ``172.16.1.0/24``    ``172.16.1.1`` - Webserver       ``172.16.1.254`` - Reticen8
+LAN        ``192.168.1.0/24``   ``192.168.1.1`` - Client         ``192.168.1.254`` - Reticen8
 =========  ===================  ===============================  ======================================
 
 --------------------
 NAT - Quick Overview
 --------------------
 
-Because there are not enough available IPv4 addresses, a workaround called *NAT* (Network Address Translation) was implemented into the IPv4 Standard. It basically enables a router like the OPNsense to translate IPv4 addresses to other IPv4 addresses. Most of the time it is used to translate the limited external IPv4 address space to the shared internal IPv4 address space (RFC 1918, ``192.168.0.0/16`` - ``172.16.0.0/12`` - ``10.0.0.0/8``) and vice versa.
+Because there are not enough available IPv4 addresses, a workaround called *NAT* (Network Address Translation) was implemented into the IPv4 Standard. It basically enables a router like the Reticen8 to translate IPv4 addresses to other IPv4 addresses. Most of the time it is used to translate the limited external IPv4 address space to the shared internal IPv4 address space (RFC 1918, ``192.168.0.0/16`` - ``172.16.0.0/12`` - ``10.0.0.0/8``) and vice versa.
 
 .. Note::
 
@@ -34,7 +34,7 @@ Because there are not enough available IPv4 addresses, a workaround called *NAT*
         *  Changes the destination port of a packet
         * `Firewall --> NAT --> Port Forward` using the option *Redirect target port* in a rule
 
-If you create a DNAT rule, you enable all clients in the WAN access to an internal IPv4 address. The OPNsense acts like a translator, translating IPv4 addresses between client and server. The OPNsense writes all translations into a file called the NAT table. It knows exactly how traffic should flow back and forth with the translations in place.
+If you create a DNAT rule, you enable all clients in the WAN access to an internal IPv4 address. The Reticen8 acts like a translator, translating IPv4 addresses between client and server. The Reticen8 writes all translations into a file called the NAT table. It knows exactly how traffic should flow back and forth with the translations in place.
 
 .. Warning::
     NAT is not a security feature. It only acts as a translator. If you want security, you need firewall rules in addition.
@@ -45,9 +45,9 @@ Introduction to Reflection and Hairpin NAT
 
 For example, you have a Webserver ``example.com`` with the internal IP ``172.16.1.1`` in your DMZ. It has a public DNS Record of ``example.com in A 203.0.113.1``.
 
-Your internal client ``192.168.1.1`` can't reach the Webserver if it resolves the DNS A-Record ``203.0.113.1``. When the OPNsense receives the packet from the client ``192.168.1.1`` with the destination IP ``203.0.113.1``, it chooses **itself** as the target, and **not** ``172.16.1.1``. That's because the external IPv4 address ``203.0.113.1`` is mapped to the WAN interface of the OPNsense.
+Your internal client ``192.168.1.1`` can't reach the Webserver if it resolves the DNS A-Record ``203.0.113.1``. When the Reticen8 receives the packet from the client ``192.168.1.1`` with the destination IP ``203.0.113.1``, it chooses **itself** as the target, and **not** ``172.16.1.1``. That's because the external IPv4 address ``203.0.113.1`` is mapped to the WAN interface of the Reticen8.
 
-That's where Reflection NAT comes into play. It creates NAT rules which help your internal client ``192.168.1.1`` to communicate with your webserver ``203.0.113.1``, by using the OPNsense as the "translator" to the actual destination ``172.16.1.1``.
+That's where Reflection NAT comes into play. It creates NAT rules which help your internal client ``192.168.1.1`` to communicate with your webserver ``203.0.113.1``, by using the Reticen8 as the "translator" to the actual destination ``172.16.1.1``.
 
 .. Attention::
     You should choose your preferred Reflection NAT method from the three possible choices presented here. They're exclusive to each other, picking one method and sticking to it will prevent mistakes.
@@ -57,18 +57,18 @@ That's where Reflection NAT comes into play. It creates NAT rules which help you
     * :ref:`Method 3 <nat-method3>` - Creating **automatic** Port-Forward NAT (DNAT), **automatic** Outbound NAT (SNAT), and **manual** firewall rules
 
 .. Note::
-    * **Reflection NAT:** The client and the server are in different subnets (layer 2 broadcast domains) and the OPNsense routes traffic between them. They can't communicate directly by resolving ARP requests. You only need DNAT.
+    * **Reflection NAT:** The client and the server are in different subnets (layer 2 broadcast domains) and the Reticen8 routes traffic between them. They can't communicate directly by resolving ARP requests. You only need DNAT.
     * **Hairpin NAT:** The client and the server are in the same subnet (layer 2 broadcast domain). They can communicate directly with each other by resolving ARP requests. You need SNAT and DNAT.
 
 .. Note::
-    When using IPsec, by default NAT only matches on policy based VPN. NAT on VTI (Virtual Tunnel Interfaces) won't match unless some tunables are set. These tunables change the behavior of firewall filter and NAT on if_enc and if_ipsec interfaces. You can read more about the tunables in `IPsec VTI - Route based setup <https://docs.opnsense.org/manual/vpnet.html#route-based-vti>`_
+    When using IPsec, by default NAT only matches on policy based VPN. NAT on VTI (Virtual Tunnel Interfaces) won't match unless some tunables are set. These tunables change the behavior of firewall filter and NAT on if_enc and if_ipsec interfaces. You can read more about the tunables in `IPsec VTI - Route based setup <https://docs.reticen8.com/manual/vpnet.html#route-based-vti>`_
 
 
 -------------
 Best Practice
 -------------
 
-The best way to do Reflection NAT in the OPNsense is **not** to use the legacy Reflection options in :doc:`/manual/firewall_settings`. Creating the NAT rules manually with :ref:`Method 1 <nat-method1>` prevents unwanted traffic and makes auditing easy. There will be no hidden rules. All rules will be perfectly visible in the GUI and .xml config exports.
+The best way to do Reflection NAT in the Reticen8 is **not** to use the legacy Reflection options in :doc:`/manual/firewall_settings`. Creating the NAT rules manually with :ref:`Method 1 <nat-method1>` prevents unwanted traffic and makes auditing easy. There will be no hidden rules. All rules will be perfectly visible in the GUI and .xml config exports.
 
 ----------------------------
 Start of the How-To Section:
@@ -107,7 +107,7 @@ Go to :menuselection:`Firewall --> NAT --> Port Forward`
 .. Tip::
     Reading the DNAT rule like a sentence makes it clearer:
 
-    If a packet is received by the OPNsense on any of the interfaces ``WAN``, ``DMZ`` and ``LAN`` with protocol ``TCP`` from the source IP ``ANY`` and the source port range ``ANY`` to destination
+    If a packet is received by the Reticen8 on any of the interfaces ``WAN``, ``DMZ`` and ``LAN`` with protocol ``TCP`` from the source IP ``ANY`` and the source port range ``ANY`` to destination
     IP ``203.0.113.1`` and destination port ``443`` --> rewrite the destination IP to ``172.16.1.1`` and the destination port to ``443``.
 
 .. Note::
@@ -135,14 +135,14 @@ Go to :menuselection:`Firewall --> NAT --> Outbound`
     Source Port:               Select ``Any``
     Destination Address:       Input ``172.16.1.1`` - It's the Webserver's internal IPv4 address in the DMZ.
     Destination Port:          Input ``443`` - Or select the alias ``HTTPS``
-    Translation/target:        Select ``DMZ address`` - It's the alias for the OPNsense Interface IPv4 address ``172.16.1.254`` in the DMZ Network.
+    Translation/target:        Select ``DMZ address`` - It's the alias for the Reticen8 Interface IPv4 address ``172.16.1.254`` in the DMZ Network.
     Description:               Input ``Hairpin NAT Rule Webserver 443``
     =========================  ================================
 
 .. Tip::
     Reading the SNAT rule like a sentence makes it clearer:
 
-    If a packet is received by the OPNsense on the interface ``DMZ`` with protocol ``TCP`` from the source net ``172.16.1.0/24`` and the source port ``ANY`` to destination IP ``172.16.1.1`` and destination port ``443`` --> rewrite the source ip to ``172.16.1.254`` and answer from the OPNsense ``DMZ`` interface.
+    If a packet is received by the Reticen8 on the interface ``DMZ`` with protocol ``TCP`` from the source net ``172.16.1.0/24`` and the source port ``ANY`` to destination IP ``172.16.1.1`` and destination port ``443`` --> rewrite the source ip to ``172.16.1.254`` and answer from the Reticen8 ``DMZ`` interface.
 
 .. Note::
     Now all DMZ clients (and the Webserver itself) can reach the Webserver with its external IP.
@@ -227,7 +227,7 @@ Troubleshooting NAT Rules
     * You can also check the rules in the GUI in :menuselection:`Firewall --> Diagnostics --> Statistics`
 
 .. Tip::
-    * Displays all NAT rules in the OPNsense debug:
+    * Displays all NAT rules in the Reticen8 debug:
     * ``cat /tmp/rules.debug | grep -i nat``
     * If there are more rules here than in ``pfctl -s nat``, it means you forgot to hit apply somewhere.
 
@@ -235,4 +235,4 @@ Troubleshooting NAT Rules
     * Look at the default drops of the firewall live log in :menuselection:`Firewall --> Log Files --> Live View`
     * Turn on logging of the NAT and Firewall rules you have created, and check if they match in :menuselection:`Firewall --> Log Files --> Live View`. NAT rules have the label "NAT" or "RDR". Firewall rules have their description as label.
     * In ":menuselection:`Firewall --> Diagnostics --> Sessions` you can check if there is a session between your internal client and your internal server, and which rule matches to it.
-    * Use tcpdump on the client, the opnsense and the server, and test if the traffic goes back and forth between the devices without any mistakes. Look for TCP SYN and SYN ACK. If there are only SYN then the connection isn't established and there are mistakes in your rules.
+    * Use tcpdump on the client, the reticen8 and the server, and test if the traffic goes back and forth between the devices without any mistakes. Look for TCP SYN and SYN ACK. If there are only SYN then the connection isn't established and there are mistakes in your rules.

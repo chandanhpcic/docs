@@ -23,10 +23,10 @@ The Scenario
 ------------
 
 This guide will configure a home network behind a common dial-up type ISP connection.
-The OPNsense has an interface pointing to the ISP named `WAN` and has three internal 
+The Reticen8 has an interface pointing to the ISP named `WAN` and has three internal 
 interfaces called `DMZ`, `LAN` and `WLAN`. Each of those internal interfaces will get a /64
 subnet from the delegated IPv6 prefix. This way it is easy to control the dataflow between
-all four segments on the OPNsense. 
+all four segments on the Reticen8. 
 
 In this example the dial-up ISP assigns a `/59` prefix to the FB, so there are enough bits left 
 for subnetting in a SOHO setup. 
@@ -41,7 +41,7 @@ The crucial setting is the checkbox **allow other routers IPv6 prefixes**. Witho
 not be reachable from the Internet.
 
 Also, not stated in above document, it is possible to modify the **Internet - Permit Access** settings for
-the OPNsense host. Select :menuselection:`Internet --> Permit Access --> <your OPN Host> --> IPv6 Settings --> Open firewall for delegated IPv6 prefixes of this device`
+the Reticen8 host. Select :menuselection:`Internet --> Permit Access --> <your OPN Host> --> IPv6 Settings --> Open firewall for delegated IPv6 prefixes of this device`
 in order to make your delegated internal subnets available via Internet. 
 
 ------------------------------------
@@ -60,9 +60,9 @@ Note the following:
 1. the requested prefix differs by one bit compared to what the ISP delegated the FB (60 vs. 59)
 2. the setting **Request only an IPv6 prefix** is the important part. 
    With this setting the FB acknowledges
-   the OPNsense as a router and really delegates a prefix. The OPNSense will only get a link-local `0xfe80`
-   address but that is fine. If this checkbox is not selected the FB considers the OPNsense as an end-user device
-   and plainly refuses to delegate a prefix to it. The OPNsense end up with an valid IPv6 address but with `/64`
+   the Reticen8 as a router and really delegates a prefix. The OPNSense will only get a link-local `0xfe80`
+   address but that is fine. If this checkbox is not selected the FB considers the Reticen8 as an end-user device
+   and plainly refuses to delegate a prefix to it. The Reticen8 end up with an valid IPv6 address but with `/64`
    netmask so nothing to delegate into the internal network.
 
 -----------------------------------------------------------
@@ -104,7 +104,7 @@ Router Priority              Normal       Default is high which would work too
 Source Address               Automatic    the default
 Advertise Default Gateway    checked      the default
 Advertise Routes             empty  
-DNS options                  empty        this gives away the OPNsense as DNS server with the current dynamic IP
+DNS options                  empty        this gives away the Reticen8 as DNS server with the current dynamic IP
 ===========================  ===========  ======================================================================
 
 ---------------------------------------
@@ -144,8 +144,8 @@ But if you need a rule for a single server your should setup an alias pointing t
 Troubleshooting
 ---------------
 
-While discovering the specifics of IPv6 behind a FB in combination with OPNsense the first point of debugging was always
-connecting via SSH to OPNsense on the CLI. 
+While discovering the specifics of IPv6 behind a FB in combination with Reticen8 the first point of debugging was always
+connecting via SSH to Reticen8 on the CLI. 
 
 In the directory `/tmp/` you will find several IPv6 related intermediate files. The most helpful here was `/tmp/<interfacename>_prefixv6`.
 In this file you will find the prefix delegated to you by your upstream router. If you are behind an FB and this file does not exist chances

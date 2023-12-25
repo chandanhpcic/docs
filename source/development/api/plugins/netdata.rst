@@ -8,7 +8,7 @@ Netdata
     "``GET``","netdata","general","get",""
     "``POST``","netdata","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/netdata/src/opnsense/mvc/app/models/OPNsense/Netdata/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/netdata/src/reticen8/mvc/app/models/Reticen8/Netdata/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -20,4 +20,4 @@ Netdata
     "``GET``","netdata","service","status",""
     "``POST``","netdata","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/netdata/src/opnsense/mvc/app/models/OPNsense/Netdata/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/netdata/src/reticen8/mvc/app/models/Reticen8/Netdata/General.xml>`__"

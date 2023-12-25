@@ -3,23 +3,23 @@
 ===========================================================================================
 
 
-The OPNsense business edition transitions to this 23.4 release including
+The Reticen8 business edition transitions to this 23.4 release including
 Unbound DNS statistics, PHP 8.1, assorted FreeBSD networking updates,
 further MVC/API conversions, WireGuard kernel module plugin plus much more.
 
 Please make sure to read the migration notes before upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 
 --------------------------------------------------------------------------
 23.4.2 (August 04, 2023)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 23.1.11 community version
+This business release is based on the Reticen8 23.1.11 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -32,8 +32,8 @@ Here are the full patch notes:
 * system: propagate error in rc.syshook scripts
 * system: use parse_url() to validate if the provided login redirect string is actually parseable to prevent redirect
 * system: fix assorted permission-after-write problems
-* system: add opnsense-crypt utility to encrypt/decrypt a config.xml
-* system: call opnsense-crypt from opnsense-import to deal with encrypted imports
+* system: add reticen8-crypt utility to encrypt/decrypt a config.xml
+* system: call reticen8-crypt from reticen8-import to deal with encrypted imports
 * system: do not allow state modification on GET for power off and reboot actions
 * system: better validation and escaping for cron commands
 * system: better validation for logging user input
@@ -58,10 +58,10 @@ Here are the full patch notes:
 * dhcp: revamp the prefix route handling also adding support for statically mapped downstream routers
 * dhcp: validate client hostnames in Dnsmasq/Unbound lease watchers
 * dhcp: fix validation for static entry requirement
-* firmware: opnsense-update: move -K option to -x
-* firmware: opnsense-update: support deferred kernel set install
-* firmware: opnsense-update: use -w option with -a option in fetch(1)
-* firmware: opnsense-update: ensure kernel directory consistency
+* firmware: reticen8-update: move -K option to -x
+* firmware: reticen8-update: support deferred kernel set install
+* firmware: reticen8-update: use -w option with -a option in fetch(1)
+* firmware: reticen8-update: ensure kernel directory consistency
 * firmware: shift subscription key extract to "-x" option
 * firmware: use post-upgrade hook and stage kernel as well for clean abort
 * firmware: sort plugins before store
@@ -82,8 +82,8 @@ Here are the full patch notes:
 * mvc: fill missing keys when sorting in searchRecordsetBase()
 * mvc: fix empty item selection issue in BaseListField
 * ui: remove noodp and noydir from HTML meta robots tag (contributed by William Desportes)
-* plugins: os-crowdsec 1.0.6 `[1] <https://github.com/opnsense/plugins/blob/stable/23.1/security/crowdsec/pkg-descr>`__ 
-* plugins: os-nginx 1.32.1 `[2] <https://github.com/opnsense/plugins/blob/stable/23.1/www/nginx/pkg-descr>`__ 
+* plugins: os-crowdsec 1.0.6 `[1] <https://github.com/reticen8/plugins/blob/stable/23.1/security/crowdsec/pkg-descr>`__ 
+* plugins: os-nginx 1.32.1 `[2] <https://github.com/reticen8/plugins/blob/stable/23.1/www/nginx/pkg-descr>`__ 
 * plugins: os-zabbix-agent plugin variant for Zabbix 6.4
 * plugins: os-zabbix-proxy plugin variant for Zabbix 6.4
 * src: axgbe: account for 4 SFP ports during GPIO expander check
@@ -107,7 +107,7 @@ Here are the full patch notes:
 * ports: py-setuptools fix for CVE-2022-40897
 * ports: python 3.9.17 `[16] <https://docs.python.org/release/3.9.17/whatsnew/changelog.html>`__ 
 * ports: squid 5.9 `[17] <http://www.squid-cache.org/Versions/v5/squid-5.9-RELEASENOTES.html>`__ 
-* ports: strongswan upstream fix for VICI stalls `[18] <https://github.com/opnsense/core/issues/6308>`__ 
+* ports: strongswan upstream fix for VICI stalls `[18] <https://github.com/reticen8/core/issues/6308>`__ 
 * ports: suricata 6.0.13 `[19] <https://suricata.io/2023/06/15/suricata-6-0-13-released/>`__ 
 
 A hotfix release was issued as 23.4.2_1:
@@ -127,7 +127,7 @@ A hotfix release was issued as 23.4.2_4:
 23.4.1 (June 14, 2023)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 23.1.9 community version
+This business release is based on the Reticen8 23.1.9 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -170,7 +170,7 @@ Here are the full patch notes:
 * interfaces: ifctl: avoid null route on fragile /64 prefix delegation
 * interfaces: ifctl: do not flush name server routes
 * interfaces: deal with RENEW and REBIND only reporting partial PDINFO
-* firewall: allow to create aliases for logged-in OpenVPN users `[1] <https://docs.opnsense.org/manual/aliases.html#openvpn-group>`__ 
+* firewall: allow to create aliases for logged-in OpenVPN users `[1] <https://docs.reticen8.com/manual/aliases.html#openvpn-group>`__ 
 * firewall: leave out fractional seconds from timestamps in aliases
 * firewall: add missing scrub rules in dependency check for alias use
 * firewall: usability improvements and cleanups in scheduler pages (contributed by kuya1284)
@@ -217,19 +217,19 @@ Here are the full patch notes:
 * ui: prevent crashing out when endpoint does not return data for SimpleActionButton
 * plugins: os-OPNBEcore minor fixes and additions
 * plugins: os-OPNcentral minor fixes and additions
-* plugins: os-acme-client 3.17 `[2] <https://github.com/opnsense/plugins/blob/stable/23.1/security/acme-client/pkg-descr>`__ 
-* plugins: os-bind 1.26 `[3] <https://github.com/opnsense/plugins/blob/stable/23.1/dns/bind/pkg-descr>`__ 
-* plugins: os-crowdsec 1.0.5 `[4] <https://github.com/opnsense/plugins/blob/stable/23.1/security/crowdsec/pkg-descr>`__ 
-* plugins: os-ddclient 1.13 `[5] <https://github.com/opnsense/plugins/blob/stable/23.1/dns/ddclient/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.13 `[6] <https://github.com/opnsense/plugins/blob/stable/23.1/dns/dnscrypt-proxy/pkg-descr>`__ 
-* plugins: os-nginx 1.32 `[7] <https://github.com/opnsense/plugins/blob/stable/23.1/www/nginx/pkg-descr>`__ 
+* plugins: os-acme-client 3.17 `[2] <https://github.com/reticen8/plugins/blob/stable/23.1/security/acme-client/pkg-descr>`__ 
+* plugins: os-bind 1.26 `[3] <https://github.com/reticen8/plugins/blob/stable/23.1/dns/bind/pkg-descr>`__ 
+* plugins: os-crowdsec 1.0.5 `[4] <https://github.com/reticen8/plugins/blob/stable/23.1/security/crowdsec/pkg-descr>`__ 
+* plugins: os-ddclient 1.13 `[5] <https://github.com/reticen8/plugins/blob/stable/23.1/dns/ddclient/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.13 `[6] <https://github.com/reticen8/plugins/blob/stable/23.1/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-nginx 1.32 `[7] <https://github.com/reticen8/plugins/blob/stable/23.1/www/nginx/pkg-descr>`__ 
 * plugins: os-smart fix for highlighting result (contributed by Justin Horton)
 * plugins: os-stunnel fix for missing OpenSSL CRL functions
 * plugins: os-upnp now allows subnet mask 0 in rules (contributed by Reiko Asakura)
-* src: bridge: add support for emulated netmap mode `[8] <https://github.com/opnsense/src/commit/eebd4b140f>`__ 
+* src: bridge: add support for emulated netmap mode `[8] <https://github.com/reticen8/src/commit/eebd4b140f>`__ 
 * src: epair: also remove vlan metadata from mbufs
 * src: ifconfig: fix configuring if_bridge with additional operating parameters
-* src: netmap: fix queue stalls with generic interfaces `[9] <https://github.com/opnsense/src/commit/cc92d78fa5>`__ 
+* src: netmap: fix queue stalls with generic interfaces `[9] <https://github.com/reticen8/src/commit/cc92d78fa5>`__ 
 * src: netmap: assorted upstream stable patches
 * src: sched_ule: assorted fixes to address issues on newer AMD platforms
 * src: axgbe: fix link issues for gigabit external SFP PHYs and 100/1000 fiber modules
@@ -257,18 +257,18 @@ Here are the full patch notes:
 23.4 (April 25, 2023)
 --------------------------------------------------------------------------
 
-The OPNsense business edition transitions to this 23.4 release including
+The Reticen8 business edition transitions to this 23.4 release including
 Unbound DNS statistics, PHP 8.1, assorted FreeBSD networking updates,
 further MVC/API conversions, WireGuard kernel module plugin plus much more.
 
 Please make sure to read the migration notes before upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
-This business release is based on the OPNsense 23.1.5 community version
+This business release is based on the Reticen8 23.1.5 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -283,7 +283,7 @@ Here are the full patch notes:
 * system: do not yield process after calling shutdown command
 * system: apply tunables during late boot in case a module was loaded depending on them to be set to a specific value
 * system: show size of ZFS ARC (adaptive replacement cache) in system widget
-* system: introduce support tier annotations for core and plugins `[2] <https://docs.opnsense.org/support.html>`__ 
+* system: introduce support tier annotations for core and plugins `[2] <https://docs.reticen8.com/support.html>`__ 
 * system: add cron tasks for scrubbing and trimming ZFS pools (contributed by Iain Henderson)
 * system: fix 6rd/6to4 gateway interface detection (contributed by Frans J Elliott)
 * system: incorrect link to CARP status page on dashboard widget
@@ -447,23 +447,23 @@ Here are the full patch notes:
 * wizard: unbound hardened DNSSEC setting moved
 * plugins: os-OPNBEcore 1.1
 * plugins: os-OPNcentral 1.6
-* plugins: os-acme-client 3.16 `[3] <https://github.com/opnsense/plugins/blob/stable/23.1/security/acme-client/pkg-descr>`__ 
-* plugins: os-api-backup 1.1 `[4] <https://github.com/opnsense/plugins/blob/stable/23.1/sysutils/api-backup/pkg-descr>`__ 
-* plugins: os-bind 1.25 `[5] <https://github.com/opnsense/plugins/blob/stable/23.1/dns/bind/pkg-descr>`__ 
-* plugins: os-crowdsec 1.0.2 `[6] <https://github.com/opnsense/plugins/blob/stable/23.1/security/crowdsec/pkg-descr>`__ 
-* plugins: os-ddclient 1.11 `[7] <https://github.com/opnsense/plugins/blob/stable/23.1/dns/ddclient/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.22 `[8] <https://github.com/opnsense/plugins/blob/stable/23.1/net/freeradius/pkg-descr>`__ 
-* plugins: os-frr 1.33 `[9] <https://github.com/opnsense/plugins/blob/stable/23.1/net/frr/pkg-descr>`__ 
-* plugins: os-haproxy 4.1 `[10] <https://github.com/opnsense/plugins/blob/stable/23.1/net/haproxy/pkg-descr>`__ 
-* plugins: os-openconnect 1.4.4 `[11] <https://github.com/opnsense/plugins/blob/stable/23.1/security/openconnect/pkg-descr>`__ 
-* plugins: os-puppet-agent 1.1 `[12] <https://github.com/opnsense/plugins/blob/stable/23.1/sysutils/puppet-agent/pkg-descr>`__ 
-* plugins: os-qemu-guest-agent 1.2 `[13] <https://github.com/opnsense/plugins/blob/stable/23.1/emulators/qemu-guest-agent/pkg-descr>`__ 
-* plugins: os-rfc2136 1.8 `[14] <https://github.com/opnsense/plugins/blob/stable/23.1/dns/rfc2136/pkg-descr>`__ 
-* plugins: os-sslh 1.0 `[15] <https://github.com/opnsense/plugins/blob/stable/23.1/net/sslh/pkg-descr>`__  (contributed by agh1467)
+* plugins: os-acme-client 3.16 `[3] <https://github.com/reticen8/plugins/blob/stable/23.1/security/acme-client/pkg-descr>`__ 
+* plugins: os-api-backup 1.1 `[4] <https://github.com/reticen8/plugins/blob/stable/23.1/sysutils/api-backup/pkg-descr>`__ 
+* plugins: os-bind 1.25 `[5] <https://github.com/reticen8/plugins/blob/stable/23.1/dns/bind/pkg-descr>`__ 
+* plugins: os-crowdsec 1.0.2 `[6] <https://github.com/reticen8/plugins/blob/stable/23.1/security/crowdsec/pkg-descr>`__ 
+* plugins: os-ddclient 1.11 `[7] <https://github.com/reticen8/plugins/blob/stable/23.1/dns/ddclient/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.22 `[8] <https://github.com/reticen8/plugins/blob/stable/23.1/net/freeradius/pkg-descr>`__ 
+* plugins: os-frr 1.33 `[9] <https://github.com/reticen8/plugins/blob/stable/23.1/net/frr/pkg-descr>`__ 
+* plugins: os-haproxy 4.1 `[10] <https://github.com/reticen8/plugins/blob/stable/23.1/net/haproxy/pkg-descr>`__ 
+* plugins: os-openconnect 1.4.4 `[11] <https://github.com/reticen8/plugins/blob/stable/23.1/security/openconnect/pkg-descr>`__ 
+* plugins: os-puppet-agent 1.1 `[12] <https://github.com/reticen8/plugins/blob/stable/23.1/sysutils/puppet-agent/pkg-descr>`__ 
+* plugins: os-qemu-guest-agent 1.2 `[13] <https://github.com/reticen8/plugins/blob/stable/23.1/emulators/qemu-guest-agent/pkg-descr>`__ 
+* plugins: os-rfc2136 1.8 `[14] <https://github.com/reticen8/plugins/blob/stable/23.1/dns/rfc2136/pkg-descr>`__ 
+* plugins: os-sslh 1.0 `[15] <https://github.com/reticen8/plugins/blob/stable/23.1/net/sslh/pkg-descr>`__  (contributed by agh1467)
 * plugins: os-theme-cicada 1.34 (contributed by Team Rebellion)
 * plugins: os-theme-tukan 1.27 (contributed by Team Rebellion)
 * plugins: os-theme-vicuna 1.45 (contributed by Team Rebellion)
-* plugins: os-upnp 1.5 `[16] <https://github.com/opnsense/plugins/blob/stable/23.1/net/upnp/pkg-descr>`__ 
+* plugins: os-upnp 1.5 `[16] <https://github.com/reticen8/plugins/blob/stable/23.1/net/upnp/pkg-descr>`__ 
 * plugins: os-wireguard switches to kernel module with a separate os-wireguard-go variant available for installation to keep the old behaviour
 * src: assorted FreeBSD 13 stable fixes for e.g. bpf, bridge, bsdinstall ifconfig, iflib, ipfw, ipsec, lagg, netmap, pf, route and vlan components
 * src: ipsec: clear pad bytes in PF_KEY messages
@@ -536,8 +536,8 @@ The public key for the 23.4 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-business-23.4-dvd-amd64.iso.bz2) = 7136d0d78e643b59bbee8866f7aa1498325bd5513af30a9ace6005aeb1638707
-    # SHA256 (OPNsense-business-23.4-nano-amd64.img.bz2) = 84b4a5ede947aae38273c4b57ddea2122764508e5309d3e1bbb816128097ce35
-    # SHA256 (OPNsense-business-23.4-serial-amd64.img.bz2) = 9da2a93f6ad246c2f02655a1d5468755b1af6b500ff2e1846c0506c956c8f84b
-    # SHA256 (OPNsense-business-23.4-vga-amd64.img.bz2) = 982a47835be03787f0a8d408aff0e117a3a5bccd810aa510808c4804abab66c4
+    # SHA256 (Reticen8-business-23.4-dvd-amd64.iso.bz2) = 7136d0d78e643b59bbee8866f7aa1498325bd5513af30a9ace6005aeb1638707
+    # SHA256 (Reticen8-business-23.4-nano-amd64.img.bz2) = 84b4a5ede947aae38273c4b57ddea2122764508e5309d3e1bbb816128097ce35
+    # SHA256 (Reticen8-business-23.4-serial-amd64.img.bz2) = 9da2a93f6ad246c2f02655a1d5468755b1af6b500ff2e1846c0506c956c8f84b
+    # SHA256 (Reticen8-business-23.4-vga-amd64.img.bz2) = 982a47835be03787f0a8d408aff0e117a3a5bccd810aa510808c4804abab66c4
 

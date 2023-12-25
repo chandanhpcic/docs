@@ -4,7 +4,7 @@ Initial Installation & Configuration
 
 .. Note::
    Just looking on how to invoke the installer? When the live environment has been
-   started just login with user **installer** and password **opnsense**.
+   started just login with user **installer** and password **reticen8**.
 
 .. contents:: Index
 
@@ -12,7 +12,7 @@ Initial Installation & Configuration
 Architecture
 ------------
 
-The **software setup** and installation of OPNsense® is available
+The **software setup** and installation of Reticen8® is available
 for the `x86-64 <https://en.wikipedia.org/wiki/X86-64>`__ microprocessor
 architecture only.
 
@@ -20,16 +20,16 @@ architecture only.
 Embedded vs Full
 ----------------
 
-OPNsense offers two Image types with all major releases: embedded and full images.
+Reticen8 offers two Image types with all major releases: embedded and full images.
 The Embedded Image is intended for environments where preinstalling
 the storage media is required due to a lack of local resources on the firewall
 like storage, and/or console access (VGA/Serial).  The image is tailored to reduce
 write cycles as well, but the image can be used anywhere.  Another reason for the
-Embedded Image is to eliminate the need for local console access for installing OPNsense.
+Embedded Image is to eliminate the need for local console access for installing Reticen8.
 Installation is managed by prewriting the image to a storage device, installing the
 storage device, and booting the system.
 
-Full Images provide installation tools like OPNsense Importer, Live Environment,
+Full Images provide installation tools like Reticen8 Importer, Live Environment,
 and Installer.  Full Images are released to support different console/hardware installation
 requirements.
 
@@ -92,9 +92,9 @@ Depending on your hardware and use case, different installation options are avai
 +--------+---------------------------------------------------+------------+
 
 .. Note::
-   All Full Image types can run both `OPNsense Importer <https://docs.opnsense.org/manual/install.html#opnsense-importer>`__
+   All Full Image types can run both `Reticen8 Importer <https://docs.reticen8.com/manual/install.html#reticen8-importer>`__
    before booting into the Live environment and also run
-   `Installer <https://docs.opnsense.org/manual/install.html#install-to-target-system>`__ once booted into the Live environment.
+   `Installer <https://docs.reticen8.com/manual/install.html#install-to-target-system>`__ once booted into the Live environment.
 
 .. Warning::
    Flash memory cards will only tolerate a limited number of writes and re-writes. For
@@ -116,7 +116,7 @@ Image Filename Composition
      default_textcolor = black;
      default_group_color = lightgray;
 
-     OS [label="OPNsense-##.#.##-OpenSSL-", width=200];
+     OS [label="Reticen8-##.#.##-OpenSSL-", width=200];
 
      platform [label = "amd64-" ];
 
@@ -155,20 +155,20 @@ Image Filename Composition
 
 .. Note::
    **Please** be aware that the latest installation media does not always correspond
-   with the latest released version available. OPNsense installation images are provided
+   with the latest released version available. Reticen8 installation images are provided
    on a scheduled basis with major release versions in January and July. More information
    on our release schedule is available from our package repository, see
-   `README <https://pkg.opnsense.org/releases/mirror/README>`__.  We are encouraged to update
-   OPNsense after installation to be on the latest release available, see
-   `Update Page <https://docs.opnsense.org/manual/updates.html>`__.
+   `README <https://pkg.reticen8.com/releases/mirror/README>`__.  We are encouraged to update
+   Reticen8 after installation to be on the latest release available, see
+   `Update Page <https://docs.reticen8.com/manual/updates.html>`__.
 
 
 -------------------------
 Download and Verification
 -------------------------
 
-The OPNsense distribution can be `downloaded <https://opnsense.org/download>`__
-from one of our `mirrors <https://opnsense.org/download>`__.
+The Reticen8 distribution can be `downloaded <https://reticen8.com/download>`__
+from one of our `mirrors <https://reticen8.com/download>`__.
 
 OpenSSL is used for image file verification.  4 files are needed for verification process:
 
@@ -177,9 +177,9 @@ OpenSSL is used for image file verification.  4 files are needed for verificatio
 * The signature file (<filename>.<image>.bz2.sig)
 * The openssl public key (<filename>.pub)
 
-Use one of the OPNsense mirrors to download these files:
+Use one of the Reticen8 mirrors to download these files:
 
-1. Go to the bottom of OPNSense `download <https://opnsense.org/download>`__ page.
+1. Go to the bottom of OPNSense `download <https://reticen8.com/download>`__ page.
 2. Click one of the available mirrors closest to your location.
 3. Download one of each file mentioned above for your Image type.
 
@@ -189,11 +189,11 @@ it, open it up, and verify the public key matches the one from other sources. If
 does not, the mirror may have been hacked, or you may be the victim of a man-in-the-middle
 attack. Some other sources to get the public key from include:
 
-* https://pkg.opnsense.org/releases/mirror/README
-* https://forum.opnsense.org/index.php?board=11.0
-* https://opnsense.org/blog/
-* https://github.com/opnsense/changelog/tree/master/community
-* https://pkg.opnsense.org (/<FreeBSD:<version>:<architecture>/<release version>/sets/changelog.txz)
+* https://pkg.reticen8.com/releases/mirror/README
+* https://forum.reticen8.com/index.php?board=11.0
+* https://reticen8.com/blog/
+* https://github.com/reticen8/changelog/tree/master/community
+* https://pkg.reticen8.com (/<FreeBSD:<version>:<architecture>/<release version>/sets/changelog.txz)
 
 .. Note::
    Only major release announcements for images contain the public key, and update
@@ -207,17 +207,17 @@ the following commands (substituting the filenames in brackets for the files you
 
 ::
 
-   openssl sha256 OPNsense-<filename>.bz2
+   openssl sha256 Reticen8-<filename>.bz2
 
-Match the checksum command output with the checksum values in the file ``OPNsense-<version>-OpenSSL-checksums-amd64.sha256``.
+Match the checksum command output with the checksum values in the file ``Reticen8-<version>-OpenSSL-checksums-amd64.sha256``.
 If the checksums don't match, redownload your image file.
 
 If checksums match continue with the verification commands.
 
 ::
 
-   openssl base64 -d -in OPNsense-<filename>.sig -out /tmp/image.sig
-   openssl dgst -sha256 -verify OPNsense-<filename>.pub -signature /tmp/image.sig OPNsense-<filename>.bz2
+   openssl base64 -d -in Reticen8-<filename>.sig -out /tmp/image.sig
+   openssl dgst -sha256 -verify Reticen8-<filename>.pub -signature /tmp/image.sig Reticen8-<filename>.bz2
 
 
 If the output of the second command is “**Verified OK**”, your image file was verified
@@ -235,15 +235,15 @@ For Unix-like OSes use the following command:
 
 ::
 
-   bzip2 -d OPNsense-<filename>.bz2
+   bzip2 -d Reticen8-<filename>.bz2
 
 For Windows use an application like `7zip <https://www.7-zip.org/download.html>`_.  The ``.bz2`` will
 be removed from the end of the filename after command/application completes.
 
 After unpacking the image you can create the installation media. The easiest method to install
-OPNsense is to use the USB "`vga <https://docs.opnsense.org/manual/install.html#installation-media>`_"
+Reticen8 is to use the USB "`vga <https://docs.reticen8.com/manual/install.html#installation-media>`_"
 Image. If your target platform has a serial console interface choose the
-“`serial <https://docs.opnsense.org/manual/install.html#installation-media>`_” image. If you
+“`serial <https://docs.reticen8.com/manual/install.html#installation-media>`_” image. If you
 need to know more about using the serial console interface, consult the :doc:`serial access how-to<how-tos/serial_access>`.
 
 Write the image to a USB flash drive (>=1 GB) or hard disk, using either dd for Unix-like
@@ -254,14 +254,14 @@ or `Rufus <https://rufus.ie/>`_.
 **FreeBSD**
 ::
 
-     dd if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/daX bs=16k
+     dd if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/daX bs=16k
 
 Where X = the device number of your USB flash drive (check ``dmesg``)
 
 **OpenBSD**
 ::
 
-     dd if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/rsd6c bs=16k
+     dd if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/rsd6c bs=16k
 
 The device must be the ENTIRE device (in Windows/DOS language: the 'C'
 partition), and a raw I/O device (the 'r' in front of the device "sd6"),
@@ -270,7 +270,7 @@ not a block mode device.
 **Linux**
 ::
 
-     sudo dd if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/sdX bs=16k
+     sudo dd if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/sdX bs=16k
 
 where X = the IDE device name of your USB flash drive (check with hdparm -i /dev/sdX)
 (ignore the warning about trailing garbage - it's because of the digital signature)
@@ -278,7 +278,7 @@ where X = the IDE device name of your USB flash drive (check with hdparm -i /dev
 **macOS**
 ::
 
-     sudo dd if=OPNsense-##.#.##-[Type]-[Architecture].img of=/dev/rdiskX bs=64k
+     sudo dd if=Reticen8-##.#.##-[Type]-[Architecture].img of=/dev/rdiskX bs=64k
 
 where r = raw device, and where X = the disk device number of your CF
 card (check Disk Utility) (ignore the warning about trailing garbage -
@@ -287,7 +287,7 @@ it's because of the digital signature)
 **Windows**
 ::
 
-     physdiskwrite -u OPNsense-##.#.##-[Type]-[Architecture].img
+     physdiskwrite -u Reticen8-##.#.##-[Type]-[Architecture].img
 
 (use v0.3 or later!)
 
@@ -304,7 +304,7 @@ first 2 to 3 seconds from powering up.
 
 .. Tip::
 
-    OPNsense devices from the `OPNsense shop <https://shop.opnsense.com/>`__ use :code:`<ESC>` to enter the bios and boot selection
+    Reticen8 devices from the `Reticen8 shop <https://shop.reticen8.com/>`__ use :code:`<ESC>` to enter the bios and boot selection
     options.
 
 .. Note::
@@ -320,25 +320,25 @@ Installation Instructions
 .. rubric:: Install Instructions
    :name: install-to-system
 
-OPNsense installation boot process allows us to run several optional configuration steps. The
+Reticen8 installation boot process allows us to run several optional configuration steps. The
 boot process was designed to always boot into the live environment, allowing us to access the
 GUI or even SSH directly. If a timeout was missed, restart the boot procedure.
 
-OPNsense Importer
+Reticen8 Importer
 -----------------
-All Full Images have the OPNsense Importer feature that offers flexibility in
+All Full Images have the Reticen8 Importer feature that offers flexibility in
 recovering failed firewalls, testing new releases without overwriting the current
 installation by running the new version in memory with the existing configuration
 or migrating configurations to new hardware installations.  Using Importer is slightly
 different between previous installs with existing configurations on disk vs new
 installations/migrations.
 
-For systems that have OPNsense installed, and the configuration intact.  Here is the process:
+For systems that have Reticen8 installed, and the configuration intact.  Here is the process:
 
 #. Boot the system with installation media
 #. Press any key when you see **“Press any key to start the configuration importer”**.
 
-   #. If you see OPNsense logo you have past the Importer and will need to reboot.
+   #. If you see Reticen8 logo you have past the Importer and will need to reboot.
 
 #. Type the device name of the existing drive that contains the configuration and press enter.
 #. If Importer is successful, the boot process will continue into the Live environment using the stored configuration on disk.
@@ -358,7 +358,7 @@ For New installations/migrations follow this process:
 #. Create a **conf** directory on the root of the USB drive
 #. Place an *unencrypted* <downloaded backup>.xml into /conf and rename the file to **config.xml** (:code:`/conf/config.xml`)
 #. Put both the Installation media and the 2nd USB drive into the system and power up / reboot.
-#. Boot the system from the OPNsense Installation media via Boot Menu or BIOS (UEFI).
+#. Boot the system from the Reticen8 Installation media via Boot Menu or BIOS (UEFI).
 #. Press aany key when you see: **“Press any key to start the configuration importer”**
 #. Type the device name of the 2nd USB Drive, e.g. `da0` or `nvd0` , and press Enter.
 
@@ -372,17 +372,17 @@ Live Environment
 ..
    Should we state the ability to manually identify network adapters before entering the live environment?
 
-.. image:: ./images/opnsense_liveenv.png
+.. image:: ./images/reticen8_liveenv.png
 
-After booting with an OPNsense Full Image (DVD, VGA, Serial), the firewall will
-be in the Live environment with and without the use of OPNsense Importer.  We
+After booting with an Reticen8 Full Image (DVD, VGA, Serial), the firewall will
+be in the Live environment with and without the use of Reticen8 Importer.  We
 can interact with the Live environment via Local Console, GUI (HTTPS), or SSH.
 
 By default, we can log into the shell using the user :code:`root` with the password
-:code:`opnsense` to operate the live environment via the local console.
+:code:`reticen8` to operate the live environment via the local console.
 
 The GUI is accessible at `https://192.168.1.1/ <https://192.168.1.1/>`__ using Username:
-:code:`root` Password: :code:`opnsense` by default (unless a previous configuration was imported).
+:code:`root` Password: :code:`reticen8` by default (unless a previous configuration was imported).
 
 Using SSH we can access the firewall at IP **192.168.1.1** .  Both the **root** and **installer**
 users are available with the password specified above.
@@ -391,22 +391,22 @@ users are available with the password specified above.
    That the installation media is read-only, which means your current live configuration will
    be lost after reboot.
 
-Continue to `OPNsense Installer`_ to install OPNsense to the local storage device.
+Continue to `Reticen8 Installer`_ to install Reticen8 to the local storage device.
 
-OPNsense Installer
+Reticen8 Installer
 ---------------------
 .. Note::
    To invoke the installer login with user **installer** and password
-   **opnsense**
+   **reticen8**
 
-After successfully booting up with the OPNsense Full Image (DVD, VGA, Serial),
+After successfully booting up with the Reticen8 Full Image (DVD, VGA, Serial),
 the firewall will be at the Live Environment's login: prompt.  To start the
-installation process, login with the user ``installer`` and password ``opnsense``.
+installation process, login with the user ``installer`` and password ``reticen8``.
 If Importer was used to import an existing configuration, the installer and root
 user password would be the root password from the imported configuration.
 
 If the installer user does not work, log in as user root and select: ``8) Shell``
-from the menu and type ``opnsense-installer``.  The ``opnsense-importer`` can also
+from the menu and type ``reticen8-installer``.  The ``reticen8-importer`` can also
 be run this way should you require to rerun the import.
 
 The installer can always be run to clone an existing system, even for Nano
@@ -464,12 +464,12 @@ By default you have to log in to enter the console.
 **Welcome message**
 ::
 
-    * * * Welcome to OPNsense [OPNsense 15.7.25 (amd64/OpenSSL) on OPNsense * * *
+    * * * Welcome to Reticen8 [Reticen8 15.7.25 (amd64/OpenSSL) on Reticen8 * * *
      
     WAN (em1)     -> v4/DHCP4: 192.168.2.100/24
     LAN (em0)     -> v4: 192.168.1.1/24
      
-    FreeBSD/10.1 (OPNsense.localdomain) (ttyv0)
+    FreeBSD/10.1 (Reticen8.localdomain) (ttyv0)
      
     login:   
 
@@ -478,7 +478,7 @@ By default you have to log in to enter the console.
 
     A user can login to the console menu with his
     credentials. The default credentials after a fresh install are username "root"
-    and password "opnsense".
+    and password "reticen8".
 
 VLANs and assigning interfaces
     If choose to do manual interface assignment or when no config file can be
@@ -492,11 +492,11 @@ LAN, WAN and optional interfaces
     interface. Type the appropriate interface name, eg. "em1" . Possible
     additional interfaces can be assigned as OPT interfaces. If you
     assigned all your interfaces you can press [ENTER] and confirm the
-    settings. OPNsense will configure your system and present the login
+    settings. Reticen8 will configure your system and present the login
     prompt when finished.
 
 Minimum installation actions
-    In case of a minimum install setup (i.e. on CF cards), OPNsense can
+    In case of a minimum install setup (i.e. on CF cards), Reticen8 can
     be run with all standard features, except for the ones that require
     disk writes, e.g. a caching proxy like Squid. Do not create a swap
     slice, but a RAM Disk instead. In the GUI enable :menuselection:`System --> Settings --> Miscellaneous --> RAM Disk Settings`
@@ -528,14 +528,14 @@ The console menu shows 13 options.
 
 Table:  *The console menu*
 
-.. rubric:: opnsense-update
-   :name: opnsense-update
+.. rubric:: reticen8-update
+   :name: reticen8-update
 
-OPNsense features a command line
-interface (CLI) tool "opnsense-update". Via menu option **8) Shell**, the user can
-get to the shell and use opnsense-update.
+Reticen8 features a command line
+interface (CLI) tool "reticen8-update". Via menu option **8) Shell**, the user can
+get to the shell and use reticen8-update.
 
-For help, type *man opnsense-update* and press [Enter].
+For help, type *man reticen8-update* and press [Enter].
 
 .. rubric:: Upgrade from console
    :name: upgrade-from-console

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<opnsense>
+<reticen8>
   <version>11.2</version>
   <lastchange/>
-  <theme>opnsense</theme>
+  <theme>reticen8</theme>
   <sysctl>
     <item>
       <descr>Disable the pf ftp proxy handler.</descr>
@@ -152,7 +152,7 @@
   </sysctl>
   <system>
     <optimization>normal</optimization>
-    <hostname>OPNsense</hostname>
+    <hostname>Reticen8</hostname>
     <domain>localdomain</domain>
     <group>
       <name>all</name>
@@ -669,7 +669,7 @@
       <vhid>1</vhid>
       <advskew>0</advskew>
       <advbase>1</advbase>
-      <password>opnsense</password>
+      <password>reticen8</password>
       <descr>VIP WANx</descr>
       <type>single</type>
       <subnet_bits>24</subnet_bits>
@@ -681,7 +681,7 @@
       <vhid>3</vhid>
       <advskew>0</advskew>
       <advbase>1</advbase>
-      <password>opnsense</password>
+      <password>reticen8</password>
       <descr>VIP LAN</descr>
       <type>single</type>
       <subnet_bits>24</subnet_bits>
@@ -696,9 +696,9 @@
     <pfsyncinterface>opt1</pfsyncinterface>
     <synchronizetoip>10.0.0.2</synchronizetoip>
     <username>root</username>
-    <password>opnsense</password>
+    <password>reticen8</password>
     <synchronizedhcpd>on</synchronizedhcpd>
     <synchronizestaticroutes>on</synchronizestaticroutes>
     <synchronizevirtualip>on</synchronizevirtualip>
   </hasync>
-</opnsense>
+</reticen8>

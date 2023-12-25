@@ -102,7 +102,7 @@ When the test service example is installed, we would expect a log line which loo
 
 ::
 
-    ....  OPNsense carp: carp demoted by 1048576 due to service disruption (services: test_service)
+    ....  Reticen8 carp: carp demoted by 1048576 due to service disruption (services: test_service)
 
 This informs the user about the amount of demotion and which services are responsible for it.
 

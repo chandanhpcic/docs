@@ -14,7 +14,7 @@ Dyndns
     "``POST``","dyndns","accounts","setItem","$uuid"
     "``POST``","dyndns","accounts","toggleItem","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `DynDNS.xml <https://github.com/opnsense/plugins/blob/master/dns/ddclient/src/opnsense/mvc/app/models/OPNsense/DynDNS/DynDNS.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `DynDNS.xml <https://github.com/reticen8/plugins/blob/master/dns/ddclient/src/reticen8/mvc/app/models/Reticen8/DynDNS/DynDNS.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -26,7 +26,7 @@ Dyndns
     "``GET``","dyndns","service","status",""
     "``POST``","dyndns","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `DynDNS.xml <https://github.com/opnsense/plugins/blob/master/dns/ddclient/src/opnsense/mvc/app/models/OPNsense/DynDNS/DynDNS.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `DynDNS.xml <https://github.com/reticen8/plugins/blob/master/dns/ddclient/src/reticen8/mvc/app/models/Reticen8/DynDNS/DynDNS.xml>`__"
 
 .. csv-table:: Resources (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -36,4 +36,4 @@ Dyndns
     "``GET``","dyndns","settings","get",""
     "``POST``","dyndns","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `DynDNS.xml <https://github.com/opnsense/plugins/blob/master/dns/ddclient/src/opnsense/mvc/app/models/OPNsense/DynDNS/DynDNS.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `DynDNS.xml <https://github.com/reticen8/plugins/blob/master/dns/ddclient/src/reticen8/mvc/app/models/Reticen8/DynDNS/DynDNS.xml>`__"

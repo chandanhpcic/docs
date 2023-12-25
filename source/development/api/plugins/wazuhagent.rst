@@ -11,7 +11,7 @@ Wazuhagent
     "``GET``","wazuhagent","service","status",""
     "``POST``","wazuhagent","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `WazuhAgent.xml <https://github.com/opnsense/plugins/blob/master/security/wazuh-agent/src/opnsense/mvc/app/models/OPNsense/WazuhAgent/WazuhAgent.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `WazuhAgent.xml <https://github.com/reticen8/plugins/blob/master/security/wazuh-agent/src/reticen8/mvc/app/models/Reticen8/WazuhAgent/WazuhAgent.xml>`__"
 
 .. csv-table:: Service (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -20,4 +20,4 @@ Wazuhagent
     "``GET``","wazuhagent","settings","get",""
     "``POST``","wazuhagent","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `WazuhAgent.xml <https://github.com/opnsense/plugins/blob/master/security/wazuh-agent/src/opnsense/mvc/app/models/OPNsense/WazuhAgent/WazuhAgent.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `WazuhAgent.xml <https://github.com/reticen8/plugins/blob/master/security/wazuh-agent/src/reticen8/mvc/app/models/Reticen8/WazuhAgent/WazuhAgent.xml>`__"

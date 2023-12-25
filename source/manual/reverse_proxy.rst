@@ -27,7 +27,7 @@ spam, web attack detection and so on.
     your own code.
 
 
-Supported Reverse Proxies in OPNsense
+Supported Reverse Proxies in Reticen8
 =====================================
 
 ========= ==========================
@@ -195,7 +195,7 @@ better than plain NAT.
     private Key of the server and a cipher without PFS_ is used. In other cases
     the connection can only be decrypted if one of the peers escrows the key.
     Firefox supports this via the environment SSLKEYLOGFILE_.
-    This is not supported by OPNsense plugins.
+    This is not supported by Reticen8 plugins.
 
 .. _SSLKEYLOGFILE: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format
 .. _PFS: https://en.wikipedia.org/wiki/Forward_secrecy

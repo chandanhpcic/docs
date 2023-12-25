@@ -84,7 +84,7 @@ Download this CA certificate and save it for later, it's needed for client setup
 System: Trust: Certificates
 ---------------------------
 
-Create a server certificate for your IPsec VPN. The lifetime of the certificate is 1 year, if it expires you have to renew the certificate on the OPNsense or your clients can't connect anymore.
+Create a server certificate for your IPsec VPN. The lifetime of the certificate is 1 year, if it expires you have to renew the certificate on the Reticen8 or your clients can't connect anymore.
 
     ==============================================  ====================================================================================================
     **Method:**                                     Create an internal Certificate
@@ -108,7 +108,7 @@ Create a server certificate for your IPsec VPN. The lifetime of the certificate 
 External DNS Records
 --------------------
 
-Your OPNsense Firewall has the example IP Subnets ``203.0.113.0/24`` and ``2001:db8:1234::/48``. The FQDN can point to any bindable IPv4 and IPv6 address in those subnets. It will be used by clients to connect to the IPsec VPN Server - and by the OPNsense to bind the local listen address.
+Your Reticen8 Firewall has the example IP Subnets ``203.0.113.0/24`` and ``2001:db8:1234::/48``. The FQDN can point to any bindable IPv4 and IPv6 address in those subnets. It will be used by clients to connect to the IPsec VPN Server - and by the Reticen8 to bind the local listen address.
 
 - Create an A-Record with your external DNS provider, for example ``vpn1.example.com in A 203.0.113.1``
 - Create an AAAA-Record, for example ``vpn1.example.com in AAAA 2001:db8:1234::1``
@@ -158,7 +158,7 @@ Since this roadwarrior configuration will use UDP encapsulation, the ESP packets
 Update your Firewall
 --------------------
 
-Update your OPNsense at least to Version 23.7.4, that's the version that introduced ``EAP id: %any`` which is used in Method 1. If you stay on a lower Version, you can only configure Method 2.
+Update your Reticen8 at least to Version 23.7.4, that's the version that introduced ``EAP id: %any`` which is used in Method 1. If you stay on a lower Version, you can only configure Method 2.
 
 
 .. Note::
@@ -167,7 +167,7 @@ Update your OPNsense at least to Version 23.7.4, that's the version that introdu
     - :ref:`Method 2 - Static IP address per roadwarrior <rw-swanctl-method2>`
 
 .. Attention::
-    - Don't create both methods on your OPNsense at the same time, it's a potential security risk.
+    - Don't create both methods on your Reticen8 at the same time, it's a potential security risk.
     - Only create **one connection** where you use ``EAP id: %any`` (Method 1). If you create multiples of these connections, any roadwarrior can connect to any of them.
 
 
@@ -181,7 +181,7 @@ Method 1 - Shared IP pool for all roadwarriors
 1.1 - VPN: IPsec: Connections: Pools
 ------------------------------------
 
-Create an IPv4 pool that all roadwarriors will share. This configuration will result in 256 usable IPv4 addresses. Please note that this is not a network, it's a pool of IP addresses that will be leased. The DNS Server(s) will be pushed as *Configuration Payload* (RFC4306 and RFC7296 3.15). In this example they represent the Unbound Server of the OPNsense.
+Create an IPv4 pool that all roadwarriors will share. This configuration will result in 256 usable IPv4 addresses. Please note that this is not a network, it's a pool of IP addresses that will be leased. The DNS Server(s) will be pushed as *Configuration Payload* (RFC4306 and RFC7296 3.15). In this example they represent the Unbound Server of the Reticen8.
 
     ==============================================  ====================================================================================================
     **Name:**                                       pool-roadwarrior-ipv4
@@ -294,7 +294,7 @@ Method 2 - Static IP address per roadwarrior
 2.1 - VPN: IPsec: Connections: Pools
 ------------------------------------
 
-Create an individual IPv4 pool for each roadwarrior. This configuration will result in 1 usable IPv4 address. The DNS Server(s) will be pushed as *Configuration Payload* (RFC4306 and RFC7296 3.15). In this example they represent the Unbound Server of the OPNsense.
+Create an individual IPv4 pool for each roadwarrior. This configuration will result in 1 usable IPv4 address. The DNS Server(s) will be pushed as *Configuration Payload* (RFC4306 and RFC7296 3.15). In this example they represent the Unbound Server of the Reticen8.
 
     ==============================================  ====================================================================================================
     **Name:**                                       pool-roadwarrior-john-ipv4
@@ -474,7 +474,7 @@ Press **+** to add a new Child, enable **advanced mode** with the toggle.
 Firewall rules, Outbound NAT and DNS
 ------------------------------------
 
-Now that you have configured split or full tunnel mode, you need rules to allow the traffic into your LAN and to the WAN (Internet). For IPv4 connection to the WAN (Internet) you need an Outbound NAT rule for IP-Masquerading. If you want the OPNsense to handle DNS, you can to configure Unbound so your roadwarriors use it as DNS server to prevent DNS leaks.
+Now that you have configured split or full tunnel mode, you need rules to allow the traffic into your LAN and to the WAN (Internet). For IPv4 connection to the WAN (Internet) you need an Outbound NAT rule for IP-Masquerading. If you want the Reticen8 to handle DNS, you can to configure Unbound so your roadwarriors use it as DNS server to prevent DNS leaks.
 
 .. Tip::
     If you have internal IPv4 services (like a mailserver) that have external IPs in their DNS A-Records, you should configure Reflection NAT. There is a tutorial in the How-To section of Network Address Translation. If you follow it, add the ``ipsec`` interface in the Port Forward rules you create.
@@ -531,7 +531,7 @@ Firewall: Rules: IPsec
 
 Here you use the aliases you created in the prior step in order to create firewall rules on the ``IPsec`` interface in order to allow traffic from the roadwarrior networks to your LAN and to the WAN (Internet).
 
-As **first** rule it's a good idea to allow ICMP for troubleshooting purposes. With that rule, roadwarriors can ping the OPNsense firewall. Please note that they can only ping those IPs that are included in the local traffic selectors of the children.
+As **first** rule it's a good idea to allow ICMP for troubleshooting purposes. With that rule, roadwarriors can ping the Reticen8 firewall. Please note that they can only ping those IPs that are included in the local traffic selectors of the children.
 
     ==============================================  ====================================================================================================
     **Action**                                      Pass
@@ -637,14 +637,14 @@ Services: Unbound DNS
     If you don't serve internal DNS records (Split DNS) or don't have an Active Directory you can skip the DNS configuration.
 
 
-For full control over DNS, you should either use Unbound on the OPNsense or the DNS servers in your own network. If you provide your roadwarriors with external DNS servers (like ``8.8.8.8``), they can't resolve your internal ressources and will send those requests to external DNS servers, thus exposing your internal DNS records. (DNS Leak)
+For full control over DNS, you should either use Unbound on the Reticen8 or the DNS servers in your own network. If you provide your roadwarriors with external DNS servers (like ``8.8.8.8``), they can't resolve your internal ressources and will send those requests to external DNS servers, thus exposing your internal DNS records. (DNS Leak)
 
 .. Attention::
     If you created a full tunnel for IPv4 only (``0.0.0.0/0`` without ``::/0``), and your roadwarriors are in IPv4+IPv6 dual stack networks, their devices will prefer the link local IPv6 DNS servers provided by SLAAC or DHCPv6 over your IPv4 VPN DNS server.
 
 **Enable** Unbound and leave the *Network Interfaces* on *All (recommended)*. Next go to *Query Forwarding* and input your *Custom forwarding* servers. For example your Samba or Microsoft Active Directory Domain Controllers.
 
-Unbound listens on port 53 UDP/TCP on all network interfaces of the Opnsense. If you followed all prior steps, access to your LAN is already permitted from the IPsec Network. You can use the IP addresses of the OPNsense in that network as target for the DNS queries.
+Unbound listens on port 53 UDP/TCP on all network interfaces of the Opnsense. If you followed all prior steps, access to your LAN is already permitted from the IPsec Network. You can use the IP addresses of the Reticen8 in that network as target for the DNS queries.
 
 In this example they are: ``192.168.1.1`` and ``2001:db8:1234:1::1``.
 
@@ -762,7 +762,7 @@ Windows/macOS NCP Secure Entry client
 -------------------------------------
 
 .. Attention::
-    This is a commercial client and needs to be licensed. It is not affiliated with Deciso B.V. or OPNsense®.
+    This is a commercial client and needs to be licensed. It is not affiliated with Reticen8 B.V. or Reticen8®.
 
 - Install the NCP Secure Entry Client
 - Save the following code as **example.ini**
@@ -899,7 +899,7 @@ Troubleshooting
 If the VPN connection doesn't establish right away there are several steps you can take to troubleshoot the connection. Here's a short summary where to start. Debugging an IPsec connection takes time, don't get discouraged if you can't solve the problem right away.
 
 - If it's your first IPsec connection, don't forget to enable IPsec and apply.
-- Use tcpdump on the OPNsense to look for incoming packets on port 500 and port 4500 when you connect your VPN client. If you can't see any, your firewall blocks them, or the remote client can't send them due to a remote firewall. There could also be a wrong IP Address the packets are sent to.
+- Use tcpdump on the Reticen8 to look for incoming packets on port 500 and port 4500 when you connect your VPN client. If you can't see any, your firewall blocks them, or the remote client can't send them due to a remote firewall. There could also be a wrong IP Address the packets are sent to.
 - If there are packets received, but no packets sent, look into the VPN log files.
 - Check /var/logs/ipsec/latest.log or :menuselection:`VPN --> IPsec --> Log File` for the connection being processed. Most of the time you can see errors in there you can search on the internet.
 - The easiest tool to troubleshoot the connection is the Android StrongSwan Client or the Windows NCP Secure Entry Client. They have powerful inbuild logging so you can check both sides of the connection. In IPsec, you need the log of the server and the client to find the true cause of a connection error.

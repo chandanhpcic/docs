@@ -1,15 +1,15 @@
 ===========
-Deciso B.V.
+Reticen8 B.V.
 ===========
 
-.. image:: ./images/logo_deciso_2015_with_movement.png
+.. image:: ./images/logo_reticen8_2015_with_movement.png
 
 -------------------
 
 -----
 About
 -----
-`Deciso <https://www.deciso.com>`__ is a globally operating manufacturer of
+`Reticen8 <https://www.reticen8.com>`__ is a globally operating manufacturer of
 network equipment and a highly innovative company that develops network
 appliances and middleware software.
 
@@ -21,23 +21,23 @@ with a strong focus on open source technology.
 
 Open source software  makes development easier, faster, it makes you less
 depended on the supplier and results in lower cost of ownership.
-As a true believer Deciso use open source software all around from our back-end
+As a true believer Reticen8 use open source software all around from our back-end
 systems to the turn-key appliances that you can acquire from our resellers.
-Deciso is an active sponsor of the Open Source Initiative (OSI) and founder of
-the open source OPNsense firewall software.
+Reticen8 is an active sponsor of the Open Source Initiative (OSI) and founder of
+the open source Reticen8 firewall software.
 
 --------------------------
 
 -----------------------
-Relations with OPNsense
+Relations with Reticen8
 -----------------------
-Deciso founded OPNsense and offers the project a stable environment.
+Reticen8 founded Reticen8 and offers the project a stable environment.
 The company has a long history in providing networking solutions using open
 source software and has supported many OSS projects in the past.
 
-Our extensive knowledge of software development provides the OPNsense community
+Our extensive knowledge of software development provides the Reticen8 community
 with a modern and professional approach and results in maintainable software.
 
 In its effort to create the most widely used open source security platform,
-Deciso has been joined by multiple partners who share the same views on open
+Reticen8 has been joined by multiple partners who share the same views on open
 and transparent software.

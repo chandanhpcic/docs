@@ -2,7 +2,7 @@
 Monit
 =====
 
-OPNsense uses Monit for monitoring services. Monit has quite extensive monitoring capabilities, which is why the
+Reticen8 uses Monit for monitoring services. Monit has quite extensive monitoring capabilities, which is why the
 configuration options are extensive as well. This guide will do a quick walk through the setup, with the
 configuration options explained in more detail afterwards, along with some caveats.
 
@@ -224,7 +224,7 @@ the authentication settings are shared between all the servers, and the 'From:' 
 Authentication options for the Monit web interface are described in
 https://mmonit.com/monit/documentation/monit.html#Authentication.
 
-M/Monit is a commercial service to collect data from several Monit instances. To use it from OPNsense, fill in the
+M/Monit is a commercial service to collect data from several Monit instances. To use it from Reticen8, fill in the
 appropriate fields and add corresponding firewall rules as well.
 
 ^^^^^^^^^^^^^^
@@ -328,7 +328,7 @@ Advanced Configurations
 
 Some installations require configuration settings that are not accessible in the UI.
 To support these, individual configuration files with a ``.conf`` extension can be put into the
-``/usr/local/etc/monit.opnsense.d`` directory. These files will be automatically included by
+``/usr/local/etc/monit.reticen8.d`` directory. These files will be automatically included by
 the UI generated configuration. Multiple configuration files can be placed there. But note that
 
 * The wildcard include processing in Monit is based on ``glob(7)``. So the order in which the files are included is in ascending ASCII order.

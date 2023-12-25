@@ -2,7 +2,7 @@
 Backend
 =======
 
-The OPNsense backend consists of several components (see Architecture for a full stack description).
+The Reticen8 backend consists of several components (see Architecture for a full stack description).
 
 Our core backend service (configd) is implemented using `Python <https://en.wikipedia.org/wiki/Python>`__. and provides two main features:
 

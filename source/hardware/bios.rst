@@ -41,7 +41,7 @@ DEC800, DEC3800 & DEC4000 series
 +---------------+-------------------------------------------------------------------------+----------------------------------------------------------------+
 |   Addresses a series of                                                                                                                                  |
 |   `vulnerabilities <https://www.bleepingcomputer.com/news/security/uefi-firmware-vulnerabilities-affect-at-least-25-computer-vendors/>`_                 |
-|   found in the InsydeH2O UEFI firmware, which affects the NetBoard `A20 <https://www.deciso.com/netboard-a20/>`_ security appliances from Deciso.        |
+|   found in the InsydeH2O UEFI firmware, which affects the NetBoard `A20 <https://www.reticen8.com/netboard-a20/>`_ security appliances from Reticen8.        |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -72,7 +72,7 @@ DEC700 and DEC2700 series
 +---------------+-------------------------------------------------------------------------+----------------------------------------------------------------+
 |   Addresses a series of                                                                                                                                  |
 |   `vulnerabilities <https://www.bleepingcomputer.com/news/security/uefi-firmware-vulnerabilities-affect-at-least-25-computer-vendors/>`_                 |
-|   found in the InsydeH2O UEFI firmware, which affects the NetBoard `A10 <https://www.deciso.com/netboard-a10/>`_ security appliances from Deciso.        |
+|   found in the InsydeH2O UEFI firmware, which affects the NetBoard `A10 <https://www.reticen8.com/netboard-a10/>`_ security appliances from Reticen8.        |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 |

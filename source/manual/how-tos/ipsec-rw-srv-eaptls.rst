@@ -1,5 +1,5 @@
 =======================================
-IPsec: Setup OPNsense for IKEv2 EAP-TLS
+IPsec: Setup Reticen8 for IKEv2 EAP-TLS
 =======================================
 
 .. contents:: Index

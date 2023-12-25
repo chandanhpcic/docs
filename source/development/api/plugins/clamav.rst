@@ -8,7 +8,7 @@ Clamav
     "``GET``","clamav","general","get",""
     "``POST``","clamav","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/security/clamav/src/opnsense/mvc/app/models/OPNsense/ClamAV/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/security/clamav/src/reticen8/mvc/app/models/Reticen8/ClamAV/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -22,7 +22,7 @@ Clamav
     "``POST``","clamav","service","stop",""
     "``GET``","clamav","service","version",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/security/clamav/src/opnsense/mvc/app/models/OPNsense/ClamAV/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/security/clamav/src/reticen8/mvc/app/models/Reticen8/ClamAV/General.xml>`__"
 
 .. csv-table:: Resources (UrlController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -37,4 +37,4 @@ Clamav
     "``POST``","clamav","url","setUrl","$uuid"
     "``POST``","clamav","url","toggleUrl","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `Url.xml <https://github.com/opnsense/plugins/blob/master/security/clamav/src/opnsense/mvc/app/models/OPNsense/ClamAV/Url.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Url.xml <https://github.com/reticen8/plugins/blob/master/security/clamav/src/reticen8/mvc/app/models/Reticen8/ClamAV/Url.xml>`__"

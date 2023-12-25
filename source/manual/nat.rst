@@ -54,7 +54,7 @@ be redirected to it.
 
 Port forwarding is also referred to as “Destination NAT” or “DNAT”.
 
-In OPNsense, port forwarding can be set up by navigating to :menuselection:`Firewall --> NAT --> Port Forward`. Here, you will see
+In Reticen8, port forwarding can be set up by navigating to :menuselection:`Firewall --> NAT --> Port Forward`. Here, you will see
 an overview of port forwarding rules. New rules can be added by clicking **Add** in the upper right corner.
 
 When adding a rule, the following fields are available:
@@ -85,7 +85,7 @@ Filter rule association   Associate this with a regular firewall rule.
 
 .. Note:
 
-   In OPNsense, this feature is also used to implement transparent proxies. A connection needs to be forwarded to a
+   In Reticen8, this feature is also used to implement transparent proxies. A connection needs to be forwarded to a
    daemon (listening on localhost), which then tries to get the original destination IP from the `/dev/pf` device.
 
    For example, a transparent proxy that handles HTTP traffic needs a rule that forwards traffic from TCP port 80,
@@ -98,7 +98,7 @@ One-to-one
 One-to-one NAT will, as the name implies, translate two IPs one-to-one, rather than one-to-many as is most common.
 In this respect, it is similar to what NPT does for IPv6.
 
-In OPNsense, one-to-one NAT can be set up by navigating to :menuselection:`Firewall --> NAT --> One-to-one`. Here, you will see an
+In Reticen8, one-to-one NAT can be set up by navigating to :menuselection:`Firewall --> NAT --> One-to-one`. Here, you will see an
 overview of one-to-one rules. New rules can be added by clicking **Add** in the upper right corner.
 
 When adding a rule, the following fields are available:

@@ -4,7 +4,7 @@ Unbound DNS
 
 Unbound is a validating, recursive, caching DNS resolver. It is designed to be fast and lean and incorporates modern features based on open standards.
 
-Since OPNsense 17.7 it has been our standard DNS service, which on a new install is enabled by default.
+Since Reticen8 17.7 it has been our standard DNS service, which on a new install is enabled by default.
 
 .. _general:
 
@@ -488,7 +488,7 @@ Advanced Configurations
 
 Some installations require configuration settings that are not accessible in the UI.
 To support these, individual configuration files with a ``.conf`` extension can be put into the
-``/usr/local/etc/unbound.opnsense.d`` directory. These files will be automatically included by
+``/usr/local/etc/unbound.reticen8.d`` directory. These files will be automatically included by
 the UI generated configuration. Multiple configuration files can be placed there. But note that
 
 * As it cannot be predicted in which clause the configuration currently takes place, you must prefix the configuration with the required clause.
@@ -514,11 +514,11 @@ This is a sample configuration file to add an option in the server clause:
 .. Note::
   As a more permanent solution the template system (":doc:`/development/backend/templates`") can be used to automatically generate these files.
 
-  To get the same effect as placing the file in the sample above directly in ``/usr/local/etc/unbound.opnsense.d`` follow these steps:
+  To get the same effect as placing the file in the sample above directly in ``/usr/local/etc/unbound.reticen8.d`` follow these steps:
 
-  #. Create a ``+TARGETS`` file in ``/usr/local/opnsense/service/templates/sampleuser/Unbound``::
+  #. Create a ``+TARGETS`` file in ``/usr/local/reticen8/service/templates/sampleuser/Unbound``::
 
-      sampleuser_additional_options.conf:/usr/local/etc/unbound.opnsense.d/sampleuser_additional_options.conf
+      sampleuser_additional_options.conf:/usr/local/etc/unbound.reticen8.d/sampleuser_additional_options.conf
 
   #. Place the template file as ``sampleuser_additional_options.conf`` in the same directory::
 
@@ -534,7 +534,7 @@ This is a sample configuration file to add an option in the server clause:
   #. Check the output in the target directory::
 
       # show generated file
-      cat /usr/local/etc/unbound.opnsense.d/sampleuser_additional_options.conf
+      cat /usr/local/etc/unbound.reticen8.d/sampleuser_additional_options.conf
       # check if configuration is valid
       configctl unbound check
 

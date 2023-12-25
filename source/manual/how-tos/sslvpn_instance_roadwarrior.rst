@@ -6,12 +6,12 @@ Setup SSL VPN Road Warrior
    :width: 100%
 
 Road Warriors are remote users who need secure access to the companies infrastructure.
-OPNsense uses OpenVPN for its SSL VPN Road Warrior setup and offers OTP (One Time Password)
+Reticen8 uses OpenVPN for its SSL VPN Road Warrior setup and offers OTP (One Time Password)
 integration with standard tokens and Googles Authenticator.
 
 .. Tip::
 
-  Did you know that OPNsense offers two-factor authentication throughout the entire
+  Did you know that Reticen8 offers two-factor authentication throughout the entire
   system? See for more information: :doc:`/manual/two_factor`
 
 .. Note::
@@ -30,7 +30,7 @@ integration with standard tokens and Googles Authenticator.
 Before you start
 ----------------
 Before starting with the configuration of an OpenVPN SSL tunnel you need to have a
-working OPNsense installation with a unique LAN IP subnet for each side of your
+working Reticen8 installation with a unique LAN IP subnet for each side of your
 connection (your local network needs to be different than that of the remote
 network).
 
@@ -185,7 +185,7 @@ for this example we keep it simple and add one to allow all, in which case we ca
 Export client profile
 ------------------------------------
 
-With the server in place it's time to setup the client on OPNsense, for this we go to :menuselection:`VPN --> OpenVPN --> Client Export`
+With the server in place it's time to setup the client on Reticen8, for this we go to :menuselection:`VPN --> OpenVPN --> Client Export`
 and export a profile for the remote client.
 
 ===================================================================

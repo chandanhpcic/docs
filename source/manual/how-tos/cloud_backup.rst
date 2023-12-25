@@ -16,7 +16,7 @@ digital cloud.
 it is intended for self hosting. You can download it freely from their
 `website <https://nextcloud.com/>`__ and install it on your webserver.
 
-The OPNsense configuration can be stored as a backup file in XML format,
+The Reticen8 configuration can be stored as a backup file in XML format,
 to your PC on an USB stick or remotely in the digital Google Drive
 cloud.
 
@@ -25,7 +25,7 @@ Free online storage
 -------------------
 
 Because Google officially offers a free storage of 15 GB and nearly
-unlimited traffic, a remote backup of an OPNsense configuration file is
+unlimited traffic, a remote backup of an Reticen8 configuration file is
 free of charge, the only thing you need is an account at Google
 (`Google Drive Signup <https://accounts.google.com/signup?hl=en>`__) .
 
@@ -44,13 +44,13 @@ library (for example, a file upload is just a HTTP PUT call).
 -------------
 Remote backup
 -------------
-In OPNsense\ :sup:`1` you can **backup** your configuration directly and
+In Reticen8\ :sup:`1` you can **backup** your configuration directly and
 automatically to **Google Drive** and **Nextcloud**, using the new backup
 feature. Every backup to **Google Drive** will be encrypted with the same
 algorithm used in the manual backup so it's quite easy to restore to a new
 installed machine.
 
-After set-up, the backup feature will run a first backup of the OPNsense
+After set-up, the backup feature will run a first backup of the Reticen8
 configuration file. Then, if the configuration is subsequently changed, a new backup will be run once per day early in the morning.
 
 You may consider specifying additional Cronjobs when more frequent remote backups or remote backups at different times of the day would be required.
@@ -74,7 +74,7 @@ First you need to set up a project in the Google developer console.
 
     .. image:: ./images/google_manage_resources.png
 
--  On the next page enter a name for your project, for example "OPNsense Backups". You may leave it as the default name ("My Project #####"), as it does not really matter. Then click on the **CREATE** button:
+-  On the next page enter a name for your project, for example "Reticen8 Backups". You may leave it as the default name ("My Project #####"), as it does not really matter. Then click on the **CREATE** button:
 
     .. image:: ./images/google_create_project.png
 
@@ -82,7 +82,7 @@ First you need to set up a project in the Google developer console.
 
     .. image:: ./images/google_drive_api.png
 
--  On the next page, make sure your project name (for example "OPNsense Backups") is displayed at the top of the page - if not, select it in the dropdown. Then click the **ENABLE** button:
+-  On the next page, make sure your project name (for example "Reticen8 Backups") is displayed at the top of the page - if not, select it in the dropdown. Then click the **ENABLE** button:
 
     .. image:: ./images/google_drive_enable.png
 
@@ -94,7 +94,7 @@ First you need to set up a project in the Google developer console.
 
     .. image:: ./images/google_create_service_account_button.png
 
--  Enter an account name (for example "OPNsense") and a description (for example "OPNsense Backups service account"), then click the **CREATE** button:
+-  Enter an account name (for example "Reticen8") and a description (for example "Reticen8 Backups service account"), then click the **CREATE** button:
 
     .. image:: ./images/google_create_service_account.png
 
@@ -135,7 +135,7 @@ The next thing is to create a folder in Google Drive and share it to the service
 
     .. image:: ./images/google_drive_new.png
 
--  Enter a name for the folder (for example "OPNsense Backups", it doesn't really matter) and then click the **CREATE** button:
+-  Enter a name for the folder (for example "Reticen8 Backups", it doesn't really matter) and then click the **CREATE** button:
 
     .. image:: ./images/google_drive_folder.png
 
@@ -152,12 +152,12 @@ The next thing is to create a folder in Google Drive and share it to the service
     .. image:: ./images/google_drive_folder_id.png
 
 
-3. Set up the account in OPNsense
+3. Set up the account in Reticen8
 =================================
 
-Now put it all together in OPNsense.
+Now put it all together in Reticen8.
 
--  Log into your OPNsense firewall and go to the backup feature. It is located at :menuselection:`System --> Configuration --> Backups`.
+-  Log into your Reticen8 firewall and go to the backup feature. It is located at :menuselection:`System --> Configuration --> Backups`.
 -  Scroll down to the Google Drive section and and enter the following values:
 
     ===============================  ===================================================================================
@@ -165,13 +165,13 @@ Now put it all together in OPNsense.
     Email Address                    enter the Unique ID number of the service account you created
     P12 key                          click the **Choose file** button and select the P12 key you saved earlier to upload it
     Folder ID                        paste the Google Drive folder ID that you copied earlier
-    Prefix hostname to backupfile    checked or unchecked as desired (useful if you have multiple OPNsenses)
+    Prefix hostname to backupfile    checked or unchecked as desired (useful if you have multiple Reticen8s)
     Backup Count                     enter the number of backups you want to keep
     Password                         choose a strong password to encrypt the backup
     Confirm                          re-enter the strong password
     ===============================  ===================================================================================
 
--  Then click the **Setup/Test Google Drive** button. OPNsense will automatically save and test your settings and you will receive either an error (connectivity issues) or a message saying "Backup successful" with a list of files currently in the backup.
+-  Then click the **Setup/Test Google Drive** button. Reticen8 will automatically save and test your settings and you will receive either an error (connectivity issues) or a message saying "Backup successful" with a list of files currently in the backup.
 
 The moment the feature is enabled, it will do a daily compare of the last file in backup and the current configuration and create a new backup when something has changed.
 
@@ -199,7 +199,7 @@ Switch to security and generate a App password.
 
 Copy and store the generated password.
 
-3. Step Connect OPNsense with Nextcloud
+3. Step Connect Reticen8 with Nextcloud
 =======================================
 
 .. image:: images/nextcloud_config.png
@@ -237,4 +237,4 @@ If you open it, you will see at lease a single backed up configuration file:
 .. rubric:: Notes
    :name: notes
 
-:sup:`1` As of OPNsense version 15.1.8.2 (25 March 2015)
+:sup:`1` As of Reticen8 version 15.1.8.2 (25 March 2015)

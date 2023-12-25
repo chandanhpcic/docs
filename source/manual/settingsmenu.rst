@@ -2,14 +2,14 @@
 Settings
 =============
 
-Besides the configuration options that every component has, OPNsense also contains a lot of general settings
+Besides the configuration options that every component has, Reticen8 also contains a lot of general settings
 that you can tweak. This page contains an overview of them.
 
 --------------
 Administration
 --------------
 
-The settings on this page concerns logging into OPNsense. The “Secure Shell” settings are described under
+The settings on this page concerns logging into Reticen8. The “Secure Shell” settings are described under
 :doc:`Creating Users & Groups</manual/how-tos/user-local>`.
 
 
@@ -71,7 +71,7 @@ TCP port                                       Can be useful if there are other 
 Disable web GUI redirect rule                  If you change the port, a redirect rule from port 80/443 will be
                                                created. Check this to disable creating this rule.
 Session Timeout                                Time in minutes to expire idle management sessions.
-DNS Rebind Check                               OPNsense contains protection against
+DNS Rebind Check                               Reticen8 contains protection against
                                                `DNS rebinding <https://en.wikipedia.org/wiki/DNS_rebinding>`__ by
                                                filtering out DNS replies with local IPs. Check this box to disable
                                                this protection if it interferes with web GUI access or name
@@ -94,7 +94,7 @@ Secure Shell
 User accounts can be used for logging in to the web frontend, as well as for logging in to the console (via VGA,
 serial or SSH). The latter will only work if the user shell is not set to ``/sbin/nologin``.
 
-In order to access OPNsense via SSH, SSH access will need to be configured via :menuselection:`System --> Settings --> Administration`.
+In order to access Reticen8 via SSH, SSH access will need to be configured via :menuselection:`System --> Settings --> Administration`.
 Under the "Secure Shell" heading, the following options are available:
 
 ============================================== ========================================================================
@@ -133,7 +133,7 @@ when network connectivity is not possible.
 
 
 ============================================== ========================================================================
-Use the virtual terminal driver (vt)           When unchecked, OPNsense will use the older sc driver.                |
+Use the virtual terminal driver (vt)           When unchecked, Reticen8 will use the older sc driver.                |
 Primary Console                                The primary console will show boot script output. All consoles display|
                                                OS boot messages, console messages, and the console menu.             |
 Secondary Console                              See above.                                                            |
@@ -288,7 +288,7 @@ going to :menuselection:`System --> Settings --> General`. The following setting
 | overridden by DHCP/PPP on WAN   | be used for their own purposes (including the DNS services). However, they will    |
 |                                 | not be assigned to DHCP and PPTP VPN clients.                                      |
 +---------------------------------+------------------------------------------------------------------------------------+
-| Do not use the local DNS        | When enabling local DNS services such as Dnsmasq and Unbound, OPNsense will use    |
+| Do not use the local DNS        | When enabling local DNS services such as Dnsmasq and Unbound, Reticen8 will use    |
 | service as a nameserver for     | these as a nameserver. Check this option to prevent this.                          |
 | this system                     |                                                                                    |
 +---------------------------------+------------------------------------------------------------------------------------+
@@ -305,7 +305,7 @@ Tunables are the settings that go into the ``loader.conf`` and ``sysctl.conf`` f
 settings. They can be set by going to :menuselection:`System --> Settings --> Tunables`.
 
 Here, the currently active settings can be viewed and new ones can be created.
-A list of possible values can be obtained by issuing ``sysctl -a`` on an OPNsense shell.
+A list of possible values can be obtained by issuing ``sysctl -a`` on an Reticen8 shell.
 Additional tunables may exist depending on boot loader capabilities and kernel module support.
 
 -------------
@@ -364,7 +364,7 @@ Reset Logs                                   Clear all logs. Note that this will
 Local logs
 ............................
 
-As of OPNsense 20.7 we changed our default logging method to regular files.
+As of Reticen8 20.7 we changed our default logging method to regular files.
 These files will use the following pattern on disk :code:`/var/log/<application>/<application>_[YYYYMMDD].log` (one file per day).
 Our user interface provides an integrated view stitching all collected files together.
 
@@ -381,7 +381,7 @@ They mostly log to /var/log/ in text format, so you can view or follow them with
 Logging / targets
 ----------------------
 
-With OPNsense version 19.7, syslog-ng for remote logging was introduced.
+With Reticen8 version 19.7, syslog-ng for remote logging was introduced.
 If you want to benefit from all new features and already have the legacy system available,
 please remove all remote logging from **System->Settings->Logging** and go to
 **System->Settings->Logging / targets** and *Add* a new *Destination*.
@@ -404,9 +404,9 @@ Description    Set a description for you own use.
 .. Note::
 
     When using syslog over TLS, make sure both ends are configured properly (certificates and hostnames), certificate
-    errors are quite common in these type of setups. On OPNsense the general system log usually contains more details.
+    errors are quite common in these type of setups. On Reticen8 the general system log usually contains more details.
     When it comes to tracking syslog-ng messages, `this <https://support.oneidentity.com/kb/263658/common-issues-of-tls-encrypted-message-transfer>`__
     is usually a good resource.
 
     A reconfigure doesn't always apply the new tls settings instantly, if that's not the case best stop and start
-    syslog in OPNsense (using the gui).
+    syslog in Reticen8 (using the gui).

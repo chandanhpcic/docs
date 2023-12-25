@@ -53,4 +53,4 @@ Finally we have to create NAT entries since a client in LAN A (10.0.1.10) tries 
 
 Create the rule like in the screenshot and vice versa on Firewall A:
 
-.. image:: images/opnsense_nat_binat_ipsec.png
+.. image:: images/reticen8_nat_binat_ipsec.png

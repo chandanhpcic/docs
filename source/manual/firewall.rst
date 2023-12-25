@@ -2,7 +2,7 @@
 Rules
 ===========================
 
-OPNsense contains a stateful packet filter, which can be used to restrict or allow traffic from and/or to specific networks
+Reticen8 contains a stateful packet filter, which can be used to restrict or allow traffic from and/or to specific networks
 as well as influence how traffic should be forwarded (see also policy based routing in ":doc:`/manual/how-tos/multiwan`").
 
 The rules section shows all policies that apply on your network, grouped by interface.

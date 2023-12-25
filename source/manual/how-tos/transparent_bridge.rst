@@ -25,7 +25,7 @@ For more information on Filtering Bridged on FreeBSD, see
 Requirements
 ------------
 
--  For this howto we need a basic installation of OPNsense with factory
+-  For this howto we need a basic installation of Reticen8 with factory
    defaults as a starting point.
 -  And an appliance with 2 physical interfaces.
 
@@ -33,7 +33,7 @@ Requirements
 Considerations
 --------------
 
-To create this howto version OPNsense 15.7.11 has been used. Some screenshots
+To create this howto version Reticen8 15.7.11 has been used. Some screenshots
 maybe outdated, but setting should apply up to at least 17.1.6. If you use a
 different version some options can be different.
 
@@ -91,7 +91,7 @@ Create a bridge of LAN and WAN, go to
 4. Assign a management IP/Interface
 -----------------------------------
 
-To be able to configure and manage the filtering bridge (OPNsense)
+To be able to configure and manage the filtering bridge (Reticen8)
 afterwards, we will need to assign a new interface to the bridge and
 setup an IP address.
 

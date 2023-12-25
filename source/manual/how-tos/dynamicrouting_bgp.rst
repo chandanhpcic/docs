@@ -3,7 +3,7 @@ Dynamic Routing: BGP
 ====================
 
 .. Note::
-    Since OPNsense version 20.7 the frr package was updated to version 7,
+    Since Reticen8 version 20.7 the frr package was updated to version 7,
     which requires an eBGP outbound policy by default. The requirement was
     disabled but it is strongly advised to use a prefix-list and filter 
     your networks to your outbound neighbors.

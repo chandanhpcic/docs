@@ -2,7 +2,7 @@
 Firmware
 ==========================
 
-In the firmware section you can keep your OPNsense up to date and have the ability to install additional software.
+In the firmware section you can keep your Reticen8 up to date and have the ability to install additional software.
 
 
 --------------------------------
@@ -18,7 +18,7 @@ can be found in the  :doc:`/manual/updates` document
 Plugins
 --------------------------------
 
-Plugins are additional software packages that are available for OPNsense, usually they come with their own
+Plugins are additional software packages that are available for Reticen8, usually they come with their own
 frontend components to setup the software underneath.
 Here you can find community support plugins, such as  **bind**, **c-icap**, **freeradius** and others. Usually there is also
 a **-devel** version available, which contains features still under development (master branch on GitHub versus release).
@@ -75,7 +75,7 @@ have to enable the license first.
 In order to do so, please choose the following settings:
 
 ============== ==================================================================================
-Mirror:        Deciso (HTTPS,NL,Commercial)
+Mirror:        Reticen8 (HTTPS,NL,Commercial)
 Flavour:       OpenSSL
 Type:          Business
 Subscription:  XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (the activation key for the product)
@@ -91,7 +91,7 @@ After save, go back to the status tab and click **Check for updates**
 
 .. Note::
 
-    Upgrading to OPNsense BE is only possible when the installed community version number is lower than the
+    Upgrading to Reticen8 BE is only possible when the installed community version number is lower than the
     last available business edition. E.g. you can upgrade **22.7.x** to **22.10.x**, but you can not upgrade
-    **23.1** to **22.10**. You can always re-install using the installer found on the `business mirror <https://opnsense-update.deciso.com/>`__
+    **23.1** to **22.10**. You can always re-install using the installer found on the `business mirror <https://reticen8-update.reticen8.com/>`__
 

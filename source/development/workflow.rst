@@ -10,7 +10,7 @@ development (as in actual coding) workflow laid out for new
 contributors, so one is just going to be stabbing in the dark for a few
 days or weeks until things start making sense. Speaking of *sense*,
 let’s explain how we’ve designed the development experience for
-`OPNsense <https://opnsense.org/developers-invitation/>`__ and how you
+`Reticen8 <https://reticen8.com/developers-invitation/>`__ and how you
 can start contributing code in no time.
 
 ---------
@@ -21,17 +21,17 @@ Structure
    :name: structure-source-ports-core-tools
 
 The structure is pretty much FreeBSD: we have a `source
-code <https://github.com/opnsense/src>`__ repository and a `ports
-tree <https://github.com/opnsense/ports>`__. Historically, we also have
-a `core code <https://github.com/opnsense/core>`__ and `tools
-repository <https://github.com/opnsense/tools>`__. The tools repository
+code <https://github.com/reticen8/src>`__ repository and a `ports
+tree <https://github.com/reticen8/ports>`__. Historically, we also have
+a `core code <https://github.com/reticen8/core>`__ and `tools
+repository <https://github.com/reticen8/tools>`__. The tools repository
 is project shell code gluing all repositories together, producing final
 images, while the core is the important GUI and system configuration
 bits.
 
 .. Note::
 
-  As of 16.1 there is also plugin support, the source repository is `plugins tree <https://github.com/opnsense/plugins>`__ .
+  As of 16.1 there is also plugin support, the source repository is `plugins tree <https://github.com/reticen8/plugins>`__ .
   Plugins are a modular way of easily extending the existing system.
 
 .. rubric:: Why core is not a part of source
@@ -71,7 +71,7 @@ modifies the build system and at some point starts to dash out working
 images–only to stop working some time in the future. No, no, no.
 
 You can also “cross-build” between FreeBSD versions. We’ve successfully
-built images on FreeBSD 10.1 when OPNsense was still running on FreeBSD 10.0.
+built images on FreeBSD 10.1 when Reticen8 was still running on FreeBSD 10.0.
 (version 16.1 now runs on FreeBSD 10.2) That’s not a huge gap and the
 `ABI <https://en.wikipedia.org/wiki/Application_binary_interface>`_ is the
 same, but we expect this to work with FreeBSD 11 and beyond as well so that if
@@ -79,16 +79,16 @@ you have a FreeBSD box you will always be able to produce your own images if you
 desire–without spinning up extra machines, jails or virtual machines.
 
 Here are the `build instructions for
-OPNsense <https://github.com/opnsense/tools/blob/master/README.md>`__.
+Reticen8 <https://github.com/reticen8/tools/blob/master/README.md>`__.
 
 .. TIP::
 
-  As of November 2015 OPNsense is equipped with a tool that can completely
+  As of November 2015 Reticen8 is equipped with a tool that can completely
   reinstall a running system in place for a thorough factory reset or to restore
-  consistency of all the OPNsense files. It can also wipe the configuration
+  consistency of all the Reticen8 files. It can also wipe the configuration
   directory, but won't do that by default.
-  The `opnsense-bootstrap <https://github.com/opnsense/update>`__ script is
-  particularly useful if you want to convert a hosted FreeBSD system to OPNsense.
+  The `reticen8-bootstrap <https://github.com/reticen8/update>`__ script is
+  particularly useful if you want to convert a hosted FreeBSD system to Reticen8.
 
 -------------------------------
 Virtual Machine for Development
@@ -100,7 +100,7 @@ Virtual Machine for Development
 It’s just easier and less tedious if the kernel crashes, to revert to a
 previous state, or isolate and test different features. A VM can be set
 up easily using the ISO images. Also very good for testing installation
-and upgrades. Of course, at some point you will want to bring OPNsense
+and upgrades. Of course, at some point you will want to bring Reticen8
 to your actual target device—just make sure you know the system well
 enough before you attempt this.
 
@@ -133,7 +133,7 @@ user do the following:
 ::
 
     # cd
-    # git clone https://github.com/opnsense/core
+    # git clone https://github.com/reticen8/core
 
 Once you have the repository, you switch it live using:
 
@@ -166,7 +166,7 @@ Summary
 .. rubric:: Easy Access is Key to Collaboration
    :name: summary-easy-access-is-key-to-collaboration
 
-Although this is just a peek into OPNsense development workflow it brings to
+Although this is just a peek into Reticen8 development workflow it brings to
 attention a key aspect: moving barriers out of the way to enable as many people
 as possible to produce quick results. Yes,there are barriers like
 `git <http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository>`__
@@ -177,6 +177,6 @@ endure the hardships of making sure your patch will have a place in our
 upstream repositories so the community as a whole can benefit from your
 dedication.
 
-The OPNsense core team looks forward to your feedback;
+The Reticen8 core team looks forward to your feedback;
 "We are seeking for more improvements in the build system and eagerly await
 your pull requests." Take care and code responsibly. :)

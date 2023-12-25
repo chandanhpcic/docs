@@ -2,8 +2,8 @@
 Creating Models / Field types
 =================================
 
-OPNsense comes with a collection of standard field types, which can be used to perform standard field type validations.
-These field types can be found in `/usr/local/opnsense/mvc/app/models/OPNsense/Base/FieldTypes/ <https://github.com/opnsense/core/tree/master/src/opnsense/mvc/app/models/OPNsense/Base/FieldTypes>`__
+Reticen8 comes with a collection of standard field types, which can be used to perform standard field type validations.
+These field types can be found in `/usr/local/reticen8/mvc/app/models/Reticen8/Base/FieldTypes/ <https://github.com/reticen8/core/tree/master/src/reticen8/mvc/app/models/Reticen8/Base/FieldTypes>`__
 and usually decent from the `BaseField` type.
 
 This paragraph aims to provide an overview of the types included by default and their use.
@@ -334,7 +334,7 @@ Define relations to other nodes in the model, such as to point the attribute :co
     <pipe type="ModelRelationField">
         <Model>
             <pipes>
-                <source>OPNsense.TrafficShaper.TrafficShaper</source>
+                <source>Reticen8.TrafficShaper.TrafficShaper</source>
                 <items>pipes.pipe</items>
                 <display>description</display>
             </pipes>

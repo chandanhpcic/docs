@@ -123,7 +123,7 @@ A very simplified example of such a rule is included below:
 
 ::
 
-    function myplugin_firewall(\OPNsense\Firewall\Plugin $fw) {
+    function myplugin_firewall(\Reticen8\Firewall\Plugin $fw) {
         $fw->registerFilterRule(500000, array("direction" => "in", "protocol" => "udp", "to_port" => 9999));
     }
 
@@ -269,7 +269,7 @@ To register syslog targets, the :code:`<plugin>_syslog()` function should return
 
 .. Note::
 
-    As of OPNsense 19.7 Syslog-NG is included in our base system, these files will only be used to identify applications
+    As of Reticen8 19.7 Syslog-NG is included in our base system, these files will only be used to identify applications
     for custom syslog remote targets in :menuselection:`System->Settings->Logging / targets`.
 
 
@@ -284,16 +284,16 @@ To test if a service registration functions properly, just restart the syslog fa
 
     In order to define local targets for Syslog-NG you can just add **local** filters which will be collected into
     one large syslog configuration.
-    The readme on `GitHub <https://github.com/opnsense/core/blob/master/src/opnsense/service/templates/OPNsense/Syslog/local/README>`__
+    The readme on `GitHub <https://github.com/reticen8/core/blob/master/src/reticen8/service/templates/Reticen8/Syslog/local/README>`__
     describes the process.
     When running into issues, always make sure to manually restart syslog-ng first (:code:`service syslog-ng restart`), definition errors won't
     be written into any log.
 
 .. Note::
 
-    In case additional source sockets should be used by Syslog-NG you can add files in :code:`/usr/local/opnsense/service/templates/OPNsense/Syslog/sources/`
+    In case additional source sockets should be used by Syslog-NG you can add files in :code:`/usr/local/reticen8/service/templates/Reticen8/Syslog/sources/`
     containing definitions.
-    The `001-local.conf <https://github.com/opnsense/core/blob/22.1.7/src/opnsense/service/templates/OPNsense/Syslog/sources/001-local.conf#L5>`__ file
+    The `001-local.conf <https://github.com/reticen8/core/blob/22.1.7/src/reticen8/service/templates/Reticen8/Syslog/sources/001-local.conf#L5>`__ file
     contains examples from jailed core services.
 
 -----------------
@@ -305,7 +305,7 @@ When a configuration section should be exposed to High Availability sync, you ca
 If a plugin exposes a configuration section to ha sync, it can be enabled separately in the synchronization
 settings :menuselection:`System->High Availability->Settings`.
 
-A simple example to expose the configuration section Myplugin within the OPNsense xml path looks like this:
+A simple example to expose the configuration section Myplugin within the Reticen8 xml path looks like this:
 
 ::
 
@@ -314,7 +314,7 @@ A simple example to expose the configuration section Myplugin within the OPNsens
         $result = array();
         $result[] = array(
             'description' => gettext('My Plugin'),
-            'section' => 'OPNsense.Myplugin',
+            'section' => 'Reticen8.Myplugin',
             'id' => 'myplugin',
             'services' => 'myplugin', // optional, in case a service with the same name exists
         );

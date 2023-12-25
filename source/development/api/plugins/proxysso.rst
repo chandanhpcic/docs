@@ -18,4 +18,4 @@ Proxysso
     "``GET``","proxysso","settings","get",""
     "``POST``","proxysso","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `ProxySSO.xml <https://github.com/opnsense/plugins/blob/master/www/web-proxy-sso/src/opnsense/mvc/app/models/OPNsense/ProxySSO/ProxySSO.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `ProxySSO.xml <https://github.com/reticen8/plugins/blob/master/www/web-proxy-sso/src/reticen8/mvc/app/models/Reticen8/ProxySSO/ProxySSO.xml>`__"

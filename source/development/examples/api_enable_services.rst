@@ -2,7 +2,7 @@
 API enable standard services
 =============================
 
-OPNsense contains a simple wrapper which handles standard service actions like starting and stopping services.
+Reticen8 contains a simple wrapper which handles standard service actions like starting and stopping services.
 For this example, we assume the HelloWorld example is created and the model exists.
 
 Prerequisites
@@ -17,7 +17,7 @@ Configd actions
 
 
 Since the example didn't contain a service, we're going to extend the configd template first.
-Edit :code:`/usr/local/opnsense/service/conf/actions.d/actions_helloworld.conf` and expand with the following sections:
+Edit :code:`/usr/local/reticen8/service/conf/actions.d/actions_helloworld.conf` and expand with the following sections:
 
 ::
 
@@ -75,14 +75,14 @@ Next we change the existing controller to use :code:`ApiMutableServiceController
 The :code:`testAction` used in the HelloWorld example is left out to avoid confusion.
 
 .. code-block:: php
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/HelloWorld/Api/ServiceController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/HelloWorld/Api/ServiceController.php
 
-    use OPNsense\Base\ApiMutableServiceControllerBase;
+    use Reticen8\Base\ApiMutableServiceControllerBase;
 
     class ServiceController extends ApiMutableServiceControllerBase
     {
-        protected static $internalServiceClass = '\OPNsense\HelloWorld\HelloWorld';
-        protected static $internalServiceTemplate = 'OPNsense/HelloWorld';
+        protected static $internalServiceClass = '\Reticen8\HelloWorld\HelloWorld';
+        protected static $internalServiceTemplate = 'Reticen8/HelloWorld';
         protected static $internalServiceEnabled = 'general.enabled';
         protected static $internalServiceName = 'helloworld';
 
@@ -98,7 +98,7 @@ The  service above defines the following static variables:
 * $internalServiceClass
     * reference the model class, which is used to determine if this service is enabled (links the model to the service)
 * $internalServiceTemplate
-    * before starting the service it will call configd to generate configuration data, in this case it would execute the equivalent of :code:`configctl template reload OPNsense/HelloWorld` on the console
+    * before starting the service it will call configd to generate configuration data, in this case it would execute the equivalent of :code:`configctl template reload Reticen8/HelloWorld` on the console
 * $internalServiceEnabled
     * Which section of the model contains a boolean defining if the service is enabled (general.enabled)
 * $internalServiceName

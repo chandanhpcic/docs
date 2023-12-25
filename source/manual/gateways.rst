@@ -7,15 +7,15 @@ Gateways
    :desctable:
 
    blockdiag {
-      OPNsense [shape="cisco.firewall", label=""];
+      Reticen8 [shape="cisco.firewall", label=""];
       internet [shape="cloud"];
       private_net [shape="cloud", label="private net"];
       Gateway1 [shape="cisco.router", label=""];
       Gateway2 [shape="cisco.router", label=""];
       Gateway3 [shape="cisco.router", label=""];
-      OPNsense -> Gateway1 -> internet;
-      OPNsense -> Gateway2 -> internet [style = dotted];
-      OPNsense -> Gateway3 -> private_net;
+      Reticen8 -> Gateway1 -> internet;
+      Reticen8 -> Gateway2 -> internet [style = dotted];
+      Reticen8 -> Gateway3 -> private_net;
 
    }
 

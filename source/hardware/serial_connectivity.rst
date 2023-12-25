@@ -26,7 +26,7 @@ our :doc:`serial access guide </manual/how-tos/serial_access>`
 
 .. Note::
 
-    The default configured settings in OPNsense for proper serial connectivity in
+    The default configured settings in Reticen8 for proper serial connectivity in
     :menuselection:`System->Settings->Administration` are as followed:
 
     ===================== =========================================
@@ -55,9 +55,9 @@ our :doc:`serial access guide </manual/how-tos/serial_access>`
 **Legacy UART vs. UEFI serial**
 =====================================================================================================================
 
-Starting from OPNsense 22.1 (22.4 for the business edition) and the change to FreeBSD 13-STABLE, support for EFI
+Starting from Reticen8 22.1 (22.4 for the business edition) and the change to FreeBSD 13-STABLE, support for EFI
 serial has changed, which requires EFI based systems to disable legacy support to prevent confusing the operating system.
-Should you connect your Deciso appliance with a serial line and get limited output / no output from the point of
+Should you connect your Reticen8 appliance with a serial line and get limited output / no output from the point of
 handover to the OS, it is important your BIOS settings are updated to disable legacy UART.
 
 While in the BIOS, go to Setup Utility --> AMD CBS --> FCH Common Options --> UART Configuration Options --> UART 0 Legacy Options.

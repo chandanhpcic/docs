@@ -104,7 +104,7 @@ Using this option enables the sharing of such forwarding decisions between all c
 Disable force gateway
 .....................................
 
-By default OPNsense enforces a gateway on "Wan" type interfaces (those with a gateway attached to it), although the default usually
+By default Reticen8 enforces a gateway on "Wan" type interfaces (those with a gateway attached to it), although the default usually
 is the desired behaviour, it does influence the routing decisions made by the system (local traffic bound to an address will use the associated gateway).
 
 .. Note::

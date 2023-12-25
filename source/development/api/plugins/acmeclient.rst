@@ -15,7 +15,7 @@ Acmeclient
     "``POST``","acmeclient","accounts","toggle","$uuid,$enabled=null"
     "``POST``","acmeclient","accounts","update","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/opnsense/plugins/blob/master/security/acme-client/src/opnsense/mvc/app/models/OPNsense/AcmeClient/AcmeClient.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/reticen8/plugins/blob/master/security/acme-client/src/reticen8/mvc/app/models/Reticen8/AcmeClient/AcmeClient.xml>`__"
 
 .. csv-table:: Resources (ActionsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -34,7 +34,7 @@ Acmeclient
     "``POST``","acmeclient","actions","toggle","$uuid,$enabled=null"
     "``POST``","acmeclient","actions","update","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/opnsense/plugins/blob/master/security/acme-client/src/opnsense/mvc/app/models/OPNsense/AcmeClient/AcmeClient.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/reticen8/plugins/blob/master/security/acme-client/src/reticen8/mvc/app/models/Reticen8/AcmeClient/AcmeClient.xml>`__"
 
 .. csv-table:: Resources (CertificatesController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -54,7 +54,7 @@ Acmeclient
     "``POST``","acmeclient","certificates","toggle","$uuid,$enabled=null"
     "``POST``","acmeclient","certificates","update","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/opnsense/plugins/blob/master/security/acme-client/src/opnsense/mvc/app/models/OPNsense/AcmeClient/AcmeClient.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/reticen8/plugins/blob/master/security/acme-client/src/reticen8/mvc/app/models/Reticen8/AcmeClient/AcmeClient.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -80,7 +80,7 @@ Acmeclient
     "``GET``","acmeclient","settings","getGcloudPluginStatus",""
     "``POST``","acmeclient","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/opnsense/plugins/blob/master/security/acme-client/src/opnsense/mvc/app/models/OPNsense/AcmeClient/AcmeClient.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/reticen8/plugins/blob/master/security/acme-client/src/reticen8/mvc/app/models/Reticen8/AcmeClient/AcmeClient.xml>`__"
 
 .. csv-table:: Resources (ValidationsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -95,4 +95,4 @@ Acmeclient
     "``POST``","acmeclient","validations","toggle","$uuid,$enabled=null"
     "``POST``","acmeclient","validations","update","$uuid"
 
-    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/opnsense/plugins/blob/master/security/acme-client/src/opnsense/mvc/app/models/OPNsense/AcmeClient/AcmeClient.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `AcmeClient.xml <https://github.com/reticen8/plugins/blob/master/security/acme-client/src/reticen8/mvc/app/models/Reticen8/AcmeClient/AcmeClient.xml>`__"

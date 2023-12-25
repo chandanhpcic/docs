@@ -1,12 +1,12 @@
 =====================================
 High Availability
 =====================================
-OPNsense utilizes the Common Address Redundancy Protocol or CARP for hardware
+Reticen8 utilizes the Common Address Redundancy Protocol or CARP for hardware
 failover. Two or more firewalls can be configured as a failover group. If one
 interface fails  on the primary or the primary goes offline entirely, the
 secondary becomes active.
 
-Utilizing this powerful feature of OPNsense creates a fully redundant firewall
+Utilizing this powerful feature of Reticen8 creates a fully redundant firewall
 with automatic and seamless fail-over. While switching to the backup network
 connections will stay active with minimal interruption for the users.
 
@@ -97,7 +97,7 @@ at the same time, assuming no technical issues exist between both.
 Configuration synchronization
 .................................
 
-OPNsense includes configuration synchronization capabilities. Configuration
+Reticen8 includes configuration synchronization capabilities. Configuration
 changes made on the primary system are synchronized on demand to the secondary firewall.
 
 

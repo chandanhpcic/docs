@@ -15,7 +15,7 @@ Using grids  module & plugin
 Goal
 ---------
 
-The purpose of this example is to show how to build data grids in OPNsense, using the various components
+The purpose of this example is to show how to build data grids in Reticen8, using the various components
 within our framework.
 
 If you haven't read the HelloWorld example yet, we advise you to start there. This example assumes you already know
@@ -33,12 +33,12 @@ file containing the actual model definition.
 
 .. code-block:: php
     :linenos:
-    :caption: /usr/local/opnsense/mvc/app/models/OPNsense/GridExample/GridExample.php
+    :caption: /usr/local/reticen8/mvc/app/models/Reticen8/GridExample/GridExample.php
 
     <?php
-    namespace OPNsense\GridExample;
+    namespace Reticen8\GridExample;
 
-    use OPNsense\Base\BaseModel;
+    use Reticen8\Base\BaseModel;
 
     class GridExample extends BaseModel
     {
@@ -48,12 +48,12 @@ file containing the actual model definition.
 .. code-block:: xml
     :emphasize-lines: 8, 9, 13
     :linenos:
-    :caption: /usr/local/opnsense/mvc/app/models/OPNsense/GridExample/GridExample.xml
+    :caption: /usr/local/reticen8/mvc/app/models/Reticen8/GridExample/GridExample.xml
 
     <model>
-        <mount>//OPNsense/GridExample</mount>
+        <mount>//Reticen8/GridExample</mount>
         <description>
-            the OPNsense "GridExample" application
+            the Reticen8 "GridExample" application
         </description>
         <items>
             <addresses>
@@ -73,7 +73,7 @@ file containing the actual model definition.
 
 Note the :code:`ArrayField` type in the XML, this is a special field type for nested items in automatically includes an internal uuid for easy referencing when written to disk.
 Both other field types are also used in the HelloWorld example earlier. All
-the preinstalled types can be found in our field type directory on `GitHub <https://github.com/opnsense/core/tree/master/src/opnsense/mvc/app/models/OPNsense/Base/FieldTypes>`__.
+the preinstalled types can be found in our field type directory on `GitHub <https://github.com/reticen8/core/tree/master/src/reticen8/mvc/app/models/Reticen8/Base/FieldTypes>`__.
 
 
 ----------------------------
@@ -94,16 +94,16 @@ Our example below uses the base methods to link all operations we need and link 
 
 .. code-block:: php
     :linenos:
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/GridExample/Api/SettingsController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/GridExample/Api/SettingsController.php
 
-    namespace OPNsense\GridExample\Api;
+    namespace Reticen8\GridExample\Api;
 
-    use \OPNsense\Base\ApiMutableModelControllerBase;
+    use \Reticen8\Base\ApiMutableModelControllerBase;
 
     class SettingsController extends ApiMutableModelControllerBase
     {
         protected static $internalModelName = 'gridexample';
-        protected static $internalModelClass = 'OPNsense\GridExample\GridExample';
+        protected static $internalModelClass = 'Reticen8\GridExample\GridExample';
 
         public function searchItemAction()
         {
@@ -163,7 +163,7 @@ Below a simple layout, the id fields reference the actual data points to map (:c
 what the api endpoint returns.
 
 .. code-block:: xml
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/GridExample/forms/dialogAddress.xml
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/GridExample/forms/dialogAddress.xml
 
     <form>
         <field>
@@ -203,7 +203,7 @@ the caption of the dialog.
 
 
 .. code-block:: html
-    :caption: /usr/local/opnsense/mvc/app/views/OPNsense/GridExample/index.volt
+    :caption: /usr/local/reticen8/mvc/app/views/Reticen8/GridExample/index.volt
     :linenos:
     :emphasize-lines: 3, 14, 37
 
@@ -255,15 +255,15 @@ defined earlier.
 
 .. code-block:: php
     :linenos:
-    :caption: /usr/local/opnsense/mvc/app/controllers/OPNsense/GridExample/IndexController.php
+    :caption: /usr/local/reticen8/mvc/app/controllers/Reticen8/GridExample/IndexController.php
 
-    namespace OPNsense\GridExample;
+    namespace Reticen8\GridExample;
 
-    class IndexController extends \OPNsense\Base\IndexController
+    class IndexController extends \Reticen8\Base\IndexController
     {
         public function indexAction()
         {
-            $this->view->pick('OPNsense/GridExample/index');
+            $this->view->pick('Reticen8/GridExample/index');
             $this->view->formDialogAddress = $this->getForm("dialogAddress");
         }
     }
@@ -273,7 +273,7 @@ defined earlier.
 Menu and ACL
 --------------------------------------
 
-The sample package on `GitHub <https://github.com/opnsense/plugins/tree/master/devel/grid_example>`__ also contains a
+The sample package on `GitHub <https://github.com/reticen8/plugins/tree/master/devel/grid_example>`__ also contains a
 menu definition (xml) and ACL (xml), which are similar to the ones explained in the hello world example.
 
 

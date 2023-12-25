@@ -2,7 +2,7 @@
 Wireless
 ==============================
 
-Although wireless networks are supported in OPNsense, result may vary.
+Although wireless networks are supported in Reticen8, result may vary.
 
 In our experience most companies use separate access points to facilitate WiFi, for reasons as supported technology
 (nowadays most devices expect wireless-ac, which isn't supported), stable hardware and often the location where

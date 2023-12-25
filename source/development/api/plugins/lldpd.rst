@@ -8,7 +8,7 @@ Lldpd
     "``GET``","lldpd","general","get",""
     "``POST``","lldpd","general","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/lldpd/src/opnsense/mvc/app/models/OPNsense/Lldpd/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/lldpd/src/reticen8/mvc/app/models/Reticen8/Lldpd/General.xml>`__"
 
 .. csv-table:: Service (ServiceController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -21,4 +21,4 @@ Lldpd
     "``GET``","lldpd","service","status",""
     "``POST``","lldpd","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/net-mgmt/lldpd/src/opnsense/mvc/app/models/OPNsense/Lldpd/General.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/reticen8/plugins/blob/master/net-mgmt/lldpd/src/reticen8/mvc/app/models/Reticen8/Lldpd/General.xml>`__"

@@ -1,10 +1,10 @@
 ==================================================
-Setup Self-Signed Certificate Chains with OPNsense
+Setup Self-Signed Certificate Chains with Reticen8
 ==================================================
 
 
 This how-to describes the process of creating **self-signed certificate chains**
-with the help of OPNsense which has all the tools available to do so.
+with the help of Reticen8 which has all the tools available to do so.
 
 Chains give the possibility to verify certificates where a single one is nothing
 more than that, a single certificate.
@@ -48,7 +48,7 @@ Please backup before you proceed.
 
 
 ---------------------------
-Create a Chain for OPNsense
+Create a Chain for Reticen8
 ---------------------------
 
 
@@ -71,7 +71,7 @@ Some entries in the form are showed here. Click on the thumbnail for a picture.
 When you are done save the form, the CA is now generated.
 
 ====================== =================================== ========================================
- **Descriptive name**   opnsense-ca                         *Choose a name that makes sense to you*
+ **Descriptive name**   reticen8-ca                         *Choose a name that makes sense to you*
  **Method**             create an internal ca               *Main purpose of CA*
  **Common Name**        internal-ca                         *Default is fine, change to liking*
  **Lifetime(days)**     3650                                *Longer is also no problem for CA*
@@ -90,14 +90,14 @@ The Intermediate
 ----------------
 
 Time to create the second CA, which is an **intermediate CA**. This certificate will be signed
-by the root CA we just created. In return it will sign the sever certificate for OPNsense.
+by the root CA we just created. In return it will sign the sever certificate for Reticen8.
 
 Go to **Trust/Authorities**
 
 Have a look at the form, create an intermediate CA and save it.
 
 ====================== =================================== ========================================
- **Descriptive name**   opnsense-ca-intermediate            *Choose a name that makes sense to you*
+ **Descriptive name**   reticen8-ca-intermediate            *Choose a name that makes sense to you*
  **Method**             create an intermediate ca           *Main purpose of CA*
  **Common Name**        intermediate-ca                     *Default is fine, change to liking*
 ====================== =================================== ========================================
@@ -116,9 +116,9 @@ Go to **Trust/Certificates**
 Have a look at the next form and notice the common name, create a server certificate and save it.
 
 ====================== =================================== ========================================
- **Descriptive name**   opnsense-ca-intermediate            *Choose a name that makes sense to you*
+ **Descriptive name**   reticen8-ca-intermediate            *Choose a name that makes sense to you*
  **Method**             create a server certificate         *Main purpose of certificate*
- **SAN**                opnsense.localdomain                *This should reflect the FQDN see Tip*
+ **SAN**                reticen8.localdomain                *This should reflect the FQDN see Tip*
 ====================== =================================== ========================================
 
 .. image:: images/webgui-cert.png
@@ -141,7 +141,7 @@ Now we need to start using the chain:
   * Go back to the dashboard & open **System/Settings/Administration**
   * Set **SSL-Certificate** to use the new server certificate.
 
-Open your browser and open the OPNsense/webgui page. You should be presented with a certificate that is
+Open your browser and open the Reticen8/webgui page. You should be presented with a certificate that is
 verified by your intermediate CA.
 
 
@@ -150,7 +150,7 @@ A Chain for Your Local Nextcloud Server
 ---------------------------------------
 
 
-The local chain for Nextcloud server so we can use OPNsense backup to Nextcloud.
+The local chain for Nextcloud server so we can use Reticen8 backup to Nextcloud.
 
 Go ahead and create a new chain **CA -- intermediate CA -- server cert.**.
 
@@ -222,7 +222,7 @@ We need to install this certificate and key to our Nextcloud server, two ways ar
    openssl pkcs12 -in nextcloud-crt.p12 -clcerts -nokeys -out nextcloud.pem
    cp nextcloud.pem nextcloud.crt
 
--  * Or download the key and certificate separately from OPNsense.
+-  * Or download the key and certificate separately from Reticen8.
    * If SSH is used '-i private-key' is not needed.
 
 ::
@@ -277,7 +277,7 @@ Once done go through the following points:
    openssl pkcs12 -in server.p12 -clcerts -nokeys -out server.pem
    cp server.pem server.crt
 
--  * Or download the key and certificate separately from OPNsense.
+-  * Or download the key and certificate separately from Reticen8.
    * If SSH is used '-i private-key' is not needed.
 
 ::

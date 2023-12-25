@@ -17,7 +17,7 @@ Types and their usage
 
 .. _Firewall_VIP_Types:
 
-OPNsense supports different types of virtual addresses all with their specific purposes, which we will explain below.
+Reticen8 supports different types of virtual addresses all with their specific purposes, which we will explain below.
 
 
 ..................

@@ -3,22 +3,22 @@
 ===========================================================================================
 
 
-The OPNsense business edition successfully transitions to this 22.4 release
+The Reticen8 business edition successfully transitions to this 22.4 release
 with a new API-capable VLAN interface including QinQ support, FreeBSD 13 and
 many other improvements.  Please make sure to read the migration notes before
 upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
 
 --------------------------------------------------------------------------
 22.4.3 (August 04, 2022)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 22.1.10 community version
+This business release is based on the Reticen8 22.1.10 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -46,11 +46,11 @@ Here are the full patch notes:
 * mvc: IntegerFieldType: fix for negative numbers (contributed by xbb)
 * mvc: fix two regressions in BaseField for Phalcon 5
 * mvc: fix rowCount when all is selected in searchRecordsetBase()
-* plugins: os-ddclient 1.8 `[1] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__ 
+* plugins: os-ddclient 1.8 `[1] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__ 
 * plugins: os-firewall 1.2 fixes internal backup restore
-* plugins: os-postfix 1.23 `[2] <https://github.com/opnsense/plugins/blob/stable/22.1/mail/postfix/pkg-descr>`__ 
+* plugins: os-postfix 1.23 `[2] <https://github.com/reticen8/plugins/blob/stable/22.1/mail/postfix/pkg-descr>`__ 
 * plugins: os-stunnel 1.0.5 adds intermediates to server chain (contributed by Johnny S. Lee)
-* plugins: os-telegraf 1.12.5 `[3] <https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.5 `[3] <https://github.com/reticen8/plugins/blob/stable/22.1/net-mgmt/telegraf/pkg-descr>`__ 
 * ports: nss 3.80 `[4] <https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_80.html>`__ 
 * ports: py-vici 5.9.3
 * ports: python 3.9.13 `[5] <https://docs.python.org/release/3.9.13/whatsnew/changelog.html>`__ 
@@ -72,7 +72,7 @@ A hotfix release was issued as 22.4.3_2:
 22.4.2 (July 07, 2022)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 22.1.9 community version
+This business release is based on the Reticen8 22.1.9 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -84,7 +84,7 @@ Here are the full patch notes:
 * system: dpinger support for IPv6 aliases
 * system: support 1500000 baudrate selection for ARM
 * system: non-functional cleanups for upcoming move to PHP 8
-* system: fix firmware command shortcut in opnsense-shell utility
+* system: fix firmware command shortcut in reticen8-shell utility
 * system: if no temperature sysctls are exposed do nothing
 * interfaces: add unique constraint for tag+if on VLANs
 * firewall: bring back missing toggle button in aliases
@@ -107,13 +107,13 @@ Here are the full patch notes:
 * unbound: zero_ttl is no longer a valid statistic (contributed by David Mora)
 * mvc: distinct between HTTP errors 401 and 403 during authentication
 * mvc: call microtime(true) only once during config save (contributed by csbyte)
-* plugins: os-acme-client 3.11 `[1] <https://github.com/opnsense/plugins/blob/stable/22.1/security/acme-client/pkg-descr>`__ 
-* plugins: os-ddclient 1.7 `[2] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__ 
+* plugins: os-acme-client 3.11 `[1] <https://github.com/reticen8/plugins/blob/stable/22.1/security/acme-client/pkg-descr>`__ 
+* plugins: os-ddclient 1.7 `[2] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__ 
 * plugins: os-debug 1.5 fixes deprecated xdebug syntax
-* plugins: os-frr 1.29 `[3] <https://github.com/opnsense/plugins/blob/stable/22.1/net/frr/pkg-descr>`__ 
-* plugins: os-nginx 1.28 `[4] <https://github.com/opnsense/plugins/blob/stable/22.1/www/nginx/pkg-descr>`__ 
-* plugins: os-postfix 1.22 `[5] <https://github.com/opnsense/plugins/blob/stable/22.1/mail/postfix/pkg-descr>`__ 
-* plugins: os-wireguard 1.11 `[6] <https://github.com/opnsense/plugins/blob/stable/22.1/net/wireguard/pkg-descr>`__ 
+* plugins: os-frr 1.29 `[3] <https://github.com/reticen8/plugins/blob/stable/22.1/net/frr/pkg-descr>`__ 
+* plugins: os-nginx 1.28 `[4] <https://github.com/reticen8/plugins/blob/stable/22.1/www/nginx/pkg-descr>`__ 
+* plugins: os-postfix 1.22 `[5] <https://github.com/reticen8/plugins/blob/stable/22.1/mail/postfix/pkg-descr>`__ 
+* plugins: os-wireguard 1.11 `[6] <https://github.com/reticen8/plugins/blob/stable/22.1/net/wireguard/pkg-descr>`__ 
 * src: pf: fix memory leaks in nvlist usage
 * src: pf: stop resolving hosts as dns that use ":" modifier
 * src: e1000: Increase rx_buffer_size to 32b
@@ -138,7 +138,7 @@ Here are the full patch notes:
 22.4.1 (June 07, 2022)
 --------------------------------------------------------------------------
 
-This business release is based on the OPNsense 22.1.7 community version
+This business release is based on the Reticen8 22.1.7 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -146,7 +146,7 @@ Here are the full patch notes:
 * system: set up all DNS system routes from system_resolvconf_generate()
 * system: tunables without hierarchy are just "environment" variables
 * system: use PHP random_bytes() builtin (contributed by oittaa)
-* system: support cd9660 file system in opnsense-importer
+* system: support cd9660 file system in reticen8-importer
 * system: prevent gateway monitoring from entering a "filter reload" loop
 * system: only restore missing or zero size ACL files
 * reporting: add ACPI and ARM temperature support to health data
@@ -184,16 +184,16 @@ Here are the full patch notes:
 * mvc: fix two regressions and deprecate __items
 * plugins: os-OPNBEcore 1.0.2 cleans up LDAP sync task
 * plugins: os-OPNProxy 1.0.2 fixes newline issue in template
-* plugins: os-OPNcentral 1.5 `[1] <https://docs.opnsense.org/vendor/deciso/opncentral.html?highlight=opncentral#multi-tenancy-using-host-groups>`__ 
-* plugins: os-acme-client 3.10 `[2] <https://github.com/opnsense/plugins/blob/stable/22.1/security/acme-client/pkg-descr>`__ 
-* plugins: os-bind 1.23 `[3] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/bind/pkg-descr>`__ 
-* plugins: os-chrony 1.5 `[4] <https://github.com/opnsense/plugins/blob/stable/22.1/net/chrony/pkg-descr>`__ 
-* plugins: os-ddclient 1.5 `[5] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.12 `[6] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/dnscrypt-proxy/pkg-descr>`__ 
-* plugins: os-frr 1.28 `[7] <https://github.com/opnsense/plugins/blob/stable/22.1/net/frr/pkg-descr>`__ 
+* plugins: os-OPNcentral 1.5 `[1] <https://docs.reticen8.com/vendor/reticen8/opncentral.html?highlight=opncentral#multi-tenancy-using-host-groups>`__ 
+* plugins: os-acme-client 3.10 `[2] <https://github.com/reticen8/plugins/blob/stable/22.1/security/acme-client/pkg-descr>`__ 
+* plugins: os-bind 1.23 `[3] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/bind/pkg-descr>`__ 
+* plugins: os-chrony 1.5 `[4] <https://github.com/reticen8/plugins/blob/stable/22.1/net/chrony/pkg-descr>`__ 
+* plugins: os-ddclient 1.5 `[5] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.12 `[6] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-frr 1.28 `[7] <https://github.com/reticen8/plugins/blob/stable/22.1/net/frr/pkg-descr>`__ 
 * plugins: os-relayd 2.7 adds listen address and port range to virtual servers
-* plugins: os-zabbix-agent 1.12 `[8] <https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/zabbix-agent/pkg-descr>`__ 
-* plugins: os-zabbix-proxy 1.8 `[9] <https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/zabbix-proxy/pkg-descr>`__ 
+* plugins: os-zabbix-agent 1.12 `[8] <https://github.com/reticen8/plugins/blob/stable/22.1/net-mgmt/zabbix-agent/pkg-descr>`__ 
+* plugins: os-zabbix-proxy 1.8 `[9] <https://github.com/reticen8/plugins/blob/stable/22.1/net-mgmt/zabbix-proxy/pkg-descr>`__ 
 * src: tcp: rewind erroneous RTO only while performing RTO retransmissions
 * src: bnxt: Allow bnxt interfaces to use VLANs
 * src: rc: use _pidcmd to determine pid for protect
@@ -215,17 +215,17 @@ Here are the full patch notes:
 22.4 (April 26, 2022)
 --------------------------------------------------------------------------
 
-The OPNsense business edition successfully transitions to this 22.4 release
+The Reticen8 business edition successfully transitions to this 22.4 release
 with a new API-capable VLAN interface including QinQ support, FreeBSD 13 and
 many other improvements.  Please make sure to read the migration notes before
 upgrading.
 
-Download link is as follows.  An installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for
+Download link is as follows.  An installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for
 the images can be found below as well.
 
-https://downloads.opnsense.com/
+https://downloads.reticen8.com/
 
-This business release is based on the OPNsense 22.1.4 community version
+This business release is based on the Reticen8 22.1.4 community version
 with additional reliability improvements.
 
 Here are the full patch notes:
@@ -236,7 +236,7 @@ Here are the full patch notes:
 * system: sync recovery utility contents with FreeBSD 13
 * system: add severity to syslog output and allow to filter for it
 * system: create latest.log links for easier log consumption
-* system: added opnsense-log utility to inspect logs on the console
+* system: added reticen8-log utility to inspect logs on the console
 * system: removed circular logging support
 * system: background all cron backend command invokes
 * system: unified cron start between legacy and MVC components
@@ -380,17 +380,17 @@ Here are the full patch notes:
 * firmware: implement cross-ABI reinstall of all packages for future use
 * firmware: improve the connectivity audit
 * firmware: independently check for available upgrade sets
-* firmware: opnsense-code: support "-z" snapshot mode
-* firmware: opnsense-revert: support "-z" snapshot mode
-* firmware: opnsense-update: exclude /boot/efi permission reset from base set extract
-* firmware: opnsense-update: support version print for sets
-* firmware: opnsense-version: support reading lock files operated by opnsense-update
+* firmware: reticen8-code: support "-z" snapshot mode
+* firmware: reticen8-revert: support "-z" snapshot mode
+* firmware: reticen8-update: exclude /boot/efi permission reset from base set extract
+* firmware: reticen8-update: support version print for sets
+* firmware: reticen8-version: support reading lock files operated by reticen8-update
 * firmware: patch version / date header in consistently for backend scripts
 * firmware: removed obsolete business repository fingerprints and added 22.4 fingerprint
 * firmware: return product info for status endpoint even when no firmware check was done
 * firmware: revoke the 21.10 fingerprint
 * firmware: separate the "needs_reboot" and "upgrade_needs_reboot" check flags
-* firmware: use opnsense-update for version info in update checks
+* firmware: use reticen8-update for version info in update checks
 * firmware: use isolated directory for database update check
 * firmware: cross-version check was not using correct information
 * firmware: cross-version update should indicate base/kernel reinstall
@@ -420,13 +420,13 @@ Here are the full patch notes:
 * openvpn: stop removing name server-related files never written
 * unbound: disable do-not-query-localhost on local address server use
 * unbound: update DNS with hostname-only static entries (contributed by Gareth Owen)
-* update: opnsense-bootstrap: -z snapshot mode
-* update: opnsense-bootstrap: improved type detection
-* update: opnsense-code: -r for repository removal
-* update: opnsense-fetch: emit error message of failed download
-* update: opnsense-update: handle kernel debug directory like /boot/kernel
-* update: opnsense-update: removed "firmware-upgrade" file support
-* update: opnsense-verify: synced shared code with FreeBSD 13
+* update: reticen8-bootstrap: -z snapshot mode
+* update: reticen8-bootstrap: improved type detection
+* update: reticen8-code: -r for repository removal
+* update: reticen8-fetch: emit error message of failed download
+* update: reticen8-update: handle kernel debug directory like /boot/kernel
+* update: reticen8-update: removed "firmware-upgrade" file support
+* update: reticen8-verify: synced shared code with FreeBSD 13
 * web proxy: fix a typo in extended logging parser (contributed by kulikov-a)
 * backend: consolidate configctl utility into one location and add manual page
 * backend: unify use of configctl utility
@@ -444,25 +444,25 @@ Here are the full patch notes:
 * ui: sidebar 2nd submenu view fix (contributed by Team Rebellion)
 * ui: universal striping adjustment for MVC components (contributed by kulikov-a)
 * ui: omit total entries display for log grids
-* plugins: os-OPNProxy 1.0.1 `[2] <https://docs.opnsense.org/vendor/deciso/opnproxy.html#authentication-options>`__ 
-* plugins: os-bind 1.22 `[3] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/bind/pkg-descr>`__ 
-* plugins: os-ddclient 1.4 `[4] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__  as an eventual replacement for os-dyndns
-* plugins: os-dnscrypt-proxy 1.11 `[5] <https://github.com/opnsense/plugins/blob/stable/22.1/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-OPNProxy 1.0.1 `[2] <https://docs.reticen8.com/vendor/reticen8/opnproxy.html#authentication-options>`__ 
+* plugins: os-bind 1.22 `[3] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/bind/pkg-descr>`__ 
+* plugins: os-ddclient 1.4 `[4] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/ddclient/pkg-descr>`__  as an eventual replacement for os-dyndns
+* plugins: os-dnscrypt-proxy 1.11 `[5] <https://github.com/reticen8/plugins/blob/stable/22.1/dns/dnscrypt-proxy/pkg-descr>`__ 
 * plugins: os-dyndns adds local copy of get_dyndns_ip()
 * plugins: os-dyndns menu compatibility with os-ddclient
-* plugins: os-freeradius 1.9.19 `[6] <https://github.com/opnsense/plugins/blob/stable/22.1/net/freeradius/pkg-descr>`__ 
-* plugins: os-frr 1.27 `[7] <https://github.com/opnsense/plugins/blob/stable/22.1/net/frr/pkg-descr>`__ 
-* plugins: os-haproxy 3.10 `[8] <https://github.com/opnsense/plugins/blob/stable/22.1/net/haproxy/pkg-descr>`__ 
-* plugins: os-mdns-repeater 1.1 `[9] <https://github.com/opnsense/plugins/blob/stable/22.1/net/mdns-repeater/pkg-descr>`__ 
-* plugins: os-nginx 1.26 `[10] <https://github.com/opnsense/plugins/blob/stable/22.1/www/nginx/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.19 `[6] <https://github.com/reticen8/plugins/blob/stable/22.1/net/freeradius/pkg-descr>`__ 
+* plugins: os-frr 1.27 `[7] <https://github.com/reticen8/plugins/blob/stable/22.1/net/frr/pkg-descr>`__ 
+* plugins: os-haproxy 3.10 `[8] <https://github.com/reticen8/plugins/blob/stable/22.1/net/haproxy/pkg-descr>`__ 
+* plugins: os-mdns-repeater 1.1 `[9] <https://github.com/reticen8/plugins/blob/stable/22.1/net/mdns-repeater/pkg-descr>`__ 
+* plugins: os-nginx 1.26 `[10] <https://github.com/reticen8/plugins/blob/stable/22.1/www/nginx/pkg-descr>`__ 
 * plugins: os-rfc2136 adds local copy of get_dyndns_ip()
-* plugins: os-rspamd 1.12 `[11] <https://github.com/opnsense/plugins/blob/stable/22.1/mail/rspamd/pkg-descr>`__ 
+* plugins: os-rspamd 1.12 `[11] <https://github.com/reticen8/plugins/blob/stable/22.1/mail/rspamd/pkg-descr>`__ 
 * plugins: os-stunnel 1.0.4 fix connect format for IPv6 (contributed by Johnny S. Lee)
 * plugins: os-theme-cicada 1.29
 * plugins: os-theme-vicuna 1.41
 * plugins: os-wol adds cron support for wake action (contributed by digitalshow)
-* plugins: os-zabbix-agent 1.11 `[12] <https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/zabbix-agent/pkg-descr>`__ 
-* plugins: os-zabbix-proxy 1.7 `[13] <https://github.com/opnsense/plugins/blob/stable/22.1/net-mgmt/zabbix-proxy/pkg-descr>`__ 
+* plugins: os-zabbix-agent 1.11 `[12] <https://github.com/reticen8/plugins/blob/stable/22.1/net-mgmt/zabbix-agent/pkg-descr>`__ 
+* plugins: os-zabbix-proxy 1.7 `[13] <https://github.com/reticen8/plugins/blob/stable/22.1/net-mgmt/zabbix-proxy/pkg-descr>`__ 
 * src: FreeBSD 13-STABLE as of 4ee9fbcd853
 * src: migrated to LUA boot loader (contributed by Kyle Evans)
 * src: revert upstream permission change for /root directory
@@ -515,7 +515,7 @@ A hotfix release was issued as 22.4_2:
 Known issues and limitations:
 
 * This release contains a new major operating system version and should be carried out with the necessary care.  Despite extended test coverage changes made by FreeBSD may still affect operation without our knowledge.  Except for ZFS boot environments rollbacks between major operating system versions are extremely fragile and a reinstall of an older version should be attempted in the worst case.  For more information please consult the FreeBSD 13.0 release notes `[43] <https://www.freebsd.org/releases/13.0R/relnotes/>`__ .
-* IPsec hash and cipher removals in FreeBSD 13 can affect existing setups as insecure cryptographic options have been removed upstream.  If you are using MD5, Blowfish, DES, 3DES, or CAST128 in your phase 2 please move to more secure settings prior to the upgrade.  Note that phase 1 settings are unaffected, but insecure settings should still be avoided.  For more information see the FreeBSD commit in question `[44] <https://github.com/opnsense/src/commit/16aabb761c0a>`__ .
+* IPsec hash and cipher removals in FreeBSD 13 can affect existing setups as insecure cryptographic options have been removed upstream.  If you are using MD5, Blowfish, DES, 3DES, or CAST128 in your phase 2 please move to more secure settings prior to the upgrade.  Note that phase 1 settings are unaffected, but insecure settings should still be avoided.  For more information see the FreeBSD commit in question `[44] <https://github.com/reticen8/src/commit/16aabb761c0a>`__ .
 * The Realtek vendor driver is no longer bundled with the updated FreeBSD kernel.  If unsure whether FreeBSD 13 supports your Realtek NIC please install the os-realtek-re plugin prior to upgrading to retain operability of your NICs.
 * MAC spoofing now only pertains to the configured interface and not the VLAN siblings or parent interface.  This can introduce unwanted configuration due to previous side effects in the code.  Make sure to assign and set the spoofed MAC for all interfaces that require a spoofed MAC or simply spoof the MAC on the parent and leave the VLAN sibling settings empty to let them follow the parent MAC automatically.  If in doubt the parent interface can be set into promiscuous mode now to allow for mixed MAC address use across VLANs too.
 * Media and hardware offload settings are no longer shown for non-parent interfaces and need to be set individually on the parent interface to take effect.  This can introduce unwanted configuration due to previous side effects in the code.  If the parent interface was not previously assigned please assign it to reapply the required settings.
@@ -546,8 +546,8 @@ The public key for the 22.4 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-business-22.4-OpenSSL-dvd-amd64.iso.bz2) = df1ccf00677249fcbe237244016cf5cd9e1a9c0cf998cfa45a579f51e0e97844
-    # SHA256 (OPNsense-business-22.4-OpenSSL-nano-amd64.img.bz2) = 1e9532ff8efcb1c89b9c71f4a3ccf59233078eab64fbfcd06ba2838b5c1e9484
-    # SHA256 (OPNsense-business-22.4-OpenSSL-serial-amd64.img.bz2) = dd4506d3c8a0ad7153153f862cfc88d6503554b1575fb7c4866036bcebde3a33
-    # SHA256 (OPNsense-business-22.4-OpenSSL-vga-amd64.img.bz2) = 88065b0e7fa514867df8e4438626f25c7278b75af91842242aacf4c9ece21531
+    # SHA256 (Reticen8-business-22.4-OpenSSL-dvd-amd64.iso.bz2) = df1ccf00677249fcbe237244016cf5cd9e1a9c0cf998cfa45a579f51e0e97844
+    # SHA256 (Reticen8-business-22.4-OpenSSL-nano-amd64.img.bz2) = 1e9532ff8efcb1c89b9c71f4a3ccf59233078eab64fbfcd06ba2838b5c1e9484
+    # SHA256 (Reticen8-business-22.4-OpenSSL-serial-amd64.img.bz2) = dd4506d3c8a0ad7153153f862cfc88d6503554b1575fb7c4866036bcebde3a33
+    # SHA256 (Reticen8-business-22.4-OpenSSL-vga-amd64.img.bz2) = 88065b0e7fa514867df8e4438626f25c7278b75af91842242aacf4c9ece21531
 

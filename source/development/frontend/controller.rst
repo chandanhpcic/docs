@@ -12,7 +12,7 @@ every request that gets processed you should inherit from our base
 classes to ensure basic functionality such as authorisation and CSRF
 protection.
 
-Controllers are placed in the directory /usr/local/opnsense/mvc/app/controllers/<Vendor\_name>/<Module\_name>/
+Controllers are placed in the directory /usr/local/reticen8/mvc/app/controllers/<Vendor\_name>/<Module\_name>/
 and should use the standard Phalcon naming conventions, suffix Controller.php on
 every class file and suffix Action on all action methods.
 
@@ -25,7 +25,7 @@ View based controllers
 
 For rendering standard pages we have chosen to use Volt templates, the
 base controller to inherit from in this case is
-OPNsense\\Base\\ControllerBase and should take care of binding a
+Reticen8\\Base\\ControllerBase and should take care of binding a
 template to the controller. Every template automatically receives
 standard features (such as the menu system).
 
@@ -50,7 +50,7 @@ And the volt template SampleVendor/Sample/index.volt could contain something lik
       the contents of my_variable1 => <b> {{ my_variable1 }} </b> <br>
       the contents of my_variable2 => <b> {{ my_variable2 }} </b> <br>
 
-A full example can be found in the OPNsense\\Sample controller
+A full example can be found in the Reticen8\\Sample controller
 directory.
 
 More information on how to write Volt pages can be found here :
@@ -66,7 +66,7 @@ guide how to use these.
 
 The getForm() method itself merily passes the structure to thew view, which can use this information to render
 forms on page load (statically).
-In our standard layout `partials <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/views/layout_partials/form_input_tr.volt>`__ we offer some different record types which we will detail below:
+In our standard layout `partials <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/views/layout_partials/form_input_tr.volt>`__ we offer some different record types which we will detail below:
 
 
 **Attributes**
@@ -153,8 +153,8 @@ post request to /api/sample/test/echo, using jQuery:
 
 .. Tip::
 
-    OPNsense ships with two standard controllers to incorporate default action scenario's, such as mutating models
-    and restarting services. These can be found in our repository `here <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/controllers/OPNsense/Base/>`__
+    Reticen8 ships with two standard controllers to incorporate default action scenario's, such as mutating models
+    and restarting services. These can be found in our repository `here <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/controllers/Reticen8/Base/>`__
     and are named :code:`ApiMutableModelControllerBase`, :code:`ApiMutableServiceControllerBase`. Both extend :code:`ApiControllerBase`
     as described in this chapter. The mutable model controller is explained in more detail in :doc:`using grids <../examples/using_grids>`, the
     service controller is explained in :doc:`api enable services <../examples/api_enable_services>`

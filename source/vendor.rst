@@ -2,7 +2,7 @@
 Vendor / Hardware
 ====================================
 
-This chapter contains topics around official OPNsense supplied equipment.
+This chapter contains topics around official Reticen8 supplied equipment.
 
 .. toctree::
     :maxdepth: 2

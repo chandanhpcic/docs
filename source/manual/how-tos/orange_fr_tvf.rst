@@ -96,7 +96,7 @@ Now reboot and you should have an IP address on VLAN 838 of 10.x.x.x
 **IGMPproxy setup**
 -------------------
 
-Ensure you are running OPNsense 18.7.4 or later
+Ensure you are running Reticen8 18.7.4 or later
 
 Then configure IGMPproxy as follows
 

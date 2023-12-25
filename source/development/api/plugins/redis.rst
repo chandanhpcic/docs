@@ -12,7 +12,7 @@ Redis
     "``GET``","redis","service","status",""
     "``POST``","redis","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Redis.xml <https://github.com/opnsense/plugins/blob/master/databases/redis/src/opnsense/mvc/app/models/OPNsense/Redis/Redis.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Redis.xml <https://github.com/reticen8/plugins/blob/master/databases/redis/src/reticen8/mvc/app/models/Reticen8/Redis/Redis.xml>`__"
 
 .. csv-table:: Service (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -21,4 +21,4 @@ Redis
     "``GET``","redis","settings","get",""
     "``POST``","redis","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Redis.xml <https://github.com/opnsense/plugins/blob/master/databases/redis/src/opnsense/mvc/app/models/OPNsense/Redis/Redis.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Redis.xml <https://github.com/reticen8/plugins/blob/master/databases/redis/src/reticen8/mvc/app/models/Reticen8/Redis/Redis.xml>`__"

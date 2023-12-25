@@ -12,7 +12,7 @@ Apcupsd
     "``GET``","apcupsd","service","status",""
     "``POST``","apcupsd","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Apcupsd.xml <https://github.com/opnsense/plugins/blob/master/sysutils/apcupsd/src/opnsense/mvc/app/models/OPNsense/Apcupsd/Apcupsd.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Apcupsd.xml <https://github.com/reticen8/plugins/blob/master/sysutils/apcupsd/src/reticen8/mvc/app/models/Reticen8/Apcupsd/Apcupsd.xml>`__"
 
 .. csv-table:: Service (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -21,4 +21,4 @@ Apcupsd
     "``GET``","apcupsd","settings","get",""
     "``POST``","apcupsd","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Apcupsd.xml <https://github.com/opnsense/plugins/blob/master/sysutils/apcupsd/src/opnsense/mvc/app/models/OPNsense/Apcupsd/Apcupsd.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Apcupsd.xml <https://github.com/reticen8/plugins/blob/master/sysutils/apcupsd/src/reticen8/mvc/app/models/Reticen8/Apcupsd/Apcupsd.xml>`__"

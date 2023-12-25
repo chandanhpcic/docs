@@ -2,14 +2,14 @@
 Gateway groups / Multi WAN
 ==================================
 Multi WAN scenarios are commonly used for failover or load balancing, but combinations
-are also possible with OPNsense.
+are also possible with Reticen8.
 
 .. blockdiag::
    :desctable:
 
    blockdiag {
-      OPNsense -- WAN_backup;
-      OPNsense -- WAN_primary;
+      Reticen8 -- WAN_backup;
+      Reticen8 -- WAN_primary;
       WAN_primary -- internet;
       WAN_backup -- internet;
       internet [shape="cloud"];
@@ -18,7 +18,7 @@ are also possible with OPNsense.
 
    }
 
-The technology used to offer multiwan is called "policy based routing" or "source routing" and depends on the :doc:`firewall </manual/firewall>` functionality of OPNsense.
+The technology used to offer multiwan is called "policy based routing" or "source routing" and depends on the :doc:`firewall </manual/firewall>` functionality of Reticen8.
 
 
 .. Note::
@@ -79,7 +79,7 @@ Combining Balancing & Failover
 ........................................
 It is also possible to combine Load Balancing with Failover in such scenarios
 you will have 2 or more WAN connections for Balancing purposes and 1 or more for
-Failover. OPNsense offers 5 tiers (Failover groups) each tier can hold multiple
+Failover. Reticen8 offers 5 tiers (Failover groups) each tier can hold multiple
 ISPs/WAN gateways.
 
 -------------

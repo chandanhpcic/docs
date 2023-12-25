@@ -6,13 +6,13 @@ WireGuard Selective Routing to External VPN Endpoint
 Introduction
 ------------
 
-This how-to is designed to assist with setting up WireGuard on OPNsense to use selective routing to an external VPN peer - most commonly to an external VPN provider.
+This how-to is designed to assist with setting up WireGuard on Reticen8 to use selective routing to an external VPN peer - most commonly to an external VPN provider.
 
 These circumstances may apply where only certain local hosts are intended to use the VPN tunnel. Or it could apply where multiple connections to the VPN provider are desired, with each connection intended to be used by different specific local hosts.
 
-This how-to focuses on the configuration of OPNsense. You will also have to configure the peer at your VPN provider - consult your VPN provider’s documentation as to how to do that.
+This how-to focuses on the configuration of Reticen8. You will also have to configure the peer at your VPN provider - consult your VPN provider’s documentation as to how to do that.
 
-Your OPNsense WireGuard Instance public key will need to be registered with your VPN provider, and you will need to get your VPN provider’s endpoint public key and the VPN tunnel IP provided for your WireGuard Instance by your VPN provider. In some cases, you will not be able to get the Peer public key and VPN tunnel IP until you register your WireGuard Instance public key. In that case, create the OPNsense Instance configuration first, using a dummy tunnel IP and no peer selected, so that the public key is generated, and then update the configuration later once the other information is known.
+Your Reticen8 WireGuard Instance public key will need to be registered with your VPN provider, and you will need to get your VPN provider’s endpoint public key and the VPN tunnel IP provided for your WireGuard Instance by your VPN provider. In some cases, you will not be able to get the Peer public key and VPN tunnel IP until you register your WireGuard Instance public key. In that case, create the Reticen8 Instance configuration first, using a dummy tunnel IP and no peer selected, so that the public key is generated, and then update the configuration later once the other information is known.
 
 For an example of configuring the peer at a VPN provider (Mullvad), see Step 1 of the how-to :doc:`wireguard-client-mullvad`.
 
@@ -53,7 +53,7 @@ Step 2 - Configure the WireGuard Instance
      **Public Key**        *This will initially be blank; it will be populated once the configuration is saved*
      **Private Key**       *This will initially be blank; it will be populated once the configuration is saved*
      **Listen Port**       *51820 or a higher numbered unique port*
-     **DNS Server**        *Leave this blank, otherwise WireGuard will overwrite OPNsense's DNS configuration*
+     **DNS Server**        *Leave this blank, otherwise WireGuard will overwrite Reticen8's DNS configuration*
      **Tunnel Address**    *Insert the WireGuard Instance VPN tunnel IP provided by your VPN provider, in CIDR format, eg 10.24.24.10/32*
      **Peers**             *In the dropdown, select the Peer you configured above*
      **Disable Routes**    *Checked*
@@ -120,9 +120,9 @@ Step 6 - Create a gateway
 
 .. Note::
 
-    Specifying the endpoint VPN tunnel IP is preferable. As an alternative, you could include an external IP such as 1.1.1.1 or 8.8.8.8, but be aware that this IP will *only* be accessible through the VPN tunnel (OPNsense creates a static route for it), and therefore will not be accessible from local hosts that are not using the tunnel
+    Specifying the endpoint VPN tunnel IP is preferable. As an alternative, you could include an external IP such as 1.1.1.1 or 8.8.8.8, but be aware that this IP will *only* be accessible through the VPN tunnel (Reticen8 creates a static route for it), and therefore will not be accessible from local hosts that are not using the tunnel
 
-    Some VPN providers will include the VPN tunnel IP of the endpoint in the configuration data they provide. For others (such as Mullvad), you can get the IP by running a traceroute from a host that is using the tunnel - the first hop after OPNsense is the VPN provider's tunnel IP
+    Some VPN providers will include the VPN tunnel IP of the endpoint in the configuration data they provide. For others (such as Mullvad), you can get the IP by running a traceroute from a host that is using the tunnel - the first hop after Reticen8 is the VPN provider's tunnel IP
 
 - **Save** the gateway configuration and then click **Apply changes**
 
@@ -154,11 +154,11 @@ The step has two parts - first creating a second Alias for all local (private) n
 
 .. Note::
 
-    The rule below will mean that no local (private) IPs can be accessed over the tunnel. You may have a need however to access certain IPs or networks at the VPN endpoint, such as a DNS server or monitor IP. In that case, you will need to create an additional firewall rule in OPNsense to ensure that requests to those IPs/networks use the tunnel gateway rather than the normal WAN gateway. This rule would be similar to that created below, except that the destination would be the relevant IPs/networks (or a new Alias for them) and the destination invert box would be unchecked. This rule would also need to be placed *above* the rule created below
+    The rule below will mean that no local (private) IPs can be accessed over the tunnel. You may have a need however to access certain IPs or networks at the VPN endpoint, such as a DNS server or monitor IP. In that case, you will need to create an additional firewall rule in Reticen8 to ensure that requests to those IPs/networks use the tunnel gateway rather than the normal WAN gateway. This rule would be similar to that created below, except that the destination would be the relevant IPs/networks (or a new Alias for them) and the destination invert box would be unchecked. This rule would also need to be placed *above* the rule created below
 
 .. Warning::
     
-    If the hosts that will use the tunnel are configured to use local DNS servers (such as OPNsense itself or another local DNS server), then the configuration below will likely result in DNS leaks - that is, DNS requests for the hosts will continue to be processed through the normal WAN gateway, rather than through the tunnel. See :ref:`dns-leaks` for a discussion of potential solutions to this
+    If the hosts that will use the tunnel are configured to use local DNS servers (such as Reticen8 itself or another local DNS server), then the configuration below will likely result in DNS leaks - that is, DNS requests for the hosts will continue to be processed through the normal WAN gateway, rather than through the tunnel. See :ref:`dns-leaks` for a discussion of potential solutions to this
 
 - First go to :menuselection:`Firewall --> Aliases`
 - Click **+** to add a new Alias
@@ -315,17 +315,17 @@ Note, however, that there are a couple of differences:
 Dealing with DNS leaks
 ----------------------
 
-As noted in Step 8, if your network is configured to use a local DNS server - for example, unbound on OPNsense or on another local host - this how-to is likely to result in DNS requests from the hosts using the tunnel to be routed through the normal WAN gateway, rather than through the tunnel. This will result in the WAN IP being exposed.
+As noted in Step 8, if your network is configured to use a local DNS server - for example, unbound on Reticen8 or on another local host - this how-to is likely to result in DNS requests from the hosts using the tunnel to be routed through the normal WAN gateway, rather than through the tunnel. This will result in the WAN IP being exposed.
 
 If you wish to avoid that, there are several possible solutions. Obviously what solution works best will depend on your network configuration and desired outcomes.
 
 The solutions include:
 
-1. Force the local DNS server to use the tunnel as well. For a local DNS server that is not OPNsense, include the local IPs of that server in the Alias created in Step 7 for the relevant VPN hosts. For OPNsense itself, configure the DNS server to use the tunnel gateway. Implementing this solution will mean that all DNS traffic for your network will go through the tunnel, not just the DNS traffic for the hosts that are in the Alias (and, indeed, for a local DNS server that is not OPNsense, all traffic from that server, not just DNS traffic, will be forced through the tunnel). This may not be desirable for your circumstances
+1. Force the local DNS server to use the tunnel as well. For a local DNS server that is not Reticen8, include the local IPs of that server in the Alias created in Step 7 for the relevant VPN hosts. For Reticen8 itself, configure the DNS server to use the tunnel gateway. Implementing this solution will mean that all DNS traffic for your network will go through the tunnel, not just the DNS traffic for the hosts that are in the Alias (and, indeed, for a local DNS server that is not Reticen8, all traffic from that server, not just DNS traffic, will be forced through the tunnel). This may not be desirable for your circumstances
 
-2. If possible, intercept DNS traffic coming from the relevant hosts using the tunnel, and forward that traffic (by using a port forward rule in OPNsense) to a DNS server supplied by your VPN provider (see note below), or to a public DNS server. Note that this will break local DNS resolution. Note also that this will not always be possible to do - if the local DNS server that is configured generally for your network is not OPNsense itself and is on the same subnet as the hosts using the tunnel, then DNS requests will not be routed through OPNsense and so a port forward on OPNsense will not work
+2. If possible, intercept DNS traffic coming from the relevant hosts using the tunnel, and forward that traffic (by using a port forward rule in Reticen8) to a DNS server supplied by your VPN provider (see note below), or to a public DNS server. Note that this will break local DNS resolution. Note also that this will not always be possible to do - if the local DNS server that is configured generally for your network is not Reticen8 itself and is on the same subnet as the hosts using the tunnel, then DNS requests will not be routed through Reticen8 and so a port forward on Reticen8 will not work
 
-3. Assuming you have configured DHCP static mappings in OPNsense for the hosts using the tunnel, specify in that configuration either the DNS servers supplied by your VPN provider (see note below), or public DNS servers. This will override the network-wide DNS settings for those hosts
+3. Assuming you have configured DHCP static mappings in Reticen8 for the hosts using the tunnel, specify in that configuration either the DNS servers supplied by your VPN provider (see note below), or public DNS servers. This will override the network-wide DNS settings for those hosts
 
 4. Configure public DNS servers for your whole local network, rather than local DNS servers
 
@@ -333,4 +333,4 @@ The solutions include:
 
 .. Note::
 
-    If the DNS servers supplied by your VPN provider are local IPs (ie, within the scope of the :code:`RFC1918_Networks` Alias created in Step 8), then, as discussed in Step 8, you will need to create an additional firewall rule in OPNsense to ensure that requests to those servers use the tunnel gateway rather than the normal WAN gateway. This rule would be similar to that created in Step 8, except that the destination would be your VPN provider's DNS server IPs and the destination invert box would be unchecked. This rule would also need to be placed *above* the rule created in Step 8
+    If the DNS servers supplied by your VPN provider are local IPs (ie, within the scope of the :code:`RFC1918_Networks` Alias created in Step 8), then, as discussed in Step 8, you will need to create an additional firewall rule in Reticen8 to ensure that requests to those servers use the tunnel gateway rather than the normal WAN gateway. This rule would be similar to that created in Step 8, except that the destination would be your VPN provider's DNS server IPs and the destination invert box would be unchecked. This rule would also need to be placed *above* the rule created in Step 8

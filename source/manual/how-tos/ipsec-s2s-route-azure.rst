@@ -14,7 +14,7 @@ This how-to covers setting up a route-based S2S VPN.
 Before you start
 ----------------
 Before starting with the configuration of an IPsec tunnel you need to have a
-working OPNsense installation and an Azure virtual network setup with a unique
+working Reticen8 installation and an Azure virtual network setup with a unique
 LAN IP subnets for each side of your connection (your local networks need to be
 different from your remote networks).
 
@@ -26,13 +26,13 @@ https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-sit
 ------------
 Sample Setup
 ------------
-This sample configuration uses an OPNsense box and the basic Azure virtual network
+This sample configuration uses an Reticen8 box and the basic Azure virtual network
 gateway, with the following configuration:
 
-OPNsense
+Reticen8
 --------
 ==================== =============================
- **Hostname**         OPNsense
+ **Hostname**         Reticen8
  **WAN IP**           1.2.3.4
  **LAN Network**      192.168.1.1/24
 ==================== =============================
@@ -55,7 +55,7 @@ Azure
 -----------------------------
 
 -----------------------
-Firewall Rules OPNsense
+Firewall Rules Reticen8
 -----------------------
 To allow IPsec tunnel connections, the following should be allowed on WAN for on
 sites (under :menuselection:`Firewall --> Rules --> WAN`):
@@ -72,7 +72,7 @@ sites (under :menuselection:`Firewall --> Rules --> WAN`):
     You can further limit the traffic by the source IP of the remote host.
 
 -------------------------
-Step 1 - Phase 1 OPNsense
+Step 1 - Phase 1 Reticen8
 -------------------------
 (Under :menuselection:`VPN --> IPsec --> Tunnel Settings` Press **+**)
 We will use the following settings:
@@ -130,7 +130,7 @@ Save your setting by pressing:
 
 
 -------------------------
-Step 2 - Phase 2 OPNsense
+Step 2 - Phase 2 Reticen8
 -------------------------
 
 Press the button *+* in front of the phase 1 entry to add a new phase 2.
@@ -169,7 +169,7 @@ Save your settings by pressing:
 
 -----------------------------
 
-Enable IPsec for OPNsense, select:
+Enable IPsec for Reticen8, select:
 
 .. image:: images/ipsec_s2s_vpn_p1a_enable.png
 
@@ -205,7 +205,7 @@ Save:
 
 .. image:: images/btn_save.png
 
-**You are almost done configuring OPNsense (only some firewall settings remain, which will be addressed later).**
+**You are almost done configuring Reticen8 (only some firewall settings remain, which will be addressed later).**
 **We will now proceed setting up Azure.**
 
 -----------------------------
@@ -219,8 +219,8 @@ We will use the following settings:
 Setup
 -------------------
 =================================== ====================== ==================================================
-**Name**                             lng.opnsense           *Freely chosen name*
-**IP address**                       1.2.3.4                *The public IP address of your remote OPNsense*
+**Name**                             lng.reticen8           *Freely chosen name*
+**IP address**                       1.2.3.4                *The public IP address of your remote Reticen8*
 **Address space**                    192.168.1.0/24         *LAN Network*
 **Address space**                    10.111.1.1/32          *Local Tunnel IP*
 =================================== ====================== ==================================================
@@ -238,10 +238,10 @@ We will use the following settings:
 General setup
 -------------------
 =================================== ====================== ==================================================
-**Name**                             vpn.opnsense           *Freely chosen name*
+**Name**                             vpn.reticen8           *Freely chosen name*
 **Connection type**                  Site-to-site (IPsec)
 **Virtual network gateway**          vpn.gw                 *Select virtual network gateway*
-**Local network gateway**            lng.opnsense           *Select local network gateway*
+**Local network gateway**            lng.reticen8           *Select local network gateway*
 **Shared Key (PSK)**                 At4aDMOAOub2NwT6gMHA   *Random key*. **CREATE YOUR OWN!**
 =================================== ====================== ==================================================
 
@@ -250,7 +250,7 @@ Press the button that says 'OK':
 .. image:: images/ipsec_s2s_route_azure_conn.png
 
 -----------------------
-Firewall Rules OPNsense
+Firewall Rules Reticen8
 -----------------------
 
 To allow traffic passing to your LAN subnet you need to add a rule to the IPsec
@@ -273,7 +273,7 @@ Step 6 - Define Gateways
 Now that you have the VPN up and running you have to set up a gateway.
 Go to :menuselection:`System --> Gateways --> Single` and add a new gateway.
 
-OPNsense
+Reticen8
 --------
 ================= ============ ===============================================================
  **Name**          VPNGW        *Set a name for your gateway*
@@ -289,7 +289,7 @@ Step 7 - Add Static Routes
 When the gateway is set up you can add a route for the Azure virtual network pointing to the new gateway.
 Go to :menuselection:`System --> Routes --> Configuration`.
 
-Route OPNsense
+Route Reticen8
 --------------
 ===================== ================ =============================
  **Network Address**   192.168.2.0/24   *Azure virtual network*

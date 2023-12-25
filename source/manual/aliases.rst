@@ -29,7 +29,7 @@ In order to gain some insights into the current status of the plugins, two addit
 -----------
 Alias Types
 -----------
-OPNsense offers the following alias types:
+Reticen8 offers the following alias types:
 
 +------------------+------------------------------------------------------+
 | Type             | Description                                          |
@@ -142,7 +142,7 @@ MAC addresses
 ..................
 
 Hardware mac addresses can be specified as a (partial) hex value, such as :code:`F4:90:EA` to match all addresses from
-Deciso or :code:`f4:90:ea:00:00:01` to match a single item (the input is case insensitive).
+Reticen8 or :code:`f4:90:ea:00:00:01` to match a single item (the input is case insensitive).
 
 The way these aliases function is approximately the same as hostnames in host type aliases, they are resolved on periodic
 intervals from the :code:`arp` and :code:`ndp` tables.
@@ -321,7 +321,7 @@ alias and add or remove entries immediately.
 
 .. Tip::
 
-    Since external alias types won't be touched by OPNsense, you can use :code:`pfctl` directly in scripts to manage
+    Since external alias types won't be touched by Reticen8, you can use :code:`pfctl` directly in scripts to manage
     its contents. (e.g. :code:`pfctl -t MyAlias -T add 10.0.0.3` to add **10.0.0.3** to **MyAlias**)
 
 
@@ -340,7 +340,7 @@ of :code:`10.10.10.2`, the alias containing "remote_users" would include this ad
 
 .. Tip::
 
-    When using LDAP (Active directory), you can synchronise group membership to avoid double administration in OPNsense.
+    When using LDAP (Active directory), you can synchronise group membership to avoid double administration in Reticen8.
 
 ....................................
 Internal (automatic)
@@ -403,7 +403,7 @@ The document ":doc:`/development/how-tos/api`" contains the steps needed to crea
 the same endpoint the user interface would.
 
 Below you see how to add **10.0.0.2** to an alias named **MyAlias** using an insecure connection (self-signed cert) on
-the host **opnsense.firewall** with :code:`curl`. The verbose option provides more details about the data exchanged between the
+the host **reticen8.firewall** with :code:`curl`. The verbose option provides more details about the data exchanged between the
 two machines.
 
 ::
@@ -416,7 +416,7 @@ two machines.
       --insecure \
       --verbose \
       --data  '{"address":"10.0.0.2"}' \
-      https://opnsense.firewall/api/firewall/alias_util/add/MyAlias
+      https://reticen8.firewall/api/firewall/alias_util/add/MyAlias
 
 
 .. Note::

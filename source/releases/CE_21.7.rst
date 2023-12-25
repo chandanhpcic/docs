@@ -4,7 +4,7 @@
 
 
 
-For more than 6 and a half years, OPNsense is driving innovation through
+For more than 6 and a half years, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple and reliable
 firmware upgrades, multi-language support, fast adoption of upstream software
 updates as well as clear and stable 2-Clause BSD licensing.
@@ -21,15 +21,15 @@ The live log now contains the actual rule ID to avoid mismatches after
 adjusting your ruleset and the firewall aliases now also support wildcard
 netmasks.  For a complete list of changes see below.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/21.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/21.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.7/
-* South America: https://mirror.venturasystems.tech/opnsense/releases/21.7/
-* Australia: http://mirror.as24220.net/opnsense/releases/21.7/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/21.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/21.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/21.7/
+* South America: https://mirror.venturasystems.tech/reticen8/releases/21.7/
+* Australia: http://mirror.as24220.net/reticen8/releases/21.7/
+* Full mirror list: https://reticen8.com/download/
 
 
 --------------------------------------------------------------------------
@@ -61,18 +61,18 @@ Here are the full patch notes:
 * firmware: offer 22.1 upgrade path when supported by mirror
 * mvc: add getInterfaceConfig endpoint to interface API (contributed by Paolo Asperti)
 * mvc: fix logging of configd errors (contributed by kulikov-a)
-* plugins: os-acme-client 3.8 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-frr 1.26 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
-* plugins: os-openconnect 1.4.2 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/security/openconnect/pkg-descr>`__ 
-* plugins: os-postfix 1.21 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/mail/postfix/pkg-descr>`__ 
-* plugins: os-telegraf 1.12.4 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
-* plugins: os-wireguard 1.10 `[6] <https://github.com/opnsense/plugins/blob/stable/21.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-acme-client 3.8 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-frr 1.26 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
+* plugins: os-openconnect 1.4.2 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/security/openconnect/pkg-descr>`__ 
+* plugins: os-postfix 1.21 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/mail/postfix/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.4 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-wireguard 1.10 `[6] <https://github.com/reticen8/plugins/blob/stable/21.7/net/wireguard/pkg-descr>`__ 
 * src: axgbe: validate contents of gpio expander
 * src: incorrect XSAVE state size `[7] <https://www.freebsd.org/security/advisories/FreeBSD-EN-22:02.xsave.asc>`__ 
 * src: vPCI compatibility improvements with certain Hyper-V releases `[8] <https://www.freebsd.org/security/advisories/FreeBSD-EN-22:03.hyperv.asc>`__ 
 * src: vt console buffer overflow `[9] <https://www.freebsd.org/security/advisories/FreeBSD-SA-22:01.vt.asc>`__ 
 * ports: expat 2.4.2 `[10] <https://github.com/libexpat/libexpat/blob/R_2_4_2/expat/Changes>`__ 
-* ports: filterlog 0.6 `[11] <https://github.com/opnsense/ports/commit/2e27655d84>`__ 
+* ports: filterlog 0.6 `[11] <https://github.com/reticen8/ports/commit/2e27655d84>`__ 
 * ports: flock 2.37.2
 * ports: hostapd 2.10 `[12] <https://w1.fi/cgit/hostap/plain/hostapd/ChangeLog>`__ 
 * ports: lighttpd 1.4.63 `[13] <https://www.lighttpd.net/2021/12/4/1.4.63/>`__ 
@@ -106,7 +106,7 @@ Here are the full patch notes:
 * system: fix /etc/ssl/cert.pem permission on backend call
 * firewall: typo in direction for session diagnostics (contributed by kulikov-a)
 * firewall: fix address direction for states diagnostics (contributed by kulikov-a)
-* firmware: added generic configuration support via opnsense-update.conf
+* firmware: added generic configuration support via reticen8-update.conf
 * firmware: modify the launcher to support -r and -s options
 * firmware: fix upgrade prompt hint
 * firmware: simplify repo file flush
@@ -114,10 +114,10 @@ Here are the full patch notes:
 * intrusion detection: update embedded classification.config
 * backend: configd profiler call fix
 * ui: prevent browser auto-fill for username/password (contributed by NOYB)
-* plugins: os-acme-client 3.6 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-acme-client 3.6 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
 * plugins: os-fetchmail removed since fetchmail author does not permit LibreSSL on FreeBSD
 * plugins: os-firewall 1.1 adds "Do not NAT" option
-* plugins: os-haproxy 3.8 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-haproxy 3.8 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
 * plugins: os-stunnel is now available for LibreSSL using an embedded OpenSSL build
 * src: axgbe: fix I2C timeouts by reissuing command on errors
 * src: axgbe: fix possbile link instabilities
@@ -161,15 +161,15 @@ Here are the full patch notes:
 * ipsec: inline only caller of get_configured_vips_list()
 * ipsec: avoid VTI device recreation when using hostnames
 * backend: add configctl "-d" and "-q" options for future use
-* plugins: os-acme-client 3.5 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-dyndns 1.27 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/dyndns/pkg-descr>`__ 
+* plugins: os-acme-client 3.5 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-dyndns 1.27 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/dyndns/pkg-descr>`__ 
 * plugins: os-etpro-telemetry 1.6 switches to Suricata 5 rulesets
-* plugins: os-frr 1.24 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
-* plugins: os-nginx 1.24 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/www/nginx/pkg-descr>`__ 
-* plugins: os-telegraf 1.12.3 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
-* plugins: os-wireguard 1.9 `[6] <https://github.com/opnsense/plugins/blob/stable/21.7/net/wireguard/pkg-descr>`__ 
-* plugins: os-zabbix-agent 1.10 `[7] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
-* plugins: os-zabbix-proxy 1.6 `[8] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/zabbix-proxy/pkg-descr>`__ 
+* plugins: os-frr 1.24 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
+* plugins: os-nginx 1.24 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/www/nginx/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.3 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-wireguard 1.9 `[6] <https://github.com/reticen8/plugins/blob/stable/21.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-zabbix-agent 1.10 `[7] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
+* plugins: os-zabbix-proxy 1.6 `[8] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/zabbix-proxy/pkg-descr>`__ 
 * ports: suricata 6.0.4 `[9] <https://forum.suricata.io/t/suricata-6-0-4-and-5-0-8-released/1942>`__  with Netmap API version 14 enabled
 
 
@@ -182,7 +182,7 @@ Here are the full patch notes:
 FreeBSD security advisories and an issue with Intel-based ixgbe driver
 with "ifconfig -v" stalls keep this release rolling.  Also note that
 OpenSSH was updated to version 8.8 which deprecates ssh-rsa usage which
-is mainly an issue for client access from the OPNsense system to the
+is mainly an issue for client access from the Reticen8 system to the
 outside and can be amended as per the suggestions in the respective
 release notes.
 
@@ -233,25 +233,25 @@ Here are the full patch notes for version 21.7.5:
 * dhcp: automatically set AdvRASrcAddress for link-local CARP address
 * dhcp: exclude link-local subnet router advertisements
 * firmware: remove unavailable Hostcentral mirror
-* firmware: opnsense-update: replace -A before -M and handle single directory -M independently
-* firmware: opnsense-verify: disable verification for repositories without signatures
-* firmware: opnsense-verify: let -l option properly discard duplicate repositories
-* firmware: opnsense-version: support -x effective ABI probing
+* firmware: reticen8-update: replace -A before -M and handle single directory -M independently
+* firmware: reticen8-verify: disable verification for repositories without signatures
+* firmware: reticen8-verify: let -l option properly discard duplicate repositories
+* firmware: reticen8-version: support -x effective ABI probing
 * ipsec: add sha256_96 flag (contributed by Patrick M. Hausen)
 * monit: add polltime to service settings (contributed by Frank Brendel)
 * ui: prevent event propagation to avoid click() events being forwarded
-* plugins: os-bind 1.19 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/bind/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.10 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/dnscrypt-proxy/pkg-descr>`__ 
-* plugins: os-dyndns 1.26 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/dyndns/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.17 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
-* plugins: os-frr 1.23 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
-* plugins: os-haproxy 3.7 `[6] <https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
-* plugins: os-nut 1.8.1 `[7] <https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-descr>`__ 
-* plugins: os-openconnect 1.4.1 `[8] <https://github.com/opnsense/plugins/blob/stable/21.7/security/openconnect/pkg-descr>`__ 
-* plugins: os-relayd 2.6 `[9] <https://github.com/opnsense/plugins/pull/2391>`__ 
-* plugins: os-telegraf 1.12.2 `[10] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
-* plugins: os-vnstat 1.3 `[11] <https://github.com/opnsense/plugins/blob/stable/21.7/net/vnstat/pkg-descr>`__ 
-* plugins: os-wireguard 1.8 `[12] <https://github.com/opnsense/plugins/blob/stable/21.7/net/wireguard/pkg-descr>`__ 
+* plugins: os-bind 1.19 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/bind/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.10 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-dyndns 1.26 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/dyndns/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.17 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-frr 1.23 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
+* plugins: os-haproxy 3.7 `[6] <https://github.com/reticen8/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-nut 1.8.1 `[7] <https://github.com/reticen8/plugins/blob/stable/21.7/sysutils/nut/pkg-descr>`__ 
+* plugins: os-openconnect 1.4.1 `[8] <https://github.com/reticen8/plugins/blob/stable/21.7/security/openconnect/pkg-descr>`__ 
+* plugins: os-relayd 2.6 `[9] <https://github.com/reticen8/plugins/pull/2391>`__ 
+* plugins: os-telegraf 1.12.2 `[10] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-vnstat 1.3 `[11] <https://github.com/reticen8/plugins/blob/stable/21.7/net/vnstat/pkg-descr>`__ 
+* plugins: os-wireguard 1.8 `[12] <https://github.com/reticen8/plugins/blob/stable/21.7/net/wireguard/pkg-descr>`__ 
 * src: axgbe: correctly enable RSS driver support by default
 * src: ixgbe: prevent subsequent I2C bus read timeouts
 * src: fix kernel panic in vmci driver initialization `[13] <https://www.freebsd.org/security/advisories/FreeBSD-EN-21:28.vmci.asc>`__ 
@@ -305,13 +305,13 @@ Here are the full patch notes:
 * dhcp: show static leases without IP address assignments in the lease pages
 * firmware: do not remove obsolete base files on major upgrades
 * firmware: support ABI hints in the file "firmware-upgrade"
-* firmware: opnsense-code utility now supports "-u" mode for automatic upgrade after fetch
-* firmware: opnsense-code utility fix for "-d" option (contributed by Patrick M. Hausen)
-* firmware: opnsense-update utility is now able to bootstrap its own configuration in "-d" mode
-* firmware: opnsense-update utility now supports "-ct package-name" check for type change
-* firmware: opnsense-update utility no longer assumes "-bkp" by default
-* firmware: opnsense-update utility adds separate clean option for obsolete base files
-* firmware: opnsense-update utility assorted cleanups
+* firmware: reticen8-code utility now supports "-u" mode for automatic upgrade after fetch
+* firmware: reticen8-code utility fix for "-d" option (contributed by Patrick M. Hausen)
+* firmware: reticen8-update utility is now able to bootstrap its own configuration in "-d" mode
+* firmware: reticen8-update utility now supports "-ct package-name" check for type change
+* firmware: reticen8-update utility no longer assumes "-bkp" by default
+* firmware: reticen8-update utility adds separate clean option for obsolete base files
+* firmware: reticen8-update utility assorted cleanups
 * ipsec: add charon.max_ikev1_exchanges parameter
 * ipsec: add closeaction parameter (contributed by Patrick M. Hausen)
 * ipsec: rewrite netmask calculation for VTI tunnel setup
@@ -321,13 +321,13 @@ Here are the full patch notes:
 * unbound: make so-reuseport conditional upon RSS status
 * backend: static parameters ignored when no dynamic ones exist
 * mvc: replace __toString() calls with string casts
-* plugins: os-acme-client 3.4 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-acme-client 3.4 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
 * plugins: os-c-icap log file fix (contributed by Michael Muenz)
-* plugins: os-dyndns 1.25 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/dyndns/pkg-descr>`__ 
-* plugins: os-haproxy 3.6 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-dyndns 1.25 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/dyndns/pkg-descr>`__ 
+* plugins: os-haproxy 3.6 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
 * plugins: os-lldpd will now identify itself as Network Connectivity Device (contributed by Xeroxxx)
-* plugins: os-puppet-agent 1.0 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/puppet-agent/pkg-descr>`__ 
-* plugins: os-qemu-guest-agent 1.1 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/emulators/qemu-guest-agent/pkg-descr>`__ 
+* plugins: os-puppet-agent 1.0 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/sysutils/puppet-agent/pkg-descr>`__ 
+* plugins: os-qemu-guest-agent 1.1 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/emulators/qemu-guest-agent/pkg-descr>`__ 
 * plugins: os-theme-rebellion 1.8.8 (contributed by Team Rebellion)
 * src: include RSS kernel support defaulting to off
 * src: axgbe: properly multiplex on reading module signals
@@ -379,13 +379,13 @@ Here are the full patch notes:
 * openvpn: do not create empty router file
 * router advertisements: remove AdvRDNSSLifetime / AdvDNSSLLifetime bounds (contributed by Maurice Walker)
 * unbound: register DHCP leases with their matching IP range configured DHCP domain
-* plugins: os-acme-client 3.1 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-chrony 1.4 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/net/chrony/pkg-descr>`__ 
-* plugins: os-collectd 1.4 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/collectd/pkg-descr>`__ 
-* plugins: os-fetchmail 1.1 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/mail/fetchmail/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.16 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-acme-client 3.1 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-chrony 1.4 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/net/chrony/pkg-descr>`__ 
+* plugins: os-collectd 1.4 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/collectd/pkg-descr>`__ 
+* plugins: os-fetchmail 1.1 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/mail/fetchmail/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.16 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
 * plugins: os-realtek-re 1.0 adds Realtek vendor NIC driver module
-* plugins: os-telegraf 1.12.1 `[6] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.1 `[6] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
 * ports: dnsmasq 2.86 `[7] <https://www.thekelleys.org.uk/dnsmasq/CHANGELOG>`__ 
 * ports: filterlog 0.5 removes unused IPv6 options support
 * ports: nss 3.70 `[8] <https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_70.html>`__ 
@@ -403,7 +403,7 @@ A hotfix release was issued as 21.7.3_3:
 
 * openvpn: fix validation for /30 subnet in peer to peer mode (contributed by kulikov-a)
 * backend: catch broken pipe on event handler (contributed by kulikov-a)
-* plugins: os-acme-client 3.2 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-acme-client 3.2 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
 
 
 
@@ -444,16 +444,16 @@ Here are the full patch notes:
 * firewall: allow to specify port ranges for outgoing NAT (contributed by Nikolay Denev)
 * firewall: fix long comment preventing IPFW reload (contributed by Robin Schneider)
 * firewall: fix compare interfaces (contributed by Smart-Soft)
-* firmware: opnsense-patch can now patch installer and updater files
-* firmware: opnsense-update -c option now honours the -f option
-* firmware: opnsense-update improvements for mirror manipulation options
+* firmware: reticen8-patch can now patch installer and updater files
+* firmware: reticen8-update -c option now honours the -f option
+* firmware: reticen8-update improvements for mirror manipulation options
 * firmware: undo masking vulnerability URLs in FreeBSD due to UUID use
 * firmware: also check plugins sync for up to date core package
 * firmware: fix visibility issue on console when syncing plugins
 * firmware: replace php version_compare() call with pkg-version shell command
 * firmware: correctly announce major upgrade reboot in status return
 * firmware: do not fetch GeoIP database from business mirrors without a subscription
-* firmware: backend now supports reinstall like opnsense-bootstrap -q
+* firmware: backend now supports reinstall like reticen8-bootstrap -q
 * intrusion detection: skip ruleset empty metadata (contributed by kulikov-a)
 * ipsec: fix a regression in rightsubnets for non-mobile phase 2
 * ipsec: fix a regression in VTI handling
@@ -463,8 +463,8 @@ Here are the full patch notes:
 * openvpn: check IPv4 tunnel prefix (contributed by kulikov-a)
 * openvpn: simplify CIDR validation and remove trim() usage
 * web proxy: adding additional memory cache options (contributed by Xeroxxx)
-* plugins: os-acme-client 3.0 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-haproxy 3.5 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-acme-client 3.0 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-haproxy 3.5 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
 * src: runtime RSS code preparations and assorted related upstream patches
 * src: axgbe: remove unneccesary packet length check
 * src: iflib: fix partial length accounting error in netmap mode
@@ -514,7 +514,7 @@ Here are the full patch notes:
 * interfaces: packet capture quick select for all interfaces
 * firewall: make sure net.pf.request_maxcount and table-entries are always aligned
 * firewall: only set state options on rules when state is being tracked
-* firmware: fix opnsense-code pull when ABI configuration is no longer there
+* firmware: fix reticen8-code pull when ABI configuration is no longer there
 * firmware: fix upgrade with multiple repositories enabled
 * firmware: sync plugins in console update
 * firmware: revoke 21.1 fingerprint
@@ -529,10 +529,10 @@ Here are the full patch notes:
 * unbound: support insecure-domain directive
 * mvc: bring back bind_textdomain_codeset() to fix possible faulty page rendering
 * ui: fix regression in subnet selector
-* plugins: os-bind 1.18 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/bind/pkg-descr>`__ 
-* plugins: os-dnscrypt-proxy 1.9 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/dns/dnscrypt-proxy/pkg-descr>`__ 
-* plugins: os-postfix 1.20 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/mail/postfix/pkg-descr>`__ 
-* plugins: os-telegraf 1.12.0 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-bind 1.18 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/bind/pkg-descr>`__ 
+* plugins: os-dnscrypt-proxy 1.9 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/dns/dnscrypt-proxy/pkg-descr>`__ 
+* plugins: os-postfix 1.20 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/mail/postfix/pkg-descr>`__ 
+* plugins: os-telegraf 1.12.0 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
 * src: revert upstream commit "e1000: Rework em_msi_link interrupt filter"
 * ports: switched to FreeBSD ports tree
 * ports: filterlog print "0" instead of "(null)" label
@@ -543,17 +543,17 @@ Here are the full patch notes:
 
 .. code-block::
 
-    # SHA256 (OPNsense-21.7.1-OpenSSL-dvd-amd64.iso.bz2) = d9062d76a944792577d32cdb35dd9eb9cec3d3ed756e3cfaa0bf25506c72a67b
-    # SHA256 (OPNsense-21.7.1-OpenSSL-nano-amd64.img.bz2) = 106b483993f252e27dfd5064f57b2800e68274cf036445a97308107144e601f9
-    # SHA256 (OPNsense-21.7.1-OpenSSL-serial-amd64.img.bz2) = 04abcd825dacbecda3eff90c8d086527b49b5d61c284442ef5d5bdd89b625004
-    # SHA256 (OPNsense-21.7.1-OpenSSL-vga-amd64.img.bz2) = 44068ee9369bc12a0226ee2e1f13a1409038953ee829e0de97abe359affbde0d
+    # SHA256 (Reticen8-21.7.1-OpenSSL-dvd-amd64.iso.bz2) = d9062d76a944792577d32cdb35dd9eb9cec3d3ed756e3cfaa0bf25506c72a67b
+    # SHA256 (Reticen8-21.7.1-OpenSSL-nano-amd64.img.bz2) = 106b483993f252e27dfd5064f57b2800e68274cf036445a97308107144e601f9
+    # SHA256 (Reticen8-21.7.1-OpenSSL-serial-amd64.img.bz2) = 04abcd825dacbecda3eff90c8d086527b49b5d61c284442ef5d5bdd89b625004
+    # SHA256 (Reticen8-21.7.1-OpenSSL-vga-amd64.img.bz2) = 44068ee9369bc12a0226ee2e1f13a1409038953ee829e0de97abe359affbde0d
 
 --------------------------------------------------------------------------
 21.7 (July 28, 2021)
 --------------------------------------------------------------------------
 
 
-For more than 6 and a half years, OPNsense is driving innovation through
+For more than 6 and a half years, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple and reliable
 firmware upgrades, multi-language support, fast adoption of upstream software
 updates as well as clear and stable 2-Clause BSD licensing.
@@ -570,15 +570,15 @@ The live log now contains the actual rule ID to avoid mismatches after
 adjusting your ruleset and the firewall aliases now also support wildcard
 netmasks.  For a complete list of changes see below.
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/21.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/21.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.7/
-* South America: https://mirror.venturasystems.tech/opnsense/releases/21.7/
-* Australia: http://mirror.as24220.net/opnsense/releases/21.7/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/21.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/21.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/21.7/
+* South America: https://mirror.venturasystems.tech/reticen8/releases/21.7/
+* Australia: http://mirror.as24220.net/reticen8/releases/21.7/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes:
 
@@ -633,9 +633,9 @@ Here are the full patch notes:
 * firmware: static template for firmware upgrade message
 * firmware: add version/date header into check script as well
 * firmware: mask subscription in GUI output
-* firmware: add "-q" option for in-place opnsense-bootstrap run
+* firmware: add "-q" option for in-place reticen8-bootstrap run
 * firmware: fix grep call on FreeBSD 13 (contributed by Mariusz Zaborski)
-* firmware: correct return code on type change in opnsense-update
+* firmware: correct return code on type change in reticen8-update
 * installer: assorted wording improvements
 * intrusion detection: fix alert reads from eve.json
 * ipsec: adhere to system defaults for route-to and reply-to when creating automatic VPN rules
@@ -652,11 +652,11 @@ Here are the full patch notes:
 * unbound: switch model to integrate full DNS over TLS support
 * unbound: add qname-minimisation-strict option
 * unbound: renamed "blacklist" to "blocklist" for clarity
-* console: throw error when opnsense-importer encounters an encrypted config.xml
+* console: throw error when reticen8-importer encounters an encrypted config.xml
 * mvc: allow to unset attribute via setAttributeValue()
 * mvc: catch all errors including syntax and class not found errors
 * mvc: reduce differentials in config.xml when saving models
-* rc: opnsense-beep melody database directory
+* rc: reticen8-beep melody database directory
 * shell: fix IPv4 /31 assignment
 * ui: improved JS hook_ipv4v6() to jump to /64 on IPv6 and back to /32 on IPv4
 * ui: inject default tooltips into bootgrid formatters
@@ -664,21 +664,21 @@ Here are the full patch notes:
 * ui: removed $main_buttons magic handler
 * ui: switch firewall category icon for clarity
 * ui: work on unification of add buttons by minifying them and adding primary color markup
-* plugins: os-acme-client 2.6 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-acme-client 2.6 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
 * plugins: os-etpro-telemetry 1.5 exclude stale data from telemetry upload
 * plugins: os-fetchmail 1.0 (contributed by Michael Muenz)
-* plugins: os-freeradius 1.9.15 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
-* plugins: os-frr 1.22 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
-* plugins: os-haproxy 3.4 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
-* plugins: os-maltrail 1.8 `[6] <https://github.com/opnsense/plugins/blob/stable/21.7/security/maltrail/pkg-descr>`__ 
-* plugins: os-net-snmp 1.5 `[7] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/net-snmp/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.15 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-frr 1.22 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/net/frr/pkg-descr>`__ 
+* plugins: os-haproxy 3.4 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
+* plugins: os-maltrail 1.8 `[6] <https://github.com/reticen8/plugins/blob/stable/21.7/security/maltrail/pkg-descr>`__ 
+* plugins: os-net-snmp 1.5 `[7] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/net-snmp/pkg-descr>`__ 
 * plugins: os-nextcloud-backup 1.0
-* plugins: os-nut 1.8 `[8] <https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-descr>`__ 
-* plugins: os-postfix 1.9 `[9] <https://github.com/opnsense/plugins/blob/stable/21.7/mail/postfix/pkg-descr>`__ 
+* plugins: os-nut 1.8 `[8] <https://github.com/reticen8/plugins/blob/stable/21.7/sysutils/nut/pkg-descr>`__ 
+* plugins: os-postfix 1.9 `[9] <https://github.com/reticen8/plugins/blob/stable/21.7/mail/postfix/pkg-descr>`__ 
 * plugins: os-radsecproxy 1.0 (contributed by Tobias Boehnert)
-* plugins: os-telegraf 1.11.0 `[10] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-telegraf 1.11.0 `[10] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-tftp 1.0 (contributed by Michael Muenz)
-* plugins: os-zabbix-agent 1.9 `[11] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
+* plugins: os-zabbix-agent 1.9 `[11] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
 * src: dhclient support for VLAN 0 decapsulation
 * src: FreeBSD updates for the pf(4) and iflib(4) subsystems
 * src: FreeBSD updates for Intel e1000, ixgbe and ixl drivers
@@ -706,7 +706,7 @@ Known issues and limitations:
 
 * NextCloud backup feature moved from core to plugins.  Please reinstall if needed.
 * IPsec identities are now set using their explicit type.  See StrongSwan documentation `[24] <https://wiki.strongswan.org/projects/strongswan/wiki/IdentityParsing>`__  for the old automatic defaults.
-* Unbound custom options setting has been discontinued.  Local override directory /usr/local/etc/unbound.opnsense.d exists.
+* Unbound custom options setting has been discontinued.  Local override directory /usr/local/etc/unbound.reticen8.d exists.
 
 The public key for the 21.7 series is:
 
@@ -731,17 +731,17 @@ The public key for the 21.7 series is:
 
 .. code-block::
 
-    # SHA256 (OPNsense-21.7-OpenSSL-dvd-amd64.iso.bz2) = 34f9b5dee78cb4ded515393bd17c248d5a06b5cbc7c3cca9a58a919dc5e0fd65
-    # SHA256 (OPNsense-21.7-OpenSSL-nano-amd64.img.bz2) = e29ddb1749798d3f4403e44c9ee259a00826814a9cb71e0918fc3a6cb75df7db
-    # SHA256 (OPNsense-21.7-OpenSSL-serial-amd64.img.bz2) = b79e8f3b2dcdc1b13ff27d4aec435662a4f8b11201dff22c538cb2fd11c655f8
-    # SHA256 (OPNsense-21.7-OpenSSL-vga-amd64.img.bz2) = 03333348f3dbd42445986221cebaf753ebe5e4549d02dbb870f651b6399327d8
+    # SHA256 (Reticen8-21.7-OpenSSL-dvd-amd64.iso.bz2) = 34f9b5dee78cb4ded515393bd17c248d5a06b5cbc7c3cca9a58a919dc5e0fd65
+    # SHA256 (Reticen8-21.7-OpenSSL-nano-amd64.img.bz2) = e29ddb1749798d3f4403e44c9ee259a00826814a9cb71e0918fc3a6cb75df7db
+    # SHA256 (Reticen8-21.7-OpenSSL-serial-amd64.img.bz2) = b79e8f3b2dcdc1b13ff27d4aec435662a4f8b11201dff22c538cb2fd11c655f8
+    # SHA256 (Reticen8-21.7-OpenSSL-vga-amd64.img.bz2) = 03333348f3dbd42445986221cebaf753ebe5e4549d02dbb870f651b6399327d8
 
 --------------------------------------------------------------------------
 21.7.r2 (July 14, 2021)
 --------------------------------------------------------------------------
 
 
-For more than 6 and a half years, OPNsense is driving innovation through
+For more than 6 and a half years, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple and reliable
 firmware upgrades, multi-language support, fast adoption of upstream software
 updates as well as clear and stable 2-Clause BSD licensing.
@@ -768,15 +768,15 @@ Here are the full patch notes:
 * unbound: allow to retain cache on service reload
 * unbound: fix /var MFS dilemma for DNSBL after boot
 * unbound: remove deprecated custom options setting
-* rc: opnsense-beep melody database directory
-* plugins: os-acme-client 2.6 `[1] <https://github.com/opnsense/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
-* plugins: os-freeradius 1.9.15 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
-* plugins: os-haproxy 3.4 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
+* rc: reticen8-beep melody database directory
+* plugins: os-acme-client 2.6 `[1] <https://github.com/reticen8/plugins/blob/stable/21.7/security/acme-client/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.15 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-haproxy 3.4 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/net/haproxy/pkg-descr>`__ 
 * plugins: os-nextcloud-backup 1.0
 * plugins: os-nginx Phalcon 4 fixes
 * plugins: os-radsecproxy 1.0 (contributed by Tobias Boehnert)
 * plugins: os-tor Phalcon 4 fix
-* plugins: os-zabbix-agent 1.9 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
+* plugins: os-zabbix-agent 1.9 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/zabbix-agent/pkg-descr>`__ 
 * src: separately log NAT and firewall rules in pf(4)
 * src: libcasper: fix descriptors numbers `[5] <https://www.freebsd.org/security/advisories/EN-21:19.libcasper.asc>`__ 
 * src: linux: prevent integer overflow in futex_requeue `[6] <https://www.freebsd.org/security/advisories/EN-21:22.linux_futex.asc>`__ 
@@ -788,7 +788,7 @@ Known issues and limitations:
 
 * NextCloud backup feature moved from core to plugins.  Please reinstall if needed.
 * IPsec identities are now set using their explicit type.  See StrongSwan documentation `[9] <https://wiki.strongswan.org/projects/strongswan/wiki/IdentityParsing>`__  for the old automatic defaults.
-* Unbound custom options setting has been discontinued.  Local override directory /usr/local/etc/unbound.opnsense.d exists.
+* Unbound custom options setting has been discontinued.  Local override directory /usr/local/etc/unbound.reticen8.d exists.
 
 Please let us know about your experience!
 
@@ -799,7 +799,7 @@ Please let us know about your experience!
 --------------------------------------------------------------------------
 
 
-For more than 6 and a half years, OPNsense is driving innovation through
+For more than 6 and a half years, Reticen8 is driving innovation through
 modularising and hardening the open source firewall, with simple and reliable
 firmware upgrades, multi-language support, fast adoption of upstream software
 updates as well as clear and stable 2-Clause BSD licensing.
@@ -807,15 +807,15 @@ updates as well as clear and stable 2-Clause BSD licensing.
 We thank all of you for helping test, shape and contribute to the project!
 We know it would not be the same without you.  <3
 
-Download links, an installation guide `[1] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[1] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below as well.
 
-* Europe: https://opnsense.c0urier.net/releases/21.7/
-* US East Coast: https://mirror.wdc1.us.leaseweb.net/opnsense/releases/21.7/
-* US West Coast: https://mirror.sfo12.us.leaseweb.net/opnsense/releases/21.7/
-* South America: https://mirror.venturasystems.tech/opnsense/releases/21.7/
-* Australia: http://mirror.as24220.net/opnsense/releases/21.7/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/21.7/
+* US East Coast: https://mirror.wdc1.us.leaseweb.net/reticen8/releases/21.7/
+* US West Coast: https://mirror.sfo12.us.leaseweb.net/reticen8/releases/21.7/
+* South America: https://mirror.venturasystems.tech/reticen8/releases/21.7/
+* Australia: http://mirror.as24220.net/reticen8/releases/21.7/
+* Full mirror list: https://reticen8.com/download/
 
 Here are the full patch notes against 21.1.7:
 
@@ -860,7 +860,7 @@ Here are the full patch notes against 21.1.7:
 * openvpn: offer the ability to export a user without a certificate
 * openvpn: increase consistency between export types
 * unbound: fix domain overrides for private address reverse lookup zones (contributed by Maurice Walker)
-* console: throw error when opnsense-importer encounters an encrypted config.xml
+* console: throw error when reticen8-importer encounters an encrypted config.xml
 * mvc: reduce differentials in config.xml when saving models
 * ui: work on unification of add buttons by minifying them and adding primary color markup
 * ui: prevent translation line breaks from breaking JS
@@ -870,10 +870,10 @@ Here are the full patch notes against 21.1.7:
 * ui: improved JS hook_ipv4v6() to jump to /64 on IPv6 and back to /32 on IPv4
 * plugins: os-etpro-telemetry 1.5 exclude stale data from telemetry upload
 * plugins: os-fetchmail 1.0 (contributed by Michael Muenz)
-* plugins: os-freeradius 1.9.14 `[2] <https://github.com/opnsense/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
-* plugins: os-maltrail 1.8 `[3] <https://github.com/opnsense/plugins/blob/stable/21.7/security/maltrail/pkg-descr>`__ 
-* plugins: os-nut 1.8 `[4] <https://github.com/opnsense/plugins/blob/stable/21.7/sysutils/nut/pkg-descr>`__ 
-* plugins: os-telegraf 1.11.0 `[5] <https://github.com/opnsense/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
+* plugins: os-freeradius 1.9.14 `[2] <https://github.com/reticen8/plugins/blob/stable/21.7/net/freeradius/pkg-descr>`__ 
+* plugins: os-maltrail 1.8 `[3] <https://github.com/reticen8/plugins/blob/stable/21.7/security/maltrail/pkg-descr>`__ 
+* plugins: os-nut 1.8 `[4] <https://github.com/reticen8/plugins/blob/stable/21.7/sysutils/nut/pkg-descr>`__ 
+* plugins: os-telegraf 1.11.0 `[5] <https://github.com/reticen8/plugins/blob/stable/21.7/net-mgmt/telegraf/pkg-descr>`__ 
 * plugins: os-zabbix5-proxy is now a plugin variant
 * plugins: os-postfix 1.9
 * plugins: os-net-snmp 1.5
@@ -924,7 +924,7 @@ Please let us know about your experience!
 
 .. code-block::
 
-    # SHA256 (OPNsense-21.7.r1-OpenSSL-dvd-amd64.iso.bz2) = e1a9cd3296352a99f8a5ac7c7edd5f7161361fde4688115186292bed91252a1Gc
-    # SHA256 (OPNsense-21.7.r1-OpenSSL-nano-amd64.img.bz2) = 94478b919bca3850f3afd213b15df6ad08904ac505e3ecc3d979b9cd33276afc
-    # SHA256 (OPNsense-21.7.r1-OpenSSL-serial-amd64.img.bz2) = a72ef31a6e97644db8091cb9fa5cd7c785671da88c587ebbe417ac2fcb180202
-    # SHA256 (OPNsense-21.7.r1-OpenSSL-vga-amd64.img.bz2) = bc7f9a3b36cf4b52b630ee5ff28b31044db4aabfdcb73f54177307d6fc5623ba
+    # SHA256 (Reticen8-21.7.r1-OpenSSL-dvd-amd64.iso.bz2) = e1a9cd3296352a99f8a5ac7c7edd5f7161361fde4688115186292bed91252a1Gc
+    # SHA256 (Reticen8-21.7.r1-OpenSSL-nano-amd64.img.bz2) = 94478b919bca3850f3afd213b15df6ad08904ac505e3ecc3d979b9cd33276afc
+    # SHA256 (Reticen8-21.7.r1-OpenSSL-serial-amd64.img.bz2) = a72ef31a6e97644db8091cb9fa5cd7c785671da88c587ebbe417ac2fcb180202
+    # SHA256 (Reticen8-21.7.r1-OpenSSL-vga-amd64.img.bz2) = bc7f9a3b36cf4b52b630ee5ff28b31044db4aabfdcb73f54177307d6fc5623ba

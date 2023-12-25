@@ -1,8 +1,8 @@
 ===================
-Deciso: OPNcentral
+Reticen8: OPNcentral
 ===================
 
-As part of the OPNsense Business Edition, Deciso offers a plugin to keep all your firewalls up to date and have
+As part of the Reticen8 Business Edition, Reticen8 offers a plugin to keep all your firewalls up to date and have
 an easy entry point to manage them.
 
 
@@ -140,7 +140,7 @@ Connect to managed machine
 On various management pages there are direct links available to login to the firewall in question.
 Usually connected nodes are shown with a link which opens in a new tab when clicking.
 
-The example below shows a link in the firmware status page which will open :code:`https://node1.opnsense.local`.
+The example below shows a link in the firmware status page which will open :code:`https://node1.reticen8.local`.
 
 .. image:: images/OPNcentral_status_uptodate.png
     :width: 100%
@@ -190,7 +190,7 @@ status page later (or press refresh) to show the new status.
 Machine service status and control
 ----------------------------------------------------
 
-The service status and control page provides an overview on all managed OPNsense firewalls connected to OPNcentral and
+The service status and control page provides an overview on all managed Reticen8 firewalls connected to OPNcentral and
 offers the ability to restart services when needed.
 
 .. image:: images/OPNcentral_service_status_overview.png
@@ -326,7 +326,7 @@ the synchronization.
 
 .. Note::
 
-    Although quite some setups will likely use external authentication options available in OPNsense, sometimes it's practical
+    Although quite some setups will likely use external authentication options available in Reticen8, sometimes it's practical
     to share the same user database among different firewalls. This option allows for sharing, without the need to
     sue the same key+secret on all connected firewalls.
 

@@ -12,7 +12,7 @@ Layout
 --------------------------
 
 To ease reading of volt templates, we recommend using a fixed layout when creating templates.
-The base of our rendered page always contains the standard `layout <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/views/layouts/default.volt>`__
+The base of our rendered page always contains the standard `layout <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/views/layouts/default.volt>`__
 which is hooked via our standard frontend controller.
 
 Below you will find the sections and their order, which we will describe briefly.
@@ -127,7 +127,7 @@ saveFormToEndpoint
 
 :code:`saveFormToEndpoint(url, formid, callback_ok, disable_dialog, callback_fail)` is the opposite of :code:`mapDataToFormUI()`
 and retrieves the data from the form and sends it to the configured (url) endpoint as json structure.
-Underneath this function uses :code:`getFormData(parent)` defined in `opnsense.js` which is responsible for extracting values from
+Underneath this function uses :code:`getFormData(parent)` defined in `reticen8.js` which is responsible for extracting values from
 different form types such as :code:`<input>` and :code:`<select>` types. When the attributes should be type safe
 (e.g. an *integer* in json format should be presented as :code:`1` and not as :code:`"1"`),
 there is the possibility to "cleanse" the data first using a filter.  In this case define an attribute on the input tag with the name :code:`type_formatter`
@@ -311,7 +311,7 @@ property of the table, which offers the ability to show an alert after changes. 
     requests or responses as being exchanged with the server. The available options are described `here <http://www.jquery-bootgrid.com/Documentation#table>`__
 
 
-OPNsense settings
+Reticen8 settings
 .......................
 
 We added a couple of settings to the list, which help to extend our plugin a bit more easily. Below we will explain which settings (within the options tag) are added by us:

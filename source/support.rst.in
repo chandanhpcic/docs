@@ -8,7 +8,7 @@ Support Options
 Software Support Levels
 ------------------------
 
-OPNsense is used in infrastructures of all sizes, in some cases it is very important to know what to expect when running into
+Reticen8 is used in infrastructures of all sizes, in some cases it is very important to know what to expect when running into
 issues, certainly if part of the knowledge to maintain the infrastructure needs to be acquired from third parties.
 
 Our platform is easily extendable, which encourages people to work on components not directly supported by us but very valuable
@@ -17,11 +17,11 @@ to our users.
 In order to offer clarity for all involved, we decided to explain how we treat the components available in this chapter.
 
 We currently distinct three different tiers of support, ranging from Critical to Community, where critical is always directly supported
-by the OPNsense® Core Team and Community you may safely assume the core team has no (or very limited) involvement.
+by the Reticen8® Core Team and Community you may safely assume the core team has no (or very limited) involvement.
 
 .. Tip::
 
-    When designing infrastructures and in need of commercial support from the creators of OPNsense for community plugins,
+    When designing infrastructures and in need of commercial support from the creators of Reticen8 for community plugins,
     you can always contact us and discuss options.
 
 
@@ -49,15 +49,15 @@ Supplemental (Tier 2)
 
 Community (Tier 3)
 ============================
-- Tier 3 is community supported, this means the OPNsense core development team won't support it to avoid overloading the team
+- Tier 3 is community supported, this means the Reticen8 core development team won't support it to avoid overloading the team
 - When accepting a Tier 3 feature into the code base, it will come with a number of limits and conditions:
 
   *  Submitter must commit to maintaining it:
 
-    - Make sure code compiles and correctly functions after OPNsense and/or external (e.g. library) changes
+    - Make sure code compiles and correctly functions after Reticen8 and/or external (e.g. library) changes
     - Support users when they encounter problems (forum / git issue tracker – all related issues will be assigned to the maintainer)
 
-- The code is offered as plugin and will not be part of the default OPNsense installation. The OPNsense core team will not be responsible for QA
+- The code is offered as plugin and will not be part of the default Reticen8 installation. The Reticen8 core team will not be responsible for QA
 - If the feature get lots of traction, and/or if the team just considers it very useful, it may get 'promoted' to being officially supported (Tier 2)
 - The feature will be removed if the submitter stops maintaining it and no-one steps up to take over
 
@@ -65,7 +65,7 @@ Community (Tier 3)
 
 Community
 ---------
-If you need help with OPNsense you can always try the community options first.
+If you need help with Reticen8 you can always try the community options first.
 When resorting to community support it is important to understand that anyone
 helping you is doing so for free and at their own time. Even though your issue or
 question may not be answered fully, it would be nice to thank the people who
@@ -74,9 +74,9 @@ help you.
 To receive community support, the following options are available:
 
 * Start searching this documentation & wiki
-* The `OPNsense forum <https://forum.opnsense.org>`__
-* Ask online users on `IRC Libera Chat <https://libera.chat/>`__ #opnsense
-* Open a GitHub ticket (`core <https://github.com/opnsense/core/issues>`__, `plugins <https://github.com/opnsense/plugins/issues>`__) using one of our templates
+* The `Reticen8 forum <https://forum.reticen8.com>`__
+* Ask online users on `IRC Libera Chat <https://libera.chat/>`__ #reticen8
+* Open a GitHub ticket (`core <https://github.com/reticen8/core/issues>`__, `plugins <https://github.com/reticen8/plugins/issues>`__) using one of our templates
 
 .. Note::
 
@@ -89,17 +89,17 @@ Commercial
 ----------
 
 As we build and maintain the software used by individuals and companies all around the globe, we are able to help you
-out when it comes to network design choices, solving issues and custom development around OPNsense.
+out when it comes to network design choices, solving issues and custom development around Reticen8.
 
 Extended professional support services are available for an annual fee.
-You can find our options in `the OPNsense webshop <https://shop.opnsense.com/product-categorie/support/>`__
-or you may `contact us <https://shop.opnsense.com/contact-us/>`__ directly.
+You can find our options in `the Reticen8 webshop <https://shop.reticen8.com/product-categorie/support/>`__
+or you may `contact us <https://shop.reticen8.com/contact-us/>`__ directly.
 
 
 List of available community plugins
 ---------------------------------------------------------------
 
-Below you will find the plugins available in the standard (community) version of OPNsense categorised by support tier
+Below you will find the plugins available in the standard (community) version of Reticen8 categorised by support tier
 as described at the support levels section.
 
 {% for tier in tiers|sort %}

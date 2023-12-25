@@ -4,7 +4,7 @@
 
 
 
-The OPNsense team is proud to announce the final availability of version
+The Reticen8 team is proud to announce the final availability of version
 17.1, nicknamed "Eclectic Eagle".  This major release features FreeBSD 11.0,
 the SSH remote installer, new languages Italian / Czech / Portuguese,
 state-of-the-art HardenedBSD security features, PHP 7.0, new plugins for
@@ -23,15 +23,15 @@ For fresh installations images are provided with OpenSSL for 32 and 64 bit
 Intel architectures.  The new SSH installer feature will be listening on the
 LAN port 192.168.1.1, give out DHCP leases to clients and can connect using
 the user "root" (console menu) or "installer" (the installer, of course) with
-the default password "opnsense".  The respective checksums for the images can
+the default password "reticen8".  The respective checksums for the images can
 be found below this announcement and the direct download links from our
 capable mirror providers are as follows:
 
-https://opnsense.c0urier.net/releases/17.1/ (Europe)
-http://mirrors.nycbug.org/pub/opnsense/releases/17.1/ (US East Coast)
-http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1/ (US West Coast)
+https://reticen8.c0urier.net/releases/17.1/ (Europe)
+http://mirrors.nycbug.org/pub/reticen8/releases/17.1/ (US East Coast)
+http://mirror.sfo12.us.leaseweb.net/reticen8/releases/17.1/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 
 --------------------------------------------------------------------------
@@ -112,8 +112,8 @@ Here are the full patch notes:
 * firewall: keep category selection when changing tabs
 * firewall: do not skip gateway switch parsing too early (contributed by Stephane Lesimple)
 * interfaces: show VLAN description during edit
-* firmware: opnsense-revert can now handle multiple packages at once
-* firmware: opnsense-patch can now handle permission changes from patches
+* firmware: reticen8-revert can now handle multiple packages at once
+* firmware: reticen8-patch can now handle permission changes from patches
 * dnsmasq: use canned --bogus-priv for no_private_reverse
 * dnsmasq: separate log file, ACL and menu entries
 * dynamic dns: fix update for IPv6 (contributed by Alexander Leisentritt)
@@ -156,13 +156,13 @@ Here are the full patch notes:
 
 
 It is with pleasure that we announce the availability of SafeStack in
-the OPNsense ports tree as our latest addition via our valued HardenendBSD
+the Reticen8 ports tree as our latest addition via our valued HardenendBSD
 friendship.  While SafeStack is already deployed for the base operating
 system, it had not previously been applied to the ports tree.
 
 SafeStack is an exploit mitigation developed by clang/llvm.  It helps
 mitigate stack-based buffer overflows.  SafeStack depends on Address
-Space Layout Randomization (ASLR) in order to be effective.  OPNsense
+Space Layout Randomization (ASLR) in order to be effective.  Reticen8
 fulfils that dependency by including the HardenedBSD ASLR implementation,
 which follows the original PaX design.  Without ASLR, SafeStack is
 ineffective as an attacker would know where the SafeStack lies in
@@ -226,9 +226,9 @@ Here are the full patch notes:
 * system: unify the console yes/no prompts to indicate their default behaviour
 * system: separate row and unhide button for 2FA OTP QR code display
 * system: prevent stripping of migrated configuration during factory reset
-* firmware: opnsense-bootstrap bare-mode addition for installing repository metadata only
-* firmware: opnsense-bootstrap will never be deleted in case it is required for recovery
-* firmware: opnsense-revert now always properly reverts the core package
+* firmware: reticen8-bootstrap bare-mode addition for installing repository metadata only
+* firmware: reticen8-bootstrap will never be deleted in case it is required for recovery
+* firmware: reticen8-revert now always properly reverts the core package
 * firmware: fix argument parsing in all update and development utilities
 * firewall: do not save range when end port is empty
 * firewall: do not automatically reload filter after alias delete
@@ -395,7 +395,7 @@ of the core package from the shell with the following command:
 
 .. code-block::
 
-    # opnsense-revert opnsense
+    # reticen8-revert reticen8
 
 Here are the full patch notes:
 
@@ -420,9 +420,9 @@ Here are the full patch notes:
 * web proxy: harden SSL ciphers (contributed by Fabian Franz)
 * mvc: fix multiple scoping issues in base volt templates
 * lang: updates for Chinese, Czech, French, German, Portuguese
-* plugins: Let's Encrypt 1.4 `[1] <https://github.com/opnsense/plugins/pull/91>`__  `[2] <https://github.com/opnsense/plugins/pull/103>`__  (contributed by Felix Kling
+* plugins: Let's Encrypt 1.4 `[1] <https://github.com/reticen8/plugins/pull/91>`__  `[2] <https://github.com/reticen8/plugins/pull/103>`__  (contributed by Felix Kling
   and Frank Wall)
-* plugins: HAproxy 1.13 `[3] <https://github.com/opnsense/plugins/pull/94>`__  (contributed by Frank Wall)
+* plugins: HAproxy 1.13 `[3] <https://github.com/reticen8/plugins/pull/94>`__  (contributed by Frank Wall)
 * src: tzdata version 2017b `[4] <http://mm.icann.org/pipermail/tz-announce/2017-March/000046.html>`__ 
 * src: HardenedBSD SafeStack for base applications `[5] <https://hardenedbsd.org/article/shawn-webb/2016-11-27/introducing-safestack>`__ 
 * src: fix IPsec skip parameter handling in IPv4
@@ -432,48 +432,48 @@ Here are the full patch notes:
 * ports: libarchive 3.3.1
 * ports: ntp 4.2.8p10 `[7] <https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ChangeLog-stable>`__ 
 
-We are also happy to announce the availability of the renewed OPNsense 17.1
+We are also happy to announce the availability of the renewed Reticen8 17.1
 images based on this version.  Apart from the numerous improvements since
 the initial release, the images have been switched to use the virtual
 console driver vt(4) as a default to address boot issues.  They also feature
 a new config importer and fix the serial console display of the installer.
 
-For more than two years now, OPNsense is driving innovation through
+For more than two years now, Reticen8 is driving innovation through
 modularising and hardening the code base, quick and reliable firmware
 upgrades, multi-language support, fast adoption of upstream software
 updates as well as clear and stable 2-Clause BSD licensing.
 
-Download links, an installation guide `[8] <https://docs.opnsense.org/manual/install.html>`__  and the checksums for the images
+Download links, an installation guide `[8] <https://docs.reticen8.com/manual/install.html>`__  and the checksums for the images
 can be found below.
 
-* Europe: https://opnsense.c0urier.net/releases/17.1.4/
-* US East Coast: http://mirrors.nycbug.org/pub/opnsense/releases/17.1.4/
-* US West Coast: http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1.4/
-* Full mirror list: https://opnsense.org/download/
+* Europe: https://reticen8.c0urier.net/releases/17.1.4/
+* US East Coast: http://mirrors.nycbug.org/pub/reticen8/releases/17.1.4/
+* US West Coast: http://mirror.sfo12.us.leaseweb.net/reticen8/releases/17.1.4/
+* Full mirror list: https://reticen8.com/download/
 
 
 
 .. code-block::
 
-    # SHA256 (OPNsense-17.1.4-OpenSSL-cdrom-amd64.iso.bz2) = 911e4b343b0a7721a8c4f306ab0f84934a40d8829adb2fa808c4656a9a2ef7aa
-    # SHA256 (OPNsense-17.1.4-OpenSSL-nano-amd64.img.bz2) = ffedac68887b5c0dd619306058471e22c8f7f81c5eb14a566b788feb1d311b16
-    # SHA256 (OPNsense-17.1.4-OpenSSL-serial-amd64.img.bz2) = 53c270a8078f956dbc923962e82ea4bc9b95b7ed9f09f048fd7ad6c86d38c839
-    # SHA256 (OPNsense-17.1.4-OpenSSL-vga-amd64.img.bz2) = f9914405f6ca9f0947ccc63d1dac088ec778112ee3a431d4b44d4b400f991106
-    # SHA256 (OPNsense-17.1.4-OpenSSL-cdrom-i386.iso.bz2) = 23a60c0790848965df1b0596fcdea64fa14a67a8ed8ec9c93ca87b1bc3f6ce03
-    # SHA256 (OPNsense-17.1.4-OpenSSL-nano-i386.img.bz2) = 4ef91cc2f341dc39e356716f6b6d1e9dd646c9a3a30a7149978c79633639bb8f
-    # SHA256 (OPNsense-17.1.4-OpenSSL-serial-i386.img.bz2) = ead413845f83d4c112a7c7fbe79047effe78082d1530f1e5502d84d18f41dde0
-    # SHA256 (OPNsense-17.1.4-OpenSSL-vga-i386.img.bz2) = 8c928797fa21025cbb54df4274ba3d61eb37b3978ab5ae66f843fa8c75d829e8
+    # SHA256 (Reticen8-17.1.4-OpenSSL-cdrom-amd64.iso.bz2) = 911e4b343b0a7721a8c4f306ab0f84934a40d8829adb2fa808c4656a9a2ef7aa
+    # SHA256 (Reticen8-17.1.4-OpenSSL-nano-amd64.img.bz2) = ffedac68887b5c0dd619306058471e22c8f7f81c5eb14a566b788feb1d311b16
+    # SHA256 (Reticen8-17.1.4-OpenSSL-serial-amd64.img.bz2) = 53c270a8078f956dbc923962e82ea4bc9b95b7ed9f09f048fd7ad6c86d38c839
+    # SHA256 (Reticen8-17.1.4-OpenSSL-vga-amd64.img.bz2) = f9914405f6ca9f0947ccc63d1dac088ec778112ee3a431d4b44d4b400f991106
+    # SHA256 (Reticen8-17.1.4-OpenSSL-cdrom-i386.iso.bz2) = 23a60c0790848965df1b0596fcdea64fa14a67a8ed8ec9c93ca87b1bc3f6ce03
+    # SHA256 (Reticen8-17.1.4-OpenSSL-nano-i386.img.bz2) = 4ef91cc2f341dc39e356716f6b6d1e9dd646c9a3a30a7149978c79633639bb8f
+    # SHA256 (Reticen8-17.1.4-OpenSSL-serial-i386.img.bz2) = ead413845f83d4c112a7c7fbe79047effe78082d1530f1e5502d84d18f41dde0
+    # SHA256 (Reticen8-17.1.4-OpenSSL-vga-i386.img.bz2) = 8c928797fa21025cbb54df4274ba3d61eb37b3978ab5ae66f843fa8c75d829e8
 
 .. code-block::
 
-    # MD5 (OPNsense-17.1.4-OpenSSL-cdrom-amd64.iso.bz2) = 26a6110fad91b2b5105bbb1e9de2c299
-    # MD5 (OPNsense-17.1.4-OpenSSL-nano-amd64.img.bz2) = 7fd648124a6e9b6386174572aab237a8
-    # MD5 (OPNsense-17.1.4-OpenSSL-serial-amd64.img.bz2) = 34b3152ecde10e3869c4a3f0a0bb201d
-    # MD5 (OPNsense-17.1.4-OpenSSL-vga-amd64.img.bz2) = 6e1563a155a8715aa73e62be4cf0d542
-    # MD5 (OPNsense-17.1.4-OpenSSL-cdrom-i386.iso.bz2) = e2870d1b63cbca5aeead2b3148841e45
-    # MD5 (OPNsense-17.1.4-OpenSSL-nano-i386.img.bz2) = e7942c3af773f7a991d37b1a8391a60b
-    # MD5 (OPNsense-17.1.4-OpenSSL-serial-i386.img.bz2) = e6c3a6629a8c62d4a07d429f446f077a
-    # MD5 (OPNsense-17.1.4-OpenSSL-vga-i386.img.bz2) = 70cdb19b808b5b5ac522d02d8db911b9
+    # MD5 (Reticen8-17.1.4-OpenSSL-cdrom-amd64.iso.bz2) = 26a6110fad91b2b5105bbb1e9de2c299
+    # MD5 (Reticen8-17.1.4-OpenSSL-nano-amd64.img.bz2) = 7fd648124a6e9b6386174572aab237a8
+    # MD5 (Reticen8-17.1.4-OpenSSL-serial-amd64.img.bz2) = 34b3152ecde10e3869c4a3f0a0bb201d
+    # MD5 (Reticen8-17.1.4-OpenSSL-vga-amd64.img.bz2) = 6e1563a155a8715aa73e62be4cf0d542
+    # MD5 (Reticen8-17.1.4-OpenSSL-cdrom-i386.iso.bz2) = e2870d1b63cbca5aeead2b3148841e45
+    # MD5 (Reticen8-17.1.4-OpenSSL-nano-i386.img.bz2) = e7942c3af773f7a991d37b1a8391a60b
+    # MD5 (Reticen8-17.1.4-OpenSSL-serial-i386.img.bz2) = e6c3a6629a8c62d4a07d429f446f077a
+    # MD5 (Reticen8-17.1.4-OpenSSL-vga-i386.img.bz2) = 70cdb19b808b5b5ac522d02d8db911b9
 
 --------------------------------------------------------------------------
 17.1.3 (March 16, 2017)
@@ -481,7 +481,7 @@ can be found below.
 
 
 A dozen bug fixes meet several dozen new features and enhancements,
-literally!  This update is about making OPNsense more flexible with
+literally!  This update is about making Reticen8 more flexible with
 the tools that everybody knows: firewall management, DNS services and
 Let's Encrypt.
 
@@ -539,7 +539,7 @@ Here is the full list of changes:
 * mvc: allow dynamic hiding of sections in forms via model
 * plugins: register group interface type for PPTP, L2TP and PPPoE
 * plugins: add lifetime expiry for Universal Plug and Play rules
-* plugins: Let's Encrypt version 1.2 (contributed by Frank Wall) `[3] <https://github.com/opnsense/plugins/pull/76>`__ 
+* plugins: Let's Encrypt version 1.2 (contributed by Frank Wall) `[3] <https://github.com/reticen8/plugins/pull/76>`__ 
 * installer: do not configure console when /dev/ttyv0 is unavailable
 * installer: console settings now support vt(4) instead of syscons(4)
 * src: fix system hang when booting when PCI-express HotPlug is enabled `[4] <https://www.freebsd.org/security/advisories/FreeBSD-EN-17:01.pcie.asc>`__ 
@@ -578,7 +578,7 @@ Language updates have been plenty, with a new and very busy contributor
 for Chinese.  Xie xie!
 
 Furthermore, the shared forwarding between both packet filters introduced
-in OPNsense 17.1 has now been disabled by default and can be manually
+in Reticen8 17.1 has now been disabled by default and can be manually
 reenabled from the GUI on Firewall: Settings: Advanced.
 
 Here are the full patch notes:
@@ -658,9 +658,9 @@ Here are the full patch notes:
   by djGrrr)
 * firewall: improve validation between IPv4 and IPv6 to prevent faulty
   rule generation
-* firmware: opnsense-update utility now unlocks packages before performing
+* firmware: reticen8-update utility now unlocks packages before performing
   major upgrades
-* firmware: opnsense-revert utility now retains the automatic flag
+* firmware: reticen8-revert utility now retains the automatic flag
 * firmware: revoked the 16.7 update fingerprints
 * dhcp: change relay text to make it clear multiple servers are
   supported (contributed by GurliGebis)
@@ -676,8 +676,8 @@ Here are the full patch notes:
 * mvc: fix HTTP status codes on CSRF errors
 * mvc: soft-fail on missing classes in ModelRelationField (contributed
   by Frank Wall)
-* plugins: os-acme-client 1.1 `[1] <https://github.com/opnsense/plugins/pull/71>`__  (contributed by Frank Wall)
-* plugins: os-haproxy 1.12 `[2] <https://github.com/opnsense/plugins/pull/72>`__  (contributed by Frank Wall)
+* plugins: os-acme-client 1.1 `[1] <https://github.com/reticen8/plugins/pull/71>`__  (contributed by Frank Wall)
+* plugins: os-haproxy 1.12 `[2] <https://github.com/reticen8/plugins/pull/72>`__  (contributed by Frank Wall)
 * src: pf(4) shared forwarding fix during NAT
 * src: pf(4) sysctl switch to disable shared forwarding
 * src: fix a panic with stf(4) interfaces
@@ -694,7 +694,7 @@ Here are the full patch notes:
 --------------------------------------------------------------------------
 
 
-The OPNsense team is proud to announce the final availability of version
+The Reticen8 team is proud to announce the final availability of version
 17.1, nicknamed "Eclectic Eagle".  This major release features FreeBSD 11.0,
 the SSH remote installer, new languages Italian / Czech / Portuguese,
 state-of-the-art HardenedBSD security features, PHP 7.0, new plugins for
@@ -713,15 +713,15 @@ For fresh installations images are provided with OpenSSL for 32 and 64 bit
 Intel architectures.  The new SSH installer feature will be listening on the
 LAN port 192.168.1.1, give out DHCP leases to clients and can connect using
 the user "root" (console menu) or "installer" (the installer, of course) with
-the default password "opnsense".  The respective checksums for the images can
+the default password "reticen8".  The respective checksums for the images can
 be found below this announcement and the direct download links from our
 capable mirror providers are as follows:
 
-https://opnsense.c0urier.net/releases/17.1/ (Europe)
-http://mirrors.nycbug.org/pub/opnsense/releases/17.1/ (US East Coast)
-http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1/ (US West Coast)
+https://reticen8.c0urier.net/releases/17.1/ (Europe)
+http://mirrors.nycbug.org/pub/reticen8/releases/17.1/ (US East Coast)
+http://mirror.sfo12.us.leaseweb.net/reticen8/releases/17.1/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 Here is the list of major features that have been worked on since 16.7 was
 released 6 months ago:
@@ -741,7 +741,7 @@ released 6 months ago:
 * Czech as a release language (contributed by Pavel Borecki)
 * improved password security (contributed by OSnet)
 * FTP proxy plugin (contributed by Frank Brendel)
-* Let's Encrypt Plugin `[1] <https://github.com/opnsense/plugins/pull/66>`__  (contributed by Frank Wall)
+* Let's Encrypt Plugin `[1] <https://github.com/reticen8/plugins/pull/66>`__  (contributed by Frank Wall)
 * Tinc VPN Plugin
 * IPsec tunnel isolation mode for interoperability
 * micro versioning/migrations for config items
@@ -799,39 +799,39 @@ Additionally, these migration caveats should be heeded before upgrading:
   system even if these plugins are not installed.
 * The Intel e1000 driver plugin has been removed due to an incompatibility
   with FreeBSD 11.0.  All previously known bugs of the FreeBSD 11.0 e1000
-  driver have been fixed in OPNsense 17.1 and reported to FreeBSD.
+  driver have been fixed in Reticen8 17.1 and reported to FreeBSD.
 
-We would love to hear your feedback!  As we want OPNsense the best it can
+We would love to hear your feedback!  As we want Reticen8 the best it can
 be for you, please do not hesitate to contact us through any of the known
 channels:
 
-* Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
-* GitHub: https://github.com/opnsense
+* Twitter: https://twitter.com/reticen8
+* Forum: https://forum.reticen8.com/
+* GitHub: https://github.com/reticen8
 
 
 
 .. code-block::
 
-    # SHA256 (OPNsense-17.1-OpenSSL-cdrom-amd64.iso.bz2) = 6cbd83204366c366b603a36f5586424dd779d84c2b34f2e2ba3d66137d28fe97
-    # SHA256 (OPNsense-17.1-OpenSSL-nano-amd64.img.bz2) = fc91680ad6933f4151afbd869b136d2d84348112dfd8f4837a1e8e0880aec1ec
-    # SHA256 (OPNsense-17.1-OpenSSL-serial-amd64.img.bz2) = 4ba88dc98733e38ffc7681f862ad7197b866a4b7fffb858d64403d32b42fee3f
-    # SHA256 (OPNsense-17.1-OpenSSL-vga-amd64.img.bz2) = de46b29fe8aa79bd9bab6d68c24b80759efd6ef59c235b296eb59adbe408d055
-    # SHA256 (OPNsense-17.1-OpenSSL-cdrom-i386.iso.bz2) = 29ee7759e7834d9fc162623af0172899a3cd79e25c5205ee935c5131a51e8777
-    # SHA256 (OPNsense-17.1-OpenSSL-nano-i386.img.bz2) = a89c3b15e3689693f8ed0610d4bc8a03ef779c7576b0a6bf5ae16b8080ac8c4c
-    # SHA256 (OPNsense-17.1-OpenSSL-serial-i386.img.bz2) = 3314d0cdafa17900beda91a9a03a2325f164948f1e17421387532f4efdb9e9c4
-    # SHA256 (OPNsense-17.1-OpenSSL-vga-i386.img.bz2) = 6a63746d021095fc72ca20303b46c4994dea85cafd9bdfca948fa17afb28f80e
+    # SHA256 (Reticen8-17.1-OpenSSL-cdrom-amd64.iso.bz2) = 6cbd83204366c366b603a36f5586424dd779d84c2b34f2e2ba3d66137d28fe97
+    # SHA256 (Reticen8-17.1-OpenSSL-nano-amd64.img.bz2) = fc91680ad6933f4151afbd869b136d2d84348112dfd8f4837a1e8e0880aec1ec
+    # SHA256 (Reticen8-17.1-OpenSSL-serial-amd64.img.bz2) = 4ba88dc98733e38ffc7681f862ad7197b866a4b7fffb858d64403d32b42fee3f
+    # SHA256 (Reticen8-17.1-OpenSSL-vga-amd64.img.bz2) = de46b29fe8aa79bd9bab6d68c24b80759efd6ef59c235b296eb59adbe408d055
+    # SHA256 (Reticen8-17.1-OpenSSL-cdrom-i386.iso.bz2) = 29ee7759e7834d9fc162623af0172899a3cd79e25c5205ee935c5131a51e8777
+    # SHA256 (Reticen8-17.1-OpenSSL-nano-i386.img.bz2) = a89c3b15e3689693f8ed0610d4bc8a03ef779c7576b0a6bf5ae16b8080ac8c4c
+    # SHA256 (Reticen8-17.1-OpenSSL-serial-i386.img.bz2) = 3314d0cdafa17900beda91a9a03a2325f164948f1e17421387532f4efdb9e9c4
+    # SHA256 (Reticen8-17.1-OpenSSL-vga-i386.img.bz2) = 6a63746d021095fc72ca20303b46c4994dea85cafd9bdfca948fa17afb28f80e
 
 .. code-block::
 
-    # MD5 (OPNsense-17.1-OpenSSL-cdrom-amd64.iso.bz2) = b39a8440377b6a2aae5832e3caea23d7
-    # MD5 (OPNsense-17.1-OpenSSL-nano-amd64.img.bz2) = 583c7d4a4c4263d51e0fa153f8c021e4
-    # MD5 (OPNsense-17.1-OpenSSL-serial-amd64.img.bz2) = d4da49aa8f4d24ab0dc8ed7f025b7b46
-    # MD5 (OPNsense-17.1-OpenSSL-vga-amd64.img.bz2) = 5ea6b7771a35fbdd97abc99ca4da1b4c
-    # MD5 (OPNsense-17.1-OpenSSL-cdrom-i386.iso.bz2) = c8b63d4018ab072f9a2370e1040381d8
-    # MD5 (OPNsense-17.1-OpenSSL-nano-i386.img.bz2) = 3989eb61efcc7057166e64662d26714a
-    # MD5 (OPNsense-17.1-OpenSSL-serial-i386.img.bz2) = 4ca5a146a050e46deffdac001e7b3f0d
-    # MD5 (OPNsense-17.1-OpenSSL-vga-i386.img.bz2) = 888f3b23a381d93600596f86c0f94cd4
+    # MD5 (Reticen8-17.1-OpenSSL-cdrom-amd64.iso.bz2) = b39a8440377b6a2aae5832e3caea23d7
+    # MD5 (Reticen8-17.1-OpenSSL-nano-amd64.img.bz2) = 583c7d4a4c4263d51e0fa153f8c021e4
+    # MD5 (Reticen8-17.1-OpenSSL-serial-amd64.img.bz2) = d4da49aa8f4d24ab0dc8ed7f025b7b46
+    # MD5 (Reticen8-17.1-OpenSSL-vga-amd64.img.bz2) = 5ea6b7771a35fbdd97abc99ca4da1b4c
+    # MD5 (Reticen8-17.1-OpenSSL-cdrom-i386.iso.bz2) = c8b63d4018ab072f9a2370e1040381d8
+    # MD5 (Reticen8-17.1-OpenSSL-nano-i386.img.bz2) = 3989eb61efcc7057166e64662d26714a
+    # MD5 (Reticen8-17.1-OpenSSL-serial-i386.img.bz2) = 4ca5a146a050e46deffdac001e7b3f0d
+    # MD5 (Reticen8-17.1-OpenSSL-vga-i386.img.bz2) = 888f3b23a381d93600596f86c0f94cd4
 
 --------------------------------------------------------------------------
 17.1.r1 (January 20, 2017)
@@ -852,11 +852,11 @@ respectively).  Awesome work!
 Direct download links from our capable mirror providers (checksums
 below this announcement) are as follows:
 
-https://opnsense.c0urier.net/releases/17.1.r1/ (Europe)
-http://mirrors.nycbug.org/pub/opnsense/releases/17.1.r1/ (US East Coast)
-http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1.r1/ (US West Coast)
+https://reticen8.c0urier.net/releases/17.1.r1/ (Europe)
+http://mirrors.nycbug.org/pub/reticen8/releases/17.1.r1/ (US East Coast)
+http://mirror.sfo12.us.leaseweb.net/reticen8/releases/17.1.r1/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 If you have been running 17.1-BETA and want to switch to the stable
 upgrade path simply upgrade to 17.1-RC1 and run the following from
@@ -864,7 +864,7 @@ the shell:
 
 .. code-block::
 
-    # # opnsense-update -t opnsense
+    # # reticen8-update -t reticen8
 
 Here is the full list of changes since 17.1-BETA:
 
@@ -912,7 +912,7 @@ Known issues in this version:
 * Insight and Health statistics import from the early installer may not work.
 * Due to a Python 2.7.13 incompatibility the NetFlow connector
   may not work.  A workaround is to revert to the Python 2.7.12
-  release.  See the forum for details `[1] <https://forum.opnsense.org/index.php?topic=4235.0>`__ .
+  release.  See the forum for details `[1] <https://forum.reticen8.com/index.php?topic=4235.0>`__ .
 * The LibreSSL version will not be available until the final release.
 * The console settings received a non-backwards compatible change.
   If the VGA console is not working, simply reconfigure it from
@@ -923,33 +923,33 @@ Any help in making 17.1 the best it could possibly be for its final
 release January 31 is highly appreciated.  Please do not hesitate to
 contact us through any of the known channels:
 
-* Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
-* GitHub: https://github.com/opnsense
+* Twitter: https://twitter.com/reticen8
+* Forum: https://forum.reticen8.com/
+* GitHub: https://github.com/reticen8
 
 
 
 .. code-block::
 
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-cdrom-amd64.iso.bz2) = 96bc814644c89128baa8afc7a4f057bd02b364ada4c33ac1d98129a0a2f2dd50
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-nano-amd64.img.bz2) = c777f3adea1621253a846bbd78c82993801e40085d1c9cab03a71d01e5c6d0a8
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-serial-amd64.img.bz2) = 0e87555296c58a51e905e4fac97ea6fac397d748b1369bab9f4c108d6adf9993
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-vga-amd64.img.bz2) = 08af040390230bffc2ac6e4eceb884c390e0058a0b8027f003eeaf601b38b909
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-cdrom-i386.iso.bz2) = 3ef78129e57414cd765cfbe903b747e6efa1222f799cc1d2e8331a68279a7c87
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-nano-i386.img.bz2) = 6a8040bf3b8a9c2bc9bb49b214c6a7612dca5235fa0314b474524e2ccdf38caf
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-serial-i386.img.bz2) = 442b774948ae14428a8c76489139644e49c935db61e32055508974fe76686fc0
-    # SHA256 (OPNsense-17.1.r1-OpenSSL-vga-i386.img.bz2) = 27149d372ded7d069aec3e5aeab7708e53bf3ca8166193480863ace768a333d5
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-cdrom-amd64.iso.bz2) = 96bc814644c89128baa8afc7a4f057bd02b364ada4c33ac1d98129a0a2f2dd50
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-nano-amd64.img.bz2) = c777f3adea1621253a846bbd78c82993801e40085d1c9cab03a71d01e5c6d0a8
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-serial-amd64.img.bz2) = 0e87555296c58a51e905e4fac97ea6fac397d748b1369bab9f4c108d6adf9993
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-vga-amd64.img.bz2) = 08af040390230bffc2ac6e4eceb884c390e0058a0b8027f003eeaf601b38b909
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-cdrom-i386.iso.bz2) = 3ef78129e57414cd765cfbe903b747e6efa1222f799cc1d2e8331a68279a7c87
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-nano-i386.img.bz2) = 6a8040bf3b8a9c2bc9bb49b214c6a7612dca5235fa0314b474524e2ccdf38caf
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-serial-i386.img.bz2) = 442b774948ae14428a8c76489139644e49c935db61e32055508974fe76686fc0
+    # SHA256 (Reticen8-17.1.r1-OpenSSL-vga-i386.img.bz2) = 27149d372ded7d069aec3e5aeab7708e53bf3ca8166193480863ace768a333d5
 
 .. code-block::
 
-    # MD5 (OPNsense-17.1.r1-OpenSSL-cdrom-amd64.iso.bz2) = 680161da68fee3c03904970e7aa89c94
-    # MD5 (OPNsense-17.1.r1-OpenSSL-nano-amd64.img.bz2) = 989bc7056ebaf08ff3ba06a5b56b2488
-    # MD5 (OPNsense-17.1.r1-OpenSSL-serial-amd64.img.bz2) = 00d92a840c6180fb87d59b2f6728f10f
-    # MD5 (OPNsense-17.1.r1-OpenSSL-vga-amd64.img.bz2) = 1574e871a3d64147e1a904074a4ff4b2
-    # MD5 (OPNsense-17.1.r1-OpenSSL-cdrom-i386.iso.bz2) = 0e409d30009af857b23e67e97451cc81
-    # MD5 (OPNsense-17.1.r1-OpenSSL-nano-i386.img.bz2) = 051a1072559982fce88fb39ef78aca77
-    # MD5 (OPNsense-17.1.r1-OpenSSL-serial-i386.img.bz2) = c32106dc7070ae462200e15fa707e19c
-    # MD5 (OPNsense-17.1.r1-OpenSSL-vga-i386.img.bz2) = 5ec394d7c2b331390d92baec41e3aece
+    # MD5 (Reticen8-17.1.r1-OpenSSL-cdrom-amd64.iso.bz2) = 680161da68fee3c03904970e7aa89c94
+    # MD5 (Reticen8-17.1.r1-OpenSSL-nano-amd64.img.bz2) = 989bc7056ebaf08ff3ba06a5b56b2488
+    # MD5 (Reticen8-17.1.r1-OpenSSL-serial-amd64.img.bz2) = 00d92a840c6180fb87d59b2f6728f10f
+    # MD5 (Reticen8-17.1.r1-OpenSSL-vga-amd64.img.bz2) = 1574e871a3d64147e1a904074a4ff4b2
+    # MD5 (Reticen8-17.1.r1-OpenSSL-cdrom-i386.iso.bz2) = 0e409d30009af857b23e67e97451cc81
+    # MD5 (Reticen8-17.1.r1-OpenSSL-nano-i386.img.bz2) = 051a1072559982fce88fb39ef78aca77
+    # MD5 (Reticen8-17.1.r1-OpenSSL-serial-i386.img.bz2) = c32106dc7070ae462200e15fa707e19c
+    # MD5 (Reticen8-17.1.r1-OpenSSL-vga-i386.img.bz2) = 5ec394d7c2b331390d92baec41e3aece
 
 --------------------------------------------------------------------------
 17.1.b (December 16, 2016)
@@ -971,11 +971,11 @@ to provide production-ready images.  Checksums can be found below this
 announcement.  Direct download links from our capable mirror providers
 are as follows:
 
-https://opnsense.c0urier.net/releases/17.1.b/ (Europe)
-http://mirrors.nycbug.org/pub/opnsense/releases/17.1.b/ (US East Coast)
-http://mirror.sfo12.us.leaseweb.net/opnsense/releases/17.1.b/ (US West Coast)
+https://reticen8.c0urier.net/releases/17.1.b/ (Europe)
+http://mirrors.nycbug.org/pub/reticen8/releases/17.1.b/ (US East Coast)
+http://mirror.sfo12.us.leaseweb.net/reticen8/releases/17.1.b/ (US West Coast)
 
-https://opnsense.org/download/ (full mirror list)
+https://reticen8.com/download/ (full mirror list)
 
 Here is a list of hand-picked major features that were worked on since 16.7:
 
@@ -1014,29 +1014,29 @@ Any help in making 17.1 the best it could possibly be for its final
 release at the end of January 2017 is highly appreciated.  Please do
 not hesitate to contact us through any of the known channels:
 
-* Twitter: https://twitter.com/opnsense
-* Forum: https://forum.opnsense.org/
-* GitHub: https://github.com/opnsense
+* Twitter: https://twitter.com/reticen8
+* Forum: https://forum.reticen8.com/
+* GitHub: https://github.com/reticen8
 
 
 .. code-block::
 
-    # SHA256 (OPNsense-17.1.b-OpenSSL-cdrom-amd64.iso.bz2) = 6ed4e335757f5f58e34f3f59984a06183612ed0cffd5a9238f85b1a156a56039
-    # SHA256 (OPNsense-17.1.b-OpenSSL-nano-amd64.img.bz2) = 70b89467d6dc9cadaa7c855764a8bb91f0fe118bba60074ab1d8f41362a7042a
-    # SHA256 (OPNsense-17.1.b-OpenSSL-serial-amd64.img.bz2) = affae7605fde77827e975597de5280db746f85c1ed38794ce647a6ad7c2f945d
-    # SHA256 (OPNsense-17.1.b-OpenSSL-vga-amd64.img.bz2) = 6f99cc3d0ef8d328eb43985b8d01cffe2e7f65e886015c65c84c062e33f15fbb
-    # SHA256 (OPNsense-17.1.b-OpenSSL-cdrom-i386.iso.bz2) = b799f8260ae1a55848c126d7be52c51e92ae3d11c0eaf347a506e7e59c92fd9c
-    # SHA256 (OPNsense-17.1.b-OpenSSL-nano-i386.img.bz2) = 86186e5b5af8be2818385497f8bdf5c3128c7864e502502676424193bcce9461
-    # SHA256 (OPNsense-17.1.b-OpenSSL-serial-i386.img.bz2) = 7b20afc07fc2ca45b6cee66c855d2576170a04684dae0cb65243a8abaa9be684
-    # SHA256 (OPNsense-17.1.b-OpenSSL-vga-i386.img.bz2) = 1fc58fade2e15a30afec82b3fff553344557e6903b69c2f48e20976373543d1e
+    # SHA256 (Reticen8-17.1.b-OpenSSL-cdrom-amd64.iso.bz2) = 6ed4e335757f5f58e34f3f59984a06183612ed0cffd5a9238f85b1a156a56039
+    # SHA256 (Reticen8-17.1.b-OpenSSL-nano-amd64.img.bz2) = 70b89467d6dc9cadaa7c855764a8bb91f0fe118bba60074ab1d8f41362a7042a
+    # SHA256 (Reticen8-17.1.b-OpenSSL-serial-amd64.img.bz2) = affae7605fde77827e975597de5280db746f85c1ed38794ce647a6ad7c2f945d
+    # SHA256 (Reticen8-17.1.b-OpenSSL-vga-amd64.img.bz2) = 6f99cc3d0ef8d328eb43985b8d01cffe2e7f65e886015c65c84c062e33f15fbb
+    # SHA256 (Reticen8-17.1.b-OpenSSL-cdrom-i386.iso.bz2) = b799f8260ae1a55848c126d7be52c51e92ae3d11c0eaf347a506e7e59c92fd9c
+    # SHA256 (Reticen8-17.1.b-OpenSSL-nano-i386.img.bz2) = 86186e5b5af8be2818385497f8bdf5c3128c7864e502502676424193bcce9461
+    # SHA256 (Reticen8-17.1.b-OpenSSL-serial-i386.img.bz2) = 7b20afc07fc2ca45b6cee66c855d2576170a04684dae0cb65243a8abaa9be684
+    # SHA256 (Reticen8-17.1.b-OpenSSL-vga-i386.img.bz2) = 1fc58fade2e15a30afec82b3fff553344557e6903b69c2f48e20976373543d1e
 
 .. code-block::
 
-    # MD5 (OPNsense-17.1.b-OpenSSL-cdrom-amd64.iso.bz2) = 221b6b63642051518cd190b63775d5a5
-    # MD5 (OPNsense-17.1.b-OpenSSL-nano-amd64.img.bz2) = 67ff68890113bb2b4223a2336cfc5d01
-    # MD5 (OPNsense-17.1.b-OpenSSL-serial-amd64.img.bz2) = e757bef2fcb5e444cad8b7d8991314fe
-    # MD5 (OPNsense-17.1.b-OpenSSL-vga-amd64.img.bz2) = c2c56a542856fd0b84f299d7dd783b17
-    # MD5 (OPNsense-17.1.b-OpenSSL-cdrom-i386.iso.bz2) = c210c342a6d618e7c1ebcdefdf1e3f9d
-    # MD5 (OPNsense-17.1.b-OpenSSL-nano-i386.img.bz2) = 1c036f6707f9922c40748be44592462a
-    # MD5 (OPNsense-17.1.b-OpenSSL-serial-i386.img.bz2) = ff07d0d4f9e62a99896de8228ceba41b
-    # MD5 (OPNsense-17.1.b-OpenSSL-vga-i386.img.bz2) = 3f67a06ca99137d135d1fc9713912aff
+    # MD5 (Reticen8-17.1.b-OpenSSL-cdrom-amd64.iso.bz2) = 221b6b63642051518cd190b63775d5a5
+    # MD5 (Reticen8-17.1.b-OpenSSL-nano-amd64.img.bz2) = 67ff68890113bb2b4223a2336cfc5d01
+    # MD5 (Reticen8-17.1.b-OpenSSL-serial-amd64.img.bz2) = e757bef2fcb5e444cad8b7d8991314fe
+    # MD5 (Reticen8-17.1.b-OpenSSL-vga-amd64.img.bz2) = c2c56a542856fd0b84f299d7dd783b17
+    # MD5 (Reticen8-17.1.b-OpenSSL-cdrom-i386.iso.bz2) = c210c342a6d618e7c1ebcdefdf1e3f9d
+    # MD5 (Reticen8-17.1.b-OpenSSL-nano-i386.img.bz2) = 1c036f6707f9922c40748be44592462a
+    # MD5 (Reticen8-17.1.b-OpenSSL-serial-i386.img.bz2) = ff07d0d4f9e62a99896de8228ceba41b
+    # MD5 (Reticen8-17.1.b-OpenSSL-vga-i386.img.bz2) = 3f67a06ca99137d135d1fc9713912aff

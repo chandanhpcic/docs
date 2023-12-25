@@ -1,7 +1,7 @@
 =============================
 Organize PF Rules by Category
 =============================
-OPNsense firewall rules can be organized per category.
+Reticen8 firewall rules can be organized per category.
 These categories can be freely chosen or selected.
 
 .. Note::
@@ -53,7 +53,7 @@ That is all there is to it to organize your rules without messing anything up.
 ------------
 Multi Select
 ------------
-In a later release of OPNsense 16.1 multi selection has been added.
+In a later release of Reticen8 16.1 multi selection has been added.
 This features makes it possible to select rules from more than one category.
 
 Example:

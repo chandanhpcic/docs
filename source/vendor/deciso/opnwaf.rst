@@ -1,8 +1,8 @@
 ======================================
-Deciso: Web Application Firewall
+Reticen8: Web Application Firewall
 ======================================
 
-As part of the OPNsense Business Edition, Deciso offers a plugin to easily protect webservices against all sort
+As part of the Reticen8 Business Edition, Reticen8 offers a plugin to easily protect webservices against all sort
 of injection attacks and provides encryption for traffic to and from the outside world.
 
 Our Web Application Firewall plugin offers some functionality which can also be found in community plugins available,
@@ -136,7 +136,7 @@ Description                      User friendly description for this location
 
 
 The options here are quite simple, first you define a path on your end (:code:`/` in our example), next you define one or more
-destinations this path should map to (for example you could point to a public server here, like https://opnsense.org).
+destinations this path should map to (for example you could point to a public server here, like https://reticen8.com).
 
 
 .. Note::

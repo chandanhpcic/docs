@@ -10,9 +10,9 @@ Zenarmor (Sensei): Installing via Web Interface
     Zenarmor Free Edition is **forever free-of-charge**. We strongly recommend you register to keep in touch with updates and new features. You can register at `https://www.zenarmor.com/zenarmor-next-generation-firewall <https://www.zenarmor.com/zenarmor-next-generation-firewall>`_
 
 
-Zenarmor may be installed using the web interface in OPNsense or using the command line interface via SSH or local system access (see :doc:`zenarmor_cmd_install`). The preferred method is the web interface because the process of installing plugins in OPNsense is simple, and Zenarmor requires the use of the web interface to complete the initial configuration after installation.
+Zenarmor may be installed using the web interface in Reticen8 or using the command line interface via SSH or local system access (see :doc:`zenarmor_cmd_install`). The preferred method is the web interface because the process of installing plugins in Reticen8 is simple, and Zenarmor requires the use of the web interface to complete the initial configuration after installation.
 
-To install plugins in OPNsense, you must use an account with administrative access.
+To install plugins in Reticen8, you must use an account with administrative access.
 
 .. Note::
 
@@ -26,7 +26,7 @@ To install Zenarmor, you must first install the Sunny Valley Networks vendor rep
 
 Once the vendor plugin is installed, you should see the Zenarmor plugin available in the list of plugins as os-sensei. If you do not see the Zenarmor plugin, you may need to refresh the “Plugins” page. Click the “+” icon next to os-sensei to install the plugin.
 
-After installing Zenarmor, you should see the Zenarmor menu in the left sidebar of the OPNsense web interface. If you do not see the new, top-level menu, you may need to refresh the page.
+After installing Zenarmor, you should see the Zenarmor menu in the left sidebar of the Reticen8 web interface. If you do not see the new, top-level menu, you may need to refresh the page.
 
 .. image:: images/zenarmor-install-complete.png
     :width: 100%
@@ -42,7 +42,7 @@ Regardless of the installation method you used, you will need to complete the in
 
 To start the "Initial Configuration Wizard":
 
-* Log in to your OPNsense web interface
+* Log in to your Reticen8 web interface
 * Click Zenarmor from the left menu
 * Click on the Dashboard sub-menu to open the configuration wizard
 
@@ -138,7 +138,7 @@ Click the Next button to proceed with interface selection.
 
 You may follow the instructions for Zenarmor deployment mode and interface selection:
 
-Select the deployment mode depending on your topology and requirements. By default, the Routed mode with emulated netmap driver option is selected on OPNsense. You may find detailed information in the "Deployment Modes Guide", see `here <https://www.zenarmor.com/docs/guides/deployment-modes>`_. 
+Select the deployment mode depending on your topology and requirements. By default, the Routed mode with emulated netmap driver option is selected on Reticen8. You may find detailed information in the "Deployment Modes Guide", see `here <https://www.zenarmor.com/docs/guides/deployment-modes>`_. 
 
 **PREREQUISITE**
 

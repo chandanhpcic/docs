@@ -1,8 +1,8 @@
 ===========================
-Deciso: Extended Blocklists
+Reticen8: Extended Blocklists
 ===========================
 
-As part of the OPNsense Business Edition, Deciso offers the extended blocklists module as
+As part of the Reticen8 Business Edition, Reticen8 offers the extended blocklists module as
 part of the standard Business Edition installation. With this module you are able
 to configure DNS blocking policies in a more fine-grained manner by specifying networks on which the blocklists
 should apply.

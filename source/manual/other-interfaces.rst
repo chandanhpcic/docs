@@ -11,7 +11,7 @@ Bridge
 ------
 
 Bridging allows to create a connection between separate networks, allow traffic on network A destined for network B
-(where both networks are connected to your OPNsense device) to reach it via this bridge. Note that this does not
+(where both networks are connected to your Reticen8 device) to reach it via this bridge. Note that this does not
 include DHCP services—this needs to set using :ref:`DHCP relaying <dhcp-relaying>`.
 
 A bridge works like a (layer-2) switch, forwarding traffic from one interface to another.
@@ -118,7 +118,7 @@ does not normally support these protocols.
 Since the GRE protocol was designed by Cisco, it is often used as default tunnel technology when using their solutions.
 
 A common use-case of GRE is also to forward (no routable) multicast traffic,
-although this will need additional software such as IGMP-proxy or PIMD, which are less commonly used on OPNsense.
+although this will need additional software such as IGMP-proxy or PIMD, which are less commonly used on Reticen8.
 
 The available settings are similar to those described for the GIF tunnel type:
 

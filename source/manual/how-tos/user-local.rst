@@ -5,7 +5,7 @@ Users & Groups
 .. image:: images/usermanager_groups.png
    :width: 100%
 
-With the local user manager in OPNsense one can add users and groups and define
+With the local user manager in Reticen8 one can add users and groups and define
 the privileges for granting access to certain parts of the GUI (Web Configurator).
 
 Adding Users

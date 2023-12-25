@@ -11,7 +11,7 @@ Sslh
     "``GET``","sslh","service","status",""
     "``POST``","sslh","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `Settings.xml <https://github.com/opnsense/plugins/blob/master/net/sslh/src/opnsense/mvc/app/models/OPNsense/Sslh/Settings.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Settings.xml <https://github.com/reticen8/plugins/blob/master/net/sslh/src/reticen8/mvc/app/models/Reticen8/Sslh/Settings.xml>`__"
 
 .. csv-table:: Service (SettingsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -21,4 +21,4 @@ Sslh
     "``GET``","sslh","settings","index",""
     "``POST``","sslh","settings","set",""
 
-    "``<<uses>>``", "", "", "", "*model* `Settings.xml <https://github.com/opnsense/plugins/blob/master/net/sslh/src/opnsense/mvc/app/models/OPNsense/Sslh/Settings.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Settings.xml <https://github.com/reticen8/plugins/blob/master/net/sslh/src/reticen8/mvc/app/models/Reticen8/Sslh/Settings.xml>`__"

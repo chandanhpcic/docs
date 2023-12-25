@@ -35,7 +35,7 @@ Ipsec
     "``POST``","ipsec","connections","toggleLocal","$uuid,$enabled=null"
     "``POST``","ipsec","connections","toggleRemote","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/Swanctl.xml>`__"
 
 .. csv-table:: Resources (KeyPairsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -50,7 +50,7 @@ Ipsec
     "``POST``","ipsec","key_pairs","set",""
     "``POST``","ipsec","key_pairs","setItem","$uuid=null"
 
-    "``<<uses>>``", "", "", "", "*model* `IPsec.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/IPsec.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `IPsec.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/IPsec.xml>`__"
 
 .. csv-table:: Resources (LeasesController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -79,7 +79,7 @@ Ipsec
     "``POST``","ipsec","manual_spd","set",""
     "``POST``","ipsec","manual_spd","toggle","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/Swanctl.xml>`__"
 
 .. csv-table:: Resources (PoolsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -94,7 +94,7 @@ Ipsec
     "``POST``","ipsec","pools","set",""
     "``POST``","ipsec","pools","toggle","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/Swanctl.xml>`__"
 
 .. csv-table:: Resources (PreSharedKeysController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -108,7 +108,7 @@ Ipsec
     "``POST``","ipsec","pre_shared_keys","set",""
     "``POST``","ipsec","pre_shared_keys","setItem","$uuid=null"
 
-    "``<<uses>>``", "", "", "", "*model* `IPsec.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/IPsec.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `IPsec.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/IPsec.xml>`__"
 
 .. csv-table:: Resources (SadController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -127,7 +127,7 @@ Ipsec
     "``GET``","ipsec","service","status",""
     "``POST``","ipsec","service","stop",""
 
-    "``<<uses>>``", "", "", "", "*model* `IPsec.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/IPsec.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `IPsec.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/IPsec.xml>`__"
 
 .. csv-table:: Resources (SessionsController.php)
    :header: "Method", "Module", "Controller", "Command", "Parameters"
@@ -170,4 +170,4 @@ Ipsec
     "``POST``","ipsec","vti","set",""
     "``POST``","ipsec","vti","toggle","$uuid,$enabled=null"
 
-    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/models/OPNsense/IPsec/Swanctl.xml>`__"
+    "``<<uses>>``", "", "", "", "*model* `Swanctl.xml <https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/models/Reticen8/IPsec/Swanctl.xml>`__"

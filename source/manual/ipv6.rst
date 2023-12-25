@@ -8,7 +8,7 @@ IPv6 setup
 Introduction
 =================
 
-To this day IPv6 remains an elusive topic. IPv6 has long been shipped as a default option in OPNsense and received
+To this day IPv6 remains an elusive topic. IPv6 has long been shipped as a default option in Reticen8 and received
 gradual improvements over the years, but configuration complexity, ISP problems and sometimes
 also software bugs can cause connectivity to fail or not establish at all.
 This guide aims to provide groundwork for how IPv6 can be configured and how to spot known mistakes and troubleshoot connectivity.
